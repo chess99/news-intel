@@ -1,17 +1,20 @@
 #!/usr/bin/env python3.11
 """
-digest.py — 对 raw/YYYY/MM/DD/ 的原文逐篇调用 MiniMax API 提炼，
+digest.py — 对 raw/YYYY/MM/DD/ 的原文逐篇调用 MiniMax API 进行批判性分析，
             汇总写入 digest/YYYY-MM-DD.md
 
 用法：
-    python3.11 scripts/digest.py [--date YYYY-MM-DD]
+    python3.11 scripts/digest.py [--date YYYY-MM-DD] [--min-score N]
 
-每篇文章提炼为：
-- 一句话核心观点（中文）
-- 3-5 个要点（中文）
-- 重要性评分 1-5
+每篇文章分析包含：
+- 核心事件（忠实还原，保留限定词）
+- 原文关键句引用
+- 缺失信息标注
+- 批判性判断（标题党识别、强度校准）
+- 重要性评分
 
 汇总文件按重要性排序，供龙虾直接用于生成日报。
+龙虾层只需做最终编辑汇总，不承担分析工作。
 """
 import os, sys, json, time, re
 from datetime import datetime, timezone, timedelta
@@ -33,33 +36,41 @@ MINIMAX_API_KEY = os.environ.get(
 MINIMAX_API_HOST = "https://api.minimaxi.com"
 MODEL = "MiniMax-M2.7"
 
-EXTRACT_PROMPT = """你是一位科技资讯编辑，请对以下文章进行提炼分析。
+ANALYZE_PROMPT = """你是一位有15年经验的科技记者，同时具备软件工程背景。请对以下文章进行批判性分析。
 
-要求：
-1. 用一句话总结核心事件/观点（中文，≤50字）
-2. 列出3-5个关键要点（中文，每点≤30字，用 • 开头）
-3. 给出重要性评分（1-5分，5分最重要）
-4. 评分依据：AI/大模型=5分，重大产品/商业事件=4分，行业动态=3分，普通资讯=2分，无关=1分
+【核心原则】
+- 忠实还原，不强化断言：原文说"nearly"就写"nearly"，原文说"据报道"就保留，不得删除限定词
+- 标注缺失信息：关键前提条件如果原文没说清楚，必须在"缺失信息"里标出
+- 识别营销语言：区分事实陈述和PR措辞（"横空出世"/"颠覆"/"革命性"等）
 
-输出格式（严格按此格式）：
-核心：[一句话总结]
-要点：
-• [要点1]
-• [要点2]
-• [要点3]
-评分：[1-5]
+【输出格式】严格按以下格式输出，不要有多余内容：
+
+核心事件：[50字以内，忠实还原，保留限定词，不夸大不缩小]
+原文引用：[直接引用原文最关键的1-2句，用引号括起，中英文均可]
+缺失信息：[原文未说但读者需要知道的关键前提或限制条件，若无则写"无"]
+批判判断：[识别标题党/PR夸大/数据缺失/逻辑漏洞等问题，若无则写"叙述客观"]
+背景补充：[结合业界知识补充1-2句有价值的背景，帮助读者理解实际意义]
+评分：[1-5，整数]
+评分理由：[一句话]
+
+评分标准：
+5=影响行业走向的重大突破或决策
+4=值得关注的重要事件或产品发布
+3=有价值的行业动态
+2=一般资讯，价值有限
+1=无关内容/纯广告/重复旧闻
 """
 
 
-def call_minimax(text: str) -> dict:
-    """调用 MiniMax API 提炼文章，返回结构化结果"""
+def call_minimax(text: str) -> str:
+    """调用 MiniMax API 分析文章，返回原始文本"""
     payload = json.dumps({
         "model": MODEL,
         "messages": [
-            {"role": "user", "content": f"{EXTRACT_PROMPT}\n\n文章内容：\n{text[:4000]}"}
+            {"role": "user", "content": f"{ANALYZE_PROMPT}\n\n---\n文章内容：\n{text[:5000]}"}
         ],
-        "max_tokens": 400,
-        "temperature": 0.3,
+        "max_tokens": 600,
+        "temperature": 0.2,
     }).encode()
 
     headers = {
@@ -79,37 +90,49 @@ def call_minimax(text: str) -> dict:
         )
         resp = opener.open(req, timeout=30)
         data = json.loads(resp.read())
-        content = data["choices"][0]["message"]["content"]
-        return parse_output(content)
+        return data["choices"][0]["message"]["content"]
     except Exception as e:
         print(f"  [ERROR] API call failed: {e}", file=sys.stderr)
-        return {"core": "提炼失败", "points": [], "score": 1, "raw": ""}
+        return ""
 
 
-def parse_output(text: str) -> dict:
-    """解析 API 输出"""
-    result = {"core": "", "points": [], "score": 2, "raw": text}
+def parse_analysis(text: str) -> dict:
+    """解析 API 输出为结构化字典"""
+    result = {
+        "core": "",
+        "quote": "",
+        "missing": "",
+        "critique": "",
+        "context": "",
+        "score": 2,
+        "score_reason": "",
+        "raw": text,
+    }
 
-    lines = text.strip().split("\n")
-    points = []
-    in_points = False
+    field_map = {
+        "核心事件": "core",
+        "原文引用": "quote",
+        "缺失信息": "missing",
+        "批判判断": "critique",
+        "背景补充": "context",
+        "评分理由": "score_reason",
+    }
 
-    for line in lines:
+    for line in text.strip().split("\n"):
         line = line.strip()
-        if line.startswith("核心：") or line.startswith("核心:"):
-            result["core"] = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-        elif line.startswith("要点"):
-            in_points = True
-        elif in_points and line.startswith("•"):
-            points.append(line[1:].strip())
-        elif line.startswith("评分：") or line.startswith("评分:"):
-            try:
-                score_str = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-                result["score"] = int(re.search(r"\d", score_str).group())
-            except Exception:
-                pass
+        for prefix, key in field_map.items():
+            if line.startswith(prefix + "：") or line.startswith(prefix + ":"):
+                val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+                result[key] = val
+                break
+        if line.startswith("评分：") or line.startswith("评分:"):
+            # 避免匹配"评分理由"
+            raw_val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+            # 只取第一个数字
+            m = re.search(r"[1-5]", raw_val)
+            if m:
+                result["score"] = int(m.group())
 
-    result["points"] = points
     return result
 
 
@@ -117,7 +140,6 @@ def read_article(filepath: Path) -> dict:
     """读取文章 markdown，提取元数据和正文"""
     text = filepath.read_text(encoding="utf-8")
 
-    # 解析 frontmatter
     meta = {}
     if text.startswith("---"):
         end = text.find("---", 3)
@@ -127,25 +149,15 @@ def read_article(filepath: Path) -> dict:
                 if ":" in line:
                     k, v = line.split(":", 1)
                     meta[k.strip()] = v.strip().strip('"')
-            text = text[end+3:].strip()
-
-    # 取标题
-    title = meta.get("title", filepath.stem)
-    url = meta.get("url", "")
-    source = meta.get("source", "")
-    category = meta.get("category", "")
-    published = meta.get("published", "")
-
-    # 正文（RSS摘要 + 正文，合并用于提炼）
-    body = text[:5000]
+            text = text[end + 3:].strip()
 
     return {
-        "title": title,
-        "url": url,
-        "source": source,
-        "category": category,
-        "published": published[:10] if published else "",
-        "body": body,
+        "title": meta.get("title", filepath.stem),
+        "url": meta.get("url", ""),
+        "source": meta.get("source", ""),
+        "category": meta.get("category", ""),
+        "published": meta.get("published", "")[:10],
+        "body": text[:5000],
         "filename": filepath.name,
     }
 
@@ -163,9 +175,11 @@ CAT_ZH = {
     "tech_culture": "🌐 科技文化",
 }
 
+SCORE_STARS = {1: "⭐", 2: "⭐⭐", 3: "⭐⭐⭐", 4: "⭐⭐⭐⭐", 5: "⭐⭐⭐⭐⭐"}
+
 
 def main():
-    parser = argparse.ArgumentParser(description="Digest raw articles using LLM API")
+    parser = argparse.ArgumentParser(description="Analyze raw articles using LLM API")
     parser.add_argument("--date", default=None, help="日期 YYYY-MM-DD（默认今天）")
     parser.add_argument("--min-score", type=int, default=2, help="最低入选评分（默认2）")
     args = parser.parse_args()
@@ -181,7 +195,7 @@ def main():
         sys.exit(1)
 
     files = sorted(raw_dir.glob("*.md"))
-    print(f"[INFO] 找到 {len(files)} 篇文章，开始提炼...", file=sys.stderr)
+    print(f"[INFO] 日期: {date_str}，找到 {len(files)} 篇文章，开始分析...", file=sys.stderr)
 
     results = []
     for i, filepath in enumerate(files, 1):
@@ -191,24 +205,32 @@ def main():
             print(f"  [skip] 正文为空", file=sys.stderr)
             continue
 
-        digest = call_minimax(article["body"])
-        article["digest"] = digest
+        raw_analysis = call_minimax(article["body"])
+        if not raw_analysis:
+            continue
+
+        analysis = parse_analysis(raw_analysis)
+        article["analysis"] = analysis
         results.append(article)
-        print(f"  评分: {digest['score']} | 核心: {digest['core'][:40]}", file=sys.stderr)
-        time.sleep(0.3)  # 避免限速
 
-    # 按评分排序
-    results.sort(key=lambda x: x["digest"]["score"], reverse=True)
-    filtered = [r for r in results if r["digest"]["score"] >= args.min_score]
+        score = analysis["score"]
+        critique = analysis["critique"]
+        print(f"  [{score}/5] {analysis['core'][:50]}", file=sys.stderr)
+        if critique and critique != "叙述客观":
+            print(f"  ⚠️  {critique[:60]}", file=sys.stderr)
+        time.sleep(0.3)
 
-    print(f"\n[INFO] 提炼完成，{len(filtered)}/{len(results)} 篇入选（评分≥{args.min_score}）", file=sys.stderr)
+    results.sort(key=lambda x: x["analysis"]["score"], reverse=True)
+    filtered = [r for r in results if r["analysis"]["score"] >= args.min_score]
+
+    print(f"\n[INFO] 分析完成，{len(filtered)}/{len(results)} 篇入选（评分≥{args.min_score}）", file=sys.stderr)
 
     # 生成 digest 文件
     DIGEST_DIR.mkdir(parents=True, exist_ok=True)
     digest_path = DIGEST_DIR / f"{date_str}.md"
 
     lines = [
-        f"# 科技资讯提炼 · {date_str}",
+        f"# 科技资讯分析 · {date_str}",
         f"",
         f"> 共处理 {len(results)} 篇，入选 {len(filtered)} 篇（评分≥{args.min_score}）",
         f"> 生成时间：{datetime.now(CST).strftime('%Y-%m-%d %H:%M')} CST",
@@ -217,13 +239,11 @@ def main():
         f"",
     ]
 
-    # 按类别分组输出
+    # 按类别分组
     by_cat: dict[str, list] = {}
     for r in filtered:
-        cat = r["category"]
-        by_cat.setdefault(cat, []).append(r)
+        by_cat.setdefault(r["category"], []).append(r)
 
-    # AI 类别优先
     priority_cats = ["ai", "tech_startup", "tech_business", "consumer_tech",
                      "deep_tech", "open_source", "community", "deep_tech_research",
                      "digital_life", "tech_culture"]
@@ -237,25 +257,40 @@ def main():
         lines.append("")
 
         for r in items:
-            d = r["digest"]
-            score_stars = "⭐" * d["score"]
+            a = r["analysis"]
+            score = a["score"]
+            stars = SCORE_STARS.get(score, "⭐" * score)
+
             lines.append(f"### {r['title']}")
-            lines.append(f"**来源**: {r['source']} | **日期**: {r['published']} | **评分**: {score_stars} ({d['score']}/5)")
+            lines.append(f"**来源**: {r['source']} | **发布**: {r['published']} | **评分**: {stars} ({score}/5)")
             lines.append(f"**链接**: {r['url']}")
             lines.append("")
-            lines.append(f"**核心**: {d['core']}")
+
+            lines.append(f"**核心**: {a['core']}")
             lines.append("")
-            if d["points"]:
-                lines.append("**要点**:")
-                for pt in d["points"]:
-                    lines.append(f"- {pt}")
-            lines.append("")
+
+            if a["quote"]:
+                lines.append(f"**原文**: {a['quote']}")
+                lines.append("")
+
+            if a["missing"] and a["missing"] != "无":
+                lines.append(f"**⚠️ 缺失信息**: {a['missing']}")
+                lines.append("")
+
+            if a["critique"] and a["critique"] != "叙述客观":
+                lines.append(f"**🔍 批判**: {a['critique']}")
+                lines.append("")
+
+            if a["context"]:
+                lines.append(f"**背景**: {a['context']}")
+                lines.append("")
+
             lines.append("---")
             lines.append("")
 
     digest_path.write_text("\n".join(lines), encoding="utf-8")
-    print(f"[DONE] 提炼文件已写入: {digest_path}", file=sys.stderr)
-    print(str(digest_path))  # stdout 输出路径，供调用方使用
+    print(f"[DONE] 分析文件已写入: {digest_path}", file=sys.stderr)
+    print(str(digest_path))
 
 
 if __name__ == "__main__":
