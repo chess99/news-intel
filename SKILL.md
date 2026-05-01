@@ -41,6 +41,13 @@ python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
 3. 对评分 4-5 分的重要事件，结合历史背景展开深度解读
 4. 生成日报，发送到资讯群（飞书群 `oc_d170dda09264716d786cd28cc48e5f78`）
 5. 将日报内容存档到 `report/YYYY-MM-DD.md`
+6. commit 并 push 当日所有新增文件（三层归档入库）：
+   ```bash
+   cd /root/.openclaw/workspace/news-intel
+   git add raw/ digest/ report/
+   git commit -m "daily: $(date +%Y-%m-%d) 科技资讯日报"
+   node /root/.openclaw/workspace/news-intel/scripts/git_push.js
+   ```
 
 ## 日报格式参考
 
@@ -87,4 +94,12 @@ python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
 - `fetch.py` 抓全文，每篇约需 2-3 秒，17 个信源约 5-10 分钟
 - `digest.py` 调 MiniMax API 逐篇提炼，约 5 分钟
 - 两步合计约 15 分钟，因此 crontab 设在 08:30，09:00 龙虾来读时已就绪
-- 原文和提炼文件全部进 git，历史可查
+- 三层文件（raw/digest/report）由你在步骤6统一 commit，每天一个提交，历史清晰
+
+## Git Push 脚本
+
+push 需要 GitHub App token，运行：
+```bash
+node /root/.openclaw/workspace/news-intel/scripts/git_push.js
+```
+脚本已内置 App 认证逻辑，直接运行即可。
