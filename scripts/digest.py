@@ -181,7 +181,7 @@ SCORE_STARS = {1: "⭐", 2: "⭐⭐", 3: "⭐⭐⭐", 4: "⭐⭐⭐⭐", 5: "⭐
 def main():
     parser = argparse.ArgumentParser(description="Analyze raw articles using LLM API")
     parser.add_argument("--date", default=None, help="日期 YYYY-MM-DD（默认今天）")
-    parser.add_argument("--min-score", type=int, default=2, help="最低入选评分（默认2）")
+    parser.add_argument("--min-score", type=int, default=3, help="最低入选评分（默认3，减少低价值文章进入日报）")
     args = parser.parse_args()
 
     today = datetime.now(CST)
