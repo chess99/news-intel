@@ -39,7 +39,10 @@ python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
 1. 读取今日提炼文件：`digest/YYYY-MM-DD.md`
 2. 结合 `report/` 目录的近期历史报告，进行汇总分析
 3. 对评分 4-5 分的重要事件，结合历史背景展开深度解读
-4. 生成日报，发送到资讯群（飞书群 `oc_d170dda09264716d786cd28cc48e5f78`）
+4. 生成日报，用 **`feishu_chat` 工具**发送到资讯群：
+   - chat_id: `oc_d170dda09264716d786cd28cc48e5f78`
+   - 用法：`feishu_chat(action="send", chat_id="oc_d170dda09264716d786cd28cc48e5f78", message="日报内容")`
+   - **注意**：不要用 curl 调 webhook，不要把 chat_id 当 token，必须用 feishu_chat 工具
 5. 将日报内容存档到 `report/YYYY-MM-DD.md`
 6. commit 并 push 当日所有新增文件（三层归档入库）：
    ```bash

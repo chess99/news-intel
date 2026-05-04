@@ -52,8 +52,15 @@ function ghReq(method, path, token, body) {
   const token = tok.body.token;
 
   const url = `https://x-access-token:${token}@github.com/${REPO}.git`;
-  const proxy = "http://127.0.0.1:7890";
-  execSync(`git -c http.proxy=${proxy} -c https.proxy=${proxy} remote set-url origin ${url}`, { cwd: WORKDIR, stdio: "inherit" });
-  execSync(`git -c http.proxy=${proxy} -c https.proxy=${proxy} push origin main`, { cwd: WORKDIR, stdio: "inherit" });
+  execSync(`git -c http.proxy='' -c https.proxy='' remote set-url origin ${url}`, { cwd: WORKDIR, stdio: "inherit" });
+
+  // 先尝试直连，失败再走代理
+  try {
+    execSync(`git -c http.proxy='' -c https.proxy='' push origin main`, { cwd: WORKDIR, stdio: "inherit" });
+  } catch (e) {
+    console.log("直连失败，尝试代理...");
+    const proxy = "http://127.0.0.1:7890";
+    execSync(`git -c http.proxy=${proxy} -c https.proxy=${proxy} push origin main`, { cwd: WORKDIR, stdio: "inherit" });
+  }
   console.log("push ok");
 })().catch(e => { console.error(e.message); process.exit(1); });
