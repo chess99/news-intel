@@ -94,14 +94,14 @@ sources:
     url: https://github.com/trending.rss
     lang: en
     category: open_source
-    enabled: true
+    enabled: false  # 406 Not Acceptable, GitHub 已不支持 trending RSS
 
   # === AI Official Blogs ===
   - name: Anthropic Blog
     url: https://www.anthropic.com/feed.rss
     lang: en
     category: ai_official
-    enabled: true
+    enabled: false  # 无 RSS，需 Playwright 抓取或第三方 RSS 服务
 
   - name: OpenAI Blog
     url: https://openai.com/blog/rss.xml
@@ -110,16 +110,16 @@ sources:
     enabled: true
 
   - name: Google DeepMind Blog
-    url: https://deepmind.google/blog/rss/
+    url: https://deepmind.google/blog/rss.xml
     lang: en
     category: ai_official
-    enabled: true
+    enabled: true  # 修正 URL: /rss/ -> /rss.xml (302 跳转目标)
 
   - name: Meta AI Blog
     url: https://ai.meta.com/blog/feed/
     lang: en
     category: ai_official
-    enabled: true
+    enabled: false  # 无 RSS
 
   - name: Hugging Face Blog
     url: https://huggingface.co/blog/feed.xml
@@ -132,7 +132,7 @@ sources:
     url: https://www.deeplearning.ai/the-batch/feed/
     lang: en
     category: ai_newsletter
-    enabled: true
+    enabled: false  # 无官方 RSS，thebatch.substack.com/feed 是无关账号
 
   - name: Latent Space
     url: https://www.latent.space/feed
