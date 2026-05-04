@@ -3,7 +3,7 @@ name: news-intel
 description: |
   科技资讯日报生成入口。每天 09:00 CST 由 cron 触发。
   当用户提到"发资讯"、"今日日报"、"科技新闻"、"资讯群"时触发。
-  告诉你工作区路径、三层文件结构、如何生成日报。
+  告诉你工作区路径、文件结构、如何生成日报。
 ---
 
 # News Intel — 科技资讯工作区
@@ -14,41 +14,42 @@ description: |
 /root/.openclaw/workspace/news-intel/
 ```
 
-## 三层文件结构
+## 文件结构
 
 ```
-raw/YYYY/MM/DD/NNN-source-slug.md   # 第一层：原文存档（脚本自动生成）
-digest/YYYY-MM-DD.md                # 第二层：LLM 提炼列表（脚本自动生成）
-report/YYYY-MM-DD.md                # 第三层：最终日报存档（你生成后保存）
+raw/YYYY/MM/DD/     原文存档（fetch.py 生成）
+digest/YYYY-MM-DD.md       LLM 批判性分析汇总（digest.py 生成）
+digest/YYYY-MM-DD.jsonl    结构化分析数据（kb_update.py 读取）
+kb/events.jsonl            30天历史事件知识库（kb_update.py 维护）
+clusters/YYYY-MM-DD.json   事件聚合结果（cluster.py 生成）
+report/YYYY-MM-DD.md       最终日报（你生成后保存）
+docs/                      GitHub Pages 静态文件（build_site.py 生成）
 ```
 
-## 日常流程
+## 完整 Pipeline
 
-**前两步由 crontab 在 08:30 CST 自动完成，你不需要管：**
-
-```bash
-# 步骤1：抓取原文（约5-10分钟）
-python3.11 /root/.openclaw/workspace/news-intel/scripts/fetch.py
-
-# 步骤2：LLM 提炼（约5分钟）
-python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
+```
+fetch.py → cluster.py → digest.py → kb_update.py → [你生成日报] → build_site.py
 ```
 
-**你的任务（09:00 CST cron 触发）：**
+**前四步由 crontab 在 08:30 CST 自动完成，你不需要管。**
 
-1. 读取今日提炼文件：`digest/YYYY-MM-DD.md`
-2. 结合 `report/` 目录的近期历史报告，进行汇总分析
-3. 对评分 4-5 分的重要事件，结合历史背景展开深度解读
+## 你的任务（09:00 CST cron 触发）
+
+1. 读取今日分析文件：`digest/YYYY-MM-DD.md`
+2. 参考 `report/` 目录近期历史报告的格式
+3. 参考 `kb/events.jsonl` 中的历史事件（如有相关联事件，展开背景分析）
 4. 生成日报，用 **`feishu_chat` 工具**发送到资讯群：
-   - chat_id: `oc_d170dda09264716d786cd28cc48e5f78`
-   - 用法：`feishu_chat(action="send", chat_id="oc_d170dda09264716d786cd28cc48e5f78", message="日报内容")`
-   - **注意**：不要用 curl 调 webhook，不要把 chat_id 当 token，必须用 feishu_chat 工具
+   ```
+   feishu_chat(action="send", chat_id="oc_d170dda09264716d786cd28cc48e5f78", message="日报内容")
+   ```
+   ⚠️ 不要用 curl 调 webhook，不要把 chat_id 当 token，必须用 feishu_chat 工具
 5. 将日报内容存档到 `report/YYYY-MM-DD.md`
-6. commit 并 push 当日所有新增文件（三层归档入库）：
+6. 运行 `python3.11 /root/.openclaw/workspace/news-intel/scripts/build_site.py` 更新静态站点
+7. commit 并 push（三层归档 + 站点同时入库）：
    ```bash
-   cd /root/.openclaw/workspace/news-intel
-   git add raw/ digest/ report/
-   git commit -m "daily: $(date +%Y-%m-%d) 科技资讯日报"
+   git -C /root/.openclaw/workspace/news-intel add raw/ digest/ report/ docs/ kb/
+   git -C /root/.openclaw/workspace/news-intel commit -m "daily: $(date +%Y-%m-%d) 科技资讯日报"
    node /root/.openclaw/workspace/news-intel/scripts/git_push.js
    ```
 
@@ -58,7 +59,7 @@ python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
 📰 科技资讯日报 · YYYY年MM月DD日
 
 🔴 重磅
-[评分5分的事件，结合历史深度解读]
+[评分5分的事件，结合 kb/ 历史背景深度解读]
 
 🤖 AI & 大模型
 [评分4-5分的AI相关内容]
@@ -70,39 +71,26 @@ python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
 [...]
 
 📊 快讯
-[评分2-3分的内容，每条一行]
+[评分3分的内容，每条一行]
 
 ---
-本报告基于真实 RSS 数据生成 | 信源: TechCrunch、36氪、VentureBeat 等
+本报告基于真实数据生成 | 信源: TechCrunch、36氪、VentureBeat、Latent Space 等
 ```
 
-## 信源配置
-
-`sources/feeds.yaml` — 可随时增删信源，重启后生效。
-
-## 手动触发
-
-如果自动流程失败或需要补发：
+## 手动触发前四步
 
 ```bash
-# 手动抓取并提炼
-python3.11 /root/.openclaw/workspace/news-intel/scripts/fetch.py
-python3.11 /root/.openclaw/workspace/news-intel/scripts/digest.py
-
-# 然后读 digest/YYYY-MM-DD.md 生成日报
+cd /root/.openclaw/workspace/news-intel
+source .env
+python3.11 scripts/fetch.py
+python3.11 scripts/cluster.py
+python3.11 scripts/digest.py
+python3.11 scripts/kb_update.py
 ```
 
 ## 注意事项
 
-- `fetch.py` 抓全文，每篇约需 2-3 秒，17 个信源约 5-10 分钟
-- `digest.py` 调 MiniMax API 逐篇提炼，约 5 分钟
-- 两步合计约 15 分钟，因此 crontab 设在 08:30，09:00 龙虾来读时已就绪
-- 三层文件（raw/digest/report）由你在步骤6统一 commit，每天一个提交，历史清晰
-
-## Git Push 脚本
-
-push 需要 GitHub App token，运行：
-```bash
-node /root/.openclaw/workspace/news-intel/scripts/git_push.js
-```
-脚本已内置 App 认证逻辑，直接运行即可。
+- 环境变量在 `.env` 文件中，脚本会自动加载（无需手动 source）
+- digest.py 分析完成后同时输出 `.md`（人类可读）和 `.jsonl`（结构化数据）
+- kb/events.jsonl 保存 30 天滚动历史，分析时自动关联同一事件的历史报道
+- git_push.js 先尝试直连 GitHub，失败再走代理 7890
