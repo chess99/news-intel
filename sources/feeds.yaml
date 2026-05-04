@@ -1,5 +1,12 @@
 # 科技 RSS 订阅源配置
 # 格式：name, url, lang, category, enabled
+#
+# category 可用值：
+#   ai, ai_official, ai_research, ai_newsletter, ai_practitioner, ai_zh
+#   tech_startup, tech_business, consumer_tech, consumer_tech_zh
+#   deep_tech, deep_tech_research, tech_culture
+#   community, open_source, open_source_zh
+#   digital_life, engineering, product, startup, platform
 
 sources:
   # === English Tech (Primary) ===
@@ -89,15 +96,114 @@ sources:
     category: open_source
     enabled: true
 
-  # === AI Specific ===
+  # === AI Official Blogs ===
+  - name: Anthropic Blog
+    url: https://www.anthropic.com/feed.rss
+    lang: en
+    category: ai_official
+    enabled: true
+
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    lang: en
+    category: ai_official
+    enabled: true
+
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/rss/
+    lang: en
+    category: ai_official
+    enabled: true
+
+  - name: Meta AI Blog
+    url: https://ai.meta.com/blog/feed/
+    lang: en
+    category: ai_official
+    enabled: true
+
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    lang: en
+    category: ai_research
+    enabled: true
+
+  # === AI Newsletters ===
+  - name: The Batch (DeepLearning.AI)
+    url: https://www.deeplearning.ai/the-batch/feed/
+    lang: en
+    category: ai_newsletter
+    enabled: true
+
+  - name: Latent Space
+    url: https://www.latent.space/feed
+    lang: en
+    category: ai_newsletter
+    enabled: true
+
+  - name: Simon Willison Blog
+    url: https://simonwillison.net/atom/everything/
+    lang: en
+    category: ai_practitioner
+    enabled: true
+
+  # === AI Research ===
+  - name: Papers With Code
+    url: https://paperswithcode.com/rss
+    lang: en
+    category: ai_research
+    enabled: true
+
+  # === Product & Startup ===
+  - name: Product Hunt
+    url: https://www.producthunt.com/feed?category=undefined
+    lang: en
+    category: product
+    enabled: true
+
+  # === Engineering ===
+  - name: InfoQ
+    url: https://feed.infoq.com/
+    lang: en
+    category: engineering
+    enabled: true
+
+  # === Chinese AI ===
+  - name: 机器之心
+    url: https://www.jiqizhixin.com/rss
+    lang: zh
+    category: ai_zh
+    enabled: true
+
+  - name: 量子位
+    url: https://www.qbitai.com/rss
+    lang: zh
+    category: ai_zh
+    enabled: true
+
+  # === Chinese Tech ===
+  - name: Solidot
+    url: https://www.solidot.org/index.rss
+    lang: zh
+    category: open_source_zh
+    enabled: true
+
+  # === Platform ===
+  - name: GitHub Changelog
+    url: https://github.blog/changelog/feed/
+    lang: en
+    category: platform
+    enabled: true
+
+  # === AI Specific (legacy disabled) ===
   - name: AI Reddit
     url: https://www.reddit.com/r/artificial/.rss
     lang: en
     category: ai
     enabled: false  # reddit rss needs login
 
-report_settings:
-  max_articles_per_source: 5
-  max_total_articles: 30
-  summaries_per_article: 3  # number of bullet points
-  language: zh  # report language
+# ── 以下配置项暂未被脚本读取，保留供未来使用 ────────────────────────────────
+# report_settings:
+#   max_articles_per_source: 5   # 实际由 fetch.py MAX_PER_SOURCE 常量控制
+#   max_total_articles: 30
+#   summaries_per_article: 3
+#   language: zh

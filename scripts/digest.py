@@ -25,18 +25,29 @@ import urllib.request
 WORKDIR = Path(__file__).parent.parent
 RAW_DIR = WORKDIR / "raw"
 DIGEST_DIR = WORKDIR / "digest"
-PROXY = "http://127.0.0.1:7890"
+PROXY = os.environ.get("HTTPS_PROXY", os.environ.get("HTTP_PROXY", ""))
 
 CST = timezone(timedelta(hours=8))
 
-MINIMAX_API_KEY = os.environ.get(
-    "MINIMAX_API_KEY",
-    "sk-cp-qf8ALh36GGWaGpdojp2-5sDD00S0hpyZdwnG3H0dOB2c7vBzXXa9bAsGdrwCu69CkKI4_MvRoZOQxR4XgFEwykEfqwgLgomZ4OIq5ZWx4jWW4QrBX27_-uo"
-)
-MINIMAX_API_HOST = "https://api.minimaxi.com"
-MODEL = "MiniMax-M2.7"
+MINIMAX_API_KEY = os.environ.get("MINIMAX_API_KEY", "")
+if not MINIMAX_API_KEY:
+    print("[ERROR] MINIMAX_API_KEY environment variable is not set.", file=sys.stderr)
+    print("  Set it: export MINIMAX_API_KEY=your_key_here", file=sys.stderr)
+    print("  Or copy .env.example to .env and fill in the values.", file=sys.stderr)
+    sys.exit(1)
+MINIMAX_API_HOST = os.environ.get("LLM_API_HOST", "https://api.minimaxi.com")
+MODEL = os.environ.get("LLM_MODEL", "MiniMax-M2.7")
 
-ANALYZE_PROMPT = """你是一位有15年经验的科技记者，同时具备软件工程背景。请对以下文章进行批判性分析。
+def build_analyze_prompt(kb_context: str = "") -> str:
+    """构建分析 prompt，可选注入历史知识库上下文"""
+    history_section = ""
+    if kb_context:
+        history_section = f"""
+【历史知识库（过去30天高分事件，供关联分析）】
+{kb_context}
+
+"""
+    return f"""你是一位有15年经验的科技记者，同时具备软件工程背景。{history_section}请对以下文章进行批判性分析。
 
 【核心原则】
 - 忠实还原，不强化断言：原文说"nearly"就写"nearly"，原文说"据报道"就保留，不得删除限定词
@@ -47,6 +58,8 @@ ANALYZE_PROMPT = """你是一位有15年经验的科技记者，同时具备软�
 
 核心事件：[50字以内，忠实还原，保留限定词，不夸大不缩小]
 原文引用：[直接引用原文最关键的1-2句，用引号括起，中英文均可]
+历史关联：[与知识库中哪些事件有关？若无关联则写"无"]
+底层驱动力：[为什么现在发生？市场动机/技术演进/商业逻辑，1-2句]
 缺失信息：[原文未说但读者需要知道的关键前提或限制条件，若无则写"无"]
 批判判断：[识别标题党/PR夸大/数据缺失/逻辑漏洞等问题，若无则写"叙述客观"]
 背景补充：[结合业界知识补充1-2句有价值的背景，帮助读者理解实际意义]
@@ -62,14 +75,24 @@ ANALYZE_PROMPT = """你是一位有15年经验的科技记者，同时具备软�
 """
 
 
-def call_minimax(text: str) -> str:
-    """调用 MiniMax API 分析文章，返回原始文本"""
+def call_minimax(prompt_or_text: str, article_text: str = "") -> str:
+    """调用 MiniMax API，返回原始文本。
+
+    两种调用方式：
+    - call_minimax(full_prompt)          — prompt 已包含文章内容
+    - call_minimax(prompt, article_text) — 分开传，函数自动拼接
+    """
+    if article_text:
+        content = f"{prompt_or_text}\n\n---\n文章内容：\n{article_text[:5000]}"
+    else:
+        content = prompt_or_text
+
     payload = json.dumps({
         "model": MODEL,
         "messages": [
-            {"role": "user", "content": f"{ANALYZE_PROMPT}\n\n---\n文章内容：\n{text[:5000]}"}
+            {"role": "user", "content": content}
         ],
-        "max_tokens": 600,
+        "max_tokens": 800,
         "temperature": 0.2,
     }).encode()
 
@@ -80,8 +103,11 @@ def call_minimax(text: str) -> str:
 
     try:
         ctx = __import__("ssl")._create_unverified_context()
-        proxy_handler = urllib.request.ProxyHandler({"http": PROXY, "https": PROXY})
-        opener = urllib.request.build_opener(proxy_handler, urllib.request.HTTPSHandler(context=ctx))
+        if PROXY:
+            proxy_handler = urllib.request.ProxyHandler({"http": PROXY, "https": PROXY})
+            opener = urllib.request.build_opener(proxy_handler, urllib.request.HTTPSHandler(context=ctx))
+        else:
+            opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=ctx))
         req = urllib.request.Request(
             f"{MINIMAX_API_HOST}/v1/chat/completions",
             data=payload,
@@ -101,6 +127,8 @@ def parse_analysis(text: str) -> dict:
     result = {
         "core": "",
         "quote": "",
+        "history": "",
+        "driver": "",
         "missing": "",
         "critique": "",
         "context": "",
@@ -112,6 +140,8 @@ def parse_analysis(text: str) -> dict:
     field_map = {
         "核心事件": "core",
         "原文引用": "quote",
+        "历史关联": "history",
+        "底层驱动力": "driver",
         "缺失信息": "missing",
         "批判判断": "critique",
         "背景补充": "context",
@@ -125,10 +155,9 @@ def parse_analysis(text: str) -> dict:
                 val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
                 result[key] = val
                 break
-        if line.startswith("评分：") or line.startswith("评分:"):
-            # 避免匹配"评分理由"
+        if (line.startswith("评分：") or line.startswith("评分:")) and not line.startswith("评分理由"):
             raw_val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-            # 只取第一个数字
+            # 只取第一个 1-5 数字（兼容 "4/5" 或 "4" 等格式）
             m = re.search(r"[1-5]", raw_val)
             if m:
                 result["score"] = int(m.group())
@@ -164,24 +193,60 @@ def read_article(filepath: Path) -> dict:
 
 CAT_ZH = {
     "ai": "🤖 AI",
+    "ai_official": "🏢 AI 官方",
+    "ai_research": "🔬 AI 研究",
+    "ai_newsletter": "📰 AI Newsletter",
+    "ai_practitioner": "🛠️ AI 实践",
+    "ai_zh": "🤖 中文 AI",
     "tech_startup": "🚀 科技创业",
     "consumer_tech": "📱 消费科技",
+    "consumer_tech_zh": "📱 中文消费科技",
     "deep_tech": "🔬 深度技术",
     "deep_tech_research": "🎓 学术研究",
     "community": "👨‍💻 社区",
     "tech_business": "💼 科技商业",
     "open_source": "🌟 开源",
+    "open_source_zh": "🌟 中文开源",
     "digital_life": "✨ 数字生活",
     "tech_culture": "🌐 科技文化",
+    "engineering": "⚙️ 工程实践",
+    "product": "🛍️ 产品发布",
+    "startup": "🚀 创业",
+    "platform": "🔧 平台动态",
 }
 
 SCORE_STARS = {1: "⭐", 2: "⭐⭐", 3: "⭐⭐⭐", 4: "⭐⭐⭐⭐", 5: "⭐⭐⭐⭐⭐"}
 
 
+def load_kb_context() -> str:
+    """读取知识库，返回注入 prompt 的历史事件文本（最多 50 条）"""
+    kb_path = WORKDIR / "kb" / "events.jsonl"
+    if not kb_path.exists():
+        return ""
+    events = []
+    with kb_path.open(encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                events.append(json.loads(line))
+            except json.JSONDecodeError:
+                pass
+    if not events:
+        return ""
+    events.sort(key=lambda r: r.get("date", ""), reverse=True)
+    events = events[:50]
+    return "\n".join(
+        f"- [{r['date']}] {r['summary']} (来源: {', '.join(r.get('sources', []))})"
+        for r in events
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(description="Analyze raw articles using LLM API")
     parser.add_argument("--date", default=None, help="日期 YYYY-MM-DD（默认今天）")
-    parser.add_argument("--min-score", type=int, default=3, help="最低入选评分（默认3，减少低价值文章进入日报）")
+    parser.add_argument("--min-score", type=int, default=3, help="最低入选评分（默认3）")
     args = parser.parse_args()
 
     today = datetime.now(CST)
@@ -190,22 +255,36 @@ def main():
 
     raw_dir = RAW_DIR / yyyy / mm / dd
     if not raw_dir.exists():
-        print(f"[ERROR] 原文目录不存在: {raw_dir}", file=sys.stderr)
+        print(f"[WARN] 原文目录不存在: {raw_dir}，写入空 digest", file=sys.stderr)
         print(f"请先运行: python3.11 scripts/fetch.py --date {date_str}", file=sys.stderr)
-        sys.exit(1)
+        DIGEST_DIR.mkdir(parents=True, exist_ok=True)
+        stub_path = DIGEST_DIR / f"{date_str}.md"
+        stub_path.write_text(
+            f"# 科技资讯分析 · {date_str}\n\n> 未运行 fetch.py，无文章数据。\n",
+            encoding="utf-8"
+        )
+        print(str(stub_path))
+        sys.exit(0)
 
     files = sorted(raw_dir.glob("*.md"))
     print(f"[INFO] 日期: {date_str}，找到 {len(files)} 篇文章，开始分析...", file=sys.stderr)
+
+    # 加载历史知识库上下文
+    kb_context = load_kb_context()
+    if kb_context:
+        kb_lines = kb_context.count("\n") + 1
+        print(f"[INFO] 知识库注入: {kb_lines} 条历史事件", file=sys.stderr)
+    analyze_prompt = build_analyze_prompt(kb_context)
 
     results = []
     for i, filepath in enumerate(files, 1):
         print(f"[{i}/{len(files)}] {filepath.name}", file=sys.stderr)
         article = read_article(filepath)
         if not article["body"].strip():
-            print(f"  [skip] 正文为空", file=sys.stderr)
+            print("  [skip] 正文为空", file=sys.stderr)
             continue
 
-        raw_analysis = call_minimax(article["body"])
+        raw_analysis = call_minimax(analyze_prompt, article["body"])
         if not raw_analysis:
             continue
 
@@ -225,18 +304,18 @@ def main():
 
     print(f"\n[INFO] 分析完成，{len(filtered)}/{len(results)} 篇入选（评分≥{args.min_score}）", file=sys.stderr)
 
-    # 生成 digest 文件
+    # 生成 digest markdown 文件
     DIGEST_DIR.mkdir(parents=True, exist_ok=True)
     digest_path = DIGEST_DIR / f"{date_str}.md"
 
     lines = [
         f"# 科技资讯分析 · {date_str}",
-        f"",
+        "",
         f"> 共处理 {len(results)} 篇，入选 {len(filtered)} 篇（评分≥{args.min_score}）",
         f"> 生成时间：{datetime.now(CST).strftime('%Y-%m-%d %H:%M')} CST",
-        f"",
-        f"---",
-        f"",
+        "",
+        "---",
+        "",
     ]
 
     # 按类别分组
@@ -244,9 +323,12 @@ def main():
     for r in filtered:
         by_cat.setdefault(r["category"], []).append(r)
 
-    priority_cats = ["ai", "tech_startup", "tech_business", "consumer_tech",
-                     "deep_tech", "open_source", "community", "deep_tech_research",
-                     "digital_life", "tech_culture"]
+    priority_cats = [
+        "ai_official", "ai", "ai_research", "ai_newsletter", "ai_practitioner", "ai_zh",
+        "tech_startup", "tech_business", "consumer_tech", "consumer_tech_zh",
+        "deep_tech", "open_source", "open_source_zh", "community", "deep_tech_research",
+        "engineering", "product", "platform", "digital_life", "tech_culture",
+    ]
     ordered_cats = [c for c in priority_cats if c in by_cat]
     ordered_cats += [c for c in by_cat if c not in ordered_cats]
 
@@ -273,6 +355,14 @@ def main():
                 lines.append(f"**原文**: {a['quote']}")
                 lines.append("")
 
+            if a["history"] and a["history"] != "无":
+                lines.append(f"**🔗 历史关联**: {a['history']}")
+                lines.append("")
+
+            if a["driver"]:
+                lines.append(f"**💡 驱动力**: {a['driver']}")
+                lines.append("")
+
             if a["missing"] and a["missing"] != "无":
                 lines.append(f"**⚠️ 缺失信息**: {a['missing']}")
                 lines.append("")
@@ -290,6 +380,26 @@ def main():
 
     digest_path.write_text("\n".join(lines), encoding="utf-8")
     print(f"[DONE] 分析文件已写入: {digest_path}", file=sys.stderr)
+
+    # 写结构化 sidecar JSONL（供 kb_update.py 读取，无需解析 .md）
+    sidecar_path = DIGEST_DIR / f"{date_str}.jsonl"
+    with sidecar_path.open("w", encoding="utf-8") as f:
+        for r in filtered:
+            record = {
+                "date": date_str,
+                "event_id": f"{date_str}-{r['filename'][:3]}",
+                "title": r["title"],
+                "summary": r["analysis"]["core"],
+                "score": r["analysis"]["score"],
+                "score_reason": r["analysis"]["score_reason"],
+                "sources": [r["source"]],
+                "category": r["category"],
+                "lang": r.get("lang", "unknown"),
+                "url": r["url"],
+            }
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    print(f"[DONE] sidecar 已写入: {sidecar_path}", file=sys.stderr)
+
     print(str(digest_path))
 
 
