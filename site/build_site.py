@@ -489,6 +489,10 @@ body {
   letter-spacing: 0.1em;
 }
 
+/* ── DATE DISPLAY TOGGLE ── */
+.mobile-date { display: none; }
+.desktop-date { display: inline; }
+
 /* ── REPORT COUNT BADGE ── */
 .count-badge {
   display: inline-block;
@@ -503,20 +507,119 @@ body {
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
+  /* Layout: single column */
   .site-wrapper {
     grid-template-columns: 1fr;
   }
+
+  /* Header: compact single line (~40px tall) */
+  .site-header {
+    padding: 0.6rem 1rem;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  .site-tagline { display: none; }
+  .site-logo { font-size: 10px; }
+  .site-header-right {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Sidebar → horizontal date chips strip */
   .sidebar {
-    position: static;
+    position: sticky;
+    top: 38px;   /* below compact header */
     height: auto;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    padding: 1rem 0;
+    padding: 0;
+    background: rgba(13,13,13,0.97);
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    overflow: hidden;
   }
+  .sidebar-section {
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-label { display: none; }
+
+  /* Archive list → horizontal scroll row */
+  .archive-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0;
+    padding: 0.5rem 1rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .archive-list::-webkit-scrollbar { display: none; }
+
+  .archive-item {
+    border-bottom: none;
+    flex-shrink: 0;
+  }
+
+  .archive-link {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    margin-right: 0.4rem;
+    white-space: nowrap;
+    min-width: 56px;
+    background: transparent;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .archive-link.active {
+    border-color: var(--accent);
+    background: var(--accent-glow);
+  }
+
+  .archive-dot { display: none; }
+
+  /* Show month/day instead of full date */
+  .archive-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+  .archive-link.active .archive-date { color: var(--accent); }
+
+  /* Show short date on mobile chips */
+  .desktop-date { display: none; }
+  .mobile-date { display: inline; }
+
+  /* Content area */
   .main-content {
-    padding: 1.5rem 1.25rem;
+    padding: 1.25rem 1rem;
   }
-  .today-date { font-size: 1.8rem; }
+
+  /* Report headings */
+  .report-body h1 {
+    font-size: 1.45rem;
+    letter-spacing: -0.01em;
+  }
+  .report-body h3 {
+    font-size: 1.05rem;
+  }
+  .report-body p,
+  .report-body li {
+    font-size: 14px;
+  }
+
+  /* Table: allow horizontal scroll on mobile */
+  .report-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
+  }
 }
 
 /* ── ANIMATIONS ── */
@@ -551,15 +654,17 @@ def make_page_html(reports_data: list) -> str:
     archive_items = ""
     for r in reports_data:
         date_display = r["date"]
-        title_short = r["title_short"]
+        # Short date for mobile chips: MM/DD
+        parts = r["date"].split("-")
+        date_short = f"{parts[1]}/{parts[2]}" if len(parts) == 3 else r["date"]
         is_latest = r is latest
         active_cls = " active" if is_latest else ""
         archive_items += f"""
         <li class="archive-item">
           <button class="archive-link{active_cls}" onclick="showReport('{r['date']}')" id="nav-{r['date']}">
             <span class="archive-dot"></span>
-            <span class="archive-date">{date_display}</span>
-            <span class="archive-title">{title_short}</span>
+            <span class="archive-date desktop-date">{date_display}</span>
+            <span class="archive-date mobile-date">{date_short}</span>
           </button>
         </li>"""
 
