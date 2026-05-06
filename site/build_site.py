@@ -34,6 +34,7 @@ DESIGN_CSS = """
   --bg: #0d0d0d;
   --bg-card: #141414;
   --bg-hover: #1a1a1a;
+  --header-h: 38px; /* mobile header height */
   --border: #2a2a2a;
   --border-light: #222;
   --text: #e8e4dc;
@@ -335,8 +336,8 @@ body {
   margin: 1.5rem 0;
 }
 
-.report-body ul {
-  padding-left: 1.25rem;
+.report-body ul, .report-body ol {
+  padding-left: 1.75rem;
   margin-bottom: 0.85rem;
 }
 
@@ -512,11 +513,12 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* Header: compact single line (~40px tall) */
+  /* Header: compact single line */
   .site-header {
     padding: 0.6rem 1rem;
     gap: 0.75rem;
     align-items: center;
+    height: var(--header-h);
   }
   .site-tagline { display: none; }
   .site-logo { font-size: 10px; }
@@ -528,7 +530,7 @@ body {
   /* Sidebar → horizontal date chips strip */
   .sidebar {
     position: sticky;
-    top: 38px;   /* below compact header */
+    top: var(--header-h);   /* matches header height exactly */
     height: auto;
     border-right: none;
     border-bottom: 1px solid var(--border);
