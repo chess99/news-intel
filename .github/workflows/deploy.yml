@@ -24,11 +24,11 @@ jobs:
         run: pip install markdown
 
       - name: Build site
-        run: python scripts/build_site.py
+        run: python site/build_site.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./site/out
           commit_message: 'docs: update GitHub Pages'
