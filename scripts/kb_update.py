@@ -1,4 +1,6 @@
 #!/usr/bin/env python3.11
+# DEPRECATED: Knowledge base maintenance is no longer needed.
+# The analyst role grep-searches digest/ files directly. Kept for reference only.
 """
 kb_update.py — 从 digest sidecar JSONL 中提取高分事件，维护 kb/events.jsonl（30天滚动窗口）
 

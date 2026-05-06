@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.11
+# DEPRECATED: Was never wired into the main pipeline. Kept for reference only.
 """
 cluster.py — 对 raw/YYYY/MM/DD/ 原文做事件聚合，合并同一事件的多个来源
 

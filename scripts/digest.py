@@ -1,4 +1,6 @@
 #!/usr/bin/env python3.11
+# DEPRECATED: This script is replaced by the analyst role in .claude/skills/news-intel/roles/analyst.md
+# Do not use for new daily report generation. Kept for reference only.
 """
 digest.py — 对 raw/YYYY/MM/DD/ 的原文逐篇调用 MiniMax API 进行批判性分析，
             汇总写入 digest/YYYY-MM-DD.md
