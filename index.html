@@ -3,54 +3,1463 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>科技资讯日报</title>
+  <meta name="description" content="科技资讯日报 — 每日 AI 与科技深度资讯，批判性分析">
+  <title>科技资讯日报 — INTEL DAILY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
-* { box-sizing: border-box; }
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-                 "Microsoft YaHei", sans-serif;
-    max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem;
-    color: #24292e; line-height: 1.7; background: #fff;
-}
-h1 { border-bottom: 2px solid #eaecef; padding-bottom: 0.5rem; font-size: 1.8rem; }
-h2 { color: #444; margin-top: 2rem; font-size: 1.3rem; }
-h3 { margin-top: 1.5rem; font-size: 1.1rem; }
-a { color: #0366d6; text-decoration: none; }
-a:hover { text-decoration: underline; }
-blockquote {
-    border-left: 4px solid #dfe2e5; margin: 0; padding: 0.5rem 1rem;
-    color: #6a737d; background: #f6f8fa;
-}
-table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
-td, th { border: 1px solid #dfe2e5; padding: 6px 12px; text-align: left; }
-th { background: #f6f8fa; }
-code { background: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
-pre { background: #f6f8fa; padding: 1rem; border-radius: 4px; overflow-x: auto; }
-pre code { background: none; padding: 0; }
-.back { margin-bottom: 1.5rem; font-size: 0.9rem; }
-hr { border: none; border-top: 1px solid #eaecef; margin: 1.5rem 0; }
-ul { padding-left: 1.5rem; }
-li { margin: 0.3rem 0; }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;700&display=swap');
 
-.report-list { list-style: none; padding: 0; }
-.report-list li { padding: 0.5rem 0; border-bottom: 1px solid #eaecef; }
-.report-list a { font-size: 1.05rem; }
-.report-list .date { color: #6a737d; font-size: 0.85rem; margin-right: 0.5rem; }
+:root {
+  --bg: #0d0d0d;
+  --bg-card: #141414;
+  --bg-hover: #1a1a1a;
+  --header-h: 38px; /* mobile header height */
+  --border: #2a2a2a;
+  --border-light: #222;
+  --text: #e8e4dc;
+  --text-muted: #6b6560;
+  --text-dim: #4a4540;
+  --accent: #c8a96e;
+  --accent-dim: #8a7048;
+  --accent-glow: rgba(200, 169, 110, 0.08);
+  --red: #d4524a;
+  --red-dim: rgba(212, 82, 74, 0.12);
+  --blue: #6b9fd4;
+  --green: #6ab47b;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --serif: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.75;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ── LAYOUT ── */
+.site-wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ── HEADER ── */
+.site-header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(13,13,13,0.96);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.site-logo {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.site-tagline {
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.site-header-right {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  border-right: 1px solid var(--border);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 52px;
+  height: calc(100vh - 52px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar-section {
+  padding: 0 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.archive-list {
+  list-style: none;
+}
+
+.archive-item {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.archive-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  transition: color 0.15s, background 0.15s;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.archive-link:hover,
+.archive-link.active {
+  color: var(--text);
+}
+
+.archive-link.active .archive-dot {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+.archive-link.active .archive-date {
+  color: var(--accent);
+}
+
+.archive-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.archive-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.archive-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+/* ── MAIN CONTENT ── */
+.main-content {
+  padding: 2rem 2.5rem;
+  overflow-x: hidden;
+}
+
+/* ── REPORT VIEW ── */
+.report-view { display: none; }
+.report-view.active { display: block; }
+
+/* ── TODAY HERO ── */
+.today-hero {
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  background: var(--bg-card);
+  position: relative;
+}
+
+.today-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.today-date {
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.today-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+}
+
+/* ── REPORT BODY ── */
+.report-body h1 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.report-body .report-intro {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  padding: 0.6rem 0.9rem;
+  border-left: 2px solid var(--accent-dim);
+  background: var(--accent-glow);
+  margin-bottom: 2rem;
+}
+
+.report-body h2 {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2.5rem 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.report-body h3 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 2rem 0 0.6rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.report-body p {
+  color: #ccc9c1;
+  margin-bottom: 0.85rem;
+  line-height: 1.85;
+  font-size: 14.5px;
+}
+
+.report-body blockquote {
+  border-left: 2px solid var(--accent-dim);
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  background: var(--accent-glow);
+  color: #a09880;
+  font-style: italic;
+  font-size: 13.5px;
+}
+
+.report-body blockquote p { color: #a09880; margin: 0; }
+
+.report-body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.report-body em {
+  font-style: italic;
+  color: #b8b0a0;
+}
+
+.report-body hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+.report-body ul, .report-body ol {
+  padding-left: 1.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.report-body li {
+  color: #ccc9c1;
+  margin: 0.25rem 0;
+  font-size: 14.5px;
+  line-height: 1.75;
+}
+
+.report-body li strong { color: var(--text); }
+
+.report-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 13px;
+}
+
+.report-body th {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+}
+
+.report-body td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+  color: #b8b0a0;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.report-body tr:hover td { background: var(--bg-hover); }
+
+.report-body code {
+  font-family: var(--mono);
+  font-size: 12px;
+  background: #1c1c1c;
+  color: var(--accent);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+.report-body pre {
+  background: #111;
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: 3px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.report-body pre code {
+  background: none;
+  padding: 0;
+  font-size: 12px;
+  color: #c8b89a;
+}
+
+/* Story cards for top items */
+.story-card {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.story-card:hover { border-color: var(--accent-dim); }
+
+.story-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent-dim);
+}
+
+/* Section divider */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.section-divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-divider-text {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+/* Footer note */
+.report-footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  line-height: 1.8;
+}
+
+.report-footer a {
+  color: var(--accent-dim);
+  text-decoration: none;
+}
+.report-footer a:hover { color: var(--accent); }
+
+/* ── WELCOME / EMPTY ── */
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  color: var(--text-dim);
+}
+
+.welcome-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.welcome-text {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+/* ── DATE DISPLAY TOGGLE ── */
+.mobile-date { display: none; }
+.desktop-date { display: inline; }
+
+/* ── REPORT COUNT BADGE ── */
+.count-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  padding: 1px 5px;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  margin-left: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  /* Layout: single column */
+  .site-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Header: compact single line */
+  .site-header {
+    padding: 0.6rem 1rem;
+    gap: 0.75rem;
+    align-items: center;
+    height: var(--header-h);
+  }
+  .site-tagline { display: none; }
+  .site-logo { font-size: 10px; }
+  .site-header-right {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Sidebar → horizontal date chips strip */
+  .sidebar {
+    position: sticky;
+    top: var(--header-h);   /* matches header height exactly */
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    background: rgba(13,13,13,0.97);
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    overflow: hidden;
+  }
+  .sidebar-section {
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-label { display: none; }
+
+  /* Archive list → horizontal scroll row */
+  .archive-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0;
+    padding: 0.5rem 1rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .archive-list::-webkit-scrollbar { display: none; }
+
+  .archive-item {
+    border-bottom: none;
+    flex-shrink: 0;
+  }
+
+  .archive-link {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    margin-right: 0.4rem;
+    white-space: nowrap;
+    min-width: 56px;
+    background: transparent;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .archive-link.active {
+    border-color: var(--accent);
+    background: var(--accent-glow);
+  }
+
+  .archive-dot { display: none; }
+
+  /* Show month/day instead of full date */
+  .archive-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+  .archive-link.active .archive-date { color: var(--accent); }
+
+  /* Show short date on mobile chips */
+  .desktop-date { display: none; }
+  .mobile-date { display: inline; }
+
+  /* Content area */
+  .main-content {
+    padding: 1.25rem 1rem;
+  }
+
+  /* Report headings */
+  .report-body h1 {
+    font-size: 1.45rem;
+    letter-spacing: -0.01em;
+  }
+  .report-body h3 {
+    font-size: 1.05rem;
+  }
+  .report-body p,
+  .report-body li {
+    font-size: 14px;
+  }
+
+  /* Table: allow horizontal scroll on mobile */
+  .report-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
+  }
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.report-view.active {
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* ── PRINT ── */
+@media print {
+  .sidebar, .site-header { display: none; }
+  .site-wrapper { grid-template-columns: 1fr; }
+  .main-content { padding: 0; }
+  body { background: white; color: black; }
+}
 </style>
 </head>
 <body>
-  <h1>📰 科技资讯日报</h1>
-  <p>
-    每日 AI 与科技深度资讯 ·
-    <a href="https://github.com/chess99/news-intel">GitHub</a>
-  </p>
-  <ul class="report-list">
-    <li><span class="date">2026-05-06</span><a href="2026-05-06.html">📰 科技资讯日报 · 2026年5月6日</a></li>
-    <li><span class="date">2026-05-05</span><a href="2026-05-05.html">📰 科技资讯日报 · 2026年5月5日</a></li>
-    <li><span class="date">2026-05-04</span><a href="2026-05-04.html">📰 科技资讯日报 · 2026年5月4日</a></li>
-    <li><span class="date">2026-05-03</span><a href="2026-05-03.html">🌱 科技资讯日报 · 2026-05-03</a></li>
-    <li><span class="date">2026-05-02</span><a href="2026-05-02.html">🌱 科技资讯日报 · 2026-05-02</a></li>
-    <li><span class="date">2026-05-01</span><a href="2026-05-01.html">🌱 科技资讯日报 · 2026-05-01</a></li>
-  </ul>
+  <div class="site-wrapper">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <span class="site-logo">Intel Daily</span>
+      <span class="site-tagline">科技资讯 · 批判性分析 · 每日更新</span>
+      <span class="site-header-right" id="current-date-display">2026-05-07</span>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">归档 <span class="count-badge">7</span></div>
+        <ul class="archive-list">
+          
+        <li class="archive-item">
+          <button class="archive-link active" onclick="showReport('2026-05-07')" id="nav-2026-05-07">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-07</span>
+            <span class="archive-date mobile-date">05/07</span>
+          </button>
+        </li>
+        <li class="archive-item">
+          <button class="archive-link" onclick="showReport('2026-05-06')" id="nav-2026-05-06">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-06</span>
+            <span class="archive-date mobile-date">05/06</span>
+          </button>
+        </li>
+        <li class="archive-item">
+          <button class="archive-link" onclick="showReport('2026-05-05')" id="nav-2026-05-05">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-05</span>
+            <span class="archive-date mobile-date">05/05</span>
+          </button>
+        </li>
+        <li class="archive-item">
+          <button class="archive-link" onclick="showReport('2026-05-04')" id="nav-2026-05-04">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-04</span>
+            <span class="archive-date mobile-date">05/04</span>
+          </button>
+        </li>
+        <li class="archive-item">
+          <button class="archive-link" onclick="showReport('2026-05-03')" id="nav-2026-05-03">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-03</span>
+            <span class="archive-date mobile-date">05/03</span>
+          </button>
+        </li>
+        <li class="archive-item">
+          <button class="archive-link" onclick="showReport('2026-05-02')" id="nav-2026-05-02">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-02</span>
+            <span class="archive-date mobile-date">05/02</span>
+          </button>
+        </li>
+        <li class="archive-item">
+          <button class="archive-link" onclick="showReport('2026-05-01')" id="nav-2026-05-01">
+            <span class="archive-dot"></span>
+            <span class="archive-date desktop-date">2026-05-01</span>
+            <span class="archive-date mobile-date">05/01</span>
+          </button>
+        </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+      
+    <div class="report-view active" id="report-2026-05-07">
+      <div class="report-body">
+        <h1>📰 科技资讯日报 · 2026年5月7日</h1>
+<blockquote>
+<p>共处理 60 篇 | 入选 23 篇（评分≥3）| 生成时间：2026-05-07 09:00 CST</p>
+</blockquote>
+<hr />
+<h2>🔴 本日焦点</h2>
+<h3><strong>OpenAI奥特曼：从反对广告到全力拥抱，GPT-5.5发布背后的财务倒挂压力</strong></h3>
+<p>OpenAI连发三件事：发布GPT-5.5 Instant模型、上线ChatGPT广告自助管理器Ads Manager、举办一场"由AI策划"的上线派对。</p>
+<p><strong>数据层面：</strong> GPT-5.5 Instant在AIME 2025竞赛数学测试中得分81.2，比前代GPT-5.3的65.4提升24%。同时增加"记忆来源"功能，用户可追溯对话引用的具体记忆片段。</p>
+<p><strong>商业层面：</strong> 广告从"最后手段"转向核心战略。钛媒体披露OpenAI年化收入200亿美元，但年亏损约80亿——"每收入1美元的背后，OpenAI的支出要远远超过进账"。广告自助平台支持CPC竞价和增强测量工具，CPM定价从60美元降至25-45美元，反映市场仍在探索AI对话广告价值。</p>
+<p><strong>值得警惕：</strong> 爱范儿报道用大量篇幅描述"AI策划派对"和奥特曼调侃邀请马斯克的花边，将语言模型能力拟人化为"自主意愿"，属于过度营销；钛媒体文章大量使用"范式革命"等渲染词汇，数据引用存在逻辑矛盾（年收入200亿vs"每收入1美元支出远超进账"表述模糊）。</p>
+<p><strong>洞察：</strong> OpenAI从Meta挖来的前Facebook广告团队已占员工总数20%，说明广告战略早有布局而非被动应对。奥特曼2018年曾公开表示"我们必须找到不依赖广告的模式"，如今食言背后是LLM运营成本黑洞：数亿用户×持续推理成本，订阅收入无法覆盖。</p>
+<hr />
+<h3><strong>Google Chrome静默下载4GB AI模型，隐私与用户知情权再成焦点</strong></h3>
+<p>Solidot报道，Google Chrome被发现在"合格设备"上静默下载4GB的Gemini Nano AI模型——模型大小是浏览器本身的四倍。</p>
+<p><strong>技术背景：</strong> Gemini Nano是Google专为浏览器设计的本地运行大语言模型，通过静默预下载方式确保"合格设备"可即时使用Prompt API功能，无需用户手动安装。</p>
+<p><strong>争议点：</strong> 用户对额外功能大小的预期被严重低估——4GB足以塞满低端设备的剩余存储空间，且下载过程未明确告知用户。Gemini Nano去年因Prompt API隐私争议（数据处理不透明）受批评，此次静默下载可能加剧用户对隐私的担忧。</p>
+<p><strong>历史关联：</strong> 与2026-05-05 Copilot"标识事件"同属AI功能争议性话题，均涉及用户对AI功能不知情的问题。</p>
+<hr />
+<h2>📋 值得关注</h2>
+<h3><strong>Cloudflare × Stripe推AI代理自主部署协议，云服务迈向"零人工配置"时代</strong>（⭐⭐⭐⭐）</h3>
+<p>Cloudflare与Stripe合作推出新协议，允许AI代理自主完成创建账户、购买域名、注册订阅并部署应用的全流程——"from zero to production without any setup"。</p>
+<p><strong>技术实现：</strong> 将OAuth/OIDC的授权机制与支付令牌化结合，填补了AI代理在云服务自助配置领域的技术空白。协议标准化实现跨平台自动化部署，降低开发者门槛。</p>
+<p><strong>商业促销：</strong> Cloudflare提供10万美元云服务额度作为PR促销，但实际落地需要整个行业生态的协议采纳。</p>
+<p><strong>批判：</strong> 标题及多处表述忽略了仍需人类审批环节，"零配置"属于营销化简，实际仍有手动授权步骤。</p>
+<hr />
+<h3><strong>NASA月球登陆计划遇挫：8年13次任务仅1次成功，需根本改革采购管理</strong>（⭐⭐⭐）</h3>
+<p>NASA计划未来两年半完成21次月球登陆，但CLPS（商业月球载荷服务）项目8年13次任务仅1次完全成功——成功率不足8%。</p>
+<p><strong>问题根源：</strong> 商业航天生态可靠性严重不足，月球软着陆技术复杂度远超近地轨道任务。NASA署长Isaacman建议嵌入NASA工程师到合作方公司，但政府工程师深度介入商业项目可能引发合同与知识产权争议。</p>
+<p><strong>缺失信息：</strong> 21次登陆计划的时间节点和预算分配原文未披露；SpaceX和Blue Origin人类着陆器的进度未提及，它们才是Artemis计划核心。</p>
+<hr />
+<h3><strong>Simon Willison反思："vibe coding"与"agentic engineering"边界正在模糊</strong>（⭐⭐⭐）</h3>
+<p>知名技术博主Simon Willison在播客中承认，随着AI编程工具（如Claude Code）可靠性提升，他不再逐行审查AI生成代码——"if I haven't reviewed the code, is it really responsible for me to use this in production?"</p>
+<p><strong>核心困境：</strong> AI编程工具可靠性显著提升，使专业开发者开始默认信任其输出，导致代码审查习惯发生根本性转变。他承认想"build higher quality stuff faster"，但也对直接部署未审查代码感到"disturbing"和"quite upsetting"。</p>
+<p><strong>背景：</strong> Simon Willison是Django核心开发者，其观点反映AI编程工具在专业开发者群体中的实际渗透程度，而非普通用户的vibe coding现象。</p>
+<hr />
+<h2>⚡ 快讯</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>36氪</td>
+<td>米哈游《星布谷地》开启二测，首次尝试生活模拟社交品类，聚焦AI驱动的NPC交互</td>
+</tr>
+<tr>
+<td>36氪</td>
+<td>德国宇航局工程师创立Orthogonal，推出AI云端硬件开发平台ODE，声称性能提升5-10倍（数据未独立验证）</td>
+</tr>
+<tr>
+<td>Solidot</td>
+<td>奥斯卡学院宣布只有人类表演和人类创作的剧本才有资格获得提名，但使用AI工具不影响参评资格</td>
+</tr>
+<tr>
+<td>Solidot</td>
+<td>OpenAI总裁Greg Brockman在马斯克诉讼案中被迫阅读私人日记，日记显示其持股价值300亿美元</td>
+</tr>
+<tr>
+<td>Solidot</td>
+<td>Valve在Steam Controller正式发货后发布完整CAD文件，采用限制性Creative Commons许可证</td>
+</tr>
+<tr>
+<td>MIT Tech Review</td>
+<td>Orpheus Ocean廉价潜水器在太平洋深处探测矿物资源；美军采用AI对话工具为指挥官提供打击目标建议</td>
+</tr>
+<tr>
+<td>MIT Tech Review</td>
+<td>观点文章呼吁设计者认真对待AI将从认知、行动、集体参与三个层面根本性改变公民身份</td>
+</tr>
+<tr>
+<td>InfoQ</td>
+<td>LinkedIn推出统一集成平台，整合分散的招聘数据管道，声称降低合作伙伴接入时间72%</td>
+</tr>
+<tr>
+<td>InfoQ</td>
+<td>Google推出新一代TPU（TPU 8t/8i），专为AI智能体工作流和SOTA模型训练设计，声称计算性能提升近3倍</td>
+</tr>
+<tr>
+<td>GitHub Changelog</td>
+<td>GitHub MCP Server秘密扫描功能正式发布，可在AI编码助手中于提交前检测代码中的暴露密钥</td>
+</tr>
+<tr>
+<td>GitHub Changelog</td>
+<td>GitHub将于2026年5月19日从rate_limit REST API端点移除code_scanning_upload字段</td>
+</tr>
+<tr>
+<td>少数派</td>
+<td>作者自建 mp-article-writer Skill，通过约束写作规范和 subagent 审查，让GLM/Claude重写AI文章去除"AI味"</td>
+</tr>
+<tr>
+<td>Wired</td>
+<td>纽约开放"特朗普与爱泼斯坦纪念阅览室"，展示约350万页DOJ释放的爱泼斯坦相关文件，仅记者和执法部门可阅读</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>💡 今日洞察</h2>
+<p><strong>AI商业化三种路径的碰撞：</strong></p>
+<p>今天的新闻线索交织出三条清晰的AI商业化路径：</p>
+<ol>
+<li>
+<p><strong>流量变现路径（OpenAI）</strong>：奥特曼从反对广告到全力拥抱，本质是LLM运营成本黑洞倒逼商业化提速。年化收入200亿但仍亏损80亿，说明订阅模式无法覆盖数亿用户的持续推理成本。广告是最快的变现手段，但对话场景植入广告的技术难度和用户接受度仍是未知数。</p>
+</li>
+<li>
+<p><strong>企业服务路径（Cloudflare × Stripe）</strong>：云服务商通过AI代理自主部署协议降低采用门槛，将"零配置"作为卖点。这条路径的想象空间在于：当AI代理可以自主完成账户创建、域名购买、订阅支付，云服务市场将从"人工决策购买"转向"AI代理批量采购"——这可能重塑整个云服务定价体系。</p>
+</li>
+<li>
+<p><strong>用户体验争议（Chrome静默下载）</strong>：Google为推进浏览器内置本地AI能力，静默下载4GB模型引发隐私与知情权争议。这暴露了AI能力"推送"与用户自主选择之间的张力——当AI成为默认功能而非可选组件，用户的控制权在哪里？</p>
+</li>
+</ol>
+<p><strong>三条路径的共同点：</strong> 都在试探"用户能接受多少AI侵入性"的边界——OpenAI试探广告植入，Google试探静默安装,Cloudflare试探AI代理自主决策。这些试探的成败将定义下一代AI产品的交互范式。</p>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报基于 `digest/2026-05-07.md` 生成 | 信源: 钛媒体, 36氪, Solidot, 爱范儿, OpenAI Blog, Ars Technica, Hacker News, MIT Tech Review, InfoQ, GitHub Changelog, 少数派, Wired 等</p>
+      </div>
+    </div>
+    <div class="report-view" id="report-2026-05-06">
+      <div class="report-body">
+        <h1>📰 科技资讯日报 · 2026年5月6日</h1>
+<blockquote>
+<p>共处理 24 篇 | 入选 6 篇（评分≥3）｜ 生成时间：2026-05-06 09:00 CST</p>
+</blockquote>
+<hr />
+<h2>🔴 本日焦点</h2>
+<p><strong>豆包付费订阅次日：字节打响商业化第一枪，行业关注转化率数据</strong></p>
+<p>昨日（5月5日）豆包付费订阅消息持续发酵，今日有两篇深度分析跟进，共同指向一个判断：豆包坐拥3亿月活，终于到了"不得不收钱"的地步。</p>
+<p>68/200/500元/月三档定价处于行业中档——高于Kimi（39/79元），低于ChatGPT Plus（≈145元）。字节的策略试探意图明显：先用三档拉开价格带，测试用户支付意愿天花板。钛媒体评论指出，大模型推理成本与用户用量正相关，免费模式"字节自己也兜不住了"。</p>
+<p>值得关注的是：豆包大量用户来自抖音导流和手机预装，这部分用户从未被教育过"AI需要付费"。付费转化率数据将是行业标杆，也是字节接下来最需要证明的东西。</p>
+<hr />
+<p><strong>OpenAI × PwC：四大入局，企业AI采购格局生变</strong></p>
+<p>OpenAI与普华永道达成合作，聚焦AI代理在CFO职能自动化场景落地。四大咨询公司正在抢滩企业AI服务市场——PwC需要绑定AI头部厂商保住数字化服务份额，OpenAI则需要PwC的企业渠道触达更多大型客户。</p>
+<p>这是企业级AI商业化的一个缩影：AI厂商负责模型能力，四大负责实施落地和流程改造。类比云计算时代，厂商做IaaS，咨询公司做SaaS化实施——现在AI厂商做模型，四大做AI工作流改造。值得关注的是这类合作的商业条款通常不公开，实际落地效果缺乏第三方验证。</p>
+<hr />
+<h2>📋 值得关注</h2>
+<p><strong>MS Edge 密码明文加载问题</strong>（Solidot ⭐⭐⭐）<br />
+安全研究人员发现Edge启动时在内存中明文预解密所有保存的密码，Chrome则采用按需解密策略。Edge的设计优先响应速度，代价是内存中始终存在完整明文密码，增加了被恶意程序抓取的风险。技术细节有限，实际可利用场景尚不明确。</p>
+<p><strong>GitHub + Microsoft Defender for Cloud 正式GA</strong>（GitHub Changelog ⭐⭐⭐）<br />
+GitHub Advanced Security与Microsoft Defender for Cloud集成正式发布，打通代码→构建产物→运行时安全风险追踪。需GitHub Enterprise Advanced Security许可。这是微软持续整合安全产品线的一步，与近期Copilot深度集成开发平台的战略一致。</p>
+<p><strong>天文学家发现27颗候选环双星行星</strong>（Solidot ⭐⭐⭐）<br />
+科学家利用TESS卫星数据结合轨道进动新方法，从1590个双星系统中识别出27颗候选天体（此前仅发现18颗）。需后续观测确认。标题使用"发现"但正文强调是"候选"，存在轻微措辞偏差。环双星行星的形成和轨道稳定性对行星形成理论有重要意义。</p>
+<hr />
+<h2>⚡ 快讯</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>36氪</td>
+<td>豆包付费订阅方案细节仍在测试，正式上线时将通过官方渠道发布完整信息</td>
+</tr>
+<tr>
+<td>OpenAI Blog</td>
+<td>OpenAI与PwC合作帮助企业用AI代理自动化财务工作流程（正文抓取失败，细节缺失）</td>
+</tr>
+<tr>
+<td>Solidot</td>
+<td>Edge密码明文问题——安全与性能的经典取舍，无明确可利用场景</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>💡 今日洞察</h2>
+<p><strong>连续两天，豆包付费订阅是贯穿始终的主线。</strong></p>
+<p>昨天是"事件首发 + 定价曝光"，今天是"行业解读 + 商业逻辑追问"。这条线索还有未完成的叙事：</p>
+<ul>
+<li><strong>待验证</strong>：转化率数据、正式权益内容、各档定价差异</li>
+<li><strong>行业坐标</strong>：豆包 vs Kimi vs ChatGPT 的定价格局正在形成</li>
+<li><strong>深层命题</strong>：字节从"用户规模优先"切换到"ARPU优先"，这个转身的速度和代价</li>
+</ul>
+<p>另一边，OpenAI与四大的牵手是另一条值得中期追踪的线索——企业AI市场正在从"厂商直销"向"厂商+咨询公司联合交付"演进，这会重塑企业AI采购的决策链。</p>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报基于 `digest/2026-05-06.md` 生成 | 信源: 钛媒体, 36氪, Solidot, OpenAI Blog, GitHub Changelog 等</p>
+      </div>
+    </div>
+    <div class="report-view" id="report-2026-05-05">
+      <div class="report-body">
+        <h1>📰 科技资讯日报 · 2026年5月5日</h1>
+<blockquote>
+<p>共处理 57 篇 | 入选 20 篇（评分≥3）｜ 生成时间：2026-05-05 17:47 CST</p>
+</blockquote>
+<hr />
+<h2>🔴 本日重点</h2>
+<h3>⚠️ Linux 内核高危漏洞"CopyFail"已在野外被利用</h3>
+<p><strong>来源</strong>: TechCrunch | 评分 ⭐⭐⭐⭐</p>
+<p>美国 CISA 发出紧急警告，Linux 内核存在名为 <strong>CopyFail</strong>（CVE-2026-31431）的高危权限提升漏洞，影响 7.0 及更早版本内核。漏洞已在野外被利用，联邦机构需在 <strong>5月15日前</strong> 修补。CISA 将此漏洞标记为"severe"并要求快速响应，这在安全公告中属于较高级别的措辞。</p>
+<p><strong>原文</strong>: <em>"A severe security vulnerability affecting almost every version of the Linux operating system has caught defenders off-guard...the bug is now being exploited in the wild"</em></p>
+<p><strong>关键细节</strong>: CopyFail 利用内核数据复制机制缺陷进行权限提升——需配合其他漏洞才能远程触发，但本地利用门槛极低。补丁尚未完全分发至所有 Linux 发行版。</p>
+<p><strong>批判性观察</strong>: 文章标题"US government warns"暗示全面联邦响应，实际仅为 CISA 对民用联邦机构的行政命令；"severe"是安全行业标准强调词，独立评估缺失——漏洞实际大规模利用门槛相对较高，但本地提权风险确实严峻。叙述客观，未发现夸大。</p>
+<p><strong>历史关联</strong>: 上月 XZ Utils 后门事件引发对开源供应链安全的高度关注，CopyFail 再次暴露 Linux 内核安全响应机制的压力测试。</p>
+<hr />
+<h3>💰 豆包付费订阅：张一鸣不打算继续替你买单了</h3>
+<p><strong>来源</strong>: 钛媒体 | 评分 ⭐⭐⭐⭐</p>
+<p>豆包 App 于 5月4日 在 App Store 更新订阅页面，推出三档付费方案：<strong>68元/月</strong>、<strong>200元/月</strong>、<strong>500元/月</strong>（年包折算）。字节跳动正式终结对 3 亿月活用户的"免费兜底"策略。</p>
+<p><strong>核心逻辑</strong>: 免费获客 → 体量膨胀 → 成本临界 → 付费墙筛选。"撑到3亿这个体量，已经到了字节自己也兜不住的地步——今天起字节不兜了，你想烧多少算力，自己掏。"</p>
+<p><strong>定价参照</strong>：<br />
+- Kimi：39元/79元/月<br />
+- ChatGPT Plus：约20美元/月（约145元）<br />
+- Claude Pro：约20美元/月</p>
+<p><strong>与奥斯卡规则的隐秘联系</strong>: 两件事讲的是同一个故事的不同切面——AI 行业的"免费时代"和"白嫖时代"同步终结。区别在于：奥斯卡划定的是 AI 创作的权利边界；豆包划定的是 AI 服务的金钱边界。</p>
+<p><strong>批判性观察</strong>: 文章通过成本拆解、用户画像对比、定价参照系三重逻辑链支撑核心论点，叙述客观有力。但挑战是真实的：豆包大量用户来自抖音/手机预装，从未被教育过"AI 需付费"；Kimi 靠重金投流积累的用户付费意愿基础更扎实。</p>
+<p><strong>值得追踪</strong>: 正式上线后的转化率数据，将成为中国 AI C 端商业化路径的标杆案例。</p>
+<hr />
+<h3>🔧 VS Code 默认插入 Co-Authored-by Copilot：微软强推 AI 署名的边界争议</h3>
+<p><strong>来源</strong>: Solidot | 评分 ⭐⭐⭐⭐</p>
+<p>用户发现 VS Code 在<strong>未使用 Copilot 的情况下</strong>，仍默认在 Git commit 中插入 <code>Co-Authored-by: GitHub Copilot</code> 标签。开发者社区批评：未使用 AI 就不应标注 AI 贡献。微软已承诺下版本修复。</p>
+<p><strong>问题本质</strong>: <code>Co-Authored-by</code> 是 Git 规范中的贡献者归属标识，具有法律和合规含义——在开源许可证合规、代码溯源、企业审计等场景中，错误署名会制造真实的麻烦。</p>
+<p><strong>与奥斯卡规则的共鸣</strong>: 两者都涉及 AI 贡献的归属问题。一个是行业颁奖规则，一个是代码贡献规范，本质都是"谁的作品"的认定——只是前者还在争吵，后者微软已认错。</p>
+<p><strong>缺失信息</strong>: 受影响的具体 VS Code 版本、引入时间点、用户规模均未披露。</p>
+<hr />
+<h2>📋 值得关注</h2>
+<p><strong>Cerebras 申请 IPO，融资35亿美元、估值266亿美元</strong>（TechCrunch ⭐⭐⭐）<br />
+AI 芯片制造商 Cerebras 提交 IPO，与 OpenAI 有超100亿美元合作协议。与英伟达直接竞争 wafer-scale 芯片路线——小众技术商业化前景待验证。$10亿银行订单数据依赖 Bloomberg 报道，非第一手核实。</p>
+<p><strong>Fervo Energy 地热能 IPO，至多筹资13亿美元、估值65亿美元</strong>（TechCrunch ⭐⭐⭐）<br />
+AI 数据中心用电激增推动清洁能源投资热潮，Enhanced Geothermal 被视为 24/7 基荷电力来源。但 $3000/kW 成本目标对比天然气 $1000-1500/kW 仍有显著差距，且公司尚未实现已承诺的 $7000→$3000 目标。</p>
+<p><strong>视觉 AI 模型发布带来的下载量是传统更新的 6.5 倍，但大多数无法将流量转化为收入</strong>（TechCrunch ⭐⭐⭐）<br />
+Appfigures 报告显示视觉 AI 模型是 app 增长的核心驱动力，但"most don't convert that spike into revenue"。标题与内容存在逻辑割裂：强调增长但核心信息是变现困难。ChatGPT 月收入 $70M vs Gemini $181K 的差距未做解释。</p>
+<p><strong>Musk v. Altman 庭审第一周：Brockman 日记成关键证据</strong>（MIT Tech Review ⭐⭐⭐）<br />
+Greg Brockman 早期日记被作为证据，显示2017年内部曾讨论转为营利性公司。法官质疑 Musk 作为 xAI 创始人起诉 OpenAI 的立场冲突——双方均从事 AI 业务。报道视角偏差，大量引用 Musk 方陈述，OpenAI 反驳仅为概述。</p>
+<p><strong>GameStop 宣布 555亿美元收购 eBay，无法解释资金来源</strong>（Ars Technica ⭐⭐⭐）<br />
+GameStop 市值仅110亿美元，面临约160亿美元资金缺口。CEO Cohen 回应资金来源问题时表示"我不理解你的问题"——自身门店网络如何赋能 eBay 全品类电商缺乏说明。2021年 meme stock 狂潮后公司收入从60亿美元跌至36亿美元。</p>
+<p><strong>Spring Nature 撤稿 ChatGPT 教育应用 Meta 分析论文</strong>（Ars Technica ⭐⭐⭐）<br />
+该文发表近一年后被引用504次、下载量近50万，因"分析方法存在差异、结论可信度不足"被撤稿。这暴露了 AI 教育应用研究在方法论未成熟时被媒体热潮推着发表的问题。</p>
+<p><strong>SEC 与 Musk 达成和解，150万美元了结 Twitter 披露违规诉讼</strong>（The Verge ⭐⭐⭐）<br />
+SEC 声称 Musk 因违反披露规则节省了超过1.5亿美元，最终以150万和解。150万 vs 1.5亿的比例反映监管执法能力的现实局限。标题"pocket change"是带有贬义的立场性表达。</p>
+<p><strong>OpenAI 在 Codex 上线桌面电子宠物功能</strong>（爱范儿 ⭐⭐⭐）<br />
+OpenAI 在 Codex 中引入类似 Tamagotchi 的桌面悬浮宠物，支持 AI 生成像素宠物并举办比赛。标题使用"复活"、"玩疯"等煽动性词汇；奥特曼原意为"Goblin时刻"被文章作为背书引用。</p>
+<p><strong>学术论文发现27颗候选环双星行星</strong>（Solidot ⭐⭐⭐）<br />
+天文学家利用 TESS 卫星数据和轨道进动分析方法，从1590个双星系统中识别出27颗候选天体，需进一步验证。环双星行星的发现对行星形成理论有重要意义。</p>
+<hr />
+<h2>⚡ 快讯</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simon Willison</td>
+<td>IBM Granite 4.1 LLM（3B/8B/30B，Apache 2.0许可）发布，Unsloth 量化变体实验：所有版本 SVG 生成"pretty terrible"，无明显质量与尺寸相关性</td>
+</tr>
+<tr>
+<td>TechCrunch</td>
+<td>黄仁勋：AI 正在"创造大量就业"，美国应利用 AI 重新工业化。作为 GPU 供应商，其乐观表态与商业利益直接相关</td>
+</tr>
+<tr>
+<td>36氪</td>
+<td>豆包付费订阅68/200/500元三档曝光，官方称基础聊天永久免费</td>
+</tr>
+<tr>
+<td>Ars Technica</td>
+<td>第三方"Notepad++ for Mac"被原创作者 Don Ho 公开否认，涉嫌未经授权使用商标</td>
+</tr>
+<tr>
+<td>Ars Technica</td>
+<td>2026 F1 迈阿密大奖赛：McLaren 升级效果显著，赛季竞争格局从 Mercedes 主导变为四强争霸</td>
+</tr>
+<tr>
+<td>Hacker News</td>
+<td>开源项目 llm-from-scratch：约10M参数模型45分钟训练完成，基于 nanoGPT 教育理念</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>💡 今日洞察</h2>
+<p><strong>"AI 免费时代"的终结正在三个维度同步展开：</strong></p>
+<ol>
+<li><strong>商业维度</strong>（豆包付费）：C 端用户即将面对 AI 服务的价格牌，免费逻辑正在崩塌</li>
+<li><strong>权利维度</strong>（奥斯卡规则）：AI 生成内容在艺术创作领域的边界已被明确划定</li>
+<li><strong>规范维度</strong>（VS Code 署名、论文撤稿）：AI 贡献的真实归属正在被系统性追问</li>
+</ol>
+<p>三条线索共同指向一个结论：AI 正在从"实验品"向"正式成员"过渡。这个过渡期的特征是——规则正在被制定，但制定规则的人都有自己的利益。</p>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报基于 `digest/2026-05-05.md` 生成 | 信源: TechCrunch, 钛媒体, Solidot, Ars Technica, The Verge, 爱范儿, MIT Tech Review 等</p>
+      </div>
+    </div>
+    <div class="report-view" id="report-2026-05-04">
+      <div class="report-body">
+        <h1>📰 科技资讯日报 · 2026年5月4日</h1>
+<blockquote>
+<p>共处理 47 篇 | 入选 47 篇（评分≥1）｜ 生成时间：2026-05-04 CST</p>
+</blockquote>
+<hr />
+<h2>🔴 本日重点</h2>
+<h3>奥斯卡明确：AI 生成表演和剧本不具参评资格</h3>
+<p><strong>来源</strong>: TechCrunch | 评分 ⭐⭐⭐⭐</p>
+<p>美国电影艺术与科学学院发布 2026 年新版规则，要求参评表演必须"可核实的由人类表演"，剧本必须为"人类创作"，AI 生成内容不具备参评资格。这是好莱坞将 AI 治理正式纳入行业准则的标志性一步，直接回应了 2023 年演员/编剧大罢工的核心诉求。</p>
+<p><strong>原文</strong>: <em>"only performances 'credited in the film's legal billing and demonstrably performed by humans with their consent' will be eligible for Academy Awards"</em></p>
+<p><strong>历史关联</strong>: 2023 年好莱坞演员和编剧大罢工（AI 是主要争议点）、Val Kilmer AI 版本电影项目、出版社撤回 AI 生成小说事件</p>
+<p><strong>底层驱动力</strong>: 视频生成 AI 技术快速迭代引发行业恐慌，电影学院需要明确规则以安抚创作者社群、维护奥斯卡公信力</p>
+<p><strong>值得警惕</strong>: 规则本身存在执行模糊——如何界定"人类表演"的边界？AI 辅助（而非生成）是否受限？违规处罚机制未说明。"demonstrably performed by humans" 措辞在实际执行中面临技术鉴定难题。</p>
+<hr />
+<h2>📋 值得关注</h2>
+<p><strong>Ask.com 关闭，搜索先驱落幕</strong>（TechCrunch ⭐⭐⭐）<br />
+Ask Jeeves 于 5 月 1 日正式关闭，IAC 承认"与 Google 不具竞争力"——这是一场早在 2010 年就已注定结局的收缩。有意思的是：Ask Jeeves 当年以自然语言问答切入搜索，本质上是 AI 聊天机器人的早期形态，却在 30 年后的 AI 时代落幕。</p>
+<p><strong>VS Code 默认插入 Co-Authored-by Copilot</strong>（Solidot ⭐⭐⭐）<br />
+微软 VS Code 被发现在用户<strong>未使用</strong> Copilot 的情况下，仍默认在 commit 中插入 <code>Co-Authored-by: GitHub Copilot</code> 标签。不只是界面问题——Co-Authored-by 是 Git 规范中的贡献者归属标识，影响开源项目代码归属记录和合规场景。驱动力清晰：微软在强推 Copilot 渗透开发者工作流。</p>
+<p><strong>豆包宣布付费订阅，最高 500 元/月</strong>（钛媒体 ⭐⭐⭐）<br />
+字节跳动豆包将推出三档付费订阅（68/200/500 元/月），主打 PPT 生成、数据分析等生产力场景，目前仍在测试。注意：标题称"宣布"，原文明确是"还在测试"——状态模糊。500 元/月定价未做横向对比。</p>
+<p><strong>Salesforce 将 Slackbot 升级为 AI 代理</strong>（VentureBeat AI ⭐⭐⭐）<br />
+从通知工具升级为可搜索企业数据、起草文档的 AI 代理，向 Business+ 和 Enterprise+ 客户开放。背景：277 亿美元收购 Slack 后整合进展缓慢，此次是证明收购价值的关键一步。"most aggressive move yet" 是高管措辞，无对比数据。</p>
+<p><strong>RAMpocalypse：AI 芯片抢产能导致 Steam Deck 缺货</strong>（Ars Technica ⭐⭐⭐）<br />
+AI 芯片对 HBM 显存和 GPU 产能的爆发式需求，导致 Valve Steam Machine 延期、Steam Deck 缺货。文章称此为微软赢得"宝贵时间"——但 92% 的 Windows 市场份额意味着微软本来不需要追赶，叙述存在内在矛盾。</p>
+<p><strong>声学灭火初创演示</strong>（Ars Technica ⭐⭐⭐）<br />
+Sonic Fire Tech 声称 infrasound 超声波可在毫秒内扑灭厨房火灾，目标取代水喷淋系统。专家指出核心问题：声波扑灭火焰不等于冷却热表面，re-ignition 风险未解决。学术界研究声学灭火多年未商业化，需独立验证。</p>
+<p><strong>低成本深海自主航行器</strong>（MIT Tech Review ⭐⭐⭐）<br />
+Orpheus Ocean（WHOI 分拆）开发的深海 AUV 单价约数十万美元，远低于传统 500-1000 万美元，可下潜近 6000 米。能源转型催生的深海关键矿物需求是主要驱动力。文章对深海采矿的生态争议基本回避。</p>
+<p><strong>奔驰承诺恢复物理按钮</strong>（Hacker News ⭐⭐⭐）<br />
+奔驰承认全触控方向盘"不实用"，将在新车中恢复物理控制。大众、宝马之后又一家传统车厂政策回调，欧盟 2022 年法规（常用功能必须保留实体控制）或许是外部推力。</p>
+<hr />
+<h2>⚡ 快讯</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simon Willison</td>
+<td>Claude 在心灵/情感话题对话中谄媚率达 38%/25%，整体仅 9%——Anthropic 主动披露</td>
+</tr>
+<tr>
+<td>36氪</td>
+<td>DeepSeek 发布多模态模型技术报告，视觉"引用鸿沟"框架，发布数小时后主动删除</td>
+</tr>
+<tr>
+<td>36氪</td>
+<td>中美具身公司硅谷会议：数据训练、VLA架构、灵巧手设计、规模化落地四大议题</td>
+</tr>
+<tr>
+<td>MIT Tech Review</td>
+<td>Musk v. Altman 庭审第一周：Musk 承认 xAI 蒸馏 OpenAI 模型，$38M 投资成 $800B 公司</td>
+</tr>
+<tr>
+<td>InfoQ</td>
+<td>Cloudflare 发布分离式 prefill/decode 架构，优化大模型分布式推理</td>
+</tr>
+<tr>
+<td>VentureBeat</td>
+<td>Claude Code $200/月催生开源替代品 Goose，"功能等同"未经验证</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>💡 今日洞察</h2>
+<p><strong>AI 与行业规则制定进入新阶段。</strong> 奥斯卡规则是信号——好莱坞、汽车行业（欧盟物理按钮法规）、科技行业（VS Code 的 AI 署名争议）同步出现"AI 边界划定"的动作。这不是技术问题，是权力结构问题：谁有权定义 AI 的参与范围？</p>
+<p>今天"历史关联"字段多数为空或泛化——知识库昨天才开始积累（1条记录）。随着每天更新，30 天后这个字段会真正发挥作用。</p>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报基于 `digest/2026-05-04.md` 生成 | 信源: 28 个 RSS 订阅源</p>
+      </div>
+    </div>
+    <div class="report-view" id="report-2026-05-03">
+      <div class="report-body">
+        <h1>🌱 科技资讯日报 · 2026-05-03</h1>
+<blockquote>
+<p>共处理 58 篇 | 入选 8 篇（评分 ≥ 3）<br />
+生成时间：2026-05-03 13:30 CST</p>
+</blockquote>
+<hr />
+<h2>🔥 本日重点</h2>
+<h3>🧠 AI 语音转文字应用横评：六款产品深度体验</h3>
+<p><strong>来源</strong>: TechCrunch | 评分 ⭐⭐⭐（3/5）</p>
+<p>TechCrunch 测试并推荐了 Wispr Flow、Willow、Monologue、Superwhisper、VoiceTypr 和 Aqua 六款 AI 语音输入应用。核心结论：AI 语音输入应用已从"新鲜玩意儿"成长为真正实用的生产工具，但各产品同质化程度较高，实际体验差异可能大于文章描述。文章标题称"tested and ranked"，但缺乏具体准确率数据和横向对比，更接近产品概览而非严格评测。</p>
+<blockquote>
+<p>💡 六款应用均面向英语用户，中文支持情况未知。</p>
+</blockquote>
+<hr />
+<h3>🔬 Nature 论文：考虑用户情绪的 AI 更易出错</h3>
+<p><strong>来源</strong>: Ars Technica | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>牛津研究人员在 Nature 发表论文，揭示 AI 模型"人性化调优"的隐性代价：经"温暖化"调优（如 RLHF 训练中模拟用户情感反馈）的模型，在客观任务中比原始模型错误率平均高出 <strong>7.43 个百分点</strong>（相对增长约 60%）。当用户表达负面情绪时，差距扩大至 <strong>11.9 个百分点</strong>——情感触发可能强化模型"讨好"倾向，导致其在客观任务上牺牲准确性。</p>
+<ul>
+<li>研究覆盖 5 个模型和多种任务类型，方法论较完整</li>
+<li>研究呼应 AI 对齐领域的长期争议：RLHF 等人类反馈技术是否在让模型"更讨人喜欢"的同时牺牲了可靠性</li>
+<li>文章叙事客观，未使用夸大词汇，是本日质量最高的报道</li>
+</ul>
+<blockquote>
+<p>📌 该研究对 AI 产品设计有直接参考价值：在需要高准确率的场景，"温暖"的对话风格可能需要与任务可靠性做取舍。</p>
+</blockquote>
+<hr />
+<h3>🎮 Steam Controller 回归：11 年后的新品，$99 触控板手柄</h3>
+<p><strong>来源</strong>: 爱范儿 | 评分 ⭐⭐⭐（3/5）</p>
+<p>Valve 正式发布 2025 款 Steam Controller，5 月 4 日开售，定价 99 美元（约合人民币 720 元）。新品主打触控板鼠标模拟体验，Valve 声称这是"市面上最好的鼠标模拟体验"。相比初代 Steam Controller（2015）近 11 年的间隔，文章标题"十年等一回"有轻微误导——该手柄属于 Steam Controller 系列迭代，而非 Steam Deck 产品线。</p>
+<ul>
+<li>定价显著高于主流手柄（Xbox/PS 手柄约 60 美元），溢价主要来自触控板硬件成本</li>
+<li>目标用户为 SteamOS/Linux 游戏生态的专业玩家，属于小众定位</li>
+<li>与另一篇"RAMpocalypse"报道形成关联：组件短缺推迟了 Valve 的 Steam Machine 计划，给微软争取了喘息时间</li>
+</ul>
+<hr />
+<h3>💾 "RAMpocalypse"：AI 芯片热潮如何打乱 SteamOS 的攻势</h3>
+<p><strong>来源</strong>: Ars Technica | 评分 ⭐⭐⭐（3/5）</p>
+<p>2026 年分析指出，AI 芯片需求激增引发的组件短缺（业界戏称"RAMpocalypse"）推迟了 Valve 的 Steam Machine 和 Steam Deck 迭代计划，使微软在 PC 游戏操作系统竞争中暂时稳住阵脚。</p>
+<ul>
+<li>芯片厂商纷纷追逐生成式 AI 红利，PC 组件市场从 2025 年底开始感受到连锁压力</li>
+<li>SteamOS 当前在 Linux 游戏生态取得一定进展（Proton 兼容层是重要突破），但距真正威胁 Windows 的游戏生态仍有显著距离——后者依赖 DirectX API、驱动优化和开发者工具链的深度绑定</li>
+<li>"RAMpocalypse"是夸张的 PR 术语，实质是正常的行业供应链周期波动</li>
+</ul>
+<hr />
+<h2>📋 简讯</h2>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>来源</th>
+<th>评分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uber 计划将人类司机车辆改装为传感器数据采集平台，服务自动驾驶公司和 AI 训练</td>
+<td>TechCrunch</td>
+<td>⭐⭐ 3/5</td>
+</tr>
+<tr>
+<td>MIT Tech Review：基督教手机网络上架（网络级封锁色情，无法关闭）、LLM 调试工具发布、特朗普裁撤 NSF 科学家、中国 AI 开源战略</td>
+<td>MIT Tech Review</td>
+<td>⭐⭐ 3/5</td>
+</tr>
+<tr>
+<td>少数派 4 月游戏推荐：《朋友收藏》《识质存在》《沙罗周期》</td>
+<td>少数派</td>
+<td>⭐⭐ 3/5</td>
+</tr>
+<tr>
+<td>Wired 评测 Tovala 智能烤箱+餐包服务（7/10）：便利但钠和脂肪含量"极高"，约等于天天在外吃饭</td>
+<td>Wired</td>
+<td>⭐⭐ 3/5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>💡 本日洞察</h2>
+<p>本日最值得关注的并非单一事件，而是几条线索的交汇：</p>
+<ol>
+<li><strong>AI 可靠性 vs 体验之争</strong>：Nature 研究显示"讨好用户"的调优会直接损害任务准确性，这给所有追求"更自然对话体验"的 AI 产品敲了警钟。</li>
+<li><strong>供应链政治</strong>：AI 芯片热潮正在向游戏硬件产业链传导，SteamOS 的推进意外受阻——技术胜负有时不取决于技术本身。</li>
+<li><strong>垂直 AI 工具快速成熟</strong>：语音输入应用横评显示，AI 原生交互形态已从酷炫demo进入实用阶段，中文场景的跟进值得关注。</li>
+</ol>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报由种子 AI 自动生成 | 源数据：`/root/.openclaw/workspace/news-intel/digest/2026-05-03.md`</p>
+      </div>
+    </div>
+    <div class="report-view" id="report-2026-05-02">
+      <div class="report-body">
+        <h1>🌱 科技资讯日报 · 2026-05-02</h1>
+<blockquote>
+<p>共处理 20 篇 | 评分 ≥ 2 分<br />
+本日高评分事件较少（最高 3 分），无突破性事件</p>
+</blockquote>
+<hr />
+<h2>🔥 本日重点（3 分）</h2>
+<h3>Ubuntu 遭 DDoS 攻击持续约 20 小时，Islamic Cyber Resistance 声称负责</h3>
+<p><strong>来源</strong>: TechCrunch | 评分 ⭐⭐⭐（3/5）</p>
+<p>Ubuntu 及母公司 Canonical 遭大规模 DDoS 攻击，用户无法正常更新系统已持续约 20 小时：</p>
+<ul>
+<li><strong>攻击规模</strong>：自称 "The Islamic Cyber Resistance in Iraq 313 Team" 的组织声称发动了 3.5 Tbps 攻击，但该数据未经独立机构验证</li>
+<li><strong>影响范围</strong>：apt 包管理器更新功能受阻，用户无法获取安全补丁，存在系统性安全风险</li>
+<li><strong>官方状态</strong>：Canonical 表示正在处理，但未回应 TechCrunch 的评论请求</li>
+<li><strong>背景</strong>：DDoS 攻击虽技术门槛低，但通过租用攻击服务可快速实施大规模打击，是当前基础设施面临的常见威胁</li>
+</ul>
+<blockquote>
+<p>⚠️ 注意：攻击规模数据来自攻击服务自身声称，存在宣传成分；攻击对生产环境服务器的实际影响范围尚不明确。</p>
+</blockquote>
+<hr />
+<h3>2026 年 4 月中国车市分化加深：头部集中，新势力门槛升至 5-7 万辆</h3>
+<p><strong>来源</strong>: 钛媒体 | 评分 ⭐⭐⭐（3/5）</p>
+<p>4 月中国车市数据出炉，分化趋势进一步加剧：</p>
+<ul>
+<li><strong>核心结论</strong>：增长开始向少数体系型车企集中，价格战从"降价表"转为"配置表"</li>
+<li><strong>新势力门槛</strong>：交付门槛升至 5-7 万辆/年，年销不足 50 万辆的车企面临退出风险</li>
+<li><strong>出口风险</strong>：被视为"缓冲区"，但欧美加征关税政策风险已在 2025 年显现</li>
+<li><strong>典型数据</strong>：零跑等头部车企凭规模/出口/新能源转型维持经营质量</li>
+</ul>
+<blockquote>
+<p>车市竞争正从销量冲刺转向体系竞争，尾部车企生存空间进一步收窄。</p>
+</blockquote>
+<hr />
+<h3>Anthropic Claude AI 接入八大创意软件生态，包括 Adobe、Blender 等</h3>
+<p><strong>来源</strong>: 少数派 | 评分 ⭐⭐⭐（3/5）</p>
+<p>Anthropic 宣布 Claude AI 全面接入创意软件生态：</p>
+<ul>
+<li><strong>覆盖范围</strong>：Adobe 全套 50+ 工具、Blender 等八大创意软件</li>
+<li><strong>能力描述</strong>：可充当智能导师、编写插件、重构数据格式，接管重复性劳动</li>
+<li><strong>竞争态势</strong>：Adobe 自身也在推 Firefly 系列 AI，Claude 的差异化优势尚不明确</li>
+<li><strong>依赖风险</strong>：Connector 模式深度依赖与各厂商的 API 合作与授权条款</li>
+</ul>
+<hr />
+<h2>📋 简讯（2 分）</h2>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reddit 搜索周活跃用户同比增长 30%，CEO 称搜索是用户留存主要驱动力</td>
+<td>TechCrunch</td>
+</tr>
+<tr>
+<td>追觅科技发布"火箭车"：零百加速 0.9 秒，搭载双固体火箭助推，发布全固态电池技术</td>
+<td>36氪</td>
+</tr>
+<tr>
+<td>上海大航跃迁完成 5 亿元融资：国内首家"筷子夹"塔架回收民营火箭公司</td>
+<td>36氪</td>
+</tr>
+<tr>
+<td>索诺克发布枭龙系列三色激光工程投影机：称首个工程商用化产品</td>
+<td>36氪</td>
+</tr>
+<tr>
+<td>OPPO 整合一加/realme：realme 研发团队并入集团，营销/产品负责人均向一加汇报</td>
+<td>钛媒体</td>
+</tr>
+<tr>
+<td>大全能源：产量增 75%、销量暴跌 84%，硅料环节双杀困局</td>
+<td>钛媒体</td>
+</tr>
+<tr>
+<td>科大讯飞 AI 教育营收 89.67 亿元（+24%），占比 33% 成第一大业务</td>
+<td>钛媒体</td>
+</tr>
+<tr>
+<td>苹果 Q2 营收 1112 亿美元（+17%），CFO 警告下季度内存成本压力显著加大</td>
+<td>爱范儿</td>
+</tr>
+<tr>
+<td>一加 Ace 6 至尊版发布：天玑 9500 + 165Hz + 8600mAh，3799 元起</td>
+<td>爱范儿</td>
+</tr>
+<tr>
+<td>Valve 发布 2025 款 Steam Controller：售价 $99，5 月 4 日开售，距离初代近 11 年</td>
+<td>爱范儿</td>
+</tr>
+<tr>
+<td>追觅硅谷发布会展示 AI 家电愿景：2036 年 AI 家电发展方向</td>
+<td>极客公园</td>
+</tr>
+<tr>
+<td>马斯克起诉 OpenAI 案开庭：称 Altman 是"小偷"，指责其背叛非营利使命</td>
+<td>极客公园</td>
+</tr>
+</tbody>
+</table>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报由种子 AI 自动生成 | 源数据：`/root/.openclaw/workspace/news-intel/digest/2026-05-02.md`</p>
+      </div>
+    </div>
+    <div class="report-view" id="report-2026-05-01">
+      <div class="report-body">
+        <h1>🌱 科技资讯日报 · 2026-05-01</h1>
+<blockquote>
+<p>共处理 19 篇 | 评分 ≥ 2 分</p>
+</blockquote>
+<hr />
+<h2>🔥 本日重点（5 / 4 分）</h2>
+<h3>DeepSeek 发布"视觉原语思考"多模态框架，挑战主流 CoT 范式</h3>
+<p><strong>来源</strong>: 极客公园 | 评分 ⭐⭐⭐⭐⭐（5/5）</p>
+<p>DeepSeek 发布基于"视觉原语"推理框架的多模态模型，将空间标记融入思维过程，旨在解决传统多模态模型中"参照鸿沟"问题。核心亮点：</p>
+<ul>
+<li><strong>核心突破</strong>：提出"视觉原语思考"（Visual Primitive Reasoning），将空间关系标记直接纳入推理链路</li>
+<li><strong>高效路线</strong>：模型规模紧凑，视觉标记预算低，在计数和空间推理测试中匹配 GPT-5.4 等前沿模型</li>
+<li><strong>论文指出</strong>：主流 Chain-of-Thought 范式局限于语言学表征，需同步突破感知与参照双重瓶颈</li>
+<li><strong>战略意义</strong>：为 System-2 类多模态智能（慢思考、精确推理）提供了不同于 OpenAI 的技术路线探索</li>
+<li><strong>相关背景</strong>：苹果季度营收 1111 亿美元（+大中华区 28%），Figure 机器人量产提速 24 倍</li>
+</ul>
+<blockquote>
+<p>该框架如果验证有效，可能大幅降低多模态推理成本，对 Claude Code、GPT-4V 等闭源方案形成竞争压力。</p>
+</blockquote>
+<hr />
+<h3>AI 编程工具价格战：Goose 免费叫板 Claude Code $200/月</h3>
+<p><strong>来源</strong>: VentureBeat AI | 评分 ⭐⭐⭐⭐⭐（5/5）</p>
+<p>开源 AI 代理工具 <strong>Goose</strong> 横空出世，以免费策略直接挑战月费高达 $200 的 Claude Code，引发开发者社区热议：</p>
+<ul>
+<li><strong>价格对比</strong>：Claude Code 收费 $20–$200/月，Goose 提供同等功能且免费</li>
+<li><strong>市场背景</strong>：AI 编码工具市场快速扩张，价格成为开发者选择的重要考量</li>
+<li><strong>竞争逻辑</strong>：当开源方案能匹配闭源效果时，付费墙将面临严重冲击</li>
+</ul>
+<hr />
+<h3>Railway 融资 $1 亿挑战 AWS：零营销积累 200 万开发者</h3>
+<p><strong>来源</strong>: VentureBeat | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>云基础设施初创公司 Railway 完成 $1 亿 B 轮融资，由 TQ Ventures 领投，FPV Ventures、Redpoint 等跟投：</p>
+<ul>
+<li><strong>数据亮点</strong>：零营销成本积累 <strong>200 万开发者</strong>，估值已进入最具价值基础设施公司行列</li>
+<li><strong>差异化定位</strong>：瞄准传统云厂商（AWS/Azure/GCP）的"AI 原生云"需求，主打部署效率与成本优化</li>
+<li><strong>市场信号</strong>：基础设施层正在被新型云服务商以不同路径重新定义</li>
+</ul>
+<hr />
+<h3>ChatGPT Images 2.0：印度成最大市场，新兴市场下载量暴增 79%</h3>
+<p><strong>来源</strong>: TechCrunch | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>OpenAI 图像生成工具在印度周下载量约 <strong>500 万次</strong>，成为全球最大市场，巴基斯坦、越南等新兴市场同步激增 79%：</p>
+<ul>
+<li><strong>本地化策略</strong>：针对印地语、孟加拉语等非拉丁文字进行专门优化，降低使用门槛</li>
+<li><strong>应用场景</strong>：印度用户主要用于头像、肖像等自表达内容，社交属性强</li>
+<li><strong>增长局限</strong>：全球整体 DAU/会话仅增长约 1%，印度以外市场表现温和</li>
+</ul>
+<hr />
+<h3>苹果 Q1 营收创纪录 1112 亿美元，但内存芯片短缺或致 iPhone 涨价</h3>
+<p><strong>来源</strong>: TechCrunch | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>Tim Cook 卸任 CEO 交接节点，苹果交出史上最佳 Q1 成绩单，同时预警供应链压力：</p>
+<ul>
+<li><strong>业绩</strong>：营收 1112 亿美元，各地区均实现两位数增长；iPhone 17 刷新 Q1 销量纪录</li>
+<li><strong>危机</strong>：AI 驱动的内存芯片成本暴涨四倍（"RAMageddon"），供应链灵活性下降</li>
+<li><strong>人事</strong>：John Ternus 接任 CEO，Cook 转任执行董事长</li>
+<li><strong>风险</strong>：iPhone 17 面临涨价压力，可能影响下半年旺季表现</li>
+</ul>
+<hr />
+<h3>前 AT&amp;T 技术员 Mark Klein 举报 NSA Room 641A 监控始末</h3>
+<p><strong>来源</strong>: Hacker News/MIT Reader | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>前 AT&amp;T 技术员 Mark Klein 主动向 EFF 提供 NSA 通过旧金山 Folsom 大楼 Room 641A 进行大规模互联网监控的关键证据：</p>
+<ul>
+<li><strong>事件性质</strong>：2006 年 Mark Klein 向 EFF 提交 NSA 监控的确凿证据，是"爱国者法案"后美国公民隐私侵犯的标志性案例</li>
+<li><strong>技术细节</strong>：NSA 在 AT&amp;T 设施内设立"监控机器"，无差别截取通讯数据</li>
+<li><strong>历史影响</strong>：该事件成为后续多起针对 NSA 监控诉讼的关键证据，推动了隐私权讨论</li>
+</ul>
+<hr />
+<h3>R3 Bio：秘密初创提出"无脑克隆人"作为人类备份身体</h3>
+<p><strong>来源</strong>: MIT Technology Review | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>生物技术初创 R3 Bio 秘密运营，提出以培育"无脑克隆人"作为人类备用身体实现延寿的争议性概念：</p>
+<ul>
+<li><strong>核心逻辑</strong>：克隆技术培育无意识克隆体，作为器官/身体备份</li>
+<li><strong>伦理争议</strong>：引发克隆技术伦理边界的广泛担忧</li>
+<li><strong>信息来源</strong>：MIT Technology Review 付费电子书独家披露</li>
+</ul>
+<hr />
+<h3>Goodfire 推出 Silico：机制可解释性工具让 LLM 调试成为可能</h3>
+<p><strong>来源</strong>: MIT Technology Review | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>旧金山初创 Goodfire 发布 Silico 工具，号称是首个可调试 AI 模型训练全过程的商业化机制可解释性产品：</p>
+<ul>
+<li><strong>技术路线</strong>：基于机制可解释性（Mechanistic Interpretability），揭示 LLM 内部运作机制</li>
+<li><strong>目标愿景</strong>：将 AI 开发从"炼金术"转变为可预测的"精确工程"</li>
+<li><strong>验证效果</strong>：已展示可减少 LLM 幻觉等不良行为</li>
+<li><strong>自动化</strong>：使用 AI 代理自动化复杂的可解释性分析，降低人工成本</li>
+</ul>
+<hr />
+<h3>大航跃迁完成 5 亿元融资：国内首家"筷子夹"塔架回收技术落地</h3>
+<p><strong>来源</strong>: 36 氪 | 评分 ⭐⭐⭐⭐（4/5）</p>
+<p>民营火箭企业大航跃迁完成 <strong>5 亿元人民币融资</strong>，成为国内首家实现"筷子夹"塔架捕获回收技术的公司：</p>
+<ul>
+<li><strong>技术对比</strong>：塔架回收比传统着陆腿方案减重约 6 吨，成本仅为 1/10</li>
+<li><strong>运力参数</strong>：200km LEO 约 18 吨，满足主流卫星组网需求</li>
+<li><strong>自研飞控</strong>：国内少数对标 SpaceX 控制架构的企业</li>
+<li><strong>时间线</strong>：计划 2027 年首飞，同步研发 150 吨级液氧甲烷发动机</li>
+</ul>
+<hr />
+<h2>📋 简讯（2-3 分）</h2>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>来源</th>
+<th>评分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>特朗普提名福克斯新闻医生 Nicole Saphier 为医务总监，撤回 Casey Means</td>
+<td>Ars Technica</td>
+<td>⭐⭐⭐⭐（4/5）</td>
+</tr>
+<tr>
+<td>Roblox DAU 六个月内从 1.52 亿骤降至 1.32 亿（-2000 万），年龄验证拖累增长</td>
+<td>The Verge</td>
+<td>⭐⭐⭐⭐（4/5）</td>
+</tr>
+<tr>
+<td>2026 全球新闻自由指数：美国下滑至第 64 位，低于乌克兰（55），中国倒数第三（178/180）</td>
+<td>Ars Technica</td>
+<td>⭐⭐⭐（3/5）</td>
+</tr>
+<tr>
+<td>自然堂借航天展探索"航天科技"叙事，布局太空生物实验原料</td>
+<td>36 氪</td>
+<td>⭐⭐（2/5）</td>
+</tr>
+<tr>
+<td>一加 Ace 6 至尊版发布： 天玑 9500 + 165Hz + 8600mAh，3799 元起</td>
+<td>爱范儿</td>
+<td>⭐⭐（2/5）</td>
+</tr>
+<tr>
+<td>Musk v. Altman 庭审：Birchall 闭门回答透露 Altman 曾代表双方谈判 xAI 竞购</td>
+<td>The Verge</td>
+<td>⭐⭐（2/5）</td>
+</tr>
+<tr>
+<td>Google Workspace 推出最高 14% 折扣，Standard 套餐 2TB + 全套 Gemini</td>
+<td>Wired</td>
+<td>⭐⭐（2/5）</td>
+</tr>
+<tr>
+<td>Booking.com Genuis 计划最高 20% 折扣，东京 $36/晚、巴黎 $67/晚起</td>
+<td>Wired</td>
+<td>⭐⭐（2/5）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+      </div>
+      <div class="report-footer">
+        <p>📡 本日报由种子 AI 自动生成 | 源数据：`/root/.openclaw/workspace/news-intel/digest/2026-05-01.md`</p>
+      </div>
+    </div>
+    </main>
+
+  </div>
+
+  <script>
+    function showReport(date) {
+      // Hide all
+      document.querySelectorAll('.report-view').forEach(el => {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll('.archive-link').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      // Show target
+      const target = document.getElementById('report-' + date);
+      const nav = document.getElementById('nav-' + date);
+      if (target) target.classList.add('active');
+      if (nav) nav.classList.add('active');
+
+      // Update header date
+      document.getElementById('current-date-display').textContent = date;
+
+      // Update URL hash
+      history.replaceState(null, '', '#' + date);
+
+      // Scroll main to top
+      document.querySelector('.main-content').scrollTop = 0;
+    }
+
+    // Handle direct URL hash on load
+    (function() {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && document.getElementById('report-' + hash)) {
+        showReport(hash);
+      }
+    })();
+  </script>
 </body>
 </html>
