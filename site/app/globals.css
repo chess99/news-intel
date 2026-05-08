@@ -10,7 +10,7 @@
   --text:         #f0f2f7;
   --text-sub:     #b8c0d0;
   --text-muted:   #7a8699;
-  --text-dim:     #4e5a6e;
+  --text-dim:     #5d6b82;
   --accent:       #4f8ef7;
   --accent-soft:  #3a6fd0;
   --accent-glow:  rgba(79, 142, 247, 0.10);
@@ -160,7 +160,7 @@ a:hover { text-decoration: underline; }
   transition: color 0.15s;
   text-decoration: none;
 }
-.archive-link:hover { color: var(--text-sub); text-decoration: none; }
+.archive-link:hover { color: var(--text-sub); background: rgba(255,255,255,0.02); text-decoration: none; }
 .archive-link.active { color: var(--text); }
 .archive-link.active .archive-dot {
   background: var(--accent);
@@ -261,7 +261,9 @@ a:hover { text-decoration: underline; }
   color: var(--accent);
   margin: 3rem 0 1.25rem;
   padding-bottom: 0.6rem;
+  padding-left: 0.75rem;
   border-bottom: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
 }
 
 .report-html h3 {
@@ -423,6 +425,9 @@ a:hover { text-decoration: underline; }
     -webkit-overflow-scrolling: touch;
     font-size: 12px;
   }
+  .header-nav-btn span { display: none; }
+  .header-nav-btn { padding: 6px 8px; min-width: 32px; justify-content: center; }
+  .site-header-right { gap: 0.5rem; }
 }
 
 /* ── ANIMATIONS ── */
