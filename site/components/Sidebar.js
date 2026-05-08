@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function Sidebar({ reports }) {
+export default function Sidebar({ reports, latestDate }) {
   const pathname = usePathname()
 
   return (
@@ -14,16 +14,16 @@ export default function Sidebar({ reports }) {
         </div>
         <ul className="archive-list">
           {reports.map(r => {
-            const href = `/${r.date}/`
             const isActive =
-              pathname === `/news-intel/${r.date}/` ||
-              pathname === `/news-intel/${r.date}`
+              pathname === `/${r.date}/` ||
+              pathname === `/${r.date}` ||
+              (pathname === '/' && r.date === latestDate)
             const parts = r.date.split('-')
             const shortDate = parts.length === 3 ? `${parts[1]}/${parts[2]}` : r.date
 
             return (
               <li key={r.date} className="archive-item">
-                <Link href={href} className={`archive-link${isActive ? ' active' : ''}`}>
+                <Link href={`/${r.date}/`} className={`archive-link${isActive ? ' active' : ''}`}>
                   <span className="archive-dot" />
                   <span className="archive-date desktop-date">{r.date}</span>
                   <span className="archive-date mobile-date">{shortDate}</span>

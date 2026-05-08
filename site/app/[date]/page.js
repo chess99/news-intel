@@ -28,11 +28,11 @@ export default async function DatePage({ params }) {
         <span className="site-tagline">科技资讯 · 批判性分析 · 每日更新</span>
         <div className="site-header-right">
           <Link href="/search/" className="header-search-link">搜索</Link>
-          <a href="/news-intel/feed.xml" className="header-search-link" target="_blank" rel="noopener">RSS</a>
+          <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/feed.xml`} className="header-search-link" target="_blank" rel="noopener">RSS</a>
         </div>
       </header>
 
-      <Sidebar reports={reports} />
+      <Sidebar reports={reports} latestDate={reports[0]?.date} />
 
       <main className="main-content">
         <ReportBody htmlContent={report.htmlContent} />

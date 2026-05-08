@@ -13,7 +13,7 @@ const REPORT_DIR = path.join(process.cwd(), '..', 'report')
  */
 function extractTitle(content, date) {
   const match = content.match(/^#\s+(.+)$/m)
-  return match ? match[1].replace(/[^\w\s·年月日\-/]/g, '').trim() : `科技资讯日报 · ${date}`
+  return match ? match[1].trim() : `科技资讯日报 · ${date}`
 }
 
 /**
@@ -34,10 +34,13 @@ function extractExcerpt(content) {
  * 返回所有日报的摘要列表，按日期倒序
  * @returns {{ date: string, title: string, excerpt: string }[]}
  */
+let _reportsCache = null
+
 export function getAllReports() {
+  if (_reportsCache) return _reportsCache
   if (!fs.existsSync(REPORT_DIR)) return []
 
-  return fs
+  _reportsCache = fs
     .readdirSync(REPORT_DIR)
     .filter(f => f.endsWith('.md'))
     .map(f => {
@@ -51,6 +54,8 @@ export function getAllReports() {
       }
     })
     .sort((a, b) => b.date.localeCompare(a.date))
+
+  return _reportsCache
 }
 
 /**

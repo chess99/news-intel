@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
           rel="alternate"
           type="application/rss+xml"
           title="Intel Daily RSS"
-          href="/news-intel/feed.xml"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/feed.xml`}
         />
       </head>
       <body>{children}</body>
