@@ -1,5 +1,7 @@
 import { getAllReports } from '../../lib/reports'
 
+export const dynamic = 'force-static'
+
 const SITE_URL = 'https://cearl.cc'
 const BASE_PATH = '/news-intel'
 

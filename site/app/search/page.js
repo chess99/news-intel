@@ -8,9 +8,16 @@ export default function SearchPage() {
     async function loadPagefind() {
       if (typeof window === 'undefined') return
       try {
-        const pagefind = await import('/news-intel/pagefind/pagefind.js')
-        await pagefind.init()
-        const { PagefindUI } = await import('/news-intel/pagefind/pagefind-ui.js')
+        // Use dynamic script loading to avoid webpack trying to resolve pagefind at build time
+        await new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.type = 'module'
+          script.src = '/news-intel/pagefind/pagefind-ui.js'
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+        // eslint-disable-next-line no-undef
         new PagefindUI({
           element: '#search-container',
           showImages: false,
