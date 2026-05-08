@@ -93,18 +93,6 @@ a:hover { text-decoration: underline; }
   gap: 1rem;
 }
 
-.header-search-link {
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--text-dim);
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  transition: border-color 0.15s, color 0.15s;
-}
-.header-search-link:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
 /* ── SIDEBAR ── */
 .sidebar {
@@ -536,7 +524,6 @@ a:hover { text-decoration: underline; }
   .search-page-title { font-size: 1.3rem; }
 }
 
-/* 同时定义 header-nav-btn（Task 2 会进一步使用，但先在此预定义基础样式） */
 .header-nav-btn {
   display: inline-flex;
   align-items: center;
@@ -565,6 +552,10 @@ a:hover { text-decoration: underline; }
   background: var(--accent-glow);
 }
 .header-nav-btn svg { flex-shrink: 0; }
+.header-nav-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 /* ── PRINT ── */
 @media print {

@@ -25,7 +25,7 @@ export default async function HomePage() {
             href={`${process.env.NEXT_PUBLIC_BASE_PATH}/feed.xml`}
             className="header-nav-btn"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="RSS 订阅"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
