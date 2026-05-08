@@ -400,6 +400,166 @@ a:hover { text-decoration: underline; }
   .report-fade-in { animation: none; }
 }
 
+/* ── SEARCH PAGE ── */
+.search-page-wrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem 5rem;
+}
+
+.search-page-inner {
+  width: 100%;
+  max-width: 720px;
+}
+
+.search-page-title {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* Pagefind UI 深色主题强制覆盖 */
+#search-container .pagefind-ui__search-input,
+.pagefind-ui .pagefind-ui__search-input {
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  font-family: var(--sans) !important;
+  font-size: 15px !important;
+  padding: 0.7rem 1rem 0.7rem 2.75rem !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+#search-container .pagefind-ui__search-input:focus,
+.pagefind-ui .pagefind-ui__search-input:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px var(--accent-glow) !important;
+}
+#search-container .pagefind-ui__search-input::placeholder,
+.pagefind-ui .pagefind-ui__search-input::placeholder {
+  color: var(--text-dim) !important;
+}
+
+#search-container .pagefind-ui__search-clear,
+.pagefind-ui .pagefind-ui__search-clear {
+  background: var(--bg-hover) !important;
+  color: var(--text-muted) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 3px !important;
+  font-family: var(--mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer !important;
+}
+#search-container .pagefind-ui__search-clear:hover,
+.pagefind-ui .pagefind-ui__search-clear:hover {
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  border-color: var(--accent) !important;
+}
+
+#search-container .pagefind-ui__message,
+.pagefind-ui .pagefind-ui__message {
+  color: var(--text-muted) !important;
+  font-size: 13px !important;
+  font-family: var(--sans) !important;
+}
+
+#search-container .pagefind-ui__result,
+.pagefind-ui .pagefind-ui__result {
+  border-color: var(--border-light) !important;
+  padding: 1.25rem 0 !important;
+}
+
+#search-container .pagefind-ui__result-link,
+.pagefind-ui .pagefind-ui__result-link {
+  color: var(--text) !important;
+  font-family: var(--serif) !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+#search-container .pagefind-ui__result-link:hover,
+.pagefind-ui .pagefind-ui__result-link:hover {
+  color: var(--accent) !important;
+}
+
+#search-container .pagefind-ui__result-excerpt,
+.pagefind-ui .pagefind-ui__result-excerpt {
+  color: var(--text-sub) !important;
+  font-size: 13.5px !important;
+  line-height: 1.7 !important;
+  margin-top: 0.4rem !important;
+}
+
+#search-container .pagefind-ui__result-excerpt mark,
+.pagefind-ui .pagefind-ui__result-excerpt mark {
+  background: rgba(79, 142, 247, 0.2) !important;
+  color: var(--accent) !important;
+  border-radius: 2px !important;
+  padding: 0 2px !important;
+}
+
+#search-container .pagefind-ui__button,
+.pagefind-ui .pagefind-ui__button {
+  background: var(--bg-card) !important;
+  color: var(--text-muted) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 3px !important;
+  font-family: var(--mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  padding: 0.5rem 1.25rem !important;
+  transition: border-color 0.15s, color 0.15s !important;
+}
+#search-container .pagefind-ui__button:hover,
+.pagefind-ui .pagefind-ui__button:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .search-page-wrapper { padding: 2rem 1rem 4rem; }
+  .search-page-title { font-size: 1.3rem; }
+}
+
+/* 同时定义 header-nav-btn（Task 2 会进一步使用，但先在此预定义基础样式） */
+.header-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.header-nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+.header-nav-btn--active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+.header-nav-btn svg { flex-shrink: 0; }
+
 /* ── PRINT ── */
 @media print {
   .sidebar, .site-header { display: none; }

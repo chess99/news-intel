@@ -1,33 +1,47 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 export default function SearchPage() {
+  const initialized = useRef(false)
+
   useEffect(() => {
-    async function loadPagefind() {
-      if (typeof window === 'undefined') return
-      try {
-        // Use dynamic script loading to avoid webpack trying to resolve pagefind at build time
-        await new Promise((resolve, reject) => {
-          const script = document.createElement('script')
-          script.type = 'module'
-          script.src = '/news-intel/pagefind/pagefind-ui.js'
-          script.onload = resolve
-          script.onerror = reject
-          document.head.appendChild(script)
-        })
-        // eslint-disable-next-line no-undef
-        new PagefindUI({
-          element: '#search-container',
-          showImages: false,
-          resetStyles: false,
-        })
-      } catch {
-        console.info('Pagefind not available in dev mode')
-      }
+    if (initialized.current) return
+    initialized.current = true
+
+    // Load pagefind-ui.css
+    if (!document.querySelector('link[href*="pagefind-ui.css"]')) {
+      const cssLink = document.createElement('link')
+      cssLink.rel = 'stylesheet'
+      cssLink.href = '/news-intel/pagefind/pagefind-ui.css'
+      document.head.appendChild(cssLink)
     }
-    loadPagefind()
+
+    // Load pagefind-ui.js as regular script (NOT module) so PagefindUI lands on window
+    const script = document.createElement('script')
+    script.src = '/news-intel/pagefind/pagefind-ui.js'
+    script.onload = () => {
+      // Poll until PagefindUI is available
+      let attempts = 0
+      const poll = setInterval(() => {
+        attempts++
+        if (typeof window.PagefindUI !== 'undefined') {
+          clearInterval(poll)
+          new window.PagefindUI({
+            element: '#search-container',
+            showImages: false,
+            resetStyles: false,
+            excerptLength: 20,
+          })
+        } else if (attempts > 30) {
+          clearInterval(poll)
+          console.warn('PagefindUI did not load in time')
+        }
+      }, 100)
+    }
+    script.onerror = () => console.info('Pagefind not available in this environment')
+    document.head.appendChild(script)
   }, [])
 
   return (
@@ -37,20 +51,32 @@ export default function SearchPage() {
         <span className="site-header-sep" />
         <span className="site-tagline">科技资讯 · 批判性分析 · 每日更新</span>
         <div className="site-header-right">
-          <Link href="/search/" className="header-search-link" style={{ color: 'var(--accent)' }}>搜索</Link>
-          <a href="/news-intel/feed.xml" className="header-search-link" target="_blank" rel="noopener">RSS</a>
+          <Link href="/search/" className="header-nav-btn header-nav-btn--active" aria-label="搜索">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <span>搜索</span>
+          </Link>
+          <a
+            href="/news-intel/feed.xml"
+            className="header-nav-btn"
+            target="_blank"
+            rel="noopener"
+            aria-label="RSS 订阅"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>
+            </svg>
+            <span>RSS</span>
+          </a>
         </div>
       </header>
 
-      <div style={{ gridColumn: '1 / -1', padding: '3rem 3rem 4rem', maxWidth: '800px', margin: '0 auto', width: '100%' }}>
-        <h1 style={{ fontFamily: 'var(--serif)', fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--text)' }}>
-          搜索日报
-        </h1>
-        <link rel="stylesheet" href="/news-intel/pagefind/pagefind-ui.css" />
-        <div id="search-container" />
-        <p style={{ marginTop: '2rem', fontSize: '12px', color: 'var(--text-dim)', fontFamily: 'var(--mono)' }}>
-          搜索功能在构建后可用。开发模式下请先运行 <code>npm run build</code>。
-        </p>
+      <div className="search-page-wrapper">
+        <div className="search-page-inner">
+          <h1 className="search-page-title">搜索日报</h1>
+          <div id="search-container" className="search-container-wrap" />
+        </div>
       </div>
     </div>
   )
