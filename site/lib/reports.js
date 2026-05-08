@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
+import remarkGfm from 'remark-gfm'
 import remarkHtml from 'remark-html'
 
 // report/ 目录相对于 site/ 的位置
@@ -70,7 +71,7 @@ export async function getReport(date) {
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { content } = matter(raw)
 
-  const processed = await remark().use(remarkHtml, { sanitize: false }).process(content)
+  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(content)
   const htmlContent = processed.toString()
 
   return {

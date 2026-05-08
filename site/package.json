@@ -8,12 +8,13 @@
     "postbuild": "npx pagefind --site out --output-path out/pagefind"
   },
   "dependencies": {
+    "gray-matter": "^4",
     "next": "^14",
     "react": "^18",
     "react-dom": "^18",
     "remark": "^15",
-    "remark-html": "^16",
-    "gray-matter": "^4"
+    "remark-gfm": "^4.0.1",
+    "remark-html": "^16"
   },
   "devDependencies": {
     "pagefind": "^1"
