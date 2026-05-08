@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'report/**.md'   # 仅日报更新时触发
+  workflow_dispatch:     # 允许手动触发
 
 permissions:
   contents: read
