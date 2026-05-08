@@ -34,28 +34,7 @@ export default function Sidebar({ reports, latestDate }) {
         </ul>
       </div>
 
-      <div className="sidebar-footer">
-        <Link
-          href="/search/"
-          className={`sidebar-footer-link${pathname === '/search/' || pathname === '/search' ? ' active' : ''}`}
-        >
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-          </svg>
-          搜索
-        </Link>
-        <a
-          href="/news-intel/feed.xml"
-          className="sidebar-footer-link"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>
-          </svg>
-          RSS
-        </a>
-      </div>
+
     </aside>
   )
 }
