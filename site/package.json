@@ -1,0 +1,21 @@
+{
+  "name": "news-intel-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "npx pagefind --site out --output-path out/pagefind"
+  },
+  "dependencies": {
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18",
+    "remark": "^15",
+    "remark-html": "^16",
+    "gray-matter": "^4"
+  },
+  "devDependencies": {
+    "pagefind": "^1"
+  }
+}
