@@ -1,0 +1,21 @@
+---
+title: "Truecaller slashes 70 jobs amid declining ad sales"
+source: TechCrunch
+url: https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/
+published: 2026-05-08T22:41:53+08:00
+lang: en
+category: tech_startup
+fetched_at: 2026-05-09T00:30:13.204004+08:00
+---
+
+# Truecaller slashes 70 jobs amid declining ad sales
+
+**来源**: TechCrunch | **发布**: 2026-05-08 | **链接**: https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/
+
+## RSS 摘要
+
+Truecaller's ad revenue declined by 44%, leading to the layoffs.
+
+## 正文
+
+Sweden-based caller ID company Truecaller said it will cut 70 jobs, or roughly 15% of its workforce, in the second quarter, as the company posted its Q1 2026 results with a decline in revenue and profits. Truecaller blamed real-money gaming in India, changes in advertising partner algorithms, and conflict in the Middle East for the slide. As TechCrunch reported last month, the company is already facing challenges from India&#8217;s telecom-led solutions, such as&nbsp; Calling Name Presentation (CNAP) identification service, and 5% year-on-year decline in downloads last year. In its Q1 2026 results, Truecaller&#8217;s net sales dropped 27% to 362 million SEK ($39.34 million). In its biggest market, India, net sales dipped by 41% year-on-year. In addition, ad revenues declined by 44%. &#8220;The year-on-year comparison looks especially weak given that Q1 and Q2 last year included a large contribution coming from the real money gaming sector in India in connection with the IPL season that takes place around this time. The situation in the Middle East also reduced our revenues from that region,&#8221; Truecaller CEO Rishit Jhunjhunwala said during the earnings call. Last August, India banned real-money gaming apps such as Dream 11 and MPL that allowed users to use money to play fantasy sports . Industry bodies estimated that the real-money gaming industry was worth $23 billion in India. Because of this shutdown, platforms on which these real-money apps are advertised were deprived of that revenue. Truecaller also said that the revenue decline in the ad business was also due to a programmatic partner, identified as Google by an analyst earlier this year , changing its algorithms. There were only a few positives for the company this quarter. First, it crossed the mark of 500 million active users . Plus, its subscription revenue increased by 27%, representing 31% of net sales. The company has been adding features like&nbsp; AI Assistant &nbsp;and&nbsp; Family Protection &nbsp;to make its paid offerings more attractive. Truecaller&#8217;s stock has dipped by over 26% this year and by over 79% in the last 12 months. However, after the Q1 results, it has seen some recovery. Topics Apps , India , Layoffs , Truecaller When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence. Ivan Mehta Ivan covers global consumer tech developments at TechCrunch. He is based out of India and has previously worked at publications including Huffington Post and The Next Web. You can contact or verify outreach from Ivan by emailing im@ivanmehta.com or via encrypted message at ivan.42 on Signal. View Bio May 27 Athens, Greece StrictlyVC Athens is up next. Hear unfiltered insights straight from Europe’s tech leaders and connect with the people shaping what’s ahead. Lock in your spot before it’s gone. REGISTER NOW Most Popular Hackers deface school login pages after claiming another Instructure hack Lorenzo Franceschi-Bicchierai Zack Whittaker Hackers steal students&#8217; data during breach at education tech giant Instructure Lorenzo Franceschi-Bicchierai As workers worry about AI, Nvidia&#8217;s Jensen Huang says AI is &#8216;creating an enormous number of jobs&#8217; Lucas Ropek Anthropic and OpenAI are both launching joint ventures for enterprise AI services Russell Brandom Ouster&#8217;s new color lidar is coming to replace cameras Sean O&#039;Kane This tiny, magnetic e-reader could stop you from doomscrolling Amanda Silberling Uber wants to turn its millions of drivers into a sensor grid for self-driving companies Connie Loizos
