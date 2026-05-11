@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
       description: excerpt,
       url: `${SITE_URL}/${params.date}/`,
       type: 'article',
-      publishedTime: params.date,
+      publishedTime: `${params.date}T09:00:00+08:00`,
       locale: 'zh_CN',
     },
   }
@@ -48,9 +48,14 @@ export default async function DatePage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: report.title,
-    datePublished: params.date,
-    dateModified: params.date,
+    datePublished: `${params.date}T09:00:00+08:00`,
+    dateModified: `${params.date}T09:00:00+08:00`,
     url: `${SITE_URL}/${params.date}/`,
+    author: {
+      '@type': 'Organization',
+      name: 'Intel Daily',
+      url: SITE_URL,
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Intel Daily',
@@ -69,7 +74,7 @@ export default async function DatePage({ params }) {
         name: `${params.date} 科技资讯有哪些重点？`,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: excerpt || `请查看 Intel Daily ${params.date} 日报获取完整内容。`,
+          text: `Intel Daily ${params.date} 日报从 30+ 中文科技媒体中精选当日重点资讯，经 AI 评分筛选后按"本日焦点"、"AI & 大模型"、"科技创业"、"产品 & 硬件"等分类整理，附带批判性分析和信源评级。完整内容见 ${SITE_URL}/${params.date}/`,
         },
       },
       {

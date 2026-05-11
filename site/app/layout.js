@@ -18,10 +18,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    site: '@inteldaily',
   },
   alternates: {
-    canonical: SITE_URL,
     types: {
       'application/rss+xml': `${SITE_URL}/feed.xml`,
     },

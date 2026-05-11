@@ -26,8 +26,7 @@ export async function generateMetadata() {
       title: `${latest.title} — Intel Daily`,
       description: latest.excerpt || '每日 AI 与科技深度资讯，批判性分析',
       url: `${SITE_URL}/`,
-      type: 'article',
-      publishedTime: latest.date,
+      type: 'website',
       locale: 'zh_CN',
     },
   }
@@ -43,9 +42,14 @@ export default async function HomePage() {
         '@context': 'https://schema.org',
         '@type': 'NewsArticle',
         headline: report.title,
-        datePublished: latest.date,
-        dateModified: latest.date,
-        url: `${SITE_URL}/`,
+        datePublished: `${latest.date}T09:00:00+08:00`,
+        dateModified: `${latest.date}T09:00:00+08:00`,
+        url: `${SITE_URL}/${latest.date}/`,
+        author: {
+          '@type': 'Organization',
+          name: 'Intel Daily',
+          url: SITE_URL,
+        },
         publisher: {
           '@type': 'Organization',
           name: 'Intel Daily',
