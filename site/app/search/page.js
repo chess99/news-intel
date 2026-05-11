@@ -14,13 +14,13 @@ export default function SearchPage() {
     if (!document.querySelector('link[href*="pagefind-ui.css"]')) {
       const cssLink = document.createElement('link')
       cssLink.rel = 'stylesheet'
-      cssLink.href = '/news-intel/pagefind/pagefind-ui.css'
+      cssLink.href = '/pagefind/pagefind-ui.css'
       document.head.appendChild(cssLink)
     }
 
     // Load pagefind-ui.js as regular script (NOT module) so PagefindUI lands on window
     const script = document.createElement('script')
-    script.src = '/news-intel/pagefind/pagefind-ui.js'
+    script.src = '/pagefind/pagefind-ui.js'
     script.onload = () => {
       // Poll until PagefindUI is available
       let attempts = 0
