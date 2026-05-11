@@ -332,6 +332,7 @@ a:hover { text-decoration: underline; }
     overflow: hidden;
   }
   .sidebar-section { padding: 0; margin: 0; }
+  .sidebar-section:last-of-type { padding-bottom: 0; }
   .sidebar-label { display: none; }
 
   .archive-list {
