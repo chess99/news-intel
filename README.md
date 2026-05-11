@@ -2,7 +2,7 @@
 
 每日 AI 与科技深度资讯 pipeline。自动抓取 30+ 信源，LLM 批判性分析，生成日报。
 
-📰 **[在线日报归档](https://chess99.github.io/news-intel/)** — 每日自动更新
+📰 **[在线日报归档](https://news.cearl.cc/)** — 每日自动更新
 
 ---
 
