@@ -2,8 +2,8 @@ import { getAllReports } from '../../lib/reports'
 
 export const dynamic = 'force-static'
 
-const SITE_URL = 'https://cearl.cc'
-const BASE_PATH = '/news-intel'
+const SITE_URL = 'https://news.cearl.cc'
+const BASE_PATH = ''
 
 export async function GET() {
   const reports = getAllReports().slice(0, 20)
