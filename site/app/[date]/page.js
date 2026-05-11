@@ -4,6 +4,8 @@ import ReportBody from '../../components/ReportBody'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+const SITE_URL = 'https://news.cearl.cc'
+
 export async function generateStaticParams() {
   const reports = getAllReports()
   return reports.map(r => ({ date: r.date }))
@@ -12,13 +14,93 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const report = await getReport(params.date)
   if (!report) return { title: 'Not Found' }
-  return { title: `${report.title} — Intel Daily` }
+
+  const reports = getAllReports()
+  const reportMeta = reports.find(r => r.date === params.date)
+  const excerpt = reportMeta?.excerpt || '每日 AI 与科技深度资讯，批判性分析'
+
+  return {
+    title: report.title,
+    description: excerpt,
+    alternates: {
+      canonical: `${SITE_URL}/${params.date}/`,
+    },
+    openGraph: {
+      title: `${report.title} — Intel Daily`,
+      description: excerpt,
+      url: `${SITE_URL}/${params.date}/`,
+      type: 'article',
+      publishedTime: params.date,
+      locale: 'zh_CN',
+    },
+  }
 }
 
 export default async function DatePage({ params }) {
   const reports = getAllReports()
   const report = await getReport(params.date)
   if (!report) notFound()
+
+  const reportMeta = reports.find(r => r.date === params.date)
+  const excerpt = reportMeta?.excerpt || ''
+
+  const newsArticleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: report.title,
+    datePublished: params.date,
+    dateModified: params.date,
+    url: `${SITE_URL}/${params.date}/`,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Intel Daily',
+      url: SITE_URL,
+    },
+    inLanguage: 'zh-CN',
+    description: excerpt,
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `${params.date} 科技资讯有哪些重点？`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: excerpt || `请查看 Intel Daily ${params.date} 日报获取完整内容。`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Intel Daily 科技日报的内容来自哪里？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Intel Daily 聚合 30+ 中文科技媒体（极客公园、36氪、InfoQ、量子位、机器之心等）的 RSS 内容，由 AI 每日评分筛选后生成结构化日报，于每天早上 09:00 CST 发布。',
+        },
+      },
+    ],
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: '首页',
+        item: `${SITE_URL}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: report.title,
+        item: `${SITE_URL}/${params.date}/`,
+      },
+    ],
+  }
 
   return (
     <div className="site-wrapper">
@@ -34,7 +116,7 @@ export default async function DatePage({ params }) {
             <span>搜索</span>
           </Link>
           <a
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/feed.xml`}
+            href="/feed.xml"
             className="header-nav-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -51,6 +133,18 @@ export default async function DatePage({ params }) {
       <Sidebar reports={reports} latestDate={reports[0]?.date} />
 
       <main className="main-content">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(newsArticleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
         <ReportBody htmlContent={report.htmlContent} />
       </main>
     </div>
