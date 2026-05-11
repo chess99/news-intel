@@ -3,10 +3,58 @@ import Sidebar from '../components/Sidebar'
 import ReportBody from '../components/ReportBody'
 import Link from 'next/link'
 
+const SITE_URL = 'https://news.cearl.cc'
+
+export async function generateMetadata() {
+  const reports = getAllReports()
+  const latest = reports[0]
+
+  if (!latest) {
+    return {
+      title: 'Intel Daily — 科技资讯日报',
+      description: '每日 AI 与科技深度资讯，批判性分析',
+    }
+  }
+
+  return {
+    title: `${latest.title} — Intel Daily`,
+    description: latest.excerpt || '每日 AI 与科技深度资讯，批判性分析 | 聚合 30+ 中文科技媒体',
+    alternates: {
+      canonical: `${SITE_URL}/`,
+    },
+    openGraph: {
+      title: `${latest.title} — Intel Daily`,
+      description: latest.excerpt || '每日 AI 与科技深度资讯，批判性分析',
+      url: `${SITE_URL}/`,
+      type: 'article',
+      publishedTime: latest.date,
+      locale: 'zh_CN',
+    },
+  }
+}
+
 export default async function HomePage() {
   const reports = getAllReports()
   const latest = reports[0]
   const report = latest ? await getReport(latest.date) : null
+
+  const newsArticleSchema = report
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'NewsArticle',
+        headline: report.title,
+        datePublished: latest.date,
+        dateModified: latest.date,
+        url: `${SITE_URL}/`,
+        publisher: {
+          '@type': 'Organization',
+          name: 'Intel Daily',
+          url: SITE_URL,
+        },
+        inLanguage: 'zh-CN',
+        description: latest.excerpt,
+      }
+    : null
 
   return (
     <div className="site-wrapper">
@@ -22,7 +70,7 @@ export default async function HomePage() {
             <span>搜索</span>
           </Link>
           <a
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/feed.xml`}
+            href="/feed.xml"
             className="header-nav-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,6 +87,12 @@ export default async function HomePage() {
       <Sidebar reports={reports} latestDate={reports[0]?.date} />
 
       <main className="main-content">
+        {newsArticleSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(newsArticleSchema) }}
+          />
+        )}
         {report ? (
           <ReportBody htmlContent={report.htmlContent} />
         ) : (
