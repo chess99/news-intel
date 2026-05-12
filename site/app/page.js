@@ -37,6 +37,7 @@ export default async function HomePage() {
   const latest = reports[0]
   const report = latest ? await getReport(latest.date) : null
 
+  // NewsArticle schema points to the stable date page, not the homepage URL
   const newsArticleSchema = report
     ? {
         '@context': 'https://schema.org',
