@@ -57,9 +57,11 @@ function ghReq(method, path, token, body) {
 
   // push 前先 pull rebase，防止本地落后远端导致 non-fast-forward
   try {
-    execSync(`git -c http.proxy=${proxy} -c https.proxy=${proxy} pull --rebase origin main`, { cwd: WORKDIR, stdio: "pipe" });
+    execSync(`git -c http.proxy=${proxy} -c https.proxy=${proxy} pull --rebase origin main`, { cwd: WORKDIR, stdio: "inherit" });
+    console.log("pull rebase ok");
   } catch (e) {
-    console.log("pull rebase 失败（可能无网络），继续尝试 push...");
+    // pull 失败不是致命的（可能本地已是最新），继续尝试 push
+    console.log("pull rebase 跳过:", e.message?.split("\n")[0]);
   }
 
   // 先尝试直连，失败再走代理

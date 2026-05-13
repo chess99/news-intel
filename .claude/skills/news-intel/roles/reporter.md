@@ -109,7 +109,7 @@ Write(
 
 ### 步骤 5: 发送到飞书群
 
-使用 feishu_chat 工具发送：
+直接调用 feishu_chat 工具，不需要先 info/members 探测，直接 send：
 ```
 feishu_chat(
   action="send",
@@ -118,7 +118,10 @@ feishu_chat(
 )
 ```
 
-⚠️ 必须使用 feishu_chat 工具，不要用 curl 调 webhook，不要把 chat_id 当 token。
+⚠️ 规则：
+- 直接用 action="send"，不要先调 action="info" 或 action="members" 探测
+- 不要用 curl 调 webhook，不要把 chat_id 当 token
+- 如果发送失败，记录错误码，继续执行后续步骤（不要重试）
 
 ### 步骤 6: 更新静态站点
 
