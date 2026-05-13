@@ -1,0 +1,527 @@
+{
+  "date": "2026-05-06",
+  "clusters": [
+    {
+      "event_id": "2026-05-06-001",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章主要报道剂泰科技的IPO情况：\n- 剂泰科技于20",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/005-untitled-ipo115.md",
+          "source": "钛媒体",
+          "title": "剂泰科技IPO：115亿港元押在首付款之后的持续性上",
+          "url": "https://www.tmtpost.com/7976832.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-002",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/004-untitled-ipad-android-vivo-pad6-pro.md",
+          "source": "少数派",
+          "title": "iPad 用户首次体验 Android 平板：vivo Pad6 Pro",
+          "url": "https://sspai.com/post/109277",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-003",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/002-36-untitled.md",
+          "source": "36氪",
+          "title": "豆包将在免费模式外新增付费订阅，推出三档月包/年包价格｜最前线",
+          "url": "https://36kr.com/p/3794799114476809?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-004",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/006-untitled-untitled.md",
+          "source": "钛媒体",
+          "title": "百万上下文之后，拼什么？",
+          "url": "https://www.tmtpost.com/7976839.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-005",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/001-36-untitled.md",
+          "source": "36氪",
+          "title": "五月，适合想清楚一件事｜幕启",
+          "url": "https://36kr.com/p/3794961189821698?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-006",
+      "event_summary": "<think>用户要求我用一句话描述文章的核心事件，不超过20字，只输出事件描述，不要标点以外的任何",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/007-untitled-palantir.md",
+          "source": "钛媒体",
+          "title": "Palantir：软件末日论汹涌，最牛信仰股也松动了？",
+          "url": "https://www.tmtpost.com/7976660.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-007",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章标题是\"豆包开启付费订阅，国内AI商业化迎来拐点？",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/008-untitled-ai.md",
+          "source": "钛媒体",
+          "title": "豆包开启付费订阅，国内AI商业化迎来拐点？",
+          "url": "https://www.tmtpost.com/7976659.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-008",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/003-untitled-12-2025.md",
+          "source": "少数派",
+          "title": "听歌时间到，12 张你可能错过的 2025 华语乐坛好专辑",
+          "url": "https://sspai.com/post/109014",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-009",
+      "event_summary": "<think>用户要求我描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任何",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/011-simon-willison-blog-llm-echo-05a0.md",
+          "source": "Simon Willison Blog",
+          "title": "llm-echo 0.5a0",
+          "url": "https://simonwillison.net/2026/May/5/llm-echo/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-010",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/010-simon-willison-blog-datasette-llm-01a7.md",
+          "source": "Simon Willison Blog",
+          "title": "datasette-llm 0.1a7",
+          "url": "https://simonwillison.net/2026/May/5/datasette-llm/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-011",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n1. IBM发布了Granite 4.1系列LLM模型",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/013-simon-willison-blog-granite-41-3b-svg-pelican-gallery.md",
+          "source": "Simon Willison Blog",
+          "title": "Granite 4.1 3B SVG Pelican Gallery",
+          "url": "https://simonwillison.net/2026/May/4/granite-41-3b-svg-pelican-gallery/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-012",
+      "event_summary": "<think>用户要求我：\n1. 用一句话描述这篇文章报道的核心事件\n2. 不超过20字\n3. 只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/009-untitled-ai.md",
+          "source": "钛媒体",
+          "title": "由豆包付费想到，AI到底会长成一门什么生意",
+          "url": "https://www.tmtpost.com/7976812.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-013",
+      "event_summary": "<think>这篇文章报道的是Steam Controller的发布事件。这是Valve公司推出的可",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/017-product-hunt-steam-controller.md",
+          "source": "Product Hunt",
+          "title": "Steam Controller",
+          "url": "https://www.producthunt.com/products/steam-machine",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-014",
+      "event_summary": "<think>让我分析这篇文章报道的核心事件。文章是关于Breathwrk这个产品的发布/介绍。\n\n",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/016-product-hunt-breathwrk.md",
+          "source": "Product Hunt",
+          "title": "Breathwrk",
+          "url": "https://www.producthunt.com/products/breathwrk",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-015",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n文章主要讨论了关于农田被出售给数据中心的争议。Andy",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/014-simon-willison-blog-quoting-andy-masley.md",
+          "source": "Simon Willison Blog",
+          "title": "Quoting Andy Masley",
+          "url": "https://simonwillison.net/2026/May/4/andy-masley/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-016",
+      "event_summary": "<think>让我仔细分析这篇文章的核心内容：\n\n文章介绍的是Velo 2.0这个产品。从标题和内容",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/015-product-hunt-velo-20.md",
+          "source": "Product Hunt",
+          "title": "Velo 2.0",
+          "url": "https://www.producthunt.com/products/velo-4",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-017",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章主要讲述：MS Edge浏览器被发现会在内存中明文",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/019-solidot-ms-edge.md",
+          "source": "Solidot",
+          "title": "MS Edge 被发现会在内存中明文加载所有密码",
+          "url": "https://www.solidot.org/story?sid=84213",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-018",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n1. 天文学家发现了27颗围绕双恒星运行的候选行星\n2.",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/022-solidot-27.md",
+          "source": "Solidot",
+          "title": "天文学家发现 27 颗围绕双恒星运行的候选行星",
+          "url": "https://www.solidot.org/story?sid=84210",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-019",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/012-simon-willison-blog-quoting-john-gruber.md",
+          "source": "Simon Willison Blog",
+          "title": "Quoting John Gruber",
+          "url": "https://simonwillison.net/2026/May/5/john-gruber/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-020",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n1. 这是一个产品发布：Dina\n2. 这是一个mac",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/018-product-hunt-dina.md",
+          "source": "Product Hunt",
+          "title": "Dina",
+          "url": "https://www.producthunt.com/products/dina",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-021",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/023-untitled-deepseekclaude-codegithub-23k.md",
+          "source": "量子位",
+          "title": "“DeepSeek版Claude Code”，Github 2.3k星",
+          "url": "https://www.qbitai.com/2026/05/412914.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-022",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n- 这是一篇GitHub的公告\n- 主题是关于code_",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/025-github-changelog-deprecation-notice-code-scanning-upload-.md",
+          "source": "GitHub Changelog",
+          "title": "Deprecation notice: code_scanning_upload field will be removed from rate_limit API endpoint",
+          "url": "https://github.blog/changelog/2026-05-05-deprecation-notice-code_scanning_upload-field-will-be-removed-from-rate_limit-api-endpoint",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-023",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/020-solidot-nethack-50.md",
+          "source": "Solidot",
+          "title": "NetHack 释出 5.0 版本",
+          "url": "https://www.solidot.org/story?sid=84212",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-024",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/021-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "科学家发现咖啡如何影响肠道和大脑",
+          "url": "https://www.solidot.org/story?sid=84211",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-025",
+      "event_summary": "<think>让我分析这篇文章的核心内容。标题是\"传小米新 SU7 锁单突破 7 万；微信输入法测「",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/026-untitled-su7-7-ai.md",
+          "source": "极客公园",
+          "title": "传小米新 SU7 锁单突破 7 万；微信输入法测「隔空发图」功能；豆包二代 AI 手机上半年发布",
+          "url": "http://www.geekpark.net/news/363701",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-026",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/028-openai-blog-openai-and-pwc-collaborate-to-reimagine-.md",
+          "source": "OpenAI Blog",
+          "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+          "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+          "lang": "",
+          "category": "ai_official"
+        }
+      ],
+      "sources": [
+        "OpenAI Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-027",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/024-github-changelog-code-to-cloud-risk-visibility-with-micro.md",
+          "source": "GitHub Changelog",
+          "title": "Code-to-cloud risk visibility with Microsoft Defender for Cloud is now generally available",
+          "url": "https://github.blog/changelog/2026-05-05-code-to-cloud-risk-visibility-with-microsoft-defender-for-cloud-is-now-generally-available",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-028",
+      "event_summary": "<think>The user wants me to describe the core even",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/029-openai-blog-how-openai-delivers-low-latency-voice-ai.md",
+          "source": "OpenAI Blog",
+          "title": "How OpenAI delivers low-latency voice AI at scale",
+          "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+          "lang": "",
+          "category": "ai_official"
+        }
+      ],
+      "sources": [
+        "OpenAI Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-06-029",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/06/027-latent-space-ainews-the-other-vs-the-utility.md",
+          "source": "Latent Space",
+          "title": "[AINews] The Other vs The Utility",
+          "url": "https://www.latent.space/p/ainews-the-other-vs-the-utility",
+          "lang": "",
+          "category": "ai_newsletter"
+        }
+      ],
+      "sources": [
+        "Latent Space"
+      ]
+    }
+  ]
+}

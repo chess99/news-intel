@@ -1,0 +1,761 @@
+{
+  "date": "2026-05-12",
+  "clusters": [
+    {
+      "event_id": "2026-05-12-001",
+      "event_summary": "<think>这篇文章的核心事件是：中国卖家正在涌向俄罗斯市场，Ozon大中华区总裁Simon Hu",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/005-36-ozonsimon-huang.md",
+          "source": "36氪",
+          "title": "Ozon大中华区总裁Simon Huang：中国卖家，正在涌向俄罗斯｜专访",
+          "url": "https://36kr.com/p/3802822550839047?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-002",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n1. 余轶南是地平线的前高管\n2. 2024年底离开地",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/003-36-untitled.md",
+          "source": "36氪",
+          "title": "硬氪专访 | 拿到行业最大单笔融资后，余轶南说万里长征才走了第一步",
+          "url": "https://36kr.com/p/3804282431659779?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-003",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/002-36-untitled.md",
+          "source": "36氪",
+          "title": "理想整车研发负责人刘立国：说理想不重视技术，是大大的误解",
+          "url": "https://36kr.com/p/3804380633554696?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-004",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/006-untitled-wwdc-icloud-iclaw.md",
+          "source": "爱范儿",
+          "title": "下个月的苹果 WWDC，假如 iCloud 变成 iClaw……?",
+          "url": "https://www.ifanr.com/1665436?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-005",
+      "event_summary": "<think>让我仔细阅读这篇文章，理解其核心内容。\n\n文章标题：「我买了这些畅销书，但作者不是人」",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/008-untitled-untitled.md",
+          "source": "爱范儿",
+          "title": "我买了这些畅销书，但作者不是人",
+          "url": "https://www.ifanr.com/1665285?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-006",
+      "event_summary": "<think>这是一个RSS摘要，包含了多条新闻的汇总。我需要用一句话描述核心事件，不超过20字。\n",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/004-36-81sk610315n4.md",
+          "source": "36氪",
+          "title": "8点1氪丨SK海力士回应“员工人均奖金达610万元”传闻；世界杯中国转播费从3亿美元腰斩到1.5亿；曝三星中国家电部门裁员补偿N+4，还送手机",
+          "url": "https://36kr.com/p/3804132892646919?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-007",
+      "event_summary": "<think>这篇文章的标题是\"氪星晚报 ｜千问与淘宝打通，正式上线AI购物；泡泡玛特将在5月13日",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/001-36-ai5132026.md",
+          "source": "36氪",
+          "title": "氪星晚报 ｜千问与淘宝打通，正式上线AI购物；泡泡玛特将在5月13日举行2026年一季度业务更新电话会",
+          "url": "https://36kr.com/p/3804795647729411?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-008",
+      "event_summary": "<think>这篇文章的核心事件是黄仁勋在CMU 2026届毕业典礼上发表演讲，主题是AI时代不必焦",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/010-untitled-2026-ai.md",
+          "source": "爱范儿",
+          "title": "黄仁勋致 2026 届毕业生：别慌，AI 把所有人拉回同一起跑线 | 附演讲全文",
+          "url": "https://www.ifanr.com/1665359?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-009",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章主要报道了：\n1. 中国在ICLR 2026 AI",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/007-untitled-ai-mit.md",
+          "source": "爱范儿",
+          "title": "中国拿下这届 AI 顶会半壁江山，清华一家单挑斯坦福加 MIT",
+          "url": "https://www.ifanr.com/1665401?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-010",
+      "event_summary": "<think>\n用户要求用一句话描述文章的核心事件，不超过20字，只输出事件描述，不要标点以外的任何",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/014-untitled-untitled.md",
+          "source": "少数派",
+          "title": "派早报：苹果与英特尔就芯片代工达成初步协议",
+          "url": "https://sspai.com/post/109610",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-011",
+      "event_summary": "<think>\n用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/015-untitled-untitled.md",
+          "source": "少数派",
+          "title": "寻找你身边的电波——如何上中继",
+          "url": "https://sspai.com/post/87897",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-012",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/009-untitled-ai.md",
+          "source": "爱范儿",
+          "title": "川普、孙宇晨都来当 AI 黄牛了，这门暴利生意的水有多深？",
+          "url": "https://www.ifanr.com/1665224?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-013",
+      "event_summary": "<think>\nThe user wants a one-sentence description ",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/013-untitled-untitled.md",
+          "source": "少数派",
+          "title": "监工水獭 × 明基挂灯：老朋友回来了，新福利也一并送到",
+          "url": "https://sspai.com/post/109542",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-014",
+      "event_summary": "<think>这篇文章的核心事件是：少数派报道近期值得关注的App，重点介绍Snapseed 4.0",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/011-untitled-app.md",
+          "source": "少数派",
+          "title": "派评 | 近期值得关注的 App",
+          "url": "https://sspai.com/post/109636",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-015",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/012-untitled-untitled.md",
+          "source": "少数派",
+          "title": "手冲咖啡进阶指北：如何让「冠军参数」变成「你的日常」",
+          "url": "https://sspai.com/post/109461",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-016",
+      "event_summary": "<think>用一句话描述文章核心事件，不超过20字。\n\n事件：3000亿宠物市场仍高速增长，淘天宠",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/017-untitled-300060.md",
+          "source": "钛媒体",
+          "title": "3000亿宠物市场“还远未到内卷的程度”，淘天宠物已孵化60多个过亿品牌",
+          "url": "https://www.tmtpost.com/7983869.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-017",
+      "event_summary": "<think>用户要求我用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/016-untitled-oppo.md",
+          "source": "钛媒体",
+          "title": "OPPO的代价：“本分”缺席的三天",
+          "url": "https://www.tmtpost.com/7984087.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-018",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章标题：完全体线控底盘上车，智能汽车开始争夺\"身体控",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/018-untitled-untitled.md",
+          "source": "钛媒体",
+          "title": "完全体线控底盘上车，智能汽车开始争夺“身体控制权”",
+          "url": "https://www.tmtpost.com/7983948.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-019",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n主要事件：美国分析师Douglas Toombs认为主",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/021-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "美国分析师称主权云在中美之外很难实现",
+          "url": "https://www.solidot.org/story?sid=84271",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-020",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/020-untitled-10a1a2.md",
+          "source": "钛媒体",
+          "title": "累计融资近10亿元，鹿明机器人连续完成A1及A2两轮融资",
+          "url": "https://www.tmtpost.com/7983576.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-021",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章主要内容：\n- Vbot维他动力宣布完成近5亿元P",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/019-untitled-5pre-avbot.md",
+          "source": "钛媒体",
+          "title": "5亿元Pre-A轮融资，Vbot维他动力创消费级具身智能赛道纪录",
+          "url": "https://www.tmtpost.com/7983653.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-022",
+      "event_summary": "<think>用户要求我用一句话描述这篇报道的核心事件，不超过20字，只输出事件描述，不要标点以外的",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/024-solidot-forza-horizon-6-10.md",
+          "source": "Solidot",
+          "title": "《Forza Horizon 6》游戏文件提前 10 天泄露",
+          "url": "https://www.solidot.org/story?sid=84268",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-023",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章主要报道了本田为电动摩托车开发模拟离合器系统的事件",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/022-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "本田新专利是为电动摩托车模拟离合器",
+          "url": "https://www.solidot.org/story?sid=84270",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-024",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/026-simon-willison-blog-learning-on-the-shop-floor.md",
+          "source": "Simon Willison Blog",
+          "title": "Learning on the Shop floor",
+          "url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-025",
+      "event_summary": "<think>这篇文章报道的核心事件是：RPCForge发布，这是个多链以太坊RPC网关工具。</t",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/029-product-hunt-rpcforge.md",
+          "source": "Product Hunt",
+          "title": "RPCForge",
+          "url": "https://www.producthunt.com/products/rpcforge-own-your-rpc",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-026",
+      "event_summary": "<think>The user request: \"用一句话描述这篇文章报道的核心事件，不超过20字",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/025-solidot-rna.md",
+          "source": "Solidot",
+          "title": "你继承了父亲的 RNA",
+          "url": "https://www.solidot.org/story?sid=84267",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-027",
+      "event_summary": "<think>用户要求我用一句话描述这篇报道的核心事件，不超过20字，只输出事件描述，不要标点以外的",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/027-simon-willison-blog-quoting-new-york-times-editors-note.md",
+          "source": "Simon Willison Blog",
+          "title": "Quoting New York Times Editors’ Note",
+          "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-028",
+      "event_summary": "<think>The user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/023-solidot-mythos-curl.md",
+          "source": "Solidot",
+          "title": "Mythos 发现了一个 curl 漏洞",
+          "url": "https://www.solidot.org/story?sid=84269",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-029",
+      "event_summary": "<think>这篇报道的核心是：硅谷认为AI时代唯一抄不走的护城河是公司组织形态。我需要用不超过20",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/032-untitled-ai.md",
+          "source": "量子位",
+          "title": "硅谷刷屏的AI护城河新论：代码能抄，产品能抄，但有一样东西，谁都抄不走",
+          "url": "https://www.qbitai.com/2026/05/415842.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-030",
+      "event_summary": "<think>这句话的核心事件是：像素绽放PixelBloom完成C轮融资。只需输出事件描述，不要其",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/033-untitled-pixelbloom-caiaiagent.md",
+          "source": "量子位",
+          "title": "像素绽放PixelBloom 完成C轮融资：做全球AI视觉表达平台，更做能交方案的AI办公Agent",
+          "url": "https://www.qbitai.com/2026/05/415810.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-031",
+      "event_summary": "<think>让我分析一下这篇文章的核心事件：\n\n文章标题是：\"OpenAI砸200亿美元买单，英伟",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/034-untitled-openai200350ipo.md",
+          "source": "量子位",
+          "title": "OpenAI砸200亿美元买单，英伟达挑战者冲刺350亿美元估值IPO",
+          "url": "https://www.qbitai.com/2026/05/415714.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-032",
+      "event_summary": "<think>The user is speaking Chinese: \"用一句话描述这篇文章报道",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/031-untitled-aiagent520.md",
+          "source": "量子位",
+          "title": "做AI漫剧的、搞Agent的、投硅谷的，5.20这些赛道顶流碰头了｜最新嘉宾阵容",
+          "url": "https://www.qbitai.com/2026/05/415263.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-033",
+      "event_summary": "<think>The user is asking for a one-sentence descr",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/035-untitled-aiai.md",
+          "source": "量子位",
+          "title": "黄仁勋喊话毕业生：AI不会取代你，但善用AI的人会",
+          "url": "https://www.qbitai.com/2026/05/415403.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-034",
+      "event_summary": "<think>The user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/028-simon-willison-blog-quoting-andrew-quinn.md",
+          "source": "Simon Willison Blog",
+          "title": "Quoting Andrew Quinn",
+          "url": "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-035",
+      "event_summary": "<think>用户要求我用一句话描述文章的核心事件，不超过20字，只输出事件描述，不要标点以外的任何",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/036-openai-blog-how-enterprises-are-scaling-ai.md",
+          "source": "OpenAI Blog",
+          "title": "How enterprises are scaling AI",
+          "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+          "lang": "",
+          "category": "ai_official"
+        }
+      ],
+      "sources": [
+        "OpenAI Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-036",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/030-product-hunt-snapseed-40.md",
+          "source": "Product Hunt",
+          "title": "Snapseed 4.0",
+          "url": "https://www.producthunt.com/products/google",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-037",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/041-untitled-pura-x-max.md",
+          "source": "极客公园",
+          "title": "华为 Pura X Max 卖爆了，但「阔折叠」还只赢了一半",
+          "url": "http://www.geekpark.net/news/363936",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-038",
+      "event_summary": "<think>让我分析这篇文章报道的核心事件。文章主要报道：\n\n1. 新能源汽车\"锁电\"问题：央视揭",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/040-untitled-ota-200-km-ai.md",
+          "source": "极客公园",
+          "title": "OTA 升级后续航减 200 KM，央视揭秘新能源汽车「锁电」真相；黄仁勋：别怕 AI，今天是应届生最好时机：微信测试「组合支付」功能｜极客早知道",
+          "url": "http://www.geekpark.net/news/363937",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-039",
+      "event_summary": "<think>\nThe user wants a one-sentence description ",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/039-untitled-figure-ai-demo.md",
+          "source": "极客公园",
+          "title": "Figure AI 发布新 demo：两个机器人点头致意，我们一起把被子拉开",
+          "url": "http://www.geekpark.net/news/363963",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-040",
+      "event_summary": "<think>The user requests: \"用一句话描述这篇文章报道的核心事件，不超过20",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/037-openai-blog-openai-campus-network-student-club-inter.md",
+          "source": "OpenAI Blog",
+          "title": "OpenAI Campus Network: Student club interest form",
+          "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+          "lang": "",
+          "category": "ai_official"
+        }
+      ],
+      "sources": [
+        "OpenAI Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-041",
+      "event_summary": "<think>The user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/038-openai-blog-openai-launches-deployco-to-help-busines.md",
+          "source": "OpenAI Blog",
+          "title": "OpenAI launches DeployCo to help businesses build around intelligence",
+          "url": "https://openai.com/index/openai-launches-the-deployment-company",
+          "lang": "",
+          "category": "ai_official"
+        }
+      ],
+      "sources": [
+        "OpenAI Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-12-042",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/12/042-untitled-altman-openai-l9-4-ai.md",
+          "source": "极客公园",
+          "title": "Altman 或官宣 OpenAI 硬件；李想谈 L9 4 年才换代：汽车非手机，AI 帮助有限；多家车企否认「被约谈」",
+          "url": "http://www.geekpark.net/news/363934",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    }
+  ]
+}
