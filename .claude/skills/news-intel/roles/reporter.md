@@ -138,11 +138,15 @@ python3.11 <工作区路径>/scripts/build_site.py
 
 ### 步骤 7: Commit + Push
 
+⚠️ **必须严格按以下格式执行，不能用 `cd && command` 复合命令（会被系统拦截静默失败）：**
+
 ```bash
-git -C <工作区路径> add raw/ digest/ report/ docs/
-git -C <工作区路径> commit -m "daily: YYYY-MM-DD 科技资讯日报"
-node <工作区路径>/scripts/git_push.js
+git -C /root/.openclaw/workspace/news-intel add raw/ digest/ report/
+git -C /root/.openclaw/workspace/news-intel commit -m "daily: YYYY-MM-DD 科技资讯日报"
+node /root/.openclaw/workspace/news-intel/scripts/git_push.js
 ```
+
+每条命令单独执行，检查返回结果。如果 `git_push.js` 输出包含 `push ok`，才算成功。
 
 ## 错误处理
 
