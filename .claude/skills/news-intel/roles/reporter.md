@@ -146,7 +146,11 @@ git -C /root/.openclaw/workspace/news-intel commit -m "daily: YYYY-MM-DD 科技�
 node /root/.openclaw/workspace/news-intel/scripts/git_push.js
 ```
 
-每条命令单独执行，检查返回结果。如果 `git_push.js` 输出包含 `push ok`，才算成功。
+每条命令单独执行，检查返回结果：
+- `git add` / `git commit`：无报错即成功
+- `node git_push.js`：**必须给足够的 timeout（至少 60 秒）**，输出必须包含 `push ok` 才算成功
+- 如果看到 `exec preflight` 错误，说明命令格式不对，**不能认为成功**
+- 如果看到超时或网络错误，**不能认为成功**，需要报告失败
 
 ## 错误处理
 
