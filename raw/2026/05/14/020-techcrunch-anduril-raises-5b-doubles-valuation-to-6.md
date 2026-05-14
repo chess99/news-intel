@@ -1,0 +1,21 @@
+---
+title: "Anduril raises $5B, doubles valuation to $61B"
+source: TechCrunch
+url: https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/
+published: 2026-05-13T22:44:25+08:00
+lang: en
+category: tech_startup
+fetched_at: 2026-05-14T00:30:14.533084+08:00
+---
+
+# Anduril raises $5B, doubles valuation to $61B
+
+**来源**: TechCrunch | **发布**: 2026-05-13 | **链接**: https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/
+
+## RSS 摘要
+
+After achieving $2.2 billion in revenue in 2025, the defense tech startup has raised another massive round, led by Thrive and a16z, it says.
+
+## 正文
+
+Another year, another massive influx of capital for Anduril: the funding round that was rumored to be in process in March has officially closed. Anduril has raised a $5 billion Series H round at a $61 billion valuation, led by returning investors Thrive Capital and Andreessen Horowitz, the company announced Wednesday. This is more than double the valuation it landed just under a year ago, when it raised $2.5 billion at a $30.5 billion valuation led by Founders Fund. (Founder&#8217;s Fund invested a $1 billion check, the largest check it has ever written, it told TechCrunch at the time.) This latest raise comes after the nine-year-old defense tech company doubled revenue in 2025 to $2.2 billion, CEO Brian Schimpf wrote in a blog post announcing the raise. Interestingly, as much as Anduril is the clear-cut winner among VC investors, the Department of Defense is already giving signs that it won&#8217;t lock itself into any one rising-star startup. Shield AI, another U.S. drone company, recently had its software selected by the Air Force to work with Anduril&#8217;s “Fury” autonomous fighter jet, rather than granting the whole hardware and software contract to either one of them. Still, Anduril is hardly hurting by sharing. In the past few weeks, it has announced a number of contracts, expanding outside the U.S., too. In May it announced it was part of a contract with others to develop a space-based &#8220;golden dome&#8221; defensive system — a missile defense shield designed to protect the continental U.S. — for America. Anduril also announced a contract win from the Dutch Ministry of Defense and a U.S. Army contract for battle manager software, using its Lattice platform to analyze data from joint missile defense systems. "When we founded Anduril in 2017, defense was not a category that attracted significant venture investment. That has changed meaningfully over the last several years," Schimpf wrote in the post. It has. To offer just a few recent examples: in March, Shield AI raised $1.5 billion in Series G funding at a $12.7 billion valuation. Last month, Hermeus, maker of hypersonic unmanned fighter jets, raised $350 million at a $1 billion+ valuation, led by Khosla Ventures. And European defense tech darling Helsing is reportedly close to raising a new $1.2 billion round at about an $18 billion valuation, led by Dragoneer and earlier Helsing investor Lightspeed. Anduril has now raised more than $11 billion from investors altogether. Topics anduril , defense tech , Fundraising , Startups , TC When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence. Julie Bort Venture Editor Julie Bort is the Startups/Venture Desk editor for TechCrunch. You can contact or verify outreach from Julie by emailing julie.bort@techcrunch.com or via @Julie188 on X. View Bio May 27 Athens, Greece StrictlyVC Athens is up next. Hear unfiltered insights straight from Europe’s tech leaders and connect with the people shaping what’s ahead. Lock in your spot before it’s gone. REGISTER NOW Most Popular Fintech startup Parker files for bankruptcy Anthony Ha Laid-off Oracle workers tried to negotiate better severance. Oracle said no. Julie Bort San Francisco&#8217;s housing market has lost its mind Connie Loizos US defense contractor who sold hacking tools to Russian broker ordered to pay $10M to former employers Lorenzo Franceschi-Bicchierai Hackers deface school login pages after claiming another Instructure hack Lorenzo Franceschi-Bicchierai Zack Whittaker Google unveils Whoop-like screenless Fitbit Air Aisha Malik Five architects of the AI economy explain where the wheels are coming off Connie Loizos

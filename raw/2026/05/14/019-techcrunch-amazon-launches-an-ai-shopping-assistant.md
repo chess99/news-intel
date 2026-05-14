@@ -1,0 +1,21 @@
+---
+title: "Amazon launches an AI shopping assistant for the search bar, powered by Alexa+"
+source: TechCrunch
+url: https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/
+published: 2026-05-13T22:59:32+08:00
+lang: en
+category: tech_startup
+fetched_at: 2026-05-14T00:30:14.521126+08:00
+---
+
+# Amazon launches an AI shopping assistant for the search bar, powered by Alexa+
+
+**来源**: TechCrunch | **发布**: 2026-05-13 | **链接**: https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/
+
+## RSS 摘要
+
+Alexa for Shopping is a new personalized AI shopping assistant in the Amazon search bar that replaces its Rufus assistant.
+
+## 正文
+
+Whether you like it or not , Amazon continues to put AI at the center of the shopping journey. The company announced Wednesday “Alexa for Shopping,” its new personalized AI shopping assistant, powered by Alexa+. Notably, the experience will replace Rufus, its generative AI shopping assistant that launched in 2024. According to the company, Alexa for Shopping is designed to offer a voice- and touch-enabled shopping experience across mobile, desktop, and Echo Show smart displays. While Rufus focused on helping customers discover and compare products, Alexa for Shopping is meant to provide more personalized recommendations and automate the shopping experience across Amazon and other online retailers. Now available to U.S. customers, Alexa for Shopping can answer anything from “What’s a good skincare routine for men?” to “When did I last order AA batteries?” Users can type their question into the main search bar or the dedicated Alexa for Shopping chat window, and Alexa will provide tailored answers, recommendations, and even create custom shopping guides. The company says the assistant understands customers&#8217; habits, preferences, and purchase history to bring “that connected, personalized assistance to how you shop” and to make the assistant “more personal and more helpful over time.&#8221; Image Credits: Amazon Beyond answering questions, Alexa for Shopping can compare products, track prices, and even schedule recurring orders for essentials like pet food or paper towels. If you want to automatically add something to your cart when it goes on sale, you can just tell Alexa, “Add this sunscreen to my cart if the price drops to $10.”&nbsp; Additionally, the assistant can also go beyond Amazon’s marketplace, shopping other online stores and using its “Buy for Me” feature to handle the purchase for you, which could be seen as convenient but also a little controversial , given the growing concern around AI autonomy and privacy. The launch of Alexa for Shopping comes on the heels of Amazon introducing its 30-minute delivery service, “ Amazon Now, ” in dozens of U.S. cities, and a new AI-powered feature that generates real-time conversational audio responses to customer product questions. Topics AI , alexa plus , Amazon , Apps , Commerce , Generative AI When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence. Lauren Forristal Lauren covers media, streaming, apps and platforms at TechCrunch. You can contact or verify outreach from Lauren by emailing laurenf.techcrunch@gmail.com or via encrypted message at laurenforris22.25 on Signal. View Bio May 27 Athens, Greece StrictlyVC Athens is up next. Hear unfiltered insights straight from Europe’s tech leaders and connect with the people shaping what’s ahead. Lock in your spot before it’s gone. REGISTER NOW Most Popular Fintech startup Parker files for bankruptcy Anthony Ha Laid-off Oracle workers tried to negotiate better severance. Oracle said no. Julie Bort San Francisco&#8217;s housing market has lost its mind Connie Loizos US defense contractor who sold hacking tools to Russian broker ordered to pay $10M to former employers Lorenzo Franceschi-Bicchierai Hackers deface school login pages after claiming another Instructure hack Lorenzo Franceschi-Bicchierai Zack Whittaker Google unveils Whoop-like screenless Fitbit Air Aisha Malik Five architects of the AI economy explain where the wheels are coming off Connie Loizos
