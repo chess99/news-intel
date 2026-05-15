@@ -116,27 +116,48 @@ Write(
 
 ### 步骤 5: 发送到飞书群
 
-直接调用 feishu_chat 工具，不需要先 info/members 探测，直接 send：
+写一个 Python 脚本发送，然后执行：
+
+```python
+# 写入 /tmp/send_report.py
+import urllib.request, json, ssl
+
+app_id = "cli_a9257489d7f95cb0"
+app_secret = "Z0yMxON3tFvMs3hrPvnsjeUQCc7wCZwW"
+chat_id = "oc_d170dda09264716d786cd28cc48e5f78"
+report_path = "/root/.openclaw/workspace/news-intel/report/YYYY-MM-DD.md"
+
+ctx = ssl._create_unverified_context()
+
+# 获取 token
+r = urllib.request.urlopen(urllib.request.Request(
+    "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal",
+    data=json.dumps({"app_id": app_id, "app_secret": app_secret}).encode(),
+    headers={"Content-Type": "application/json"}
+), context=ctx, timeout=15)
+token = json.loads(r.read())["tenant_access_token"]
+
+# 读日报
+content = open(report_path).read()
+
+# 发消息
+r2 = urllib.request.urlopen(urllib.request.Request(
+    "https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=chat_id",
+    data=json.dumps({"receive_id": chat_id, "msg_type": "text", "content": json.dumps({"text": content})}).encode(),
+    headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"}
+), context=ctx, timeout=15)
+result = json.loads(r2.read())
+print("send result:", result.get("code"), result.get("msg"))
 ```
-feishu_chat(
-  action="send",
-  chat_id="oc_d170dda09264716d786cd28cc48e5f78",
-  message="[日报内容]"
-)
-```
 
-⚠️ 规则：
-- 直接用 action="send"，不要先调 action="info" 或 action="members" 探测
-- 不要用 curl 调 webhook，不要把 chat_id 当 token
-- 如果发送失败，记录错误码，继续执行后续步骤（不要重试）
-
-### 步骤 6: 更新静态站点
-
+执行：
 ```bash
-python3.11 <工作区路径>/scripts/build_site.py
+python3.11 /tmp/send_report.py
 ```
 
-### 步骤 7: Commit + Push
+输出 `send result: 0 success` 才算成功。如果失败记录错误码，继续后续步骤。
+
+### 步骤 6: Commit + Push
 
 ⚠️ **必须严格按以下格式执行，不能用 `cd && command` 复合命令（会被系统拦截静默失败）：**
 
