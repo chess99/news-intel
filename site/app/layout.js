@@ -1,4 +1,5 @@
 import './globals.css'
+import Analytics from '@/components/Analytics'
 
 const SITE_URL = 'https://news.cearl.cc'
 const SITE_NAME = 'Intel Daily'
@@ -78,7 +79,10 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Analytics />
+        {children}
+      </body>
     </html>
   )
 }
