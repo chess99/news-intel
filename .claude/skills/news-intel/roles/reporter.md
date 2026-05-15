@@ -116,46 +116,13 @@ Write(
 
 ### 步骤 5: 发送到飞书群
 
-写一个 Python 脚本发送，然后执行：
-
-```python
-# 写入 /tmp/send_report.py
-import urllib.request, json, ssl
-
-app_id = "cli_a9257489d7f95cb0"
-app_secret = "Z0yMxON3tFvMs3hrPvnsjeUQCc7wCZwW"
-chat_id = "oc_d170dda09264716d786cd28cc48e5f78"
-report_path = "/root/.openclaw/workspace/news-intel/report/YYYY-MM-DD.md"
-
-ctx = ssl._create_unverified_context()
-
-# 获取 token
-r = urllib.request.urlopen(urllib.request.Request(
-    "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal",
-    data=json.dumps({"app_id": app_id, "app_secret": app_secret}).encode(),
-    headers={"Content-Type": "application/json"}
-), context=ctx, timeout=15)
-token = json.loads(r.read())["tenant_access_token"]
-
-# 读日报
-content = open(report_path).read()
-
-# 发消息
-r2 = urllib.request.urlopen(urllib.request.Request(
-    "https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=chat_id",
-    data=json.dumps({"receive_id": chat_id, "msg_type": "text", "content": json.dumps({"text": content})}).encode(),
-    headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"}
-), context=ctx, timeout=15)
-result = json.loads(r2.read())
-print("send result:", result.get("code"), result.get("msg"))
-```
-
-执行：
 ```bash
-python3.11 /tmp/send_report.py
+python3.11 /root/.openclaw/workspace/news-intel/scripts/send_report.py YYYY-MM-DD
 ```
 
-输出 `send result: 0 success` 才算成功。如果失败记录错误码，继续后续步骤。
+将 `YYYY-MM-DD` 替换为实际日期（如 `2026-05-15`）。
+
+输出 `send ok:` 开头才算成功。如果失败记录错误，继续后续步骤。
 
 ### 步骤 6: Commit + Push
 
