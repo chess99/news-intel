@@ -1,0 +1,21 @@
+---
+title: "Open source tool maker Grafana Labs says hackers stole its code, refuses to pay ransom"
+source: TechCrunch
+url: https://techcrunch.com/2026/05/18/open-source-tool-maker-grafana-labs-says-hackers-stole-its-code-refuses-to-pay-ransom/
+published: 2026-05-18T21:42:19+08:00
+lang: en
+category: tech_startup
+fetched_at: 2026-05-19T00:30:12.104720+08:00
+---
+
+# Open source tool maker Grafana Labs says hackers stole its code, refuses to pay ransom
+
+**来源**: TechCrunch | **发布**: 2026-05-18 | **链接**: https://techcrunch.com/2026/05/18/open-source-tool-maker-grafana-labs-says-hackers-stole-its-code-refuses-to-pay-ransom/
+
+## RSS 摘要
+
+The open source project said hackers stole its codebase and threatened to publish its source code if the company did not pay.
+
+## 正文
+
+Grafana Labs, the maker of its eponymous popular open source web visualization software, confirmed it had been hacked but that it refused to pay the hackers who had threatened to release the company&#8217;s codebase. In a series of posts on social media, the lab said its investigation found that the hackers had abused a stolen token credential that allowed access to the company&#8217;s GitLab environment, which it uses for code development. The token did not provide access to customer records or financial data but allowed the hackers to obtain the company&#8217;s repositories of source code. The company has since invalidated the token and added additional security measures to prevent a repeat incident. &#8220;The attacker attempted to blackmail us, demanding payment to prevent the release of our codebase,&#8221; the company said. Grafana&#8217;s code is open source and public, meaning anyone can download the software and edit its code before running it on their own machines. It&#8217;s unclear if the hackers stole any proprietary code or information. A spokesperson for the company did not immediately return a request for comment. The incident contrasts with the recent hack at education tech giant Instructure, which last week &#8220;reached an agreement&#8221; to pay the hackers who had compromised its network twice in recent weeks. The hackers had demanded an unspecified ransom, threatening to release stolen data about staff and students who use its software following a massive data breach and a subsequent website defacement . While in Grafana&#8217;s case, no customer data was taken, the company cited the FBI&#8217;s long-standing advice urging victims not to pay hackers, as cooperating with them does not guarantee they will return stolen data or refrain from publishing it later. Critics also say paying cybercriminals helps to fund future cyberattacks. Grafana said its investigation was ongoing and will share its findings once its probe concludes. Topics cyberattack , cybersecurity , data breach , extortion , grafana , open source , Security When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence. Zack Whittaker Security Editor Zack Whittaker is the security editor at TechCrunch. He also authors the weekly cybersecurity newsletter, this week in security . He can be reached via encrypted message at zackwhittaker.1337 on Signal. You can also contact him by email, or to verify outreach, at zack.whittaker@techcrunch.com . View Bio May 27 Athens, Greece StrictlyVC Athens is up next. Hear unfiltered insights straight from Europe’s tech leaders and connect with the people shaping what’s ahead. Lock in your spot before it’s gone. REGISTER NOW Most Popular Users turn to jailbreaking their older Kindles as Amazon ends support Lauren Forristal OpenAI launches ChatGPT for personal finance, will let you connect bank accounts Ivan Mehta US orders travelers on Air Force One to throw away gifts, pins, and burner phones after China trip Lorenzo Franceschi-Bicchierai OpenAI is reportedly preparing legal action against Apple; it wouldn&#8217;t be the first partner to feel burned Connie Loizos How to turn off Instagram&#8217;s new Instants feature and retract photos you accidentally shared Aisha Malik Spotify launches a Wrapped-style recap of your entire listening history Ivan Mehta Amazon launches 30-minute delivery across the US Sarah Perez
