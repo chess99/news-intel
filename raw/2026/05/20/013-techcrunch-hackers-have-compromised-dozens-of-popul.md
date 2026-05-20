@@ -1,0 +1,21 @@
+---
+title: "Hackers have compromised dozens of popular open source packages in an ongoing supply chain attack"
+source: TechCrunch
+url: https://techcrunch.com/2026/05/19/hackers-have-compromised-dozens-of-popular-open-source-packages-in-an-ongoing-supply-chain-attack/
+published: 2026-05-19T23:32:46+08:00
+lang: en
+category: tech_startup
+fetched_at: 2026-05-20T00:30:10.376424+08:00
+---
+
+# Hackers have compromised dozens of popular open source packages in an ongoing supply chain attack
+
+**来源**: TechCrunch | **发布**: 2026-05-19 | **链接**: https://techcrunch.com/2026/05/19/hackers-have-compromised-dozens-of-popular-open-source-packages-in-an-ongoing-supply-chain-attack/
+
+## RSS 摘要
+
+The attacks are part of a wider campaign known as Mini Shai-Hulud, which has already compromised several open source projects and, in turn, developers and companies that use them.
+
+## 正文
+
+In Brief Posted: 8:32 AM PDT · May 19, 2026 Image Credits: fotograzia / Getty Images Lorenzo Franceschi-Bicchierai Hackers have compromised dozens of popular open source packages in an ongoing supply chain attack Hackers have compromised several popular open source projects relied on by software developers all over the world in an ongoing cyberattack. On Tuesday, cybersecurity firms StepSecurity and SafeDep warned of the latest wave of so-called &#8220;supply chain&#8221; attacks, which aim to compromise developers of popular open source projects and use that access to plant malicious updates that are pushed to users downstream.&nbsp; According to SafeDep, hackers took over the account of one developer and released over 630 malicious versions across 317 packages in about 20 minutes. The goal of the attack is to steal credentials for various services, including password managers, as a way to steal data and continue spreading the malware.&nbsp; Among the packages that the hackers compromised there’s Antv, a library made by Alibaba. In some cases, the hackers published malicious updates on GitHub, according to JFrog Security . This latest wave of attacks is part of a wider campaign targeting open source projects and the developers who use the code for their own projects. Researchers have dubbed the hacks &#8220;Mini Shai-Hulud,&#8221; after the attack followed a previous, more expansive hacking campaign. Last week, in another wave of attacks as part of the Mini Shai-Hulud attacks, hackers compromised the computers of two OpenAI employees after hacking the open source library TanStack. OpenAI was just one of several victims. Topics cybersecurity , Mini Shai-Hulud , open source , Security , supply chain attack , supply chain security May 27 Athens, Greece StrictlyVC Athens is up next. Hear unfiltered insights straight from Europe’s tech leaders and connect with the people shaping what’s ahead. Lock in your spot before it’s gone. REGISTER NOW Newsletters See More Subscribe for the industry’s biggest tech news TechCrunch Daily News Every weekday and Sunday, you can get the best of TechCrunch’s coverage. TechCrunch Mobility TechCrunch Mobility is your destination for transportation news and insight. Startups Weekly Startups are the core of TechCrunch, so get our best coverage delivered weekly. StrictlyVC Provides movers and shakers with the info they need to start their day. No newsletters selected. Subscribe By submitting your email, you agree to our Terms and Privacy Notice . Related Apps &#8216;Survivor&#8217; stars Kyle Fraser and Kamilla Karthigesu introduce a goal-tracking app, Paprclip Sarah Perez 2 hours ago Security NYC Health + Hospitals says hackers stole medical data and fingerprints during breach affecting at least 1.8 million people Zack Whittaker 24 hours ago Security Open source tool maker Grafana Labs says hackers stole its code, refuses to pay ransom Zack Whittaker 1 day ago Latest in Security In Brief Hackers have compromised dozens of popular open source packages in an ongoing supply chain attack Lorenzo Franceschi-Bicchierai 32 minutes ago Security US cyber agency CISA exposed reams of passwords and cloud keys to the open web Zack Whittaker 58 minutes ago Security NYC Health + Hospitals says hackers stole medical data and fingerprints during breach affecting at least 1.8 million people Zack Whittaker 24 hours ago
