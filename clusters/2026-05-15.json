@@ -1,0 +1,635 @@
+{
+  "date": "2026-05-15",
+  "clusters": [
+    {
+      "event_id": "2026-05-15-001",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/003-untitled-5-8-p-ultra3058.md",
+          "source": "爱范儿",
+          "title": "三个轮子也能开！全新豹 5 豹 8 首发云辇-P Ultra，30.58 万元起",
+          "url": "https://www.ifanr.com/1665791?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-002",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章标题是\"杀死 ChatGPT 聊天框的，是「鼠标」",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/001-untitled-chatgpt.md",
+          "source": "爱范儿",
+          "title": "杀死 ChatGPT 聊天框的，是「鼠标」",
+          "url": "https://www.ifanr.com/1665672?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-003",
+      "event_summary": "<think>用户要求我：\n1. 用一句话描述文章报道的核心事件\n2. 不超过20字\n3. 只输出事",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/002-untitled-pura.md",
+          "source": "爱范儿",
+          "title": "传联手玛莎拉蒂打造新车，尊界将迎来自己的「Pura」时刻？",
+          "url": "https://www.ifanr.com/1665861?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-004",
+      "event_summary": "<think>这篇文章的核心事件是什么？让我仔细阅读文章内容。\n\n文章标题是：\"黄仁勋的 Token",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/004-untitled-token-daaai.md",
+          "source": "爱范儿",
+          "title": "黄仁勋的 Token 经济，李彦宏的 DAA，AI 度量衡之争才刚开始",
+          "url": "https://www.ifanr.com/1665838?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-005",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/005-untitled-1000.md",
+          "source": "爱范儿",
+          "title": "连时间都没法看的手环，每年敢收 1000 块，居然比苹果还火？",
+          "url": "https://www.ifanr.com/1665715?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-006",
+      "event_summary": "<think>用户要求：用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/007-36-untitled.md",
+          "source": "36氪",
+          "title": "腾讯要懂得花钱",
+          "url": "https://36kr.com/p/3808999399497221?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-007",
+      "event_summary": "<think>用户要求我根据提供的文章内容，用一句话描述核心事件，不超过20字，只输出事件描述，不要",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/008-36-ai.md",
+          "source": "36氪",
+          "title": "腾讯，把AI塞入一切",
+          "url": "https://36kr.com/p/3808710182034944?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-008",
+      "event_summary": "<think>让我仔细分析这篇文章的核心事件：\n\n文章标题：03年创始人造火箭，40万做出原型发动机",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/010-36-0340.md",
+          "source": "36氪",
+          "title": "03年创始人造火箭，40万做出原型发动机，选了一条没人走过的路｜产业专访",
+          "url": "https://36kr.com/p/3808769298767369?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-009",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/012-untitled-android-linux-2026.md",
+          "source": "少数派",
+          "title": "在 Android 上运行 Linux 终端，体验究竟怎么样？（2026 版）",
+          "url": "https://sspai.com/prime/story/linux-vm-on-android",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-010",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n1. 文章标题是\"新玩意 241｜少数派的编辑们最近买",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/011-untitled-241.md",
+          "source": "少数派",
+          "title": "新玩意 241｜少数派的编辑们最近买了啥？",
+          "url": "https://sspai.com/post/109771",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-011",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/006-36-ceo.md",
+          "source": "36氪",
+          "title": "氪星晚报｜千里智驾CEO辟谣离职传闻；三星在计划罢工前夕启动减产",
+          "url": "https://36kr.com/p/3809007831375621?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-012",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/013-untitled-obsidian-web-clipper.md",
+          "source": "少数派",
+          "title": "用 Obsidian Web Clipper，让豆瓣种草更容易",
+          "url": "https://sspai.com/post/109318",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-013",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/015-untitled-xperia-1-viii-alpha-7r-vi.md",
+          "source": "少数派",
+          "title": "派早报：索尼推出 Xperia 1 VIII 手机及 Alpha 7R VI 相机等",
+          "url": "https://sspai.com/post/109734",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-014",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/016-untitled-spacexipo.md",
+          "source": "钛媒体",
+          "title": "火箭实验室及另外三只航天股：在SpaceX超大规模IPO之前值得买入",
+          "url": "https://www.tmtpost.com/7988923.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-015",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n1. 东星医疗宣布以7.695亿元收购武汉医佳宝生物材",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/017-untitled-7710.md",
+          "source": "钛媒体",
+          "title": "东星医疗最大并购案：溢价三倍豪掷7.7亿，一口气把商誉堆到近10亿",
+          "url": "https://www.tmtpost.com/7988057.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-016",
+      "event_summary": "<think>The user is speaking Chinese, request: \"用一句",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/009-36-1036.md",
+          "source": "36氪",
+          "title": "与近10家整机厂达成合作，专注打造航空电推进“中国心”，「羽嘉动力」连续完成两轮融资｜36氪首发",
+          "url": "https://36kr.com/p/3808772503199489?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-017",
+      "event_summary": "<think>用户要求我描述这篇报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任何其他",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/020-untitled-untitled.md",
+          "source": "钛媒体",
+          "title": "姚军红带队闯美股，大搜车备案落地前路仍崎岖",
+          "url": "https://www.tmtpost.com/7988336.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-018",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/019-untitled-ai.md",
+          "source": "钛媒体",
+          "title": "腾讯在AI赛道上略显吃力",
+          "url": "https://www.tmtpost.com/7988103.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-019",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n文章主要讨论的是为什么有些人特别招蚊子，科学家在研究背",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/021-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "为什么部分人特别招蚊子？",
+          "url": "https://www.solidot.org/story?sid=84299",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-020",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n文章主要讨论的是短剧行业中AI内容和真人内容的矛盾：\n",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/018-untitled-untitled.md",
+          "source": "钛媒体",
+          "title": "朝令夕改，短剧苦红果久矣",
+          "url": "https://www.tmtpost.com/7988085.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-021",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n1. 美国批准向10家中国公司出售H200芯片\n2. ",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/022-solidot-10-h200.md",
+          "source": "Solidot",
+          "title": "美国批准向 10 家中国公司出售 H200 芯片",
+          "url": "https://www.solidot.org/story?sid=84298",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-022",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/025-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "肥胖率在发展中国家加速",
+          "url": "https://www.solidot.org/story?sid=84295",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-023",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/014-untitled-ai.md",
+          "source": "少数派",
+          "title": "AI 潮来，翻译何为",
+          "url": "https://sspai.com/post/108816",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-024",
+      "event_summary": "<think>让我分析这篇文章的核心事件：\n\n1. 文章讨论的是一项关于婴儿蔬菜接受度的研究\n2. ",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/023-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "研究发现在出生前接触蔬菜气味帮助婴儿爱上吃蔬菜",
+          "url": "https://www.solidot.org/story?sid=84297",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-025",
+      "event_summary": "<think>让我仔细阅读这篇新闻文章的核心内容：\n\n1. 文章标题是\"重生之我在AI时代当老板：让",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/027-untitled-aiagentpua.md",
+          "source": "量子位",
+          "title": "重生之我在AI时代当老板：让一群Agent互相PUA",
+          "url": "https://www.qbitai.com/2026/05/417816.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-026",
+      "event_summary": "<think>用户要求用一句话描述文章核心事件，不超过20字，只输出事件描述，不要标点以外的任何其他",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/030-untitled-agent-token-61.md",
+          "source": "量子位",
+          "title": "腾讯开源 Agent 记忆技术方案，Token 消耗最高降低 61%",
+          "url": "https://www.qbitai.com/2026/05/417753.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-027",
+      "event_summary": "<think>用户要求我简要描述这篇文章的核心事件，不超过20字，且只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/028-untitled-gpusglang.md",
+          "source": "量子位",
+          "title": "国产GPU组了个开源局，把SGLang等核心开发者都摇来了！",
+          "url": "https://www.qbitai.com/2026/05/417791.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-028",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/026-untitled-kimiai.md",
+          "source": "量子位",
+          "title": "人手一个数据库，Kimi背后这套AI基建到底有多能扛？",
+          "url": "https://www.qbitai.com/2026/05/417731.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-029",
+      "event_summary": "<think>让我分析这篇文章的核心内容：\n\n1. 文章标题：DeepSeek 融资后，大模型领域会",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/031-untitled-deepseek.md",
+          "source": "极客公园",
+          "title": "DeepSeek 融资后，大模型领域会有什么新格局？",
+          "url": "http://www.geekpark.net/news/364208",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-030",
+      "event_summary": "<think>The user request: \"用一句话描述这篇文章报道的核心事件，不超过20字",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/024-solidot-120-lap1-b.md",
+          "source": "Solidot",
+          "title": "天文学家观测 120 亿年前极小星系 LAP1-B",
+          "url": "https://www.solidot.org/story?sid=84296",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-031",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/029-untitled-robotaxi.md",
+          "source": "量子位",
+          "title": "Robotaxi第一股又涨疯了",
+          "url": "https://www.qbitai.com/2026/05/417754.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-032",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/035-untitled-1500.md",
+          "source": "极客公园",
+          "title": "免费 1500 次背后，商汤在下一盘什么棋",
+          "url": "http://www.geekpark.net/news/364099",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-033",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/032-untitled-minimax-ai.md",
+          "source": "极客公园",
+          "title": "投中了理想、MiniMax 后，他说，AI 时代仍然要找「让人汗毛直竖」的创业者",
+          "url": "http://www.geekpark.net/news/364177",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-034",
+      "event_summary": "<think>The user asks:\n\n\"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/033-untitled-15-6.md",
+          "source": "极客公园",
+          "title": "脉脉：具身智能岗位暴增 15 倍，平均月薪超 6 万元；马斯克点赞宇树「人形机甲」；阿里吴泳铭：没有一张卡是「空」的",
+          "url": "http://www.geekpark.net/news/364131",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    },
+    {
+      "event_id": "2026-05-15-035",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/15/034-untitled-auto-research-ai.md",
+          "source": "极客公园",
+          "title": "Auto Research 来了：当 AI 开始接管科研里最苦的活，意味着什么",
+          "url": "http://www.geekpark.net/news/364100",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "极客公园"
+      ]
+    }
+  ]
+}

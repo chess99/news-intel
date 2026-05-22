@@ -1,0 +1,1463 @@
+{
+  "date": "2026-05-20",
+  "clusters": [
+    {
+      "event_id": "2026-05-20-001",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/001-36-spacex10.md",
+          "source": "36氪",
+          "title": "氪星晚报 ｜SpaceX即将成为马斯克旗下第二家上市公司；京东、洋河集团等在宿迁成立新动能股权投资基金，出资额10亿",
+          "url": "https://36kr.com/p/3816109626138119?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-002",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/002-36-80013.md",
+          "source": "36氪",
+          "title": "裸辞九个月，降薪跳槽，一个80后营销人如何“上岸甲方”？｜百万年薪系列013",
+          "url": "https://36kr.com/p/3816036564147718?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-003",
+      "event_summary": "The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/003-36-untitled.md",
+          "source": "36氪",
+          "title": "影石：重新定义性价比",
+          "url": "https://36kr.com/p/3815841756028425?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-004",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/004-36-robo-labor.md",
+          "source": "36氪",
+          "title": "鲸跃动力获星海图数千万元种子轮投资，用「数据+模型+末端执行」打造开箱即用的Robo Labor丨涌现新项目",
+          "url": "https://36kr.com/p/3814860909600261?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-005",
+      "event_summary": "<think>\n这篇文章的核心事件是：腾讯发布了AI助手Marvis，它定位为操作系统层级的个人AI",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/006-untitled-marvis-ai.md",
+          "source": "爱范儿",
+          "title": "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统",
+          "url": "https://www.ifanr.com/1666242?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-006",
+      "event_summary": "<think>\n用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/007-untitled-iphone-ai-wwdc.md",
+          "source": "爱范儿",
+          "title": "为折叠 iPhone 和苹果 AI 做足准备｜苹果 WWDC 提前剧透",
+          "url": "https://www.ifanr.com/1666255?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-007",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/005-36-ai.md",
+          "source": "36氪",
+          "title": "高瓴出手了一家AI体育科技公司，曾获李泽湘天使轮融资｜硬氪首发",
+          "url": "https://36kr.com/p/3805660478184966?f=rss",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "36氪"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-008",
+      "event_summary": "<think>\n让我分析这篇文章的核心事件：\n\n1. 文章标题：最后一辆宝马 Z4 下线，BBA 双",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/009-untitled-z4-bba.md",
+          "source": "爱范儿",
+          "title": "最后一辆宝马 Z4 下线，BBA 双座敞篷跑车「全军覆没」",
+          "url": "https://www.ifanr.com/1665941?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-009",
+      "event_summary": "<think>\nThe user is asking: \"用一句话描述这篇文章报道的核心事件，不超过",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/008-untitled-untitled.md",
+          "source": "爱范儿",
+          "title": "宝马高调发布六缸新车！全手工铝制外壳+六出排气，排量同步提升",
+          "url": "https://www.ifanr.com/1666178?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-010",
+      "event_summary": "<think>\nThe user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/010-untitled-wwdcaim9l9appai.md",
+          "source": "爱范儿",
+          "title": "早报｜苹果开启WWDC邀请，将公布苹果AI新进展/问界M9设计师点赞理想L9内饰/国家反诈中心App上线「AI内容鉴定」",
+          "url": "https://www.ifanr.com/1666237?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "爱范儿"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-011",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/011-techcrunch-openai-co-founder-andrej-karpathy-joins-.md",
+          "source": "TechCrunch",
+          "title": "OpenAI co-founder Andrej Karpathy joins Anthropic’s pre-training team",
+          "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-012",
+      "event_summary": "The user wants a one-sentence description of the c",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/013-techcrunch-hackers-have-compromised-dozens-of-popul.md",
+          "source": "TechCrunch",
+          "title": "Hackers have compromised dozens of popular open source packages in an ongoing supply chain attack",
+          "url": "https://techcrunch.com/2026/05/19/hackers-have-compromised-dozens-of-popular-open-source-packages-in-an-ongoing-supply-chain-attack/",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-013",
+      "event_summary": "<think>\nThe user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/016-wired-former-openai-staffers-warn-that-xais-po.md",
+          "source": "Wired",
+          "title": "Former OpenAI Staffers Warn That xAI’s Poor Safety Record Could Complicate SpaceX’s IPO",
+          "url": "https://www.wired.com/story/ex-openai-staffers-warn-spacex-investors-of-ai-safety-risks/",
+          "lang": "",
+          "category": "tech_culture"
+        }
+      ],
+      "sources": [
+        "Wired"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-014",
+      "event_summary": "The user request: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/012-techcrunch-the-minimalist-light-phone-teams-up-with.md",
+          "source": "TechCrunch",
+          "title": "The minimalist Light Phone teams up with Andrew Yang’s Noble Mobile, which pays you to stop doomscrolling",
+          "url": "https://techcrunch.com/2026/05/19/the-minimalist-light-phone-teams-up-with-andrew-yangs-noble-mobile-which-pays-you-to-stop-doomscrolling/",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-015",
+      "event_summary": "<think>The user wants a brief news headline. Let m",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/014-techcrunch-us-cyber-agency-cisa-exposed-reams-of-pa.md",
+          "source": "TechCrunch",
+          "title": "US cyber agency CISA exposed reams of passwords and cloud keys to the open web",
+          "url": "https://techcrunch.com/2026/05/19/us-cyber-agency-cisa-exposed-reams-of-passwords-and-cloud-keys-to-the-open-web/",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-016",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/015-techcrunch-apple-announces-apple-intelligence-power.md",
+          "source": "TechCrunch",
+          "title": "Apple announces Apple Intelligence powered accessibility feature updates",
+          "url": "https://techcrunch.com/2026/05/19/apple-announces-apple-intelligence-powered-accessibility-feature-updates/",
+          "lang": "",
+          "category": "tech_startup"
+        }
+      ],
+      "sources": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-017",
+      "event_summary": "<think>The user is speaking Chinese: \"用一句话描述这篇文章报道",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/017-wired-the-zuckerbergs-are-hiring-a-lifeguard-b.md",
+          "source": "Wired",
+          "title": "The Zuckerbergs Are Hiring a Lifeguard but Calling It a ‘Beach Water Person’",
+          "url": "https://www.wired.com/story/mark-zuckerberg-priscilla-chan-lifeguard-beach-water-person/",
+          "lang": "",
+          "category": "tech_culture"
+        }
+      ],
+      "sources": [
+        "Wired"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-018",
+      "event_summary": "The user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述不要",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/019-wired-the-herman-miller-coyl-standing-desk-is-.md",
+          "source": "Wired",
+          "title": "The Herman Miller Coyl Standing Desk Is Built Just for Gamers",
+          "url": "https://www.wired.com/story/exclusive-herman-miller-coyl-standing-desk-for-gamers/",
+          "lang": "",
+          "category": "tech_culture"
+        }
+      ],
+      "sources": [
+        "Wired"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-019",
+      "event_summary": "<think>The user requests: \"用一句话描述这篇文章报道的核心事件，不超过20",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/020-wired-the-us-built-a-site-to-ensure-fair-acces.md",
+          "source": "Wired",
+          "title": "The US Built a Site to Ensure Fair Access to Public Lands. Then Everything Went Wrong",
+          "url": "https://www.wired.com/story/the-us-built-a-site-to-ensure-fair-access-to-public-lands-then-everything-went-wrong/",
+          "lang": "",
+          "category": "tech_culture"
+        }
+      ],
+      "sources": [
+        "Wired"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-020",
+      "event_summary": "The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/018-wired-the-best-action-cameras-for-all-your-cra.md",
+          "source": "Wired",
+          "title": "The Best Action Cameras for All Your Craziest Adventures (2026)",
+          "url": "https://www.wired.com/gallery/best-action-cameras/",
+          "lang": "",
+          "category": "tech_culture"
+        }
+      ],
+      "sources": [
+        "Wired"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-021",
+      "event_summary": "<think>The user request is: \"用一句话描述这篇文章报道的核心事件，不超过",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/022-ars-technica-in-addition-to-space-stations-vast-says-.md",
+          "source": "Ars Technica",
+          "title": "In addition to space stations, Vast says it will now build high-power satellites",
+          "url": "https://arstechnica.com/space/2026/05/vast-space-seeks-to-diversify-by-building-satellites-as-well-as-space-stations/",
+          "lang": "",
+          "category": "deep_tech"
+        }
+      ],
+      "sources": [
+        "Ars Technica"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-022",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/021-ars-technica-electrical-utility-megamerger-is-all-abo.md",
+          "source": "Ars Technica",
+          "title": "Electrical utility megamerger is all about the data centers",
+          "url": "https://arstechnica.com/tech-policy/2026/05/electrical-utility-megamerger-is-all-about-the-data-centers/",
+          "lang": "",
+          "category": "deep_tech"
+        }
+      ],
+      "sources": [
+        "Ars Technica"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-023",
+      "event_summary": "<think>\n用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/026-untitled-141.md",
+          "source": "少数派",
+          "title": "社区速递 141 | 派友下午三点的「精神快充」、复古磁带机与特殊的新玩意",
+          "url": "https://sspai.com/post/109928",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-024",
+      "event_summary": "<think>\nThe user says:\n\n\"用一句话描述这篇文章报道的核心事件，不超过20字，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/023-ars-technica-iran-demands-big-tech-pay-fees-for-under.md",
+          "source": "Ars Technica",
+          "title": "Iran demands Big Tech pay fees for undersea Internet cables in Strait of Hormuz",
+          "url": "https://arstechnica.com/tech-policy/2026/05/iran-demands-big-tech-pay-fees-for-undersea-internet-cables-in-strait-of-hormuz/",
+          "lang": "",
+          "category": "deep_tech"
+        }
+      ],
+      "sources": [
+        "Ars Technica"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-025",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/024-ars-technica-ebola-outbreak-who-declares-emergency-us.md",
+          "source": "Ars Technica",
+          "title": "Ebola outbreak: WHO declares emergency, US restricts travel, American infected",
+          "url": "https://arstechnica.com/health/2026/05/ebola-outbreak-who-declares-emergency-us-restricts-travel-american-infected/",
+          "lang": "",
+          "category": "deep_tech"
+        }
+      ],
+      "sources": [
+        "Ars Technica"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-026",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/025-ars-technica-legal-fail-dont-use-ai-to-sue-facebook-u.md",
+          "source": "Ars Technica",
+          "title": "Legal fail: Don’t use AI to sue Facebook users for calling you a bad date",
+          "url": "https://arstechnica.com/tech-policy/2026/05/legal-fail-dont-use-ai-to-sue-facebook-users-for-calling-you-a-bad-date/",
+          "lang": "",
+          "category": "deep_tech"
+        }
+      ],
+      "sources": [
+        "Ars Technica"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-027",
+      "event_summary": "<think>用户要求我用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/027-untitled-emoleon-x.md",
+          "source": "少数派",
+          "title": "线下活动｜听完这首，不再 Emo：Leon x 少数派萨克斯音乐奏享会",
+          "url": "https://sspai.com/post/109724",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-028",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/029-untitled-11s-pro.md",
+          "source": "少数派",
+          "title": "派早报：红魔发布红魔 11S Pro 系列手机等",
+          "url": "https://sspai.com/post/109908",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-029",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/028-untitled-yoooclaw-cone-ai-agent.md",
+          "source": "少数派",
+          "title": "YoooClaw C·ONE 体验：为 AI Agent 而生的硬件，怎样构筑了数字化的「我」？",
+          "url": "https://sspai.com/post/109889",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-030",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/030-untitled-app.md",
+          "source": "少数派",
+          "title": "派评 | 近期值得关注的 App",
+          "url": "https://sspai.com/post/109886",
+          "lang": "",
+          "category": "digital_life"
+        }
+      ],
+      "sources": [
+        "少数派"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-031",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/035-hacker-news-gaussian-splat-of-a-strawberry.md",
+          "source": "Hacker News",
+          "title": "Gaussian Splat of a Strawberry",
+          "url": "https://superspl.at/scene/84df8849",
+          "lang": "",
+          "category": "community"
+        }
+      ],
+      "sources": [
+        "Hacker News"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-032",
+      "event_summary": "<think>用户要求用一句话描述文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/036-untitled-ai170b.md",
+          "source": "钛媒体",
+          "title": "一季度AI广告收入暴涨170%，B站：模型没有，广告管够",
+          "url": "https://www.tmtpost.com/7994018.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-033",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/033-hacker-news-ive-joined-anthropic.md",
+          "source": "Hacker News",
+          "title": "I’ve joined Anthropic",
+          "url": "https://twitter.com/karpathy/status/2056753169888334312",
+          "lang": "",
+          "category": "community"
+        }
+      ],
+      "sources": [
+        "Hacker News"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-034",
+      "event_summary": "The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/031-hacker-news-ive-built-a-virtual-museum-with-nearly-e.md",
+          "source": "Hacker News",
+          "title": "I've built a virtual museum with nearly every operating system you can think of",
+          "url": "https://virtualosmuseum.org/",
+          "lang": "",
+          "category": "community"
+        }
+      ],
+      "sources": [
+        "Hacker News"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-035",
+      "event_summary": "<think>The user wants a one-sentence description o",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/034-hacker-news-gentoo-news-copy-fail-dirty-frag-and-fra.md",
+          "source": "Hacker News",
+          "title": "Gentoo News: Copy Fail, Dirty Frag, and Fragnesia Kernel Vulnerabilities",
+          "url": "https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html",
+          "lang": "",
+          "category": "community"
+        }
+      ],
+      "sources": [
+        "Hacker News"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-036",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/032-hacker-news-apple-unveils-new-accessibility-features.md",
+          "source": "Hacker News",
+          "title": "Apple unveils new accessibility features",
+          "url": "https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/",
+          "lang": "",
+          "category": "community"
+        }
+      ],
+      "sources": [
+        "Hacker News"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-037",
+      "event_summary": "<think>The user requests: \"用一句话描述这篇文章报道的核心事件，不超过20",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/038-untitled-10.md",
+          "source": "钛媒体",
+          "title": "广州酒家拟发10亿可转债再启扩张，增收不增利困局待解",
+          "url": "https://www.tmtpost.com/7993857.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-038",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/040-untitled-6.md",
+          "source": "钛媒体",
+          "title": "特朗普再次访华！6本书看懂中美会谈的关键",
+          "url": "https://www.tmtpost.com/7993651.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-039",
+      "event_summary": "<think>The user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/037-untitled-untitled.md",
+          "source": "钛媒体",
+          "title": "“忽悠式”回购“翻车”，广汇能源与“新疆首富”仍在困局之中",
+          "url": "https://www.tmtpost.com/7993965.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-040",
+      "event_summary": "<think>The user says: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/039-untitled-vla.md",
+          "source": "钛媒体",
+          "title": "独家对话银河通用张直政：我们找到了VLA和世界模型的融合之路",
+          "url": "https://www.tmtpost.com/7993834.html",
+          "lang": "",
+          "category": "tech_business"
+        }
+      ],
+      "sources": [
+        "钛媒体"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-041",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/041-simon-willison-blog-the-last-six-months-in-llms-in-five-minu.md",
+          "source": "Simon Willison Blog",
+          "title": "The last six months in LLMs in five minutes",
+          "url": "https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-042",
+      "event_summary": "<think>\nThe user wants a one-sentence description ",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/042-simon-willison-blog-glaucous-winged-gull-brown-pelican-snowy.md",
+          "source": "Simon Willison Blog",
+          "title": "Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose",
+          "url": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
+          "lang": "",
+          "category": "ai_practitioner"
+        }
+      ],
+      "sources": [
+        "Simon Willison Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-043",
+      "event_summary": "<think>\nThe user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/043-product-hunt-monocle-35-for-macos.md",
+          "source": "Product Hunt",
+          "title": "Monocle 3.5 for macOS",
+          "url": "https://www.producthunt.com/products/monocle-clear-workspace-clear-mind",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-044",
+      "event_summary": "<think>\n用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/044-product-hunt-insights-by-omnia.md",
+          "source": "Product Hunt",
+          "title": "Insights by Omnia",
+          "url": "https://www.producthunt.com/products/omnia-2",
+          "lang": "",
+          "category": "product"
+        }
+      ],
+      "sources": [
+        "Product Hunt"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-045",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/045-latent-space-ainews-how-to-land-a-job-at-a-frontier-l.md",
+          "source": "Latent Space",
+          "title": "[AINews] How to land a job at a frontier lab (on Pretraining)",
+          "url": "https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier",
+          "lang": "",
+          "category": "ai_newsletter"
+        }
+      ],
+      "sources": [
+        "Latent Space"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-046",
+      "event_summary": "<think>The user is asking: \"用一句话描述这篇文章报道的核心事件，不超过2",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/046-latent-space-the-next-war-is-already-here-the-west-is.md",
+          "source": "Latent Space",
+          "title": "The Next War Is Already Here. The West Isn't Ready. — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith, Noahpinion",
+          "url": "https://www.latent.space/p/the-fourth-law",
+          "lang": "",
+          "category": "ai_newsletter"
+        }
+      ],
+      "sources": [
+        "Latent Space"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-047",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/049-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "人类为什么惯用右手",
+          "url": "https://www.solidot.org/story?sid=84341",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-048",
+      "event_summary": "The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/048-solidot-ps-pc.md",
+          "source": "Solidot",
+          "title": "索尼取消将 PS 独占单人游戏移植到 PC 的计划",
+          "url": "https://www.solidot.org/story?sid=84342",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-049",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/047-solidot-pgbackrest.md",
+          "source": "Solidot",
+          "title": "pgBackRest 作者宣布继续维护该项目",
+          "url": "https://www.solidot.org/story?sid=84343",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-050",
+      "event_summary": "The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/050-solidot-firefox-151.md",
+          "source": "Solidot",
+          "title": "Firefox 151 释出",
+          "url": "https://www.solidot.org/story?sid=84340",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-051",
+      "event_summary": "<think>用户要求我用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/052-untitled-fps.md",
+          "source": "量子位",
+          "title": "抢先李飞飞！世界模型能多人联机玩FPS游戏了",
+          "url": "https://www.qbitai.com/2026/05/420083.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-052",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/053-untitled-gpu.md",
+          "source": "量子位",
+          "title": "国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
+          "url": "https://www.qbitai.com/2026/05/420084.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-053",
+      "event_summary": "用户要求：用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外的任何其他内",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/051-solidot-untitled.md",
+          "source": "Solidot",
+          "title": "少数湖泊拥有三分之二的湖泊淡水储量",
+          "url": "https://www.solidot.org/story?sid=84339",
+          "lang": "",
+          "category": "open_source_zh"
+        }
+      ],
+      "sources": [
+        "Solidot"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-054",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/054-untitled-cursorkimi.md",
+          "source": "量子位",
+          "title": "Cursor新模型，你怎么还在套Kimi？马斯克你怎么还吆喝上了？？",
+          "url": "https://www.qbitai.com/2026/05/419990.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-055",
+      "event_summary": "<think>The user asks for an answer: Use the simple",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/055-untitled-l2.md",
+          "source": "量子位",
+          "title": "L2++「五冠王」文远知行：自动驾驶版的张雪机车，专治各种不服",
+          "url": "https://www.qbitai.com/2026/05/419913.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-056",
+      "event_summary": "<think>The user is speaking Chinese. They want: \"用",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/056-untitled-520-aigc2026.md",
+          "source": "量子位",
+          "title": "5.20 明天见！拿好这份参会指南｜AIGC2026峰会",
+          "url": "https://www.qbitai.com/2026/05/419901.html",
+          "lang": "",
+          "category": "ai_zh"
+        }
+      ],
+      "sources": [
+        "量子位"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-057",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/059-the-verge-an-ai-announcer-mispronounced-and-skippe.md",
+          "source": "The Verge",
+          "title": "An AI announcer mispronounced and skipped names during a graduation",
+          "url": "https://www.theverge.com/tech/933653/ai-graduation-commencement-glendale-community-college",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "The Verge"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-058",
+      "event_summary": "<think>The user says:\n\n\"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/057-the-verge-sonys-1000x-the-collexion-are-a-luxuriou.md",
+          "source": "The Verge",
+          "title": "Sony’s 1000X The Collexion are a luxurious and expensive celebration of its iconic headphones",
+          "url": "https://www.theverge.com/tech/933168/sony-1000x-collexion-review",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "The Verge"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-059",
+      "event_summary": "<think>\nThe user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/060-the-verge-americas-dangerous-messy-deepfakes-crack.md",
+          "source": "The Verge",
+          "title": "America’s dangerous, messy deepfakes crackdown is here",
+          "url": "https://www.theverge.com/policy/933518/take-it-down-act-notice-removal-social-media-deepfake",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "The Verge"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-060",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/058-the-verge-google-io-2026-all-the-news-and-announce.md",
+          "source": "The Verge",
+          "title": "Google I/O 2026: All the news and announcements",
+          "url": "https://www.theverge.com/tech/932454/google-io-2026-news-announcements",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "The Verge"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-061",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/063-mit-tech-review-the-download-musk-v-altman-smart-glasses.md",
+          "source": "MIT Tech Review",
+          "title": "The Download: Musk v. Altman, smart glasses for warfare, and Google I/O",
+          "url": "https://www.technologyreview.com/2026/05/19/1137505/the-download-musk-altman-trial-smart-glasses-warfare-google-i-o/",
+          "lang": "",
+          "category": "deep_tech_research"
+        }
+      ],
+      "sources": [
+        "MIT Tech Review"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-062",
+      "event_summary": "The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/061-the-verge-apples-accessibility-features-add-more-a.md",
+          "source": "The Verge",
+          "title": "Apple’s accessibility features add more AI-powered processing",
+          "url": "https://www.theverge.com/tech/933420/apple-iphone-mac-vision-pro-accessibility-2026-apple-intelligence",
+          "lang": "",
+          "category": "consumer_tech"
+        }
+      ],
+      "sources": [
+        "The Verge"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-063",
+      "event_summary": "The user request is in Chinese: \"用一句话描述这篇文章报道的核心事件",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/062-mit-tech-review-understanding-the-modern-cybercrime-land.md",
+          "source": "MIT Tech Review",
+          "title": "Understanding the modern cybercrime landscape",
+          "url": "https://www.technologyreview.com/2026/05/19/1136925/understanding-the-modern-cybercrime-landscape/",
+          "lang": "",
+          "category": "deep_tech_research"
+        }
+      ],
+      "sources": [
+        "MIT Tech Review"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-064",
+      "event_summary": "<think>The user says:\n\n\"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/064-mit-tech-review-colossal-biosciences-is-growing-chickens.md",
+          "source": "MIT Tech Review",
+          "title": "Colossal Biosciences is growing chickens in a 3D-printed artificial eggshell",
+          "url": "https://www.technologyreview.com/2026/05/19/1137471/colossal-biosciences-is-growing-chickens-in-a-3d-printed-container/",
+          "lang": "",
+          "category": "deep_tech_research"
+        }
+      ],
+      "sources": [
+        "MIT Tech Review"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-065",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/068-github-changelog-removal-of-code-scanning-upload-field-fr.md",
+          "source": "GitHub Changelog",
+          "title": "Removal of code_scanning_upload field from rate_limit API endpoint",
+          "url": "https://github.blog/changelog/2026-05-19-removal-of-code_scanning_upload-field-from-rate_limit-api-endpoint",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-066",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/065-mit-tech-review-heres-why-elon-musk-lost-his-suit-agains.md",
+          "source": "MIT Tech Review",
+          "title": "Here’s why Elon Musk lost his suit against OpenAI",
+          "url": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
+          "lang": "",
+          "category": "deep_tech_research"
+        }
+      ],
+      "sources": [
+        "MIT Tech Review"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-067",
+      "event_summary": "<think>The user wants a single sentence describing",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/067-github-changelog-start-a-github-advanced-security-trial-f.md",
+          "source": "GitHub Changelog",
+          "title": "Start a GitHub Advanced Security trial from a risk assessment",
+          "url": "https://github.blog/changelog/2026-05-19-start-a-github-advanced-security-trial-from-a-risk-assessment",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-068",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/066-mit-tech-review-what-to-expect-from-google-this-week.md",
+          "source": "MIT Tech Review",
+          "title": "What to expect from Google this week",
+          "url": "https://www.technologyreview.com/2026/05/18/1137439/what-to-expect-from-google-this-week/",
+          "lang": "",
+          "category": "deep_tech_research"
+        }
+      ],
+      "sources": [
+        "MIT Tech Review"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-069",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/071-github-changelog-ask-questions-in-context-with-copilot-on.md",
+          "source": "GitHub Changelog",
+          "title": "Ask questions in context with Copilot on web",
+          "url": "https://github.blog/changelog/2026-05-18-ask-questions-in-context-with-copilot-on-web",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-070",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/069-github-changelog-one-click-fixes-for-failing-actions-with.md",
+          "source": "GitHub Changelog",
+          "title": "One-click fixes for failing Actions with Copilot cloud agent",
+          "url": "https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-071",
+      "event_summary": "<think>The user says:\n\n\"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/073-infoq-presentation-powering-the-future-buildin.md",
+          "source": "InfoQ",
+          "title": "Presentation: Powering the Future: Building Your GenAI Infrastructure Stack",
+          "url": "https://www.infoq.com/presentations/infrastructure-ai-agent-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "lang": "",
+          "category": "engineering"
+        }
+      ],
+      "sources": [
+        "InfoQ"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-072",
+      "event_summary": "<think>We need to produce a single-sentence descri",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/070-github-changelog-copilot-cloud-agent-fast-cost-efficient-.md",
+          "source": "GitHub Changelog",
+          "title": "Copilot cloud agent: Fast, cost-efficient models for simple tasks",
+          "url": "https://github.blog/changelog/2026-05-18-copilot-cloud-agent-fast-cost-efficient-models-for-simple-tasks",
+          "lang": "",
+          "category": "platform"
+        }
+      ],
+      "sources": [
+        "GitHub Changelog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-073",
+      "event_summary": "<think>用户要求用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，不要标点以外",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/077-hugging-face-blog-introducing-the-ettin-reranker-family.md",
+          "source": "Hugging Face Blog",
+          "title": "Introducing the Ettin Reranker Family",
+          "url": "https://huggingface.co/blog/ettin-reranker",
+          "lang": "",
+          "category": "ai_research"
+        }
+      ],
+      "sources": [
+        "Hugging Face Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-074",
+      "event_summary": "<think>\nThe user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/075-infoq-article-kernel-level-ground-truth-why-eb.md",
+          "source": "InfoQ",
+          "title": "Article: Kernel-Level Ground Truth: Why eBPF is Replacing User-Space Agents for Security Observability",
+          "url": "https://www.infoq.com/articles/ebpf-for-security-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "lang": "",
+          "category": "engineering"
+        }
+      ],
+      "sources": [
+        "InfoQ"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-075",
+      "event_summary": "<think>The user asks: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/072-infoq-agoda-builds-multimodal-content-system-t.md",
+          "source": "InfoQ",
+          "title": "Agoda Builds Multimodal Content System to Bridge Images and Reviews in Travel Discovery",
+          "url": "https://www.infoq.com/news/2026/05/agoda-multimodal-content-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "lang": "",
+          "category": "engineering"
+        }
+      ],
+      "sources": [
+        "InfoQ"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-076",
+      "event_summary": "<think>这篇文章的标题是关于\"使用LoRA/DoRA微调NVIDIA Cosmos Predi",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/078-hugging-face-blog-fine-tuning-nvidia-cosmos-predict-25-wit.md",
+          "source": "Hugging Face Blog",
+          "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
+          "url": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
+          "lang": "",
+          "category": "ai_research"
+        }
+      ],
+      "sources": [
+        "Hugging Face Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-077",
+      "event_summary": "<think>The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/074-infoq-tanstack-details-sophisticated-npm-suppl.md",
+          "source": "InfoQ",
+          "title": "TanStack Details Sophisticated npm Supply Chain Attack That Compromised 42 Packages",
+          "url": "https://www.infoq.com/news/2026/05/tanstack-supply-chain-attack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "lang": "",
+          "category": "engineering"
+        }
+      ],
+      "sources": [
+        "InfoQ"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-078",
+      "event_summary": "<think>\nThe user asks:\n\n\"用一句话描述这篇文章报道的核心事件，不超过20字，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/076-infoq-vite-version-8-unified-rust-based-bundle.md",
+          "source": "InfoQ",
+          "title": "Vite Version 8: Unified Rust-Based Bundler and Up to 30x Faster Builds",
+          "url": "https://www.infoq.com/news/2026/05/vite-v8-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "lang": "",
+          "category": "engineering"
+        }
+      ],
+      "sources": [
+        "InfoQ"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-079",
+      "event_summary": "The user wants: \"用一句话描述这篇文章报道的核心事件，不超过20字，只输出事件描述，",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/079-hugging-face-blog-paddleocr-35-running-ocr-and-document-pa.md",
+          "source": "Hugging Face Blog",
+          "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+          "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+          "lang": "",
+          "category": "ai_research"
+        }
+      ],
+      "sources": [
+        "Hugging Face Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-080",
+      "event_summary": "The user wants a single sentence (one sentence) de",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/081-openai-blog-openai-and-dell-partner-to-bring-codex-t.md",
+          "source": "OpenAI Blog",
+          "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+          "url": "https://openai.com/index/dell-codex-enterprise-partnership",
+          "lang": "",
+          "category": "ai_official"
+        }
+      ],
+      "sources": [
+        "OpenAI Blog"
+      ]
+    },
+    {
+      "event_id": "2026-05-20-081",
+      "event_summary": "",
+      "article_count": 1,
+      "articles": [
+        {
+          "file": "/root/.openclaw/workspace/news-intel/raw/2026/05/20/080-hugging-face-blog-the-open-agent-leaderboard.md",
+          "source": "Hugging Face Blog",
+          "title": "The Open Agent Leaderboard",
+          "url": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+          "lang": "",
+          "category": "ai_research"
+        }
+      ],
+      "sources": [
+        "Hugging Face Blog"
+      ]
+    }
+  ]
+}

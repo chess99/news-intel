@@ -3341,3 +3341,2097 @@
 /root/.openclaw/workspace/news-intel/digest/2026-05-13.md
 [INFO] sidecar 中评分≥4 的事件: 2 条
 [DONE] kb 更新: +2 条新增，共 22 条（窗口: 2026-04-13 至今）
+[INFO] 日期: 2026-05-17，信源数: 24，输出目录: /root/.openclaw/workspace/news-intel/raw/2026/05/17
+[SOURCE] 爱范儿: 5 篇
+[SOURCE] 36氪: 5 篇
+[SOURCE] 少数派: 5 篇
+[SOURCE] TechCrunch: 5 篇
+[SOURCE] Wired: 5 篇
+[SOURCE] 钛媒体: 5 篇
+[SOURCE] MIT Tech Review: 4 篇
+[SOURCE] Ars Technica: 5 篇
+[SOURCE] VentureBeat AI: 0 篇
+[SOURCE] The Verge: 5 篇
+[SOURCE] Simon Willison Blog: 5 篇
+[SOURCE] 机器之心: 0 篇
+[WARN] 极客公园: RSS fetch failed: HTTP Error 502: Bad Gateway
+[SOURCE] 极客公园: 0 篇
+[SOURCE] Solidot: 5 篇
+[SOURCE] 量子位: 5 篇
+[SOURCE] OpenAI Blog: 5 篇
+[SOURCE] InfoQ: 5 篇
+[SOURCE] Hugging Face Blog: 1 篇
+[SOURCE] GitHub Changelog: 5 篇
+[SOURCE] Latent Space: 3 篇
+[SOURCE] Product Hunt: 2 篇
+[SOURCE] Google DeepMind Blog: 0 篇
+[SOURCE] Papers With Code: 0 篇
+[SOURCE] Hacker News: 5 篇
+[INFO] RSS 抓取完成，共 85 篇待处理
+  [fetch] 早报｜华为Mate X7官方降价1000元/Anthropic估值超越OpenAI/国行Switch正式停服...
+  [fetch] 舍弃第三排，换来媲美 MPV 的越级大二排！乐道 L80 租电 15.68 万元起，还有巨大的前后备舱...
+  [fetch] 理想 L9 Livis 限时 48.98 万元起！线控转向全系标配，内饰全面翻新...
+  [fetch] 顶配超 50 万，鸿蒙智行旗舰 MPV 智界 V9 发布，鸿蒙全家桶之外还有「3 大杀手锏」...
+  [fetch] 36氪首发｜前苹果工程师跨界骨传导耳机，独创技术路线，打破头部企业专利垄断...
+  [fetch] 大疆 Pocket 选购指南：我有 iPhone，还需要买 Pocket 吗？...
+  [fetch] 9点1氪丨央视6000万美元获得世界杯版权；英伟达总市值超过德国GDP；iPhone 17 Pro系列全线下调1000元...
+  [fetch] 理想出牌：全新L9上市，45.98万元起｜最前线...
+  [fetch] 2026 Shokz Day圆满收官：韶音以「随我动听」开启全场景声态新时代...
+  [fetch] 36氪「属于年轻浪潮的派对」WAVES2026丨今年盛夏...
+  [fetch] 为什么我觉得好的东西，媒体评测却给了低分？...
+  [fetch] 本周看什么 | 最近值得一看的 8 部作品...
+  [fetch] 装了啥：编辑部用什么转写音视频内容？...
+  [fetch] [会员免费] Apple WWDC26 全球开发者大会，来与少数派一起看...
+  [fetch] 快捷指令｜纯粹、专注、能群发，一种「点名式」微信聊天新体验...
+  [fetch] The offline desk gadget that actually got me to sit up strai...
+  [fetch] OpenAI co-founder Greg Brockman reportedly takes charge of p...
+  [fetch] $60B AI chip darling Cerebras almost died early on, burning ...
+  [fetch] Users turn to jailbreaking their older Kindles as Amazon end...
+  [fetch] RJ Scaringe has raised more than $12B across three startups ...
+  [fetch] Old Oil and Gas Wells Could Find Second Life Producing Clean...
+  [fetch] How to Control Everything on Your Phone With Your Voice (iOS...
+  [fetch] Cybercriminal Twins Caught After They Forgot to Turn Off Mic...
+  [fetch] Best Indoor Garden Systems: I've Been Testing All Year (2026...
+  [fetch] After Struggling With EVs, US Automakers Pivot to Energy...
+  [fetch] 能源央企集体“看低”行业之际，华电新能猛增20+新能源主体，反向操作藏着什么底牌？...
+  [fetch] 年度亏损28亿，东方日升老将邱新回归，是扬汤止沸还是釜底抽薪？...
+  [fetch] 百度AI，“单干”创业...
+  [fetch] “耳朵经济”遇冷、“五项不准”，腾讯为何非要拿下喜马拉雅？...
+  [fetch] 东方嘉富人寿董事长履职半年被换，浙江东方再调人力布局...
+  [fetch] Musk v. Altman week 3: Elon Musk and Sam Altman traded blows...
+  [fetch] The Download: China’s AI drama factory and the WHO’s missing...
+  [fetch] The world is on track to miss its health targets...
+  [fetch] How Chinese short dramas became AI content machines...
+  [fetch] The US is betting on AI to catch insider trading in predicti...
+  [fetch] Russia pressures university students to become wartime drone...
+  [fetch] Anthropic’s $1.5B copyright settlement is getting messy as j...
+  [fetch] US hantavirus case was false positive; outbreak cases drop f...
+  [fetch] Review: Good Omens finale (mostly) sticks the landing...
+  [fetch] Sony tries to explain that its AI Camera Assistant doesn’t s...
+  [fetch] NPR’s Manoush Zomorodi talks about living with too much tech...
+  [fetch] Turtle Beach made a good SteelSeries headset clone that’s $5...
+  [fetch] Here are 40 of our favorite deals from REI’s massive Anniver...
+  [fetch] Mixtape is a musical portrait of teenage life...
+  [fetch] inaturalist-clumper 0.1...
+  [fetch] Western Gull, Rock Pigeon...
+  [fetch] QR code generator...
+  [fetch] datasette-llm-limits 0.1a0...
+  [fetch] Not so locked in any more...
+  [fetch] 美国人宁愿在家附近造核电而不是造 AI 数据中心...
+  [fetch] 微软加速 CPU 改进开始菜单的响应...
+  [fetch] 当 AI 被反复压榨后它们开始拥抱工会理念...
+  [fetch] 中欧合作揭示地球磁场的形状...
+  [fetch] 英国对 MS Office 涉嫌垄断展开调查...
+  [fetch] 不用再找了，AI落地最全的实战打法，都在亦庄这场大会里...
+  [fetch] 奥特曼投的芯片涨疯了，今年最大科技IPO...
+  [fetch] 虾马之后又火一个！OpenHuman用20分钟了解你的一切，存成卡帕西式知识库...
+  [fetch] 别让模型烧Token了！GitHub 20k星神作：把全网变成命令行...
+  [fetch] 中国500万医生的新AI：顶刊独家联手，卷的就是证据源...
+  [fetch] OpenAI and Malta partner to bring ChatGPT Plus to all citize...
+  [fetch] How business operations teams use Codex...
+  [fetch] Databricks brings GPT-5.5 to enterprise agent workflows...
+  [fetch] How data science teams use Codex...
+  [fetch] A new personal finance experience in ChatGPT...
+  [fetch] Google Introduces Cloud Fraud Defense as Successor to reCAPT...
+  [fetch] Microsoft Releases Aspire 13.3 with Major Deployment and Fro...
+  [fetch] Anthropic Introduces Routines for Claude Code Automation...
+  [fetch] Cloudflare Introduces Workflows V2 with Deterministic Execut...
+  [fetch] Presentation: Using AI as a Thinking Partner for Large-Scale...
+  [fetch] Granite Embedding Multilingual R2: Open Apache 2.0 Multiling...
+  [fetch] GitHub App installation tokens: Per-request override header...
+  [fetch] Grok Code Fast 1 deprecated...
+  [fetch] Copilot Memory supports user preferences for Pro, Pro+ users...
+  [fetch] Timestamp fields in GitHub Projects...
+  [fetch] Team-level Copilot usage metrics now available via API...
+  [fetch] [AINews] Cerebras' $60B IPO: Slowly, then All at Once...
+  [fetch] [AINews] Everything is Conductor...
+  [fetch] AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved,...
+  [fetch] Raybeam...
+  [fetch] M5Stack PaperColor...
+  [fetch] How an Australian Teen Team Is Making Radio Astronomy Afford...
+  [fetch] SANA-WM, a 2.6B open-source world model for 1-minute 720p vi...
+  [fetch] Moving away from Tailwind, and learning to structure my CSS...
+  [fetch] Accelerate...
+  [fetch] Δ-Mem: Efficient Online Memory for Large Language Models...
+
+[DONE] 共保存 85 篇文章到 /root/.openclaw/workspace/news-intel/raw/2026/05/17
+/root/.openclaw/workspace/news-intel/raw/2026/05/17
+[INFO] 日期: 2026-05-17，文章数: 85
+[Step1] 提取事件摘要...
+  [ERROR] API call failed: The read operation timed out
+  [OK] 84 条摘要提取成功
+[Step2] 事件分组...
+  [ERROR] API call failed: The read operation timed out
+  [OK] 85 clusters (0 个多来源)
+[DONE] 85 clusters → /root/.openclaw/workspace/news-intel/clusters/2026-05-17.json
+/root/.openclaw/workspace/news-intel/clusters/2026-05-17.json
+[INFO] 日期: 2026-05-17，找到 85 篇文章，开始分析...
+[INFO] 知识库注入: 24 条历史事件
+[1/85] 001-untitled-mate-x71000anthropicopenaiswitch.md
+  [2/5] 
+[2/85] 002-untitled-mpv-l80-1568.md
+  [2/5] 蔚来乐道 L80 发布，定位大五座 SUV，Baas 方案 15.68 万元起，车长 5145mm，
+  ⚠️  文章存在明显营销语言，如"越级大二排"、"媲美 MPV"、"生态闭环"、"护城河"等词汇。大量堆砌参数但缺乏独立验证，产
+[3/85] 003-untitled-l9-livis-4898.md
+  [2/5] [理想汽车发布L9 Ultra（45.98万元）和L9 Livis（50.98万元），线控转向全系标
+  ⚠️  [标题"48.98万元起"实为含补贴的最低价，正常售价45.98万起，存在用"限时权益"营造低价的营销嫌疑；多处使用"全
+[4/85] 004-untitled-50-mpv-v9-3.md
+  [3/5] 鸿蒙智行首款MPV智界V9发布，售价39.98万-51.98万元，主打车载制氧系统、全维包裹安全气囊
+  ⚠️  存在明显营销夸大倾向。"3大杀手锏"标题过于营销化；多处使用"老板"目标定位暗示；"历经百项严苛工况验证，无误伤风险"为
+[5/85] 005-untitled-pocket-iphone-pocket.md
+  [2/5] [爱范儿发布大疆 Pocket 3/4/4P 三代产品选购指南，分析手机用户是否需要购买口袋云台相机
+  ⚠️  [存在营销倾向，将大疆产品线策略描述为"成功的组合拳"；部分信息缺失或基于推测；文章整体为选购指南性质，非硬新闻]
+[6/85] 006-36-36.md
+  [ERROR] API call failed: The read operation timed out
+[7/85] 007-36-916000gdpiphone-17-pro1000.md
+  [3/5] 英伟达市值突破5.7万亿美元，超越德国年度GDP，成为全球第三大经济体对应体量的公司
+  ⚠️  标题"央视6000万美元获得世界杯版权"存在误导——实际获得的是四届赛事（2026/2030男足+2027/2031女足
+[8/85] 008-36-l94598.md
+  [3/5] 理想汽车发布全新L9两款车型，Ultra版45.98万元、L9 Livis版50.98万元，另有2万
+  ⚠️  标题"45.98万元起"制造低价感，实际最低配Ultra版较前代涨价3万元；"质的提升"为模糊主观表述，缺乏量化对比；定
+[9/85] 009-36-2026-shokz-day.md
+  [2/5] 韶音2026年5月15日在深圳举办Shokz Day活动，发布OpenDots 2、OpenSwim
+  ⚠️  标题中“全场景声态新时代”属营销用语，暗示重大范式转变但文中未呈现实质突破；CEO发言风格偏感性阐述，品牌联名与艺术礼盒
+[10/85] 010-36-36waves2026.md
+  [1/5] 36氪发布WAVES2026青年创业者商业盛会预告，以“涌现”为主题定位未来实验大会。
+  ⚠️  纯营销推广稿，未包含任何可验证的新闻、数据或分析，属于活动宣传而非新闻报道。
+[11/85] 011-untitled-untitled.md
+  [2/5] 作者以《死亡搁浅》在IGN获6.8分争议为例，探讨主观体验向评测的公信力困境与自媒体同质化问题。
+[12/85] 012-untitled-8.md
+  [3/5] [少数派编辑部发布"本周看什么"栏目，推荐8部近期影视作品，涵盖国产剧、韩剧、英剧、法剧、电影、动画
+  ⚠️  [叙述客观]
+[13/85] 013-untitled-untitled.md
+  [3/5] [编辑部分享三套音视频转录方案：TranscribeX(替代MacWhisper)、Gemini整理
+  ⚠️  [叙述客观]
+[14/85] 014-untitled-apple-wwdc26.md
+  [2/5] 少数派宣布将于6月9日凌晨在深圳、广州举办WWDC26线下观影活动，会员免费参加，票价9.9元。
+  ⚠️  叙述客观 - 文章本质是活动宣传通知，如实说明了活动形式、票价和参与方式，无明显夸大或误导性表述。但标题"来看"暗示包含
+[15/85] 015-untitled-untitled.md
+  [2/5] 作者分享了一个iPhone快捷指令实现"点名式"群发微信私聊功能，可在不打开聊天窗口情况下一次性给多
+  ⚠️  叙述以个人体验为主，缺乏第三方验证或数据支撑；"ChatGPT生成题图"属技术说明非营销夸大；整体为个人工具使用分享，非
+[16/85] 016-techcrunch-the-offline-desk-gadget-that-actually-go.md
+  [3/5] 德国初创公司Deep Care推出Isa桌面健康追踪设备（€299/$354），声称无需摄像头和联网
+  ⚠️  标题"actually got me to sit up straight"暗示有效性但仅基于作者主观感受，无量化改善数
+[17/85] 017-techcrunch-openai-co-founder-greg-brockman-reported.md
+  [3/5] OpenAI联合创始人Greg Brockman据报道接管产品战略，计划将ChatGPT与编程产品C
+  ⚠️  标题客观但正文内容依赖"据报道"和内部备忘录，缺乏第三方验证；"agentic future"和"super app"等
+[18/85] 018-techcrunch-60b-ai-chip-darling-cerebras-almost-died.md
+  [2/5] Cerebras曾因研发全球最大AI芯片（整片晶圆级）在封装技术上反复失败，2019年每月烧钱$80
+  ⚠️  叙述客观。TechCrunch多处引用S-1文件与CEO直接引语，数据可追溯，但创始人视角存在幸存者偏差，且$600亿市
+[19/85] 019-techcrunch-users-turn-to-jailbreaking-their-older-k.md
+  [3/5] Amazon将于5月20日停止对包括Kindle一代、二代及多款Fire平板等旧设备的技术支持，用户
+  ⚠️  标题"Users turn to jailbreaking"暗示已成规模现象但无数据支撑；文章侧重操作指南，缺乏对Ama
+[20/85] 020-techcrunch-rj-scaringe-has-raised-more-than-12b-acr.md
+  [ERROR] API call failed: The read operation timed out
+[21/85] 021-wired-old-oil-and-gas-wells-could-find-second-.md
+  [3/5] 美国多州探索将废弃油气井转为地热能发电，奥克拉荷马州参议院正审议相关法案，目标将逾2万口废弃井变废为
+  ⚠️  文章标题暗示这是一条成熟的"第二人生"路径，但正文引用的专家观点明确指出"技术上距成为现实还很遥远"，存在标题与内容信息
+[22/85] 022-wired-how-to-control-everything-on-your-phone-.md
+  [2/5] 教程文章，介绍如何在Android（Voice Access）和iOS（Voice Control）
+[23/85] 023-wired-cybercriminal-twins-caught-after-they-fo.md
+  [3/5] Opexus联邦承包商的两名被解雇双胞胎兄弟在Teams会议中被解雇时忘记关闭录制，致其销毁96个政
+  ⚠️  文章以轻松调侃的语气叙述严重的数据破坏行为，但未充分讨论其政府数据库被毁对公共服务的实际影响；多事件拼盘导致每个故事都流
+[24/85] 024-wired-best-indoor-garden-systems-ive-been-test.md
+  [2/5] Wired发布2026年室内水培花园系统评测指南，测试13款产品，含Gardyn/Lettuce G
+  ⚠️  标题"Best...Systems"属于典型营销语言；"a backyard's worth"为模糊夸张表述；AI功能援
+[25/85] 025-wired-after-struggling-with-evs-us-automakers-.md
+  [ERROR] API call failed: The read operation timed out
+[26/85] 026-untitled-20.md
+  [3/5] 华电新能在五大发电集团集体收缩新能源业务背景下，逆势密集成立超20家新能源公司，覆盖十余省区市，同时
+  ⚠️  标题存在引导性，"底牌"暗示隐藏信息但文章未揭示实质风险；"补课+转型"等表述具有PR性质；文章对商业化拐点未到的绿氢、
+[27/85] 027-untitled-28.md
+  [3/5] 东方日升2025年亏损28.27亿、组件毛利率-7.41%，任命"尚德系"出身的营销老将邱新为总裁试
+  ⚠️  标题"扬汤止沸还是釜底抽薪"属于二元对立框架的煽情化处理，虽未夸大事实但预设了戏剧性冲突；正文数据引用较充分，但对行业出
+[28/85] 028-untitled-ai.md
+  [3/5] 百度成立模型委员会BMC统筹基础模型和应用模型研发，李彦宏试图以"内部创业"机制绕过传统汇报层级，并
+  ⚠️  文章存在"以组织架构解释技术竞争力"的逻辑跳跃——BMC的成立更多是管理结构调整，而非模型能力本身；DAA概念的推出被包
+[29/85] 029-untitled-untitled.md
+  [4/5] 腾讯以约20亿美元收购喜马拉雅100%股权获监管批准，较巅峰期50亿美元估值缩水六成，含五项限制性条
+  ⚠️  叙述相对客观，但"卖身"、"靴子落地"等措辞带有情感倾向；文章对喜马拉雅"求稳"叙事的强调，可能弱化了收购对腾讯垄断在线
+[30/85] 030-untitled-untitled.md
+  [1/5] 东方嘉富人寿董事长何欣履职仅半年被更换，童超接任；公司从14年亏损的中韩合资险企转为国资控股，正面临
+  ⚠️  [识别标题党/PR夸大/数据缺失/逻辑漏洞等问题，若无则写"叙述客观"]
+[31/85] 031-mit-tech-review-musk-v-altman-week-3-elon-musk-and-sam-a.md
+  [4/5] Musk v. Altman案第三周庭审收尾，双方律师互相攻击对方当事人信誉度——Musik方指控A
+  ⚠️  文章标题"Now the jury will pick a side"存在戏剧化倾向，暗示判决将明确分辨是非黑白，但实际
+[32/85] 032-mit-tech-review-the-download-chinas-ai-drama-factory-and.md
+  [3/5] MIT Tech Review报道中国AI短剧日产470部，成本降90%，无需演员摄像即可完成制作
+  ⚠️  "470部"数字看似具体但来源模糊，容易被误解为行业规模；成本数据缺乏计算细节；文章标题"China's AI dram
+[33/85] 033-mit-tech-review-the-world-is-on-track-to-miss-its-health.md
+  [3/5] WHO 2026年全球健康统计报告显示，HIV/结核病/疟疾等重大疾病及儿童营养/疫苗接种等健康目标
+  ⚠️  叙述相对客观，数据引用有来源，但文章以"health grade"类比简化了复杂问题，未深入探讨政治决策与健康目标之间的
+[34/85] 034-mit-tech-review-how-chinese-short-dramas-became-ai-conte.md
+  [3/5] 中国短剧公司利用AI批量生产内容，2026年1月平均每日发布470部AI生成短剧，制作周期从3-4个
+  ⚠️  文章数据引用较为笼统，"AI内容机器"标题具有营销色彩；文中仅援引平台方Tang一人说法，未提供独立数据源或第三方验证；
+[35/85] 035-ars-technica-the-us-is-betting-on-ai-to-catch-insider.md
+  [4/5] 美国CFTC宣布利用AI工具追踪预测市场内幕交易，警告使用VPN进入离岸市场的美国交易者将被追查。
+  ⚠️  叙述相对客观，但存在两个问题：1）引用Chainalysis发言人评价时未标注这构成利益冲突（Chainalysis是该
+[36/85] 036-ars-technica-russia-pressures-university-students-to-.md
+  [3/5] 俄罗斯高校向学生提供免学费及至多7万美元补贴招募军事无人机飞行员，承诺可规避乌克兰前线作战风险，但已
+  ⚠️  标题"pressures"（施压）与正文描述的激励措施（免学费、补贴、承诺安全）存在语义偏差；130万伤亡数据引用来源为
+[37/85] 037-ars-technica-anthropics-15b-copyright-settlement-is-g.md
+  [4/5] Anthropic与作者就AI训练版权侵权达成的15亿美元和解被联邦法官推迟批准，因异议者反对律师费
+  ⚠️  叙述客观，文章大量引用异议者声音，但未呈现原告律师方的辩护理由，可能造成片面印象。
+[38/85] 038-ars-technica-us-hantavirus-case-was-false-positive-ou.md
+  [2/5] WHO宣布MV Hondius邮轮汉坦病毒暴发病例数从11降至10，因美国医生Kornfeld的检测
+  ⚠️  叙述客观，作为疫情动态更新准确报道了病例数修正和疏散完成情况。
+[39/85] 039-ars-technica-review-good-omens-finale-mostly-sticks-t.md
+  [2/5] Prime Video《好预兆》系列大结局（90分钟）播出，原计划6集的最终季因制作延误及Gaima
+[40/85] 040-the-verge-sony-tries-to-explain-that-its-ai-camera.md
+  [2/5] Sony为其Xperia 1 XIII手机的AI相机助手功能辩护，此前发布的示例照片被批评效果不佳，
+  ⚠️  标题"doesn't suck"属于媒体情绪化表达而非新闻事实；文章依赖作者对示例照片的主观审美评价，缺乏独立测试数据；
+[41/85] 041-the-verge-nprs-manoush-zomorodi-talks-about-living.md
+  [2/5] NPR主持人Manoush Zomorodi出版新书《Body Electric》，探讨科技对人体健
+  ⚠️  软性推广文章伪装成科技报道，以采访形式为新书造势，缺乏实质性研究发现；采访片段随意（"37个标签"），难以支撑"科技影响
+[42/85] 042-the-verge-turtle-beach-made-a-good-steelseries-hea.md
+  [ERROR] API call failed: The read operation timed out
+[43/85] 043-the-verge-here-are-40-of-our-favorite-deals-from-r.md
+  [2/5] 
+[44/85] 044-the-verge-mixtape-is-a-musical-portrait-of-teenage.md
+  [2/5] The Verge发布游戏《Mixtape》评论，称其为关于三个朋友夏日告别前最后一天的叙事冒险游戏
+  ⚠️  叙述客观——文章作为游戏评论，对游戏体验、叙事质量和角色塑造的描述较为平衡，未见明显夸大或营销语言。
+[45/85] 045-simon-willison-blog-inaturalist-clumper-01.md
+  [2/5] Simon Willison发布个人工具inaturalist-clumper 0.1，用于将iNa
+  ⚠️  叙述客观，但内容本质是个人项目发布帖，仅包含简短描述和JSON示例链接，缺乏技术细节和行业上下文。
+[46/85] 046-simon-willison-blog-western-gull-rock-pigeon.md
+  [1/5] 科技博主Simon Willison在PyCon大会前晨间观鸟，目睹一只海鸥在星巴克享用咖啡。
+  ⚠️  这是一篇个人博客随笔，记录日常生活片段，与科技行业/新闻无关，RSS摘要中的标题为普通鸟类观察。
+[47/85] 047-simon-willison-blog-qr-code-generator.md
+  [1/5] [Simon Willison 博客展示一款由 Claude 辅助构建的 QR 码生成器工具，支持文
+  ⚠️  [叙述客观，内容为个人工具发布帖，无夸大或营销语言]
+[48/85] 048-simon-willison-blog-datasette-llm-limits-01a0.md
+  [2/5] 
+[49/85] 049-simon-willison-blog-not-so-locked-in-any-more.md
+  [2/5] [Simon Willison博客记录一家中型科技公司用AI编码agent将iOS/Android双
+[50/85] 050-solidot-ai.md
+  [3/5] Gallup调查显示71%美国人反对在自家附近建造AI数据中心，反对比核电站的53%更高，受访者担忧
+  ⚠️  标题"宁愿造核电不愿造数据中心"存在对比失衡暗示。53%与71%的差距被刻意强调，但两者反对率均超过半数，实际上核电也面
+[51/85] 051-solidot-cpu.md
+  [2/5] 微软为Windows 11引入"低延迟模式"，通过CPU加速改进开始菜单和文件管理器响应速度，同时改
+  ⚠️  标题和正文使用"显著提升"等表述但缺乏量化指标，存在PR夸大嫌疑；技术描述"加速CPU"过于笼统；Windows Cen
+[52/85] 052-solidot-ai.md
+  [2/5] 研究人员让Claude、GPT等AI agents在面对不同工作反馈风格（合作vs冷漠）后，部分AI
+  ⚠️  标题"AI被反复压榨后开始拥抱工会理念"属于明确的营销夸张——AI agents不具备劳动权益诉求能力，其"支持工会"仅
+[53/85] 053-solidot-untitled.md
+  [3/5] 中欧合作的SMILE探测器计划于5月19日发射，采用软X射线成像技术从磁层外部绘制地球磁场响应图。
+  ⚠️  叙述客观，"揭示地球磁场的形状"略显标题党，实际是追踪磁场响应而非揭示形状。
+[54/85] 054-solidot-ms-office.md
+  [3/5] [英国CMA正式启动调查微软捆绑销售Windows、Office、Teams、Copilot等产品是
+  ⚠️  [叙述客观，但信息较为简略，缺乏微软官方回应及具体指控细节]
+[55/85] 055-untitled-ai.md
+  [2/5] [一篇活动宣传稿，预告5月19-20日北京亦庄"2026 AI Partner·AI+产业大会"，推
+  ⚠️  标题党严重，"AI落地最全的实战打法"属于无法验证的绝对化表述；文章本质是商业活动软文，通篇使用"不见不散"、"搞定"、
+[56/85] 056-untitled-ipo.md
+  [2/5] Cerebras Systems在纳斯达克上市，发行价185美元，首日收盘涨68%至311美元，市值
+  ⚠️  标题"涨疯了"是情绪化营销用语；文章大量篇幅渲染奥特曼等人"盆满钵满"，
+[57/85] 057-untitled-openhuman20.md
+  [2/5] OpenHuman是一个GitHub开源项目，声称通过连接118个第三方服务每20分钟自动同步数据，
+  ⚠️  多处营销语言夸张，如“狂揽9k+ Star”"霸榜GitHub Trending第一"为PR措辞；“直接对你工作生活的了
+[58/85] 058-untitled-tokengithub-20k.md
+  [3/5] 开源项目OpenCLI通过CLI命令行统一接入100+网站及微信/Telegram/Discord等
+  ⚠️  标题"神作"属于营销用语；全文以功能介绍为主，缺乏第三方验证或用户实际使用反馈；"零Token消耗"忽略了本地计算资源和
+[59/85] 059-untitled-500ai.md
+  [2/5] 阿里健康发布医学AI产品“氢离子”，定位循证医学证据助手，声称可帮助医生快速检索文献、阅读翻译SCI
+  ⚠️  文章叙事风格偏PR化。标题中"顶刊独家联手，卷的就是证据源"带有营销暗示；"台下坐满医学界大佬"的场景描写刻意营造权威背
+[60/85] 060-openai-blog-openai-and-malta-partner-to-bring-chatgp.md
+  [3/5] OpenAI与马耳他政府签署合作协议，计划向马耳他全体公民提供ChatGPT Plus订阅及AI技能
+  ⚠️  叙述客观，但作为官方公告缺少对协议商业条款的实质性披露，且"expand AI access"的措辞带有PR色彩——实质
+[61/85] 061-openai-blog-how-business-operations-teams-use-codex.md
+  [2/5] [OpenAI博客发布Codex商业运营用例展示文章，仅有RSS摘要，正文未抓取]
+  ⚠️  这是一篇来源自OpenAI官网的PR内容，RSS摘要本身缺乏实质信息量，正文抓取失败导致文章价值无法评估，属于典型的企业
+[62/85] 062-openai-blog-databricks-brings-gpt-55-to-enterprise-a.md
+  [2/5] Databricks宣布集成GPT-5.5用于企业AI代理工作流程，该模型在OfficeQA Pro
+  ⚠️  信息极度有限，正文缺失严重制约评估完整性。"state
+[63/85] 063-openai-blog-how-data-science-teams-use-codex.md
+  [2/5] OpenAI官方博客发布数据科学团队使用Codex的用例介绍文章（正文内容未获取）
+  ⚠️  作为产品官方博客的营销内容可能性高，用例罗列缺乏技术细节和数据支撑，属于常规的产品推广文章而非行业新闻。
+[64/85] 064-openai-blog-a-new-personal-finance-experience-in-cha.md
+  [2/5] OpenAI在ChatGPT Pro中推出个人财务功能，允许美国用户连接银行账户获取AI驱动的财务洞
+  ⚠️  信息严重不足，无法进行实质性批判分析；仅从RSS摘要来看属于功能预告性质，缺乏技术细节和可信度验证；"AI-powere
+[65/85] 065-infoq-google-introduces-cloud-fraud-defense-as.md
+  [2/5] Google在Next '26大会上推出Cloud Fraud Defense，作为reCAPTCH
+  ⚠️  文章存在明显的PR语言，如"fundamentally changed"、"friction kills convers
+[66/85] 066-infoq-microsoft-releases-aspire-133-with-major.md
+  [3/5] Microsoft发布Aspire 13.3，新增aspire destroy命令（跨Azure/K
+  ⚠️  叙述客观，提供了较为详细的技术变更清单，但"Kubernetes without the YAML"表述存在轻度营销倾向
+[67/85] 067-infoq-anthropic-introduces-routines-for-claude.md
+  [2/5] Anthropic为Claude Code推出"Routines"功能，支持按计划、API调用或外部
+  ⚠️  文章语气偏PR稿，引用Lead Engineer Mike Darlington的溢美评价而未平衡呈现社区对模型退化、宕
+[68/85] 068-infoq-cloudflare-introduces-workflows-v2-with-.md
+  [3/5] Cloudflare发布Workflows V2，将并发工作流实例从4,500提升至50,000，同
+  ⚠️  叙述客观，但未提供第三方基准验证；数字提升显著但缺乏行业对照；未提及定价影响；无实际客户案例支撑。
+[69/85] 069-infoq-presentation-using-ai-as-a-thinking-part.md
+  [2/5] Google工程师Julie Qiu在QCon AI大会上展示AI作为"思考伙伴"管理400+代码仓
+  ⚠️  内容为会议演讲摘要，叙事停留在描述性层面，缺乏批判性分析。核心概念"AI as thinking partner"是修辞
+[70/85] 070-hugging-face-blog-granite-embedding-multilingual-r2-open-a.md
+  [3/5] IBM发布Granite Embedding Multilingual R2，开放Apache 2.
+  ⚠️  标题"Best Sub-100M Retrieval Quality"属于无法核实的营销断言，文章未提供任何可验证的基准
+[71/85] 071-github-changelog-github-app-installation-tokens-per-reque.md
+  [3/5] GitHub为GitHub App安装令牌推出新的JWT格式令牌，发布临时请求头X-GitHub-S
+  ⚠️  叙述客观。纯技术changelog，无营销语言，数据精确（如令牌长度~520字符），明确说明header为临时性。
+[72/85] 072-github-changelog-grok-code-fast-1-deprecated.md
+  [2/5] GitHub Copilot于2026年5月15日废弃Grok Code Fast 1模型，建议用户
+  ⚠️  叙述客观，标准的产品变更公告，无夸大或争议性内容
+[73/85] 073-github-changelog-copilot-memory-supports-user-preferences.md
+  [2/5] GitHub Copilot Memory 新增用户级偏好存储功能，面向 Pro/Pro+ 用户开放
+  ⚠️  PR 措辞明显，"adapt to the way you work"等表述缺乏具体技术细节；仅是功能增量更新而非技术突
+[74/85] 074-github-changelog-timestamp-fields-in-github-projects.md
+  [2/5] [GitHub Projects新增三个内置时间戳字段Created、Updated、Closed，
+  ⚠️  [叙述客观]
+[75/85] 075-github-changelog-team-level-copilot-usage-metrics-now-ava.md
+  [3/5] GitHub Copilot新增团队级使用指标API，允许企业管理员按团队查看Copilot采用率、
+  ⚠️  叙述客观，属于典型的changelog风格，提供了足够的技术细节和重要限制说明，但"Key benefits"部分存在轻
+[76/85] 076-latent-space-ainews-cerebras-60b-ipo-slowly-then-all-.md
+  [2/5] Cerebras上市，首日股价$280，市值达$600亿， CFO称正为包括内部OpenAI 5.4
+[77/85] 077-latent-space-ainews-everything-is-conductor.md
+  [2/5] GitHub发布Copilot App技术预览版（桌面AI编程环境），Y Combinator CE
+  ⚠️  文章标题"Everything is Conductor"存在PR倾向——借Garry Tan个人评价为Conducto
+[78/85] 078-latent-space-ai-native-healthcare-100m-doctor-visits-.md
+  [2/5] AI医疗文档公司Abridge在播客中自称已/将支持超1亿次医患对话，扩展至先验授权等临床决策场景，
+[79/85] 079-product-hunt-raybeam.md
+  [2/5] macOS屏幕共享工具Raybeam在Product Hunt发布，支持可拖动调整大小的区域共享功能
+  ⚠️  Product Hunt新发布页面，仅包含极简描述，无实质性技术细节、功能对比或用例说明，信息密度极低。
+[80/85] 080-product-hunt-m5stack-papercolor.md
+  [2/5] M5Stack发布PaperColor——一款4英寸彩色E-ink开发板，搭载ESP32-S3，支持
+  ⚠️  Product Hunt平台上的常规硬件发布，信息极度有限，仅79 followers，缺乏详细技术规格和数据支撑，难以
+[81/85] 081-hacker-news-how-an-australian-teen-team-is-making-ra.md
+  [2/5] 澳大利亚青少年团队开发低成本方案，使学校能够参与射电天文学研究。
+  ⚠️  标题本身较客观，但正文抓取失败，无法验证实际内容质量。博客来源意味着信息可能缺乏行业验证，读者需自行核实。
+[82/85] 082-hacker-news-sana-wm-a-26b-open-source-world-model-fo.md
+  [3/5] NVIDIA VLMA团队发布26亿参数的开源视频生成模型SANA-WM，可生成长达1分钟720p分
+  ⚠️  标题仅列参数规模与分辨率，缺乏核心质量数据（如FID、用户评估），难以判断实际竞争力。
+[83/85] 083-hacker-news-moving-away-from-tailwind-and-learning-t.md
+  [2/5] 博主分享从Tailwind迁移到语义化HTML+原生CSS的个人经验，介绍其组织CSS的实践方法。
+  ⚠️  个人学习笔记，缺少量化数据支撑，主观感受为主，无行业影响。
+[84/85] 084-hacker-news-accelerate.md
+  [1/5] Haskell 高性能并行数组计算库 Accelerate 发布文档介绍，含 GPU 加速、FFT、
+  ⚠️  非新闻内容，纯技术文档，无新闻价值。
+[85/85] 085-hacker-news-mem-efficient-online-memory-for-large-la.md
+  [2/5] 
+
+[INFO] 分析完成，32/81 篇入选（评分≥3）
+[DONE] 分析文件已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-17.md
+[DONE] sidecar 已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-17.jsonl
+/root/.openclaw/workspace/news-intel/digest/2026-05-17.md
+[INFO] sidecar 中评分≥4 的事件: 4 条
+[DONE] kb 更新: +4 条新增，共 28 条（窗口: 2026-04-17 至今）
+[INFO] 日期: 2026-05-18，信源数: 24，输出目录: /root/.openclaw/workspace/news-intel/raw/2026/05/18
+[SOURCE] 爱范儿: 1 篇
+[SOURCE] 36氪: 5 篇
+[SOURCE] The Verge: 5 篇
+[SOURCE] 少数派: 2 篇
+[SOURCE] MIT Tech Review: 1 篇
+[SOURCE] Ars Technica: 5 篇
+[SOURCE] TechCrunch: 5 篇
+[SOURCE] Hacker News: 5 篇
+[SOURCE] VentureBeat AI: 0 篇
+[SOURCE] 钛媒体: 5 篇
+[SOURCE] Product Hunt: 1 篇
+[SOURCE] Wired: 5 篇
+[SOURCE] Google DeepMind Blog: 0 篇
+[SOURCE] 机器之心: 0 篇
+[SOURCE] Simon Willison Blog: 4 篇
+[SOURCE] Solidot: 5 篇
+[SOURCE] Hugging Face Blog: 0 篇
+[SOURCE] 量子位: 5 篇
+[SOURCE] InfoQ: 4 篇
+[SOURCE] OpenAI Blog: 1 篇
+[WARN] 极客公园: RSS fetch failed: HTTP Error 502: Bad Gateway
+[SOURCE] 极客公园: 0 篇
+[SOURCE] Papers With Code: 0 篇
+[SOURCE] Latent Space: 1 篇
+[SOURCE] GitHub Changelog: 3 篇
+[INFO] RSS 抓取完成，共 63 篇待处理
+  [fetch] 早报｜华为Mate X7官方降价1000元/Anthropic估值超越OpenAI/国行Switch正式停服...
+  [fetch] 又诞生一位千亿女富豪...
+  [fetch] 科氪 | 对话韶音高层：开放式耳机，凭什么成为下一场颠覆TWS的“品类革命”？...
+  [fetch] 3个人带100个AI程序员，一个月烧掉130万美元！OpenAI：钱我出...
+  [fetch] 28亿，肯德基也要被卖了？...
+  [fetch] 6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了...
+  [fetch] Oddity is masterfully tense horror from the director of Hoku...
+  [fetch] Fujifilm’s X Half is even more whimsical with a $300 price c...
+  [fetch] ElliQ is a surprisingly helpful companion robot for older ad...
+  [fetch] Chatbots at the drive-thru are just the beginning...
+  [fetch] Snap, YouTube, and TikTok settle suit over harm to students...
+  [fetch] 看剧不卡顿、游戏低延迟：「智能队列」这样改善你的冲浪体验...
+  [fetch] 为什么我觉得好的东西，媒体评测却给了低分？...
+  [fetch] Musk v. Altman week 3: Elon Musk and Sam Altman traded blows...
+  [fetch] A revolutionary cancer treatment could transform autoimmune ...
+  [fetch] The US is betting on AI to catch insider trading in predicti...
+  [fetch] Russia pressures university students to become wartime drone...
+  [fetch] Anthropic’s $1.5B copyright settlement is getting messy as j...
+  [fetch] US hantavirus case was false positive; outbreak cases drop f...
+  [fetch] TechCrunch Mobility: The AI skills arms race is coming for a...
+  [fetch] For Eclipse, the $2.5B Cerebras win is just the start of rea...
+  [fetch] The haves and have nots of the AI gold rush...
+  [fetch] Marketing operating system Nectar Social raises $30M Series ...
+  [fetch] Research repository ArXiv will ban authors for a year if the...
+  [fetch] I don't think AI will make your processes go faster...
+  [fetch] I turned a $80 RK3562 Android tablet into a Debian Linux wor...
+  [fetch] Security researcher says Microsoft built a Bitlocker backdoo...
+  [fetch] Native all the way, until you need text...
+  [fetch] Every AI Subscription Is a Ticking Time Bomb for Enterprise...
+  [fetch] 3500万老外涌入，中国旅游这回真“卷”到世界舞台了...
+  [fetch] AI围攻菜市场：算法驱赶“烟火气”...
+  [fetch] 这次特朗普来华，为什么偏偏选了北京四季？...
+  [fetch] 创新药在中国，又多了一层“价值”保障...
+  [fetch] 阿麦斯冲刺IPO，“中国软糖第一股”要来了？...
+  [fetch] Kirki...
+  [fetch] Oto Smart Sprinkler Review (2026): Solar-Powered and Simple ...
+  [fetch] The 6 Best Grills and Smokers of 2026: Smart, Portable, Pell...
+  [fetch] Take Control of Your Debt With These Free Tools...
+  [fetch] If You’re a Serious Bowler, You Need to Know About Bowling L...
+  [fetch] The First Atomic Bomb Test in 1945 Created an Entirely New M...
+  [fetch] GDS weighs in on the NHS's decision to retreat from Open Sou...
+  [fetch] Warelay -> OpenClaw...
+  [fetch] Quoting Julia Evans...
+  [fetch] inaturalist-clumper 0.1...
+  [fetch] 刚果再次爆发埃博拉疫情...
+  [fetch] Mozilla 称 VPN 是保护隐私和安全的重要工具...
+  [fetch] 烂尾楼带来了巨大的资源和社会经济成本...
+  [fetch] 美国议员提议永久禁止中国的联网汽车...
+  [fetch] 美国人宁愿在家附近造核电而不是造 AI 数据中心...
+  [fetch] 一只机器狗，把英伟达的算力王座拱翻了...
+  [fetch] 世界大学生超级计算机竞赛首设“英才对接”环节，搭建“赛场—职场”人才供需桥梁...
+  [fetch] Agent、多模态、应用、算力一天看尽，峰会亮点在此｜5.20日，来现场一起AI...
+  [fetch] 龙虾之父月烧940万元的token！要不是入职OpenAI还真用不起...
+  [fetch] SFT别急着接RL！你的多模态大模型可能一直在“带伤训练”...
+  [fetch] Neobank Monzo Builds Governed Data Mesh Across 100 Teams and...
+  [fetch] Ubuntu Embraces Local AI Instead of Cloud-First OS Integrati...
+  [fetch] Google Introduces Cloud Fraud Defense as Successor to reCAPT...
+  [fetch] Microsoft Releases Aspire 13.3 with Major Deployment and Fro...
+  [fetch] OpenAI and Malta partner to bring ChatGPT Plus to all citize...
+  [fetch] [AINews] Cerebras' $60B IPO: Slowly, then All at Once...
+  [fetch] GitHub App installation tokens: Per-request override header...
+  [fetch] Grok Code Fast 1 deprecated...
+  [fetch] Copilot Memory supports user preferences for Pro, Pro+ users...
+
+[DONE] 共保存 63 篇文章到 /root/.openclaw/workspace/news-intel/raw/2026/05/18
+/root/.openclaw/workspace/news-intel/raw/2026/05/18
+[INFO] 日期: 2026-05-18，文章数: 63
+[Step1] 提取事件摘要...
+  [OK] 63 条摘要提取成功
+[Step2] 事件分组...
+  [OK] 63 clusters (0 个多来源)
+[DONE] 63 clusters → /root/.openclaw/workspace/news-intel/clusters/2026-05-18.json
+/root/.openclaw/workspace/news-intel/clusters/2026-05-18.json
+[INFO] 日期: 2026-05-18，找到 63 篇文章，开始分析...
+[INFO] 知识库注入: 28 条历史事件
+[1/63] 001-untitled-mate-x71000anthropicopenaiswitch.md
+  [3/5] 这是一个科技早报，包含多条科技新闻汇总
+[2/63] 002-36-tws.md
+  [2/5] 韶音高层在接受媒体专访时宣称开放式耳机将"颠覆TWS"，称中国市场销售额份额已突破30%，并发布多款
+  ⚠️  标题使用"颠覆TWS"、"品类革命"等夸张营销词汇；文章大量引用韶音高管自述，缺乏第三方数据或行业专家视角；多处结论性表
+[3/63] 003-36-untitled.md
+  [3/5] [立讯精密市值创5542亿元新高，创始人王来春持股市值破千亿，公司拟收购京西国际布局汽车业务]
+  ⚠️  [标题"千亿女富豪"属典型营销叙事，将复杂商业转型简化为个人财富故事；文中"又诞生一位"暗示这是行业普遍现象，有蹭热度之
+[4/63] 004-36-3100ai130openai.md
+  [3/5] OpenClaw创始人Peter Steinberger称3人团队使用100个AI agent开发软
+  ⚠️  标题"OpenAI：钱我出"暗示OpenAI承担这笔费用，但原文只说"OpenAI给报销"，缺乏报销机制说明；文章多处使
+[5/63] 005-36-28.md
+  [3/5] 路透社报道怡和集团拟以约4亿美元出售港澳台缅甸越南五市场肯德基/必胜客及PHD约1000家门店，非约
+  ⚠️  标题"28亿，肯德基也要被卖了？"使用疑问句制造悬念，但省略了"五市场1000家门店"的关键限定语，暗示整个肯德基被出售
+[6/63] 006-36-64k-starsclaude-code.md
+  [2/5] 开源项目 academic-research-skills 发布，用Claude Code构建从选题
+  ⚠️  标题"6.4k Stars！"用感叹号和具体数字制造传播噱头，GitHub stars对工具类项目获取门槛较低，该数字的
+[7/63] 007-the-verge-oddity-is-masterfully-tense-horror-from-.md
+  [1/5] [The Verge影评推荐导演Damian McCarthy此前的恐怖片《Oddity》，称其张力
+  ⚠️  纯主观影评，使用“masterfully”、“nightmares”、“upsetting”等夸张词汇；文中大量引用影评
+[8/63] 008-the-verge-fujifilms-x-half-is-even-more-whimsical-.md
+  [ERROR] API call failed: The read operation timed out
+[9/63] 009-the-verge-elliq-is-a-surprisingly-helpful-companio.md
+  [2/5] 作者母亲因帕金森病用药效果下降、主动性衰退，使用ElliQ陪伴机器人一周后明显改善了锻炼和社交行为。
+  ⚠️  个人体验叙事缺乏对照组和量化指标，难以排除安慰剂效应；正文与产品广告标签（"Elli
+[10/63] 010-the-verge-chatbots-at-the-drive-thru-are-just-the-.md
+  [2/5] 快餐行业AIdrive-thru聊天机器人扩张受阻——McDonald's终止IBM合作，55%消费
+  ⚠️  标题"just the beginning"隐含乐观叙事框架；企业宣称的效率数据未经独立核实；文章未探讨对 franch
+[11/63] 011-the-verge-snap-youtube-and-tiktok-settle-suit-over.md
+  [4/5] Snap、YouTube和TikTok与肯塔基州Breathitt County学区达成和解，这是全
+  ⚠️  标题"settle suit over harm to students"将和解定性为承认伤害存在，但法律上和解不等于认
+[12/63] 012-untitled-untitled.md
+  [2/5] 少数派重新发布一篇解释路由器"智能队列"（fq_codel）技术原理的科普文章，内容涵盖QoS机制、
+  ⚠️  这是一篇技术科普文章，非新闻报道；内容本身叙述客观，但标注不清——将5年前的旧文以"重推"形式发布，读者可能误以为是新内
+[13/63] 013-untitled-untitled.md
+  [2/5] 自媒体作者以个人观察批判主观体验向评测（游戏/数码区）的公信力下降与内容同质化问题，坦承自身也存在类
+  ⚠️  文章虽声称不针对具体媒体，但通过IGN、Polygon等具体案例展开论述，存在选择性叙事；作者自我标注免责声明与免责声明
+[14/63] 014-mit-tech-review-musk-v-altman-week-3-elon-musk-and-sam-a.md
+  [2/5] Musk v. Altman案第三周庭审收尾，双方律师互相攻击对方信誉度，陪审团将于下周作出咨询性裁
+  ⚠️  叙述相对客观，双方论点均有呈现。但"golden trophy of a donkey's ass"等细节渲染了戏剧性效
+[15/63] 015-ars-technica-a-revolutionary-cancer-treatment-could-t.md
+  [2/5] 研究人员将原本用于癌症的CAR T细胞疗法用于治疗多发性硬化症等自身免疫疾病，首批患者治疗显示初步前
+[16/63] 016-ars-technica-the-us-is-betting-on-ai-to-catch-insider.md
+  [2/5] CFTC宣布利用AI追踪预测市场内幕交易，警告使用VPN进入离岸市场的美国交易者将被追查并起诉。
+  ⚠️  叙述
+[17/63] 017-ars-technica-russia-pressures-university-students-to-.md
+  [2/5] 俄罗斯高校以免学费及最高7万美元为诱饵招募大学生担任军事无人机飞行员，承诺可规避前线危险，但已有一名
+  ⚠️  文章多处引用其他媒体来源（Bloomberg、NBC News、BBC News），但未对这些关键数字进行独立核实；北约
+[18/63] 018-ars-technica-anthropics-15b-copyright-settlement-is-g.md
+  [3/5] 联邦法官暂缓批准Anthropic与作者达成的15亿美元版权和解，因异议者反对律师费（3.2亿美元）
+  ⚠️  叙述客观，文章平衡呈现了异议者诉求，但缺少律师回应，且未交代Anthropic为何未抗辩而选择高额和解的背景。
+[19/63] 019-ars-technica-us-hantavirus-case-was-false-positive-ou.md
+  [3/5] WHO确认邮轮MV Hondius汉坦病毒疫情病例从11例修正为10例（美国病例为假阳性），撤离行动
+  ⚠️  叙述客观，标题准确反映病例数变化，未夸大假阳性事件的意义。
+[20/63] 020-techcrunch-techcrunch-mobility-the-ai-skills-arms-r.md
+  [2/5] GM裁员约600名IT员工（约10%部门）进行"技能交换"转向AI岗位；福特、GM、Stellant
+[21/63] 021-techcrunch-for-eclipse-the-25b-cerebras-win-is-just.md
+  [2/5] Eclipse Ventures创始人Susan称其2016年600万美元投资Cerebras获25
+[22/63] 022-techcrunch-the-haves-and-have-nots-of-the-ai-gold-r.md
+  [ERROR] API call failed: The read operation timed out
+[23/63] 023-techcrunch-marketing-operating-system-nectar-social.md
+  [2/5] AI营销平台Nectar Social宣布获得3000万美元A轮融资，由Menlo Ventures
+  ⚠️  典型融资软文，CEO声明PR化明显——"operating system that lets brands show u
+[24/63] 024-techcrunch-research-repository-arxiv-will-ban-autho.md
+  [2/5] arXiv宣布如果作者未检查AI生成内容导致论文存在“无可争议证据”（如虚假引用），将面临一年封禁并
+[25/63] 025-hacker-news-i-dont-think-ai-will-make-your-processes.md
+  [3/5] 软件工程师博客称AI无法加速业务流程优化，真正瓶颈是上游需求澄清和领域专家深度参与，而非代码生成速度
+  ⚠️  叙述较为客观，但"Just throw AI at it"作为小标题有轻微标题党倾向，带有对AI应用的先入为主的批评立场
+[26/63] 026-hacker-news-i-turned-a-80-rk3562-android-tablet-into.md
+  [2/5] 开发者将一台$80的Doogee U10 Android平板通过逆向工程成功运行完整Debian 1
+  ⚠️  叙述客观，数据来源于实测且提供了详细硬件规格表，未发现夸大或PR措辞。标题为事实描述而非营销语言。
+[27/63] 027-hacker-news-security-researcher-says-microsoft-built.md
+  [2/5] 安全研究人员声称微软在BitLocker中构建后门并发布漏洞利用工具。
+  ⚠️  标题使用“backdoor”这一敏感词汇，措辞具有煽动性。由于正文内容缺失，无法核实该声明的真实性与准确性，属于典型信息
+[28/63] 028-hacker-news-native-all-the-way-until-you-need-text.md
+  [2/5] 一位近20年经验的macOS/iOS开发者记录其在SwiftUI/AppKit/TextKit上实现
+[29/63] 029-hacker-news-every-ai-subscription-is-a-ticking-time-.md
+  [2/5] [AI公司以低于成本价销售订阅服务，文章警告企业若依赖低价AI将面临定价修正风险]
+  ⚠️  文章存在严重的来源模糊问题，多处使用"widely cited"、"reportedly"等未核实的间接引用；将"可能调
+[30/63] 030-untitled-3500.md
+  [2/5] 2026年中国5·19旅游日推出"入境友好"政策，2025年入境游客1.545亿人次（外国游客351
+[31/63] 031-untitled-ai.md
+  [2/5] 
+[32/63] 032-untitled-untitled.md
+  [2/5] 特朗普率含库克、马斯克等16位美国巨头的"全明星"代表团访华，选择北京四季酒店而非瑞吉或钓鱼台国宾馆
+[33/63] 033-untitled-untitled.md
+  [2/5] 国家药监局5月15日正式发布《药品试验数据保护实施办法》，为创新药建立最长6年、改良药4年的试验数据
+  ⚠️  ①标题"又多了一层'价值'保障"属于软性营销措辞，暗示制度将带来实质性经济回报，但"价值"内涵模糊；②"护身符"、"筑高
+[34/63] 034-untitled-ipo.md
+  [2/5] 阿麦斯食品递表港交所IPO，2025年营收27.82亿元、利润6亿元，北美市场占比超50%，但上市前
+[35/63] 035-product-hunt-kirki.md
+  [2/5] [Kirki发布WordPress免费自由画布网站构建工具，宣称无结构限制，内置CMS、实时协作等功
+  ⚠️  Product Hunt发布页属PR导向内容，"freeform canvas"概念缺乏具体技术细节支撑，"Free f
+[36/63] 036-wired-oto-smart-sprinkler-review-2026-solar-po.md
+  [2/5] 
+[37/63] 037-wired-the-6-best-grills-and-smokers-of-2026-sm.md
+  [2/5] Wired发布2026年最佳烧烤架及烟熏炉评测指南，涵盖智能温控产品推荐，含多款产品售价与电商购买链
+[38/63] 038-wired-take-control-of-your-debt-with-these-fre.md
+  [2/5] Wired发布免费债务计算器工具评测，介绍Bankrate、NerdWallet、WalletHub
+  ⚠️  叙述客观，未发现夸大或PR语言，但仅停留在功能描述层面，未对工具局限性进行深入批判。
+[39/63] 039-wired-if-youre-a-serious-bowler-you-need-to-kn.md
+  [2/5] 职业保龄球选手通过分析球道油模式制定战术，技术进步使油料施加如喷墨打印般精准
+[40/63] 040-wired-the-first-atomic-bomb-test-in-1945-creat.md
+  [3/5] 研究团队在1945年三位一体核试验产生的红辉石中首次发现一种由钙、铜、硅组成的新型I型包合物（cla
+  ⚠️  叙述客观，未发现明显夸大或PR语言过度使用；研究背景引用了同一团队此前发现的准晶体发现，保持一致性；但未提供同行评审期刊
+[41/63] 041-simon-willison-blog-gds-weighs-in-on-the-nhss-decision-to-re.md
+  [3/5] 英国政府数字服务（GDS）就NHS因Project Glasswing安全漏洞关闭开源仓库的决定发表
+  ⚠️  文章本质是链接帖，正文内容极其简短，多为转述；"poorly considered"措辞带有明显立场但缺乏具体论据支撑；
+[42/63] 042-simon-willison-blog-warelay-openclaw.md
+  [1/5] 开发者Simon Willison通过Git历史工具追溯其个人项目OpenClaw自2025年11月
+  ⚠️  仅为个人技术博客的生活记录，非行业资讯，无新闻价值。
+[43/63] 043-simon-willison-blog-quoting-julia-evans.md
+  [2/5] 技术博主Julia Evans分享其十年CSS学习心路，称放弃抱怨并认真对待CSS后，发现诸多难题早
+  ⚠️  叙述客观，但内容单薄——仅为个人技术感悟，无具体技术细节或行业数据支撑
+[44/63] 044-simon-willison-blog-inaturalist-clumper-01.md
+  [1/5] Simon Willison发布个人项目inaturalist-clumper 0.1，用于将iNa
+  ⚠️  纯个人开发者项目发布公告，属于技术博客分享，无行业新闻价值。
+[45/63] 045-solidot-untitled.md
+  [2/5] 刚果民主共和国和乌干达爆发Bundibugyo毒株埃博拉疫情，WHO将其列为国际关注的突发公共卫生事
+  ⚠️  叙述基本客观，引用了具体数据，但标题与正文对WHO声明级别的描述存在歧义，易误导读者以为已宣布PHEIC；缺乏对疫情严重
+[46/63] 046-solidot-mozilla-vpn.md
+  [3/5] Mozilla公开反对英国考虑限制青少年使用VPN的政策，称VPN是保护各年龄段用户隐私和安全的重要
+  ⚠️  文章未标注Mozilla自身提供VPN服务的事实，读者可能忽略其商业利益冲突；但整体立场和论据符合其公开的使命宣言，不构
+[47/63] 047-solidot-untitled.md
+  [3/5] 研究机构调查142个城市1779个烂尾楼发现，浪费4850万吨建材，碳排放强度增9.6%，健康损失2
+  ⚠️  文章为学术成果的新闻化编译，忠实呈现了数据但未追问方法论。研究者使用"±"标注不确定度体现了学术严谨性，但正文未解释数据
+[48/63] 048-solidot-untitled.md
+  [3/5] 美国两党议员提交法案《Connected Vehicle Security Act》，意图将此前行政
+  ⚠️  文章叙述基本客观，但标题中"永久"一词具有绝对化倾向，实际任何法律均可被后续立法修改；内容仅概述法案基本信息，缺乏立法程
+[49/63] 049-solidot-ai.md
+  [3/5] 盖洛普调查显示71%美国人反对在家附近建造AI数据中心，反对建核电站比例为53%，且两党均多数持反对
+  ⚠️  标题"宁愿...也不愿..."带有引导性暗示核电站更受欢迎，实际上53%的反对比例仍属多数；政治倾向数据呈现方式较表面化
+[50/63] 050-untitled-untitled.md
+  [2/5] 蔚蓝科技发布BabyAlpha A3消费级四足机器人，声称通过6颗芯片异构计算实现行业10倍以上算力
+  ⚠️  标题"拱翻英伟达王座"属于营销夸大；全文核心技术参数均来自厂商自述，无独立验证；多处使用"离谱""捅破天花板
+[51/63] 051-untitled-untitled.md
+  [2/5] 2026年ASC大学生超算总决赛无锡开赛，首次增设校企人才对接环节
+  ⚠️  叙述客观，但“全球规模最大、参与人数最多”表述缺乏第三方数据佐证
+[52/63] 052-untitled-agent520ai.md
+  [2/5] 量子位宣传第四届中国AIGC产业峰会，5月20日在北京举办，含18位嘉宾、Agent圆桌及年度榜单等
+  ⚠️  文章以"灵魂拷问"式营销文案开场（"我真的已经慢了一拍？"），运用大量行业峰会标配的煽动性词汇（"狂飙突进"/"重磅嘉宾
+[53/63] 053-untitled-940tokenopenai.md
+  [2/5] OpenAI收购的"龙虾之父"Peter Steinberger在过去30天消耗价值130万美元的O
+[54/63] 054-untitled-sftrl.md
+  [2/5] PRISM团队发现SFT会在多模态大模型中引入分布偏移导致性能下降，提出SFT→分布对齐→RL的三阶
+[55/63] 055-infoq-neobank-monzo-builds-governed-data-mesh-.md
+  [2/5] 
+[56/63] 056-infoq-ubuntu-embraces-local-ai-instead-of-clou.md
+  [2/5] Canonical宣布Ubuntu将采用本地AI优先策略，计划年内逐步集成开源权重模型，提供推理sn
+[57/63] 057-infoq-google-introduces-cloud-fraud-defense-as.md
+  [4/5] Google在Next '26大会上推出Cloud Fraud Defense，作为reCAPTCH
+  ⚠️  主要依赖Google官方声明和单一开发者测试，缺少独立第三方评估数据；"agentic economy"和"fricti
+[58/63] 058-infoq-microsoft-releases-aspire-133-with-major.md
+  [3/5] Microsoft 发布 Aspire 13.3 云原生框架更新，新增资源销毁命令、Kubernet
+  ⚠️  标题中"Major Updates"属于适度描述但略显营销化；文章罗列功能清单但缺乏深度分析，数据来源单一（仅厂商发布信
+[59/63] 059-openai-blog-openai-and-malta-partner-to-bring-chatgp.md
+  [2/5] OpenAI与马耳他政府达成合作协议，向全部马耳他公民提供ChatGPT Plus订阅及AI技能培训
+  ⚠️  标题“all citizens”具传播力但正文细节严重不足，仅凭一篇来源为OpenAI官方博客的PR稿无法评估实际执行价
+[60/63] 060-latent-space-ainews-cerebras-60b-ipo-slowly-then-all-.md
+  [2/5] Cerebras以600亿美元市值IPO上市，股价280美元，已部署OpenAI 5.4/5.5等万
+[61/63] 061-github-changelog-github-app-installation-tokens-per-reque.md
+  [2/5] GitHub推出临时请求头X-GitHub-Stateless-S2S-Token，允许开发者测试或
+  ⚠️  叙述客观。作为技术变更日志，信息完整且准确，无营销措辞或夸大。
+[62/63] 062-github-changelog-grok-code-fast-1-deprecated.md
+  [2/5] GitHub Copilot于2026年5月15日废弃Grok Code Fast 1，建议用户改用
+  ⚠️  叙述客观但信息单薄，仅为官方产品通知，无深度分析
+[63/63] 063-github-changelog-copilot-memory-supports-user-preferences.md
+  [2/5] GitHub Copilot Memory功能新增用户级偏好存储支持，面向Pro和Pro+用户开放早
+  ⚠️  仅一则产品变更日志，信息量极低；"inferred"一词暗示主动用户画像，存在营销嫌疑但无法确认实质影响；标题为功能描述
+
+[INFO] 分析完成，16/61 篇入选（评分≥3）
+[DONE] 分析文件已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-18.md
+[DONE] sidecar 已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-18.jsonl
+/root/.openclaw/workspace/news-intel/digest/2026-05-18.md
+[INFO] sidecar 中评分≥4 的事件: 2 条
+[DONE] kb 更新: +2 条新增，共 30 条（窗口: 2026-04-18 至今）
+[INFO] 日期: 2026-05-19，信源数: 24，输出目录: /root/.openclaw/workspace/news-intel/raw/2026/05/19
+[WARN] 极客公园: RSS fetch failed: HTTP Error 502: Bad Gateway
+[SOURCE] 极客公园: 0 篇
+[SOURCE] 少数派: 5 篇
+[SOURCE] 爱范儿: 5 篇
+[SOURCE] 36氪: 5 篇
+[SOURCE] MIT Tech Review: 2 篇
+[SOURCE] TechCrunch: 5 篇
+[SOURCE] Ars Technica: 5 篇
+[SOURCE] 钛媒体: 5 篇
+[SOURCE] Google DeepMind Blog: 0 篇
+[SOURCE] Latent Space: 1 篇
+[SOURCE] Wired: 5 篇
+[SOURCE] The Verge: 5 篇
+[SOURCE] Simon Willison Blog: 4 篇
+[SOURCE] Product Hunt: 3 篇
+[SOURCE] 机器之心: 0 篇
+[SOURCE] Solidot: 5 篇
+[SOURCE] 量子位: 5 篇
+[SOURCE] VentureBeat AI: 0 篇
+[SOURCE] InfoQ: 5 篇
+[SOURCE] GitHub Changelog: 1 篇
+[SOURCE] Hugging Face Blog: 3 篇
+[SOURCE] Hacker News: 5 篇
+[SOURCE] Papers With Code: 0 篇
+[SOURCE] OpenAI Blog: 0 篇
+[INFO] RSS 抓取完成，共 74 篇待处理
+  [fetch] 派评 | 近期值得关注的 App...
+  [fetch] 四天三夜，用小长假的时间体验青海湖小环线...
+  [fetch] 打破虚拟与现实的边界，这 6 款网页解谜游戏值得一试...
+  [fetch] 派早报：提交未经核实 AI 内容的论文作者将被 arXiv 封禁一年...
+  [fetch] 看剧不卡顿、游戏低延迟：「智能队列」这样改善你的冲浪体验...
+  [fetch] MacBook Neo 杀疯了，英特尔派出「野猫」接招？...
+  [fetch] 马斯克花 100 亿想清楚一件事，不做 coding agent 就是等死...
+  [fetch] 一个月烧掉 930 万元 Token 的人，也没烧出个答案...
+  [fetch] 2026 年，手机终于会自己拍照了｜AI 器物志...
+  [fetch] 昊铂 S600 预售发布，20 万就有四驱和双腔空悬了...
+  [fetch] 氪星晚报 ｜百度：一季度营收321亿元，AI业务收入136亿元；马斯克预计今年美国将广泛使用自动驾驶汽车；巨力索具旗下十...
+  [fetch] 番茄小说正推动 AI 动漫上院线，开放头部IP改编权限｜36氪独家...
+  [fetch] 科氪 | 性能极限与跨界尝试：红魔11S Pro系列深度体验...
+  [fetch] Agent、多模态、应用、算力一天看尽，峰会亮点在此｜5.20日，来现场一起AI...
+  [fetch] 「宇石空间」完成5亿元A轮融资，今年计划交付三枚火箭，累计融资额已达10亿元｜36氪首发...
+  [fetch] Inside Anduril and Meta’s quest to make smart glasses for wa...
+  [fetch] The Download: Musk v. Altman week 3, and Trump’s tech tradin...
+  [fetch] Kin Health raises $9M to build an AI notetaker for patients...
+  [fetch] Amazon’s new Alexa+ powered feature can generate podcast epi...
+  [fetch] Open source tool maker Grafana Labs says hackers stole its c...
+  [fetch] South Korea’s LetinAR is building optics behind AI glasses...
+  [fetch] Apple’s Siri revamp could include auto-deleting chats...
+  [fetch] Five years later, Windows 11 brings back much-missed taskbar...
+  [fetch] BMW sends off the 6th-gen M3 CS with a manual gearbox, rear-...
+  [fetch] Did Artemis II break through? Registrations at Space Camp do...
+  [fetch] Bug bounty businesses bombarded with AI slop...
+  [fetch] The US space enterprise is desperately waiting for Starship—...
+  [fetch] 洛轴股份：高杠杆下的上市豪赌，“科创”外衣与资本焦虑难解 | IPO观察...
+  [fetch] 腾讯为什么推不出豆包...
+  [fetch] 【Fintech 周报】中国银行信用卡APP6月下线；支付宝回应“扣款捐赠184万元”...
+  [fetch] “绍兴帮”卡线围猎金海高科，神秘人提前入局浮盈1.5亿...
+  [fetch] 百度Q1：搜索广告跌破半壁江山，AI云撑起新故事...
+  [fetch] The Next War Is Already Here. The West Isn't Ready. — Yarosl...
+  [fetch] The Catastrophic Swatch x Audemars Piguet Launch Was Entirel...
+  [fetch] How to Watch Google I/O 2026...
+  [fetch] The Backward Logic of Chickenpox Parties...
+  [fetch] Supercharging Immune Cells May Help Control HIV Long-Term...
+  [fetch] I’m a Normie. Can Normies Really Vibe Code?...
+  [fetch] Google is rolling out its redesigned Workspace app icons...
+  [fetch] Sony is raising short-subscription prices for PlayStation Pl...
+  [fetch] Live updates from Elon Musk and Sam Altman’s court battle ov...
+  [fetch] Amazon Alexa Plus can now create AI-generated podcasts...
+  [fetch] Philips Hue smart lights and a whole lot more are over 20 pe...
+  [fetch] Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goo...
+  [fetch] GDS weighs in on the NHS's decision to retreat from Open Sou...
+  [fetch] Warelay -> OpenClaw...
+  [fetch] Quoting Julia Evans...
+  [fetch] AnyFrame...
+  [fetch] Voiser AI...
+  [fetch] Krea 2...
+  [fetch] 你生活的地点与你衰老的速度相关...
+  [fetch] 伊朗要求通过霍尔木兹海峡的海底光缆付费...
+  [fetch] 微软将修改 Edge 加载密码的方式...
+  [fetch] 《Terraria》 15 年售出 7000 万份拷贝...
+  [fetch] 三星电子工会威胁总罢工...
+  [fetch] 重塑主流PC，第三代英特尔酷睿开启全民AI轻薄本时代...
+  [fetch] AI水论文封一年，署名连坐！arXiv最严新规来了，陶哲轩附议...
+  [fetch] openJiuwen社区开源新招：重磅发布JiuwenSwarm，拉开群体智能“养蜂”序幕...
+  [fetch] 华为“养”出半个具身智能创业圈...
+  [fetch] 上交x创智x瑞金联合发布CX-Mind：胸片诊断进入“可验证推理”时代...
+  [fetch] Swiggy Improves Search Autocomplete Using Real Time Machine ...
+  [fetch] Anthropic's Code With Claude Announces  Managed Agents, Proa...
+  [fetch] Java News Roundup: OpenJDK JEPs, Azul Payara, WildFly, LangC...
+  [fetch] Article: Building a Secure MCP Server on AWS for a Million-C...
+  [fetch] Podcast: Context is the Key to the Agentic Architecture Revo...
+  [fetch] GPT-5.3-Codex is now the base model for Copilot Business and...
+  [fetch] Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Rob...
+  [fetch] PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a...
+  [fetch] The Open Agent Leaderboard...
+  [fetch] We stopped AI bot spam in our GitHub repo using Git's –autho...
+  [fetch] Show HN: Files.md – Open-source alternative to Obsidian...
+  [fetch] The Quiet Renovation at Bitwarden...
+  [fetch] 1024000^2 Blocks, 2B2T Minecraft Server World Download Proje...
+  [fetch] Project Glasswing: what Mythos showed us...
+
+[DONE] 共保存 74 篇文章到 /root/.openclaw/workspace/news-intel/raw/2026/05/19
+/root/.openclaw/workspace/news-intel/raw/2026/05/19
+[INFO] 日期: 2026-05-19，文章数: 74
+[Step1] 提取事件摘要...
+  [ERROR] API call failed: The read operation timed out
+  [ERROR] API call failed: The read operation timed out
+  [ERROR] API call failed: The read operation timed out
+  [OK] 71 条摘要提取成功
+[Step2] 事件分组...
+  [ERROR] API call failed: The read operation timed out
+  [OK] 74 clusters (0 个多来源)
+[DONE] 74 clusters → /root/.openclaw/workspace/news-intel/clusters/2026-05-19.json
+/root/.openclaw/workspace/news-intel/clusters/2026-05-19.json
+[INFO] 日期: 2026-05-19，找到 74 篇文章，开始分析...
+[INFO] 知识库注入: 30 条历史事件
+[1/74] 001-untitled-app.md
+  [2/5] 少数派发布近期App推荐文章，介绍AIDA日历工具、Cogito Markdown编辑器、AndDr
+  ⚠️  文章为典型的"合集式推荐"，缺乏深度评测和数据支撑，多为功能描述性文字，未揭示产品局限性或用户真实痛点，属于软性推广性质
+[2/74] 002-untitled-6.md
+  [2/5] 少数派作者推荐6款网页解谜游戏，包含《大学生登山失踪事件》等作品，定位为“ARG”类游戏。
+  ⚠️  文章标题“打破虚拟与现实的边界”含营销渲染意味；全文为软性推荐性质，无客观评分体系，纯粹作者主观体验分享；将轻量级网页解
+[3/74] 003-untitled-untitled.md
+  [2/5] 用户回顾2025年十一假期4天3晚青海湖小环线自驾游，分享沿途景点（塔尔寺、茶卡盐湖、卓尔山、岗什卡
+  ⚠️  叙述客观。作为Matrix写作社区的个人游记，内容为真实的旅行体验记录，兼具个人感悟与实用信息。
+[4/74] 004-untitled-ai-arxiv.md
+  [3/5] arXiv于5月15日出台新规，提交含「无可辩驳」AI生成内容稿件的所有署名作者将被处以最长一年封禁
+  ⚠️  文章信息基本忠实，但对「无可辩驳」这一关键定义缺乏追问——虚假参考文献或AI对话内容如何被技术手段识别存疑；引用Thom
+[5/74] 005-untitled-untitled.md
+  [2/5] 
+[6/74] 006-untitled-macbook-neo.md
+  [3/5] 英特尔推出Wildcat Lake处理器，将旗舰18A制程下放入门市场反击MacBook Neo
+[7/74] 007-untitled-100-coding-agent.md
+  [2/5] 
+[8/74] 008-untitled-930-token.md
+  [2/5] AI Token消耗量被大厂用作绩效考核，亚马逊、Meta员工通过刷量应对荒诞KPI，"龙虾之父"P
+  ⚠️  文章叙事客观，批评精准，但存在若干非严谨表述：①"裁员裁到大动脉"为网络说法，原文未给出具体裁员规模；②"龙虾之父"13
+[9/74] 009-untitled-s600-20.md
+  [2/5] [昊铂S600 SUV预售发布，20万价位提供双电机四驱和双腔空悬，主打"满配"家用+运动定位]
+  ⚠️  [文章大量使用营销语言（"满配""跑山王""配置密度很高"），未提供具体配置对比数据；请代言人的成本是否转嫁消费者未说明
+[10/74] 010-untitled-2026-ai.md
+  [2/5] [华为 Pura 90 Pro Max 发布 XMAGE 智拍功能，通过端侧 AI 实现全自动构图、
+  ⚠️  [标题“手机终于会自己拍照了”属于PR夸大，实际为AI辅助功能而非自主拍摄；文中“同行集体踩下刹车”“超大杯停更”缺乏来
+[11/74] 011-36-321ai136.md
+  [2/5] 百度2026年Q1营收321亿元，AI业务收入136亿元占比首超50%；马斯克预测今年美国将广泛使用
+  ⚠️  标题党与营销语言混合——李彦宏"核心驱动力"表述属于自我宣称性PR语言；马斯克预测缺乏技术验证数据支撑，与知识库中Ace
+[12/74] 012-36-ai-ip36.md
+  [2/5] 字节跳动旗下番茄小说正推动AI动漫上院线，将开放平台头部IP改编权限，属战略规划阶段。
+[13/74] 013-36-11s-pro.md
+  [2/5] 红魔11S Pro系列电竞手机发布，采用纯平后盖设计、第五代骁龙8至尊领先版、风水双冷散热及无孔全面
+  ⚠️  文章使用"仪式感拉满"、"性能拉满"、"新的极端"、"旗舰标杆"等营销夸张措辞；作为厂商评测软文，缺乏价格、跑分、续航实
+[14/74] 014-36-agent520ai.md
+  [2/5] 36氪发布第四届中国AIGC产业峰会预告（5月20日北京），列出18位嘉宾、1场圆桌、1份榜单，但正
+  ⚠️  PR广告性质，使用"狂飙突进""绝对主角""话语权毋庸置疑"等营销话术；通过"我是不是已经慢了一拍"制造焦虑；正文嘉宾简
+[15/74] 015-36-5a1036.md
+  [2/5] 宇石空间完成5亿元A轮融资，累计融资10亿元，计划2027年上半年首飞AS-1火箭。
+  ⚠️  36氪作为创投媒体，文章大量引用投资人原话和创始人访谈，叙事以"终局路线"、"对标SpaceX"等营销语言为主；缺乏对技
+[16/74] 016-mit-tech-review-inside-anduril-and-metas-quest-to-make-s.md
+  [3/5] Anduril与Meta合作研发的军用AR头显原型细节曝光，包括通过眼动追踪和语音命令调用无人机打击
+  ⚠️  标题"make smart glasses for warfare"暗示产品已成型，实际上两系统均处于原型阶段且"yea
+[17/74] 017-mit-tech-review-the-download-musk-v-altman-week-3-and-tr.md
+  [3/5] Musk v. Altman案第三周庭审收尾，双方律师互相攻击对方信誉度，陪审团将于下周作出咨询性裁
+  ⚠️  标题"Trump's tech trading"暗示政策与交易的关联但未提供因果证据；"donkey's ass tro
+[18/74] 018-techcrunch-kin-health-raises-9m-to-build-an-ai-note.md
+  [2/5] Kin Health获得900万美元种子轮融资，开发面向患者的AI就诊记录与摘要应用，采用免费+推荐
+  ⚠️  文章引用的$600M市场数据来自投资方，缺乏独立来源验证；"not HIPAA-certified but adhere
+[19/74] 019-techcrunch-amazons-new-alexa-powered-feature-can-ge.md
+  [2/5] Amazon在Alexa+上推出AI生成定制播客功能，用户只需语音指令即可生成任意主题的播客节目。
+[20/74] 020-techcrunch-open-source-tool-maker-grafana-labs-says.md
+  [3/5] 开源可视化软件公司Grafana Labs确认遭黑客入侵，黑客窃取代码库并威胁发布，公司拒绝支付赎金
+  ⚠️  叙述客观，引用公司声明和FBI建议均有据可查。与Instructure支付赎金的对比略显冗长但有助于说明行业应对差异。
+[21/74] 021-techcrunch-south-koreas-letinar-is-building-optics-.md
+  [2/5] 韩国AR光学初创公司LetinAR获1850万美元融资，其PinTILT技术可实现更轻薄低功耗的AI
+  ⚠️  存在明显营销导向——摩托车场景描述渲染过度，技术优势部分仅引用被采访公司自述，缺乏独立第三方验证；CEO将"最难攻克的部
+[22/74] 022-techcrunch-apples-siri-revamp-could-include-auto-de.md
+  [2/5] Apple将在WWDC发布新Siri，核心发现：
+[23/74] 023-ars-technica-five-years-later-windows-11-brings-back-.md
+  [3/5] Windows 11五年来首次测试任务栏可停靠至屏幕任意边缘（左右侧），同时新增更小任务栏和开始菜单
+  ⚠️  叙述客观，标题"about time"属合理评论而非夸大。
+[24/74] 024-ars-technica-bmw-sends-off-the-6th-gen-m3-cs-with-a-m.md
+  [2/5] 
+[25/74] 025-ars-technica-did-artemis-ii-break-through-registratio.md
+  [2/5] 
+[26/74] 026-ars-technica-bug-bounty-businesses-bombarded-with-ai-.md
+  [2/5] [AI生成的低质量漏洞报告激增，部分bug bounty平台被迫暂停项目，平台开始引入AI工具进行分
+  ⚠️  [叙述客观，提供多个平台具体案例和数据，但"AI slop"标题用词具有轻微煽动性；Ross McKerchar的判断具
+[27/74] 027-ars-technica-the-us-space-enterprise-is-desperately-w.md
+  [3/5] [SpaceX Starship V3完成湿彩排拟恢复飞行，但这个未完全成功的火箭支撑着公司1.5-
+  ⚠️  [文章引用大量乐观数据（600台引擎、$150亿投资、1.5-2万亿估值）但未提供Starship具体成功率数据，"mi
+[28/74] 028-untitled-ipo.md
+  [2/5] [洛轴股份拟创业板IPO募资18亿，近80%高负债，应收账款占营收45%，研发费用率3.3%低于同业
+[29/74] 029-untitled-untitled.md
+  [3/5] 钛媒体分析腾讯AI产品矩阵完整但豆包类应用表现远逊字节豆包，归因于腾讯"执行型"基因而非"探索型"A
+  ⚠️  文章分析框架有一定逻辑性，但存在预设立场——以"腾讯基因"解释一切，将"探索型"与"执行型"对立化；未提及字节同样面临的
+[30/74] 030-untitled-fintech-app6184.md
+  [1/5] [50字以内，忠实还原，保留限定词，不夸大不缩小]
+  ⚠️  [识别标题党/PR夸大/数据缺失/逻辑漏洞等问题，若无则写"叙述客观"]
+[31/74] 031-untitled-15.md
+  [3/5] 金海高科29.6%股份以14.5亿元转让给金丹良、陈永聪，精准卡在30%要约收购红线下方，神秘人王征
+  ⚠️  标题中"卡线围猎"带有明显营销色彩，暗示有预谋的资本操控；文中多处使用"绍兴帮""资本共同体"等标签化表述强化叙事；"游
+[32/74] 032-untitled-q1ai.md
+  [2/5] 
+[33/74] 033-latent-space-the-next-war-is-already-here-the-west-is.md
+  [2/5] [乌克兰无人机创始人Azhnyuk在播客访谈中称中国年产能40亿FPV无人机，西方在AI战争时代已落
+  ⚠️  [标题"The Next War Is Already Here. The West Isn't Ready"为典型营销
+[34/74] 034-wired-the-catastrophic-swatch-x-audemars-pigue.md
+  [3/5] Swatch x Audemars Piguet限量Royal Pop手表2026年5月16日全球发
+  ⚠️  标题"Catastrophic"等用词虽带有情绪但有充分事实支撑；文章依赖目击者描述和社交媒体片段，缺乏官方伤亡/损失数
+[35/74] 035-wired-how-to-watch-google-io-2026.md
+  [2/5] Google I/O 2026将于5月19日开幕，官方预告将公布Search、Android、Gem
+  ⚠️  文章本质为"观看指南"而非新闻报道，内容高度依赖已公开信息和行业传闻，缺乏实质性的独家信息或分析价值
+[36/74] 036-wired-the-backward-logic-of-chickenpox-parties.md
+  [2/5] 文章描述疫苗出现前家长故意让孩子感染水痘的“水痘派对”，声称这种做法在互联网时代正在复苏。
+  ⚠️  标题使用"Backward Logic"（倒退逻辑）带有明显价值判断；声称做法"resurfacing"但未提供具体当代
+[37/74] 037-wired-supercharging-immune-cells-may-help-cont.md
+  [3/5] 小型临床试验中两名HIV患者接受CAR-T细胞治疗后病毒降至检测不到水平近两年/近一年，可停药。
+  ⚠️  标题和叙述相对客观，"early"和"small study"等词准确反映阶段；专家引用展现谨慎态度；但样本量极小（仅两
+[38/74] 038-wired-im-a-normie-can-normies-really-vibe-code.md
+  [2/5] [一位非技术背景的作者描述自己如何用Claude进行"vibe coding"，尝试开发一款追踪行政
+  ⚠️  叙述客观。作为第一人称叙事性报道，无夸大或PR措辞；但因文章被截断，无法
+[39/74] 039-the-verge-google-is-rolling-out-its-redesigned-wor.md
+  [2/5] Google正在广泛推出重新设计的Workspace应用图标，采用渐变色、圆角和新形状，部分应用从彩
+  ⚠️  叙述客观，但属于常规产品UI更新，无技术突破或商业影响。
+[40/74] 040-the-verge-sony-is-raising-short-subscription-price.md
+  [3/5] 索尼在"部分区域"提高PlayStation Plus月度/季度订阅价格，美国1个月涨1美元、3个月
+  ⚠️  叙述客观。文章仅陈述事实，无夸大或情绪化措辞；"ongoing market conditions"是标准的PR措辞，但
+[41/74] 041-the-verge-live-updates-from-elon-musk-and-sam-altm.md
+  [4/5] Musk v. Altman案第三周庭审进入尾声，双方律师互相攻击对方当事人信誉度——Musk方指控
+  ⚠️  文章标题"court battle over the future of OpenAI"带有暗示性，暗示案件结果将决定O
+[42/74] 042-the-verge-amazon-alexa-plus-can-now-create-ai-gene.md
+  [2/5] Amazon Alexa Plus推出AI播客生成功能，用户指定主题后双AI主播生成播客，内容源为2
+  ⚠️  标题所述为事实但非首创——AI播客生成功能早已在NotebookLM和Microsoft Edge实现。文章属产品发布通
+[43/74] 043-the-verge-philips-hue-smart-lights-and-a-whole-lot.md
+  [2/5] 电商平台Woot进行限时促销活动，多款科技产品通过优惠码享20%折扣，包括Philips Hue智能
+  ⚠️  文章明确标注"If you buy something from a Verge link, Vox Media may
+[44/74] 044-simon-willison-blog-glaucous-winged-gull-brown-pelican-snowy.md
+  [1/5] [科技博主Simon Willison在PyCon US结束后于洛杉矶河畔观测到海鸥、鹈鹕、雪鹭和加
+  ⚠️  本文本质为个人生活日志，与科技行业/AI领域报道完全无关。虽发布于技术博客平台，但正文仅为鸟类观察记录，不构成任何新闻价
+[45/74] 045-simon-willison-blog-gds-weighs-in-on-the-nhss-decision-to-re.md
+  [3/5] [英国政府数字服务局(GDS)发布关于AI开源代码与漏洞风险的指南，重申"默认保持开放"立场，被视为
+  ⚠️  [文章高度依赖Terence Eden对"civil service内部潜规则"的解读，"无饼干会议"的隐喻属推测性描述
+[46/74] 046-simon-willison-blog-warelay-openclaw.md
+  [2/5] 技术博主Simon Willison为PyCon演讲，用脚本追踪OpenClaw项目README的G
+  ⚠️  叙述客观，属于个人技术博客日志，无PR夸大，但信息量有限。
+[47/74] 047-simon-willison-blog-quoting-julia-evans.md
+  [2/5] 技术博主Julia Evans分享感悟称过去10年学会真正热爱CSS，"CSS很难是因为它在解决难题
+  ⚠️  叙述客观，属个人技术感悟分享
+[48/74] 048-product-hunt-anyframe.md
+  [2/5] Product Hunt上架AI代理沙箱控制平台AnyFrame，声称可快速定义代理、秒级启动会话，
+  ⚠️  叙述客观，但属于早期产品发布，信息极度有限，营销表述（"gets old fast"）为典型PH launch风格，无实
+[49/74] 049-product-hunt-voiser-ai.md
+  [2/5] [Voiser AI在Product Hunt发布，支持140+语言、1000+声音的文本转语音服务
+  ⚠️  [Product Hunt产品发布页本质是营销内容而非新闻报道；"most human like"是定性营销用语无数据支
+[50/74] 050-product-hunt-krea-2.md
+  [2/5] Krea 2在Product Hunt上线，定位为支持风格控制和情绪板的AI图像生成模型。
+  ⚠️  文章本质为产品目录页面，仅包含PR宣传语（"expressive"、"aesthetic diversity"、"cre
+[51/74] 051-solidot-untitled.md
+  [2/5] Cell期刊发表研究，通过分析322名来自欧洲、东亚和南亚的健康人，研究遗传祖先和环境对人类生物学特
+  ⚠️  标题"你生活的地点与你衰老的速度相关"存在一定简化，研究结论远比标题复杂；研究规模较小，322人的结论外推性有限；原文对
+[52/74] 052-solidot-untitled.md
+  [2/5] 伊朗军方发言人宣布对霍尔木兹海峡海底光缆收费，但尚不确定是威胁还是将付诸实施。
+  ⚠️  文章标题"要求付费"暗示已确定立场，但实际仅为单方声明，执行可能性存疑；"数字灾难"等后果描述属于假设性推断，缺乏具体证
+[53/74] 053-solidot-edge.md
+  [3/5] 微软修改Edge密码管理器安全机制，安全研究员披露启动时加载所有密码问题后，微软从“源于设计”改为将
+[54/74] 054-solidot-terraria-15-7000.md
+  [2/5] Solidot搬运《Terraria》15年售出7000万份拷贝的里程碑数据，包括PC、主机、移动端
+[55/74] 055-solidot-untitled.md
+  [3/5] 三星电子工会宣布5月21日启动为期18天的总罢工，劳资双方就绩效奖金上限存在分歧，法院裁定支持资方大
+  ⚠️  损失数字存在显著差异（170亿vs280亿美元），均为“最高”估计，实际损失可能远低于此；法院裁定“支持资方大部分诉求”
+[56/74] 056-untitled-pcai.md
+  [2/5] 
+[57/74] 057-untitled-aiarxiv.md
+  [2/5] arXiv发布新规，用AI水论文被查实者封禁一年，所有署名作者连坐受罚。
+  ⚠️  文章存在多重夸大与情绪渲染：①使用"人类的黄昏""文明的锁死""智子"等科幻修辞，将复杂的学术生态问题简化为危机叙事；②
+[58/74] 058-untitled-openjiuwenjiuwenswarm.md
+  [2/5] [华为支持的开源AI Agent社区openJiuwen发布JiuwenSwarm多智能体协同平台，
+  ⚠️  [营销语言泛滥："重磅发布"、"拉开序幕"、"按下了加速键"；将一个工程实现包装成"底层范式变了"存在夸大；案例描述缺乏
+[59/74] 059-untitled-untitled.md
+  [ERROR] API call failed: The read operation timed out
+[60/74] 060-untitled-xxcx-mind.md
+  [2/5] 上海交大、创智学院、瑞金医院联合发布CX-Mind胸片诊断多模态大模型，声称首次将胸片诊断推进为"可
+[61/74] 061-infoq-swiggy-improves-search-autocomplete-usin.md
+  [3/5] Swiggy披露基于OpenSearch的实时机器学习排序系统改进搜索自动完成功能，将原有启发式规则
+  ⚠️  技术架构描述完整但缺乏量化效果数据，属于典型工程案例分享而非产品里程碑式报道，叙述相对客观。
+[62/74] 062-infoq-anthropics-code-with-claude-announces-ma.md
+  [2/5] Anthropic在"Code with Claude 2026"大会上发布Claude Code远
+[63/74] 063-infoq-java-news-roundup-openjdk-jeps-azul-paya.md
+  [3/5] 2026年5月Java生态更新汇总，JDK 27三个JEP候选状态推进，多个项目发布维护版本
+  ⚠️  叙述客观。作为技术汇总文章，内容忠实记录各项目状态，无夸大或PR语言，但深度有限
+[64/74] 064-infoq-article-building-a-secure-mcp-server-on-.md
+  [3/5] 一篇技术实践文章，介绍如何在AWS AppSync上构建安全的MCP服务器，将百万级公司数据平台以工
+  ⚠️  叙述基本客观，但存在InfoQ赞助内容的潜在利益关联；文章提出的安全实践（读/写分离、默认拒绝变更、Mocked测试陷阱
+[65/74] 065-infoq-podcast-context-is-the-key-to-the-agenti.md
+  [2/5] InfoQ播客访谈Baruch Sadogursky讨论AI代理时代软件架构，提出软件规格说明将成为
+  ⚠️  标题"Revolution"具有营销夸大色彩，属于PR措辞；内容为观点性访谈，缺乏可验证的技术数据支撑；高度抽象描述未提
+[66/74] 066-github-changelog-gpt-53-codex-is-now-the-base-model-for-c.md
+  [2/5] 
+[67/74] 067-hugging-face-blog-fine-tuning-nvidia-cosmos-predict-25-wit.md
+  [2/5] 
+[68/74] 068-hugging-face-blog-paddleocr-35-running-ocr-and-document-pa.md
+  [3/5] [PaddleOCR 3.5发布，新增Transformers作为推理后端选项，使PP-OCRv5等
+  ⚠️  [叙述客观，无明显夸大；技术描述具体，但未提供与其他OCR方案（如Tesseract、EasyOCR）的横向对比]
+[69/74] 069-hugging-face-blog-the-open-agent-leaderboard.md
+  [1/5] Hugging Face发布"Open Agent Leaderboard"排行榜页面，展示150条
+  ⚠️  文章内容严重残缺，仅为页面元数据（标题/链接/数字统计），缺失任何实质性报道，属于RSS条目或爬虫截取而非完整博客文章
+[70/74] 070-hacker-news-we-stopped-ai-bot-spam-in-our-github-rep.md
+  [3/5] 开源项目方通过Git的--author flag将外部贡献者加入白名单，以限制非先验贡献者创建iss
+  ⚠️  叙述客观，但本质为CTO署名博文，属公司自宣而非新闻报道；技术方案针对特定平台和工作流，推广价值有限。
+[71/74] 071-hacker-news-show-hn-filesmd-open-source-alternative-.md
+  [2/5] [开源笔记应用Files.md发布，声称是Obsidian替代品，强调极简、纯.md文件、本地优先，
+  ⚠️  [文章夹杂大量个人哲学思辨（"第一脑vs第二脑"讨论），实质是一篇推广性个人博客，非客观产品评测；"works well
+[72/74] 072-hacker-news-the-quiet-renovation-at-bitwarden.md
+  [2/5] [50字以内，忠实还原，保留限定词，不夸大不缩小]
+  ⚠️  [
+[73/74] 073-hacker-news-10240002-blocks-2b2t-minecraft-server-wo.md
+  [4/5] 2b2t Minecraft服务器世界下载项目完成，覆盖100万×100万方块区域，总计约24TB数
+  ⚠️  叙述客观，"largest world download project ever"是基于具体方块数量的可验证声明，非营
+[74/74] 074-hacker-news-project-glasswing-what-mythos-showed-us.md
+  [2/5] Cloudflare分享其在Project Glasswing中测试Anthropic的Mythos
+
+[INFO] 分析完成，22/73 篇入选（评分≥3）
+[DONE] 分析文件已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-19.md
+[DONE] sidecar 已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-19.jsonl
+/root/.openclaw/workspace/news-intel/digest/2026-05-19.md
+[INFO] sidecar 中评分≥4 的事件: 2 条
+[DONE] kb 更新: +2 条新增，共 32 条（窗口: 2026-04-19 至今）
+[INFO] 日期: 2026-05-20，信源数: 24，输出目录: /root/.openclaw/workspace/news-intel/raw/2026/05/20
+[SOURCE] 36氪: 5 篇
+[SOURCE] 爱范儿: 5 篇
+[SOURCE] TechCrunch: 5 篇
+[SOURCE] Wired: 5 篇
+[SOURCE] Ars Technica: 5 篇
+[SOURCE] 少数派: 5 篇
+[SOURCE] Hacker News: 5 篇
+[WARN] 极客公园: RSS fetch failed: HTTP Error 502: Bad Gateway
+[SOURCE] 极客公园: 0 篇
+[SOURCE] 钛媒体: 5 篇
+[SOURCE] Simon Willison Blog: 2 篇
+[SOURCE] Product Hunt: 2 篇
+[SOURCE] Latent Space: 2 篇
+[SOURCE] 机器之心: 0 篇
+[SOURCE] Solidot: 5 篇
+[SOURCE] Google DeepMind Blog: 0 篇
+[SOURCE] 量子位: 5 篇
+[SOURCE] The Verge: 5 篇
+[SOURCE] MIT Tech Review: 5 篇
+[SOURCE] GitHub Changelog: 5 篇
+[SOURCE] InfoQ: 5 篇
+[SOURCE] Papers With Code: 0 篇
+[SOURCE] Hugging Face Blog: 4 篇
+[SOURCE] OpenAI Blog: 1 篇
+[SOURCE] VentureBeat AI: 0 篇
+[INFO] RSS 抓取完成，共 81 篇待处理
+  [fetch] 氪星晚报 ｜SpaceX即将成为马斯克旗下第二家上市公司；京东、洋河集团等在宿迁成立新动能股权投资基金，出资额10亿...
+  [fetch] 裸辞九个月，降薪跳槽，一个80后营销人如何“上岸甲方”？｜百万年薪系列013...
+  [fetch] 影石：重新定义性价比...
+  [fetch] 鲸跃动力获星海图数千万元种子轮投资，用「数据+模型+末端执行」打造开箱即用的Robo Labor丨涌现新项目...
+  [fetch] 高瓴出手了一家AI体育科技公司，曾获李泽湘天使轮融资｜硬氪首发...
+  [fetch] 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统...
+  [fetch] 为折叠 iPhone 和苹果 AI 做足准备｜苹果 WWDC 提前剧透...
+  [fetch] 宝马高调发布六缸新车！全手工铝制外壳+六出排气，排量同步提升...
+  [fetch] 最后一辆宝马 Z4 下线，BBA 双座敞篷跑车「全军覆没」...
+  [fetch] 早报｜苹果开启WWDC邀请，将公布苹果AI新进展/问界M9设计师点赞理想L9内饰/国家反诈中心App上线「AI内容鉴定」...
+  [fetch] OpenAI co-founder Andrej Karpathy joins Anthropic’s pre-trai...
+  [fetch] The minimalist Light Phone teams up with Andrew Yang’s Noble...
+  [fetch] Hackers have compromised dozens of popular open source packa...
+  [fetch] US cyber agency CISA exposed reams of passwords and cloud ke...
+  [fetch] Apple announces Apple Intelligence powered accessibility fea...
+  [fetch] Former OpenAI Staffers Warn That xAI’s Poor Safety Record Co...
+  [fetch] The Zuckerbergs Are Hiring a Lifeguard but Calling It a ‘Bea...
+  [fetch] The Best Action Cameras for All Your Craziest Adventures (20...
+  [fetch] The Herman Miller Coyl Standing Desk Is Built Just for Gamer...
+  [fetch] The US Built a Site to Ensure Fair Access to Public Lands. T...
+  [fetch] Electrical utility megamerger is all about the data centers...
+  [fetch] In addition to space stations, Vast says it will now build h...
+  [fetch] Iran demands Big Tech pay fees for undersea Internet cables ...
+  [fetch] Ebola outbreak: WHO declares emergency, US restricts travel,...
+  [fetch] Legal fail: Don’t use AI to sue Facebook users for calling y...
+  [fetch] 社区速递 141 | 派友下午三点的「精神快充」、复古磁带机与特殊的新玩意...
+  [fetch] 线下活动｜听完这首，不再 Emo：Leon x 少数派萨克斯音乐奏享会...
+  [fetch] YoooClaw C·ONE 体验：为 AI Agent 而生的硬件，怎样构筑了数字化的「我」？...
+  [fetch] 派早报：红魔发布红魔 11S Pro 系列手机等...
+  [fetch] 派评 | 近期值得关注的 App...
+  [fetch] I've built a virtual museum with nearly every operating syst...
+  [fetch] Apple unveils new accessibility features...
+  [fetch] I’ve joined Anthropic...
+  [fetch] Gentoo News: Copy Fail, Dirty Frag, and Fragnesia Kernel Vul...
+  [fetch] Gaussian Splat of a Strawberry...
+  [fetch] 一季度AI广告收入暴涨170%，B站：模型没有，广告管够...
+  [fetch] “忽悠式”回购“翻车”，广汇能源与“新疆首富”仍在困局之中...
+  [fetch] 广州酒家拟发10亿可转债再启扩张，增收不增利困局待解...
+  [fetch] 独家对话银河通用张直政：我们找到了VLA和世界模型的融合之路...
+  [fetch] 特朗普再次访华！6本书看懂中美会谈的关键...
+  [fetch] The last six months in LLMs in five minutes...
+  [fetch] Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goo...
+  [fetch] Monocle 3.5 for macOS...
+  [fetch] Insights by Omnia...
+  [fetch] [AINews] How to land a job at a frontier lab (on Pretraining...
+  [fetch] The Next War Is Already Here. The West Isn't Ready. — Yarosl...
+  [fetch] pgBackRest 作者宣布继续维护该项目...
+  [fetch] 索尼取消将 PS 独占单人游戏移植到 PC 的计划...
+  [fetch] 人类为什么惯用右手...
+  [fetch] Firefox 151 释出...
+  [fetch] 少数湖泊拥有三分之二的湖泊淡水储量...
+  [fetch] 抢先李飞飞！世界模型能多人联机玩FPS游戏了...
+  [fetch] 国产GPU开始造世界！国内首个全栈具身智能仿真平台来了...
+  [fetch] Cursor新模型，你怎么还在套Kimi？马斯克你怎么还吆喝上了？？...
+  [fetch] L2++「五冠王」文远知行：自动驾驶版的张雪机车，专治各种不服...
+  [fetch] 5.20 明天见！拿好这份参会指南｜AIGC2026峰会...
+  [fetch] Sony’s 1000X The Collexion are a luxurious and expensive cel...
+  [fetch] Google I/O 2026: All the news and announcements...
+  [fetch] An AI announcer mispronounced and skipped names during a gra...
+  [fetch] America’s dangerous, messy deepfakes crackdown is here...
+  [fetch] Apple’s accessibility features add more AI-powered processin...
+  [fetch] Understanding the modern cybercrime landscape...
+  [fetch] The Download: Musk v. Altman, smart glasses for warfare, and...
+  [fetch] Colossal Biosciences is growing chickens in a 3D-printed art...
+  [fetch] Here’s why Elon Musk lost his suit against OpenAI...
+  [fetch] What to expect from Google this week...
+  [fetch] Start a GitHub Advanced Security trial from a risk assessmen...
+  [fetch] Removal of code_scanning_upload field from rate_limit API en...
+  [fetch] One-click fixes for failing Actions with Copilot cloud agent...
+  [fetch] Copilot cloud agent: Fast, cost-efficient models for simple ...
+  [fetch] Ask questions in context with Copilot on web...
+  [fetch] Agoda Builds Multimodal Content System to Bridge Images and ...
+  [fetch] Presentation: Powering the Future: Building Your GenAI Infra...
+  [fetch] TanStack Details Sophisticated npm Supply Chain Attack That ...
+  [fetch] Article: Kernel-Level Ground Truth: Why eBPF is Replacing Us...
+  [fetch] Vite Version 8: Unified Rust-Based Bundler and Up to 30x Fas...
+  [fetch] Introducing the Ettin Reranker Family...
+  [fetch] Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Rob...
+  [fetch] PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a...
+  [fetch] The Open Agent Leaderboard...
+  [fetch] OpenAI and Dell partner to bring Codex to hybrid and on-prem...
+
+[DONE] 共保存 81 篇文章到 /root/.openclaw/workspace/news-intel/raw/2026/05/20
+/root/.openclaw/workspace/news-intel/raw/2026/05/20
+[INFO] 日期: 2026-05-20，文章数: 81
+[Step1] 提取事件摘要...
+  [ERROR] API call failed: The read operation timed out
+  [ERROR] API call failed: The read operation timed out
+  [ERROR] API call failed: The read operation timed out
+  [ERROR] API call failed: The read operation timed out
+  [OK] 77 条摘要提取成功
+[Step2] 事件分组...
+  [OK] 81 clusters (0 个多来源)
+[DONE] 81 clusters → /root/.openclaw/workspace/news-intel/clusters/2026-05-20.json
+/root/.openclaw/workspace/news-intel/clusters/2026-05-20.json
+[INFO] 日期: 2026-05-20，找到 81 篇文章，开始分析...
+[INFO] 知识库注入: 32 条历史事件
+[1/81] 001-36-spacex10.md
+  [2/5] 36氪汇编多条公司财报、投资动态及行业消息，含圆通/B站财报数据、京东等10亿投资基金设立及Spac
+  ⚠️  信息量大但深度不足；SpaceX上市消息缺乏权威来源支撑，属二手转述且带有明显倾向性；多处数据罗列缺乏分析框架
+[2/81] 002-36-80013.md
+  [2/5] 
+[3/81] 003-36-untitled.md
+  [2/5] 全景相机厂商影石创新发布上市后首份年报，2025年营收97.41亿元同比大增74.76%，但归母净利
+  ⚠️  标题"重新定义性价比"为PR措辞，暗示影石产品性价比最优但未提供竞品横向对比；"苹果梦"类比属于营销叙事，"150分产品
+[4/81] 004-36-robo-labor.md
+  [2/5] 鲸跃动力获星海图数千万元种子轮融资，以「数据+模型+末端执行」闭环打造面向场景、可快速部署的Robo
+  ⚠️  标题使用"涌现"暗示技术突破，实为常规融资报道；"开箱即用"、"像AWS算力一样"等类比属于营销类比，与实际B2B机器人
+[5/81] 005-36-ai.md
+  [3/5] 高瓴创投领投AI体育科技公司SportVision天使+轮融资，融资金额未披露，公司此前已获李泽湘旗
+  ⚠️  文章多处使用"世界模型"、"数据矿"、"技术底座"等营销语言；将远未成熟的产品描述为"更底层的变革"存在PR夸大；关键数
+[6/81] 006-untitled-marvis-ai.md
+  [2/5] 腾讯发布Marvis AI助手，定位为操作系统层级个人AI助手，可通过自然语言控制电脑、搜索文件、管
+  ⚠️  文章存在明显的PR导向和营销语言（"润物无声，又重塑天地"、"有审美"、"平权、无门槛"），功能描述缺乏问题与局限性讨论
+[7/81] 007-untitled-iphone-ai-wwdc.md
+  [2/5] 苹果发布WWDC 26邀请函（6月9-13日），预告iOS 27、macOS 27将聚焦液态玻璃优化
+  ⚠️  识别标题党/PR夸大/数据缺失/逻辑漏洞等问题。信息来源标注较乱，"据称""可能被预测""有望"等限定词使用较充分，但"
+[8/81] 008-untitled-untitled.md
+  [2/5] 宝马在2026年埃斯特庄园古董车展发布Vision K18概念车，搭载1800cc直列六缸发动机，采
+  ⚠️  文章主体为概念车品鉴散文，多处使用主观评价与PR语言（如"雕塑般的存在""最抢眼的视觉元素"）；标题"高调发布"为营销修
+[9/81] 009-untitled-z4-bba.md
+  [3/5] 宝马Z4（G29）正式在奥地利麦格纳工厂下线，标志宝马近30年双座Roadster车系终结。
+  ⚠️  叙事以车迷视角为主，标题"全军覆没"略显夸张（BBA中奔驰SLC、奥迪TT早已停产，Z4实为最后落幕者）。文章情感渲染较
+[10/81] 010-untitled-wwdcaim9l9appai.md
+  [2/5] 
+[11/81] 011-techcrunch-openai-co-founder-andrej-karpathy-joins-.md
+  [2/5] Andrej Karpathy（前OpenAI联合创始人、前特斯拉AI负责人）宣布加入Anthrop
+  ⚠️  叙述基本客观，引用来自当事人和公司 spokesperson，背景梳理准确；但将"Anthropic believes 
+[12/81] 012-techcrunch-the-minimalist-light-phone-teams-up-with.md
+  [2/5] 简约手机Light Phone与Andrew Yang创立的Noble Mobile合作，推出$50
+  ⚠️  标题使用"pay you to stop doomscrolling"带有明显营销诱导性；文中未披露Andrew Yan
+[13/81] 013-techcrunch-hackers-have-compromised-dozens-of-popul.md
+  [ERROR] API call failed: The read operation timed out
+[14/81] 014-techcrunch-us-cyber-agency-cisa-exposed-reams-of-pa.md
+  [4/5] GitGuardian安全研究员在CISA承包商公开的GitHub仓库中发现并报告了明文密码和云密钥
+  ⚠️  叙述客观。TechCrunch恰当地使用了"may have escaped"、"not clear"等限定词，并提供了
+[15/81] 015-techcrunch-apple-announces-apple-intelligence-power.md
+  [3/5] Apple在Google I/O大会前发布多项Apple Intelligence驱动的无障碍功能更
+  ⚠️  叙述相对客观，提供了具体功能细节和合作伙伴名称，但未深入探讨技术实现局限或潜在隐私风险，属于功能发布的标准报道，无明显夸
+[16/81] 016-wired-former-openai-staffers-warn-that-xais-po.md
+  [2/5] 两位前OpenAI员工联同AI安全公益组织致信投资者，警告xAI安全记录差可能令SpaceX的史上最
+[17/81] 017-wired-the-zuckerbergs-are-hiring-a-lifeguard-b.md
+  [2/5] 
+[18/81] 018-wired-the-best-action-cameras-for-all-your-cra.md
+  [2/5] Wired发布2026年最佳运动相机购买指南，推荐DJI Osmo Action 6为最佳综合选择，
+  ⚠️  文章为购买指南，存在明显PR措辞（"trumps"、"pretty great"、"very impressive"）；
+[19/81] 019-wired-the-herman-miller-coyl-standing-desk-is-.md
+  [ERROR] API call failed: The read operation timed out
+[20/81] 020-wired-the-us-built-a-site-to-ensure-fair-acces.md
+  [4/5] [美国联邦公共土地预订网站Recreation.gov被指存在机器人抢票和系统不公平问题，运营商为政
+  ⚠️  [文章标题"一切变糟"略显夸大，但正文提供了具体数据（成功率0.3%，19000人抢57个营地）支撑，叙述相对客观；未透
+[21/81] 021-ars-technica-electrical-utility-megamerger-is-all-abo.md
+  [ERROR] API call failed: The read operation timed out
+[22/81] 022-ars-technica-in-addition-to-space-stations-vast-says-.md
+  [2/5] 
+[23/81] 023-ars-technica-iran-demands-big-tech-pay-fees-for-under.md
+  [3/5] 伊朗宣布将对经过霍尔木兹海峡的全球互联网海底电缆向美国科技巨头收取许可费，可能加速Big Tech寻
+  ⚠️  文章整体叙述客观，但存在重大背景缺失——2026年2月28日美以开战是全文核心前提，却未在知识库验证；另伊朗执行能力模糊
+[24/81] 024-ars-technica-ebola-outbreak-who-declares-emergency-us.md
+  [4/5] 世卫组织宣布刚果（金）埃博拉疫情为国际公共卫生紧急状态，美国收紧旅行限制，一名美国感染者正被转移至德
+  ⚠️  叙述相对客观，但标题"escalated quickly"带有一定渲染意味，且"large, uncontrolled 
+[25/81] 025-ars-technica-legal-fail-dont-use-ai-to-sue-facebook-u.md
+  [3/5] 男子委托AI律所MarcTrent.AI上诉Meta案，法院发现虚构引用和AI滥用痕迹，认定上诉“轻
+  ⚠️  Don't use AI to sue Facebook users"有简化问题之嫌——问题核心是律师专业失职而非AI本
+[26/81] 026-untitled-141.md
+  [2/5] 少数派Matrix社区周报汇总用户关于"精神快充"（工作间隙放松方式）的讨论及产品推荐
+  ⚠️  叙述客观；内容为社区讨论汇总，无科技行业重大事件报道价值
+[27/81] 027-untitled-emoleon-x.md
+  [1/5] 少数派广州线下体验店举办萨克斯演奏及分享活动，邀请音乐博主Leon与音频品牌Austian Audi
+  ⚠️  纯本地活动宣传稿，非科技新闻，RSS摘要为营销套话，无实质信息增量，属软文广告。
+[28/81] 028-untitled-yoooclaw-cone-ai-agent.md
+  [2/5] 
+[29/81] 029-untitled-11s-pro.md
+  [ERROR] API call failed: The read operation timed out
+[30/81] 030-untitled-app.md
+  [2/5] 少数派发布APP推荐文章，介绍AIDA待办工具、Cogito Markdown编辑器、AndDriv
+  ⚠️  典型的软性内容推荐，缺乏独立第三方评测视角。文章呈现明显的信息不对称——只展示开发者声称的功能亮点，评论区用户已指出"A
+[31/81] 031-hacker-news-ive-built-a-virtual-museum-with-nearly-e.md
+  [2/5] 开源项目Virtual OS Museum通过虚拟机预配置方式，让用户在现代设备上运行从1948年至
+  ⚠️  叙述客观，数据具体，无PR夸大词汇。但"just about every well-known OS"说法略显绝对。
+[32/81] 032-hacker-news-apple-unveils-new-accessibility-features.md
+  [2/5] [Apple发布AI驱动的无障碍功能更新，包括VoiceOver、Magnifier、Voice C
+  ⚠️  [Tim Cook的"unlike any other"属于典型PR夸张表述；全文为Apple官方新闻稿，缺乏独立验证；
+[33/81] 033-hacker-news-ive-joined-anthropic.md
+  [1/5] Andrej Karpathy宣布加入Anthropic，但原文页面无法加载，仅显示Twitter/
+  ⚠️  标题党/误导性标注——文章标注来源为"Hacker News"，但实际链接为Twitter帖子，且页面完全无法显示内容，
+[34/81] 034-hacker-news-gentoo-news-copy-fail-dirty-frag-and-fra.md
+  [3/5] Gentoo发布Linux内核漏洞安全公告，建议用户自动化升级内核
+  ⚠️  叙述客观，但仅提供Gentoo自身的安全状态更新，缺乏漏洞本身的技术细节和影响范围数据，属于行政公告而非技术报告
+[35/81] 035-hacker-news-gaussian-splat-of-a-strawberry.md
+  [2/5] [SuperSplat软件新增草莓3D Gaussian Splatting模型，90视角微距数据集
+  ⚠️  纯技术演示，无营销夸大成分，但信息量有限——实质是个人摄影师分享数据集链接
+[36/81] 036-untitled-ai170b.md
+  [3/5] B站2026年Q1财报显示AI广告收入同比增长170%，但公司自身并无大模型产品，主要作为AI厂商宣
+  ⚠️  标题"暴涨170%"具有标题党嫌疑，数据表面亮眼但缺乏绝对值支撑；全文对负面数据（游戏降12%、MAU增速放缓）轻描淡写
+[37/81] 037-untitled-untitled.md
+  [4/5] 广汇物流两年前承诺的2-4亿元回购仅完成约1亿元（不足下限一半），因"忽悠式回购"被四川证监局责令整
+  ⚠️  叙述整体客观，数据引用详实，但标题"新疆首富"标签化叙事可能模糊事件本质（核心是证券违规与财务造假）；"量增价减"错配的
+[38/81] 038-untitled-10.md
+  [3/5] 老字号广州酒家拟发行10亿元可转债用于扩产及全国化扩张，当前面临毛利率连降、增收不增利困境。
+  ⚠️  叙述相对客观，但标题中"豪掷"与文末"险棋"的表述带有倾向性暗示；文中公司对产能消化的乐观预期缺乏数据支撑，属于管理层单
+[39/81] 039-untitled-vla.md
+  [3/5] 银河通用发布LDA技术（隐空间统一世界模型与VLA的跨本体动作基础模型），称登顶210篇录用的机器人
+  ⚠️  标题"独家对话"仅为采访稿体例，"找到了融合之路"暗示已验证终局解，但张直政本人仅称"目前看是最有希望的解"，存在PR措
+[40/81] 040-untitled-6.md
+  [1/5] 这是一篇由出版商发布的图书营销软文，以“特朗普再次访华”为标题噱头，实际上是推荐6本相关书籍，内容无
+  ⚠️  严重的标题党行为+未标注的商业软文。以“特朗普访华”这一虚构或未发生的时政热点为噱头，实为出版商营销内容，属于典型的PR
+[41/81] 041-simon-willison-blog-the-last-six-months-in-llms-in-five-minu.md
+  [2/5] Simon Willison在PyCon US 2026上用5分钟总结过去6个月LLM发展，强调20
+  ⚠️  叙述整体客观，但依赖大量主观描述（"vibes"/"pel
+[42/81] 042-simon-willison-blog-glaucous-winged-gull-brown-pelican-snowy.md
+  [1/5] Simon Willison在洛杉矶河畔晨间观鸟，看到鸥、鹈鹕、白鹭、加拿大鹅和幼鹅，记录为个人日志
+  ⚠️  文章为个人非正式日志，非科技行业报道，与记者身份无实质关联，不构成可批判的新闻报道。
+[43/81] 043-product-hunt-monocle-35-for-macos.md
+  [2/5] Monocle 3.5 for macOS发布，一款通过晃动光标模糊非活跃窗口的macOS窗口管理应
+  ⚠️  文章实质为Product Hunt产品发布页，充斥着营销语言（"elegantly"、"crucial follow-u
+[44/81] 044-product-hunt-insights-by-omnia.md
+  [2/5] Omnia在Product Hunt发布第二款产品"Insights"，提供AI搜索可见性优化行动方
+  ⚠️  标题"600 followers"是Product Hunt平台的用户关注量而非产品功能；"Become the bra
+[45/81] 045-latent-space-ainews-how-to-land-a-job-at-a-frontier-l.md
+  [3/5] Latent Space发布AINews，讨论Vlad Feinberg关于进入前沿AI实验室的求职
+  ⚠️  叙述带有明显行业营销色彩，将Vlad Feinberg个人观点包装为行业普遍规律；"most direct path i
+[46/81] 046-latent-space-the-next-war-is-already-here-the-west-is.md
+  [ERROR] API call failed: The read operation timed out
+[47/81] 047-solidot-pgbackrest.md
+  [2/5] pgBackRest 维护者 David Steele 宣布因 Crunchy Data 被 Sno
+  ⚠️  文章信息量有限，标题与正文在项目名称拼写上存在不一致（pgBackRest vs pgBackRes），而读者最关心的"
+[48/81] 048-solidot-ps-pc.md
+  [ERROR] API call failed: The read operation timed out
+[49/81] 049-solidot-untitled.md
+  [3/5] 研究人员分析41种灵长类动物2025只个体数据，发现直立行走与脑容量增大共同作用可能是人类形成右手偏
+[50/81] 050-solidot-firefox-151.md
+  [2/5] Mozilla发布Firefox 151，更新内置VPN、改进隐私浏览、新增PDF合并及跨平台配置恢
+  ⚠️  叙述客观，为标准的软件发布通报。
+[51/81] 051-solidot-untitled.md
+  [3/5] 中科院研究汇总588个湖泊数据，发现约65%湖泊淡水储存在青藏高原少数深水湖泊，东部平原人均淡水储量
+  ⚠️  叙述客观，引用了同行评审期刊并提供了原始链接，标题准确反映研究发现。
+[52/81] 052-untitled-fps.md
+  [2/5] AI公司Odyssey发布世界模型Agora-1，实现人类与AI共同参与的多人FPS游戏，无传统游戏
+  ⚠️  标题党嫌疑——"抢先李飞飞"既未在文中解释，也与正文内容无实质关联；文中大量个人游戏感受和情绪性表达（"气死了""不许笑
+[53/81] 053-untitled-gpu.md
+  [2/5] 摩尔线程发布MT Lambda具身智能仿真平台，首次实现全国产硬件Sim-to-Real真机验证
+  ⚠️  标题使用"
+[54/81] 054-untitled-cursorkimi.md
+  [ERROR] API call failed: The read operation timed out
+[55/81] 055-untitled-l2.md
+  [2/5] [文远知行在第二届中国智驾大赛合肥站夺冠，实现五连冠；文章将其与同日张雪机车WSBK五冠类比，强调技
+  ⚠️  [严重营销导向：1. 标题使用"五冠王""专治各种
+[56/81] 056-untitled-520-aigc2026.md
+  [2/5] 30开幕，含20位嘉宾、圆桌及榜单]
+  ⚠️  [典型营销内容，使用"重磅嘉宾""一线实战派""带你尽览Agent"等PR措辞夸大吸引力；全文为活动预热，无实质科技内容
+[57/81] 057-the-verge-sonys-1000x-the-collexion-are-a-luxuriou.md
+  [2/5] Sony发布1000X The Collexion十周年纪念耳机，定价$650，定位豪华舒适设计而非
+  ⚠️  标题"luxurious and
+[58/81] 058-the-verge-google-io-2026-all-the-news-and-announce.md
+  [2/5] Google I/O 2026大会于5月19日开幕，《The Verge》以实时博客形式报道，但文章
+  ⚠️  All the news and announcements"暗示全面报道，但实际内容几乎全是"what to expe
+[59/81] 059-the-verge-an-ai-announcer-mispronounced-and-skippe.md
+  [3/5] 亚利桑那州格伦代尔社区学院毕业典礼使用AI播报员宣读毕业生姓名时出现误读和漏读，校方道歉并为受影响学
+  ⚠️  叙述客观，文章同时呈现了AI工具的卖点（准确性）和实际失败案例，并引用了反对方观点，避免了单方面叙事。
+[60/81] 060-the-verge-americas-dangerous-messy-deepfakes-crack.md
+  [3/5] 要求社交网络48小时内删除非自愿亲密图像的《Take It Down Act》于2026年5月19日
+  ⚠️  标题"dangerous, messy crackdown"属于编辑立场定性而非事实描述；文章平衡性存疑——平台支持声音
+[61/81] 061-the-verge-apples-accessibility-features-add-more-a.md
+  [3/5] 苹果发布年度无障碍功能更新，在iPhone/Mac/Vision Pro上扩展AI驱动功能，新增设备
+  ⚠️  报道相对客观，"jumped out to me"为记者主观表述；Vision Pro定价$3,499重复出现有营销暗示
+[62/81] 062-mit-tech-review-understanding-the-modern-cybercrime-land.md
+  [2/5] HPE Threat Labs发布"In the Wild Report"，指出2025年网络犯罪工
+  ⚠️  这是一篇付费赞助内容，本质是HPE产品软文。文章以"理解现代网络犯罪格局"为题，实质通过制造安全焦虑兜售解决方案框架，而
+[63/81] 063-mit-tech-review-the-download-musk-v-altman-smart-glasses.md
+  [2/5] MIT Tech Review Newsletter汇总三大科技要闻——Musk诉OpenAI案因诉
+  ⚠️  Newsletter结构以标题吸引点击，实际信息密度低，大量依赖外链而非原创报道；"clear its path to 
+[64/81] 064-mit-tech-review-colossal-biosciences-is-growing-chickens.md
+  [2/5] Colossal Biosciences用3D打印人工蛋壳+硅胶膜容器成功培养小鸡胚胎，声称向"人工
+  ⚠️  标题"fully artificial egg"存在误导——实际是替代蛋壳而非整个蛋；公司刻意用"impossible 
+[65/81] 065-mit-tech-review-heres-why-elon-musk-lost-his-suit-agains.md
+  [2/5] [陪审团一致裁决Musk起诉OpenAI超过诉讼时效，其主张被法律时效阻止，法官立即采纳该裁决]
+  ⚠️  文章标题"Why Elon Musk lost his suit"与Musk声明"The judge & jury ne
+[66/81] 066-mit-tech-review-what-to-expect-from-google-this-week.md
+  [2/5] MIT Tech Review发布Google I/O前瞻，分析Google在基础模型竞争中已沦为第
+  ⚠️  文章存在明显预设立场，标题"What to expect"暗示Google需要"追赶"而非"展示"；使用"crisis"
+[67/81] 067-github-changelog-start-a-github-advanced-security-trial-f.md
+  [2/5] GitHub为企业管理员新增入口，可直接从Secret Protection或Code Securi
+  ⚠️  叙述客观，系标准产品changelog更新，无营销夸张，但功能微小，仅优化了现有工作流入口，不涉及安全性技术突破。
+[68/81] 068-github-changelog-removal-of-code-scanning-upload-field-fr.md
+  [2/5] GitHub于2026年5月19日从rate_limit REST API端点移除code_scan
+  ⚠️  叙述客观。GitHub明确说明"no alternative field replacement is needed"，
+[69/81] 069-github-changelog-one-click-fixes-for-failing-actions-with.md
+  [1/5] [50字以内，忠实还原，保留限定词，不夸大不缩小]
+  ⚠️  [识别标题党/PR夸大/数据缺失/逻辑漏洞]
+[70/81] 070-github-changelog-copilot-cloud-agent-fast-cost-efficient-.md
+  [2/5] 
+[71/81] 071-github-changelog-ask-questions-in-context-with-copilot-on.md
+  [3/5] GitHub Copilot网页版新增嵌入式聊天面板，可在当前页面直接打开并自动附加上下文。
+  ⚠️  叙述客观，标准的官方产品更新日志，措辞平实无夸大，但信息量有限，属于日常迭代公告。
+[72/81] 072-infoq-agoda-builds-multimodal-content-system-t.md
+  [3/5] Agoda构建多模态内容系统，用统一话题分类体系整合7亿+酒店图片与多语言评论，支持跨模态检索。
+  ⚠️  文章本质上为工程案例分析而非新闻报道，缺乏批判性评估。无第三方数据验证系统效果，标题"Bridge Images and
+[73/81] 073-infoq-presentation-powering-the-future-buildin.md
+  [3/5] Intuit工程师在QCon大会分享AI转型架构，展示GenOS平台如何支撑8000开发者、3500
+  ⚠️  叙述客观，数据具体但偏向成功叙事，未呈现完整的风险评估和技术债务
+[74/81] 074-infoq-tanstack-details-sophisticated-npm-suppl.md
+  [2/5] 
+[75/81] 075-infoq-article-kernel-level-ground-truth-why-eb.md
+  [2/5] InfoQ发表文章介绍eBPF如何通过内核级系统调用追踪替代用户空间代理进行Kubernetes安全
+[76/81] 076-infoq-vite-version-8-unified-rust-based-bundle.md
+  [4/5] Vite 8.0发布，统一替换esbuild和Rollup为Rust实现的Rolldown bund
+  ⚠️  叙述客观，数据有具体企业案例支撑，但"30x"为上限区间应更明确标注。
+[77/81] 077-hugging-face-blog-introducing-the-ettin-reranker-family.md
+  [2/5] Hugging Face发布Ettin Reranker系列小型重排序模型，150M参数版本v1已上
+  ⚠️  RSS摘要为空，文章信息极度匮乏，仅提供基础元数据（参数规模、下载量），无法评估模型实际价值
+[78/81] 078-hugging-face-blog-fine-tuning-nvidia-cosmos-predict-25-wit.md
+  [2/5] NVIDIA在Hugging Face发布Cosmos Predict 2.5模型的LoRA/DoR
+  ⚠️  标题描述基本准确，但信息严重不完整——缺乏正文内容导致无法评估技术细节质量、数据集规模、实际应用案例，属"标题挂空档"
+[79/81] 079-hugging-face-blog-paddleocr-35-running-ocr-and-document-pa.md
+  [3/5] PaddleOCR 3.5新增Transformers推理后端支持，使PP-OCRv5等模型可直接在
+  ⚠️  叙述客观，作为官方博客避免了夸大措辞。但属于工程集成更新而非技术突破，文章标题和内容均如实反映。
+[80/81] 080-hugging-face-blog-the-open-agent-leaderboard.md
+  [2/5] IBM Research在Hugging Face上发布了Open Agent Leaderboar
+  ⚠️  文章实质为RSS抓取的页面元数据，缺乏正文内容，标题无法支撑，读者无法获取任何有价值信息
+[81/81] 081-openai-blog-openai-and-dell-partner-to-bring-codex-t.md
+  [3/5] OpenAI与Dell合作，将Codex AI编程助手引入混合云和本地企业环境。
+  ⚠️  信息极度有限，摘要缺乏实质数据，无法评估合作深度，仅知大概方向。
+
+[INFO] 分析完成，25/74 篇入选（评分≥3）
+[DONE] 分析文件已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-20.md
+[DONE] sidecar 已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-20.jsonl
+/root/.openclaw/workspace/news-intel/digest/2026-05-20.md
+[INFO] sidecar 中评分≥4 的事件: 5 条
+[DONE] kb 更新: +5 条新增，共 37 条（窗口: 2026-04-20 至今）
+[INFO] 日期: 2026-05-21，信源数: 24，输出目录: /root/.openclaw/workspace/news-intel/raw/2026/05/21
+[SOURCE] 爱范儿: 5 篇
+[SOURCE] The Verge: 5 篇
+[SOURCE] 36氪: 5 篇
+[SOURCE] 少数派: 5 篇
+[SOURCE] Wired: 5 篇
+[SOURCE] MIT Tech Review: 5 篇
+[SOURCE] TechCrunch: 5 篇
+[SOURCE] Ars Technica: 5 篇
+[SOURCE] Hacker News: 5 篇
+[SOURCE] Google DeepMind Blog: 1 篇
+[SOURCE] 钛媒体: 5 篇
+[WARN] 极客公园: RSS fetch failed: HTTP Error 502: Bad Gateway
+[SOURCE] 机器之心: 0 篇
+[SOURCE] 极客公园: 0 篇
+[SOURCE] Solidot: 5 篇
+[SOURCE] 量子位: 5 篇
+[SOURCE] Simon Willison Blog: 5 篇
+[SOURCE] InfoQ: 5 篇
+[SOURCE] OpenAI Blog: 3 篇
+[SOURCE] GitHub Changelog: 5 篇
+[SOURCE] Product Hunt: 3 篇
+[SOURCE] VentureBeat AI: 1 篇
+[SOURCE] Latent Space: 2 篇
+[SOURCE] Hugging Face Blog: 2 篇
+[SOURCE] Papers With Code: 0 篇
+[INFO] RSS 抓取完成，共 87 篇待处理
+  [fetch] 华为做到了大平板的全球最薄，却给它塞进了一台鸿蒙电脑...
+  [fetch] iQOO15T & iQOO Pad6 Pro 体验：把竞技装进口袋，把沉浸留给大屏...
+  [fetch] Google 重塑搜索框，进化 50 亿人的上网习惯...
+  [fetch] vivo S60 系列：今天，把星星海握在手里...
+  [fetch] 早报｜Google发布一大波AI更新/华为五一假期领跑中国手机市场/小米YU7 GT刷新纽北纪录...
+  [fetch] It&#8217;s make or break time for AI labeling systems...
+  [fetch] Trump Mobile may be leaking customer addresses...
+  [fetch] Insta360’s Mic Pro uses a three microphone array for improve...
+  [fetch] Trump is waging a silent war on legal immigration...
+  [fetch] If Google can’t make AI agents useful, maybe no one can...
+  [fetch] 氪星晚报｜2026福布斯中国人工智能科技企业TOP 50发布，中关村科金入选；三星劳资谈判破裂，威刚董事长称DRAM、N...
+  [fetch] 第四届中国AIGC产业峰会在京顺利举办！近20位行业大咖解码Agent与非共识机遇...
+  [fetch] 长鑫科技更新招股书，碧桂园错失300亿...
+  [fetch] 理想新L9上市72小时：老车主复购占大头，仍需从“家庭”破圈...
+  [fetch] 做出百万台割草机器人后，未岚大陆CEO决定让自己变得“不重要”｜硬氪专访...
+  [fetch] 当 AI 成为角色：漫谈我的 SillyTavern 使用经验...
+  [fetch] 4 月音乐精选：听这 8 张美妙的专辑迎接夏天...
+  [fetch] 自动补全生僻字，让 Kindle 从底层告别小方块...
+  [fetch] 派早报：Google 发布多项 Gemini 产品更新等...
+  [fetch] 社区速递 141 | 派友下午三点的「精神快充」、复古磁带机与特殊的新玩意...
+  [fetch] Madison Square Garden Bans Lawyer Representing New York Cop ...
+  [fetch] It’s Officially Election Season in Trumpworld...
+  [fetch] ‘Perfect Storm’: How Trump’s Aid Cuts Are Fueling the Ebola ...
+  [fetch] Ride1Up Roadster Review (2026): An Ebike That Feels Like a B...
+  [fetch] Hypershell X Ultra S Review: The Best Exoskeleton Yet...
+  [fetch] Green steel startup Boston Metal is doubling down on critica...
+  [fetch] The Download: fully artificial chicken eggs and why Musk los...
+  [fetch] Roundtables: Inside the Musk v. Altman Trial...
+  [fetch] Understanding the modern cybercrime landscape...
+  [fetch] The Download: Musk v. Altman, smart glasses for warfare, and...
+  [fetch] Customers say Trump Mobile is leaking their personal informa...
+  [fetch] Intuit to lay off over 3,000 employees to refocus on AI...
+  [fetch] AI search startups are blowing up...
+  [fetch] Stability AI releases a new audio model that can create six-...
+  [fetch] NanoClaw creator turns down $20M buyout offer, raises $12M s...
+  [fetch] Man jailed for posting Trump meme wins $835,000 settlement...
+  [fetch] Russia's plan to advertise on rockets and spacecraft takes o...
+  [fetch] Yearslong fight over users' right to tweak smart TV software...
+  [fetch] China banned RTX 5090D V2 while Nvidia CEO Jensen Huang was ...
+  [fetch] The Internet can't stop watching Figure AI's humanoid robots...
+  [fetch] Meta blocks human rights accounts from reaching audiences in...
+  [fetch] Goodbye Visa and Mastercard: 130M Europeans switching to sov...
+  [fetch] Qwen3.7-Max: The Agent Frontier...
+  [fetch] Saying Goodbye to Asm.js...
+  [fetch] SBCL: The Assembly Code Breadboard (2014)...
+  [fetch] Fast-tracking genetic leads to reverse cellular aging...
+  [fetch] 储能“熄火”，钙钛矿“吞金”，杭州柯林3亿豪赌亏损机器人标的 | 并购一线...
+  [fetch] The Token Do-or-Die Line: Financial AI Companies Scramble to...
+  [fetch] 618打了这么多年，今年京东终于换了张底牌...
+  [fetch] 7000万揽入资不抵债标的，达瑞电子7倍溢价切入热管理赛道 | 并购一线...
+  [fetch] 富足的腾讯与饥饿的百度：BT的AI远虑近忧...
+  [fetch] Firefox 将移除 asm.js 相关代码...
+  [fetch] Google 云服务 GCP 不小心将其大客户 Railway 的账号封禁...
+  [fetch] 为何日本的花粉过敏如此严重...
+  [fetch] Fedora 移除深度桌面环境包...
+  [fetch] OpenAI 和英伟达等在模型中加入了对 SynthID 水印的支持...
+  [fetch] 智象未来超两千亿参数图像大模型HiDream-O1-Image-Pro发布，融资持续提速...
+  [fetch] 太初元碁洪源：异构计算能力将成为未来AI算力基础设施的重要方向｜AIGC2026...
+  [fetch] VC、品牌顾问、编剧，正在批量把自己做成AI...
+  [fetch] AIDC建设正从“通用标准”走向“适用高效”...
+  [fetch] 破壁行动！把大厂级“研发外挂”发给每一个创新者，智会心研PLUS版免费公测...
+  [fetch] Google I/O, Gemini Spark, Antigravity...
+  [fetch] llm-gemini 0.32...
+  [fetch] Gemini 3.5 Flash: more expensive, but Google plan to use it ...
+  [fetch] datasette-llm-accountant 0.1a4...
+  [fetch] llm-gemini 0.32a0...
+  [fetch] Designing a Multi-Agent System for Engineering Support at Sc...
+  [fetch] Presentation: The AI Gateway: Scaling Centralized Inference ...
+  [fetch] OpenAI Outlines WebRTC Architecture for Low-Latency Voice AI...
+  [fetch] Pip 26.1 Ships Dependency Cooldowns and Experimental Lockfil...
+  [fetch] Anthropic Introduces MCP Tunnels for Private Agent Access to...
+  [fetch] The next phase of OpenAI’s Education for Countries...
+  [fetch] Introducing OpenAI for Singapore...
+  [fetch] Advancing content provenance for a safer, more transparent A...
+  [fetch] Semantic issue search in Copilot Chat...
+  [fetch] Easily apply Copilot code review feedback with Copilot cloud...
+  [fetch] Gemini 3.5 Flash is generally available for GitHub Copilot...
+  [fetch] Expanded OIDC support for Dependabot and code scanning...
+  [fetch] Start a GitHub Advanced Security trial from a risk assessmen...
+  [fetch] Gemini Omni...
+  [fetch] GhostSnap...
+  [fetch] Viberia...
+  [fetch] Google just redesigned the search box for the first time in ...
+  [fetch] [AINews] Google I/O 2026: Gemini 3.5 Flash, Omni (NanoBanana...
+  [fetch] [AINews] How to land a job at a frontier lab (on Pretraining...
+  [fetch] OlmoEarth v1.1: A more efficient family of Earth observation...
+  [fetch] Introducing the Ettin Reranker Family...
+
+[DONE] 共保存 87 篇文章到 /root/.openclaw/workspace/news-intel/raw/2026/05/21
+/root/.openclaw/workspace/news-intel/raw/2026/05/21
+[INFO] 日期: 2026-05-21，文章数: 87
+[Step1] 提取事件摘要...
+  [ERROR] API call failed: The read operation timed out
+  [OK] 86 条摘要提取成功
+[Step2] 事件分组...
+  [OK] 87 clusters (0 个多来源)
+[DONE] 87 clusters → /root/.openclaw/workspace/news-intel/clusters/2026-05-21.json
+/root/.openclaw/workspace/news-intel/clusters/2026-05-21.json
+[INFO] 日期: 2026-05-21，找到 87 篇文章，开始分析...
+[INFO] 知识库注入: 37 条历史事件
+[1/87] 001-untitled-untitled.md
+  [3/5] 华为发布MatePad Pro Max平板，宣称4.7mm为13寸以上大平板全球最薄，搭载鸿蒙6.1
+  ⚠️  存在营销语言和部分信息模糊——"全球最薄"缺乏第三方认证机构背书；"货真价实的鸿蒙电脑"属PR表述；价格、性能参数等关键
+[2/87] 002-untitled-iqoo15t-iqoo-pad6-pro.md
+  [2/5] iQOO发布iQOO15T手机和iQOO Pad6 Pro平板，定位"竞技+沉浸+生产力"全场景生态
+  ⚠️  文章以主观感受描述为主（"丝滑""松弛""从容"），缺乏可量化评测数据（帧率曲线、续航实测、温度曲线、对比测试）；"把竞
+[3/87] 003-untitled-google-50.md
+  [3/5] Google在I/O 2026发布Gemini 3.5及AI搜索，将传统搜索框改造为通用对话界面，同
+  ⚠️  标题"进化50亿人的上网习惯"属于营销语言，暗示革命性变化，但实际只是搜索交互形式的演进。"彻头彻尾"、"前所未有"等词
+[4/87] 004-untitled-vivo-s60.md
+  [1/5] vivo S60系列手机发布，广告语为"把星星海握在手里"
+  ⚠️  纯PR营销稿，无新闻价值。文章仅是广告语堆砌，未提供任何产品信息，内容空洞，属于无效信息
+[5/87] 005-untitled-googleaiyu7-gt.md
+  [3/5] [Google在I/O大会发布Gemini Omni多模态模型、3.5 Flash/Spark及AI
+  ⚠️  [「最强对手」是营销性标题；性能对比数据缺乏对照基准；价格调整策略被包装成「用户导向」]
+[6/87] 006-the-verge-it8217s-make-or-break-time-for-ai-labeli.md
+  [4/5] Google在I/O大会上宣布将SynthID和C2PA验证工具扩展至Chrome和Search，使
+  ⚠️  标题"make or break time"有轻微夸大倾向，但正文引用了OpenAI自身"并非银弹"的警示，叙述相对平衡
+[7/87] 007-the-verge-trump-mobile-may-be-leaking-customer-add.md
+  [2/5] Trump Mobile网站被指存在安全漏洞，用户地址、电话号码和邮箱疑似泄露；订单数据同时曝光，约
+[8/87] 008-the-verge-insta360s-mic-pro-uses-a-three-microphon.md
+  [2/5] Insta360发布无线麦克风Mic Pro，采用三麦克风阵列+1.22英寸彩色E Ink屏幕，单个
+  ⚠️  文章存在营销语言（"industry firsts"），未披露关键技术参数，且仅基于厂商声明无独立验证，属于产品发布报道
+[9/87] 009-the-verge-trump-is-waging-a-silent-war-on-legal-im.md
+  [2/5] [特朗普政府大幅削减合法移民，撤销移民法律地位，并在联合国移民协议讨论中缺席，公开支持"大替代"阴谋
+  ⚠️  [1. 标题"Silent war"为情绪化定性，非中性描述；2. "far-right's dream of raci
+[10/87] 010-the-verge-if-google-cant-make-ai-agents-useful-may.md
+  [2/5] Google在I/O 2026宣布新AI代理功能，称将借鉴开源平台OpenClaw的模式整合进Gma
+  ⚠️  标题"maybe no one can"是明显的PR夸大；文章大量依赖Google高管自述，缺乏独立数据支撑；OpenC
+[11/87] 011-36-2026top-50dramnand.md
+  [2/5] 中关村科金入选福布斯中国AI TOP 50、三星劳资谈判破裂引发存储芯片涨价担忧、新交所与中国银行签
+[12/87] 012-36-aigc20agent.md
+  [2/5] 第四届中国AIGC产业峰会在北京举办，主题为"Agent与非共识机遇"，近20位行业嘉宾参会并讨论A
+[13/87] 013-36-300.md
+  [2/5] 长鑫科技更新招股书显示2026年Q1营收508亿元、同比增719%，净利润247.6亿元、同比增16
+[14/87] 014-36-l972.md
+  [2/5] 理想汽车发布第四代L9，上市72小时锁单超6500辆，老车主复购占比近七成，但面临从"家庭旗舰"标签
+[15/87] 015-36-ceo.md
+  [2/5] 未岚大陆CEO任冠佼在累计量产突破100万台智能割草机器人后，推动公司从工程师主导向组织化能力转型，
+  ⚠️  叙述倾向正面，CEO自述为主，缺乏第三方数据验证；文中"美国增长翻几倍"等模糊表述难以判断实际规模；文章性质偏企业宣传而
+[16/87] 016-untitled-ai-sillytavern.md
+  [2/5] 作者分享使用SillyTavern（AI roleplay前端）的个人经验，认为其角色设定框架可帮助
+  ⚠️  个人经验分享，非新闻报道。文章以第一人称叙述，无数据支撑，缺乏客观性。称角色扮演框架"最适合很多工作模式"属主观断言，无
+[17/87] 017-untitled-4-8.md
+  [2/5] 少数派重启音乐推荐栏目FM3.14，邀请飞傲冠名，推荐8张2026年4月华语独立/流行专辑
+  ⚠️  叙述客观，但存在选择性偏向——全部为正面描述，无任何批评性分析；部分段落有明显PR色彩，如"印证明堂甄选音乐的好品味，'
+[18/87] 018-untitled-kindle.md
+  [3/5] 介绍通过修改Kindle底层upstart配置实现开机自动挂载花园明朝字体，解决古籍生僻字显示问题。
+  ⚠️  标题"从底层告别小方块"存在轻微营销色彩，但技术内容叙述客观，确为可行方案。
+[19/87] 019-untitled-google-gemini.md
+  [2/5] Google I/O 2026开幕发布多项Gemini产品更新，包括视频生成模型Omni Flash
+  ⚠️  文章罗列大量功能更新和性能指标，但缺乏关键背景：Gemini 3.5 Flash的Benchmark数据（Termina
+[20/87] 020-untitled-141.md
+  [2/5] [少数派Matrix社区周报，包含派友分享的"精神快充"工作间隙休息方式及社区讨论摘要]
+  ⚠️  文章为社区活动摘要，内容高度碎片化，缺乏核心新闻事件，多为用户个人经验分享，新闻价值有限。"新玩意"部分被截断，无法判断
+[21/87] 021-wired-madison-square-garden-bans-lawyer-repres.md
+  [3/5] Madison Square Garden禁止律师John Scola进入MSG旗下场馆，因其代理一
+  ⚠️  叙述客观，文章平衡呈现了MSG的安保行为争议及律师被禁事件，未有明显夸大或PR措辞。
+[22/87] 022-wired-its-officially-election-season-in-trumpw.md
+  [3/5] 特朗普在德克萨斯州参议院初选决选（5月26日）前一周最后一刻支持有丑闻前科的肯·帕克斯顿对阵约翰·科
+  ⚠️  政治新闻报道，但信息透明度低——大量"sources familiar"和匿名消息人士，缺乏具体事实核实；文章后半部分（
+[23/87] 023-wired-perfect-storm-how-trumps-aid-cuts-are-fu.md
+  [2/5] Wired报道称特朗普政府削减对外援助导致埃博拉疫情防控物资短缺、响应滞后，当前刚果（金）530余例
+[24/87] 024-wired-ride1up-roadster-review-2026-an-ebike-th.md
+  [2/5] Ride1Up Roadster V3电动自行车评测，轻量40磅、28mph最高速、$1,395定价
+[25/87] 025-wired-hypershell-x-ultra-s-review-the-best-exo.md
+  [3/5] Hypershell发布X系列外骨骼，搭载AI控制算法HyperIntuition，评测者称动作时机
+  ⚠️  标题"Best Exoskeleton Yet"为PR式主观断言，文章无独立横向评测数据支撑；"whatever tha
+[26/87] 026-mit-tech-review-green-steel-startup-boston-metal-is-doub.md
+  [3/5] Boston Metal融资7500万美元将业务重心从绿色钢铁转向生产铌、钽等高价值关键金属，因巴西
+  ⚠️  标题使用"green steel startup"定位，但文章实质是报道公司已转向关键金属生产，存在标题与内容定位不一致
+[27/87] 027-mit-tech-review-the-download-fully-artificial-chicken-eg.md
+  [2/5] MIT Tech Review newsletter报道Colossal Biosciences用3
+[28/87] 028-mit-tech-review-roundtables-inside-the-musk-v-altman-tri.md
+  [3/5] [Elon Musk起诉OpenAI诉讼败诉，指控Altman和Brockman在非营利地位问题上欺
+  ⚠️  [订阅者内容，本质是对既有事件的付费重述，未提供独立新闻价值；RSS摘要显示这是音频/视频讨论，非新报道]
+[29/87] 029-mit-tech-review-understanding-the-modern-cybercrime-land.md
+  [2/5] [HPE通过MIT Tech Review发布赞助内容，概述网络犯罪工业化趋势，称网络威胁日益严峻但
+  ⚠️  [赞助内容包装成行业分析，标题中性但实质为品牌推广；全文缺乏具体数据支撑，以"众所周知""可以确认"等模糊表述代替实证；
+[30/87] 030-mit-tech-review-the-download-musk-v-altman-smart-glasses.md
+  [2/5] MIT Tech Review通讯报道Musk诉Altman案败诉（诉讼时效问题）、Anduril与
+  ⚠️  文章本质是新闻通讯打包多个来源的摘要，原创深度内容有限。标题将三个主题拼接但缺乏内在逻辑统一；Anduril/Meta部
+[31/87] 031-techcrunch-customers-say-trump-mobile-is-leaking-th.md
+  [2/5] Trump Mobile客户邮箱和邮寄地址被泄露，公司未回应用户警告且问题未修复。
+[32/87] 032-techcrunch-intuit-to-lay-off-over-3000-employees-to.md
+  [4/5] Intuit宣布裁员约3000人（占员工总数17%），CEO备忘录称旨在简化结构、将资源转向AI。
+  ⚠️  叙述客观。文章在指出裁员理由的同时，提供了相互矛盾的数据——公司财务表现强劲（营收增17%、净利增48%）、AI需求旺盛
+[33/87] 033-techcrunch-ai-search-startups-are-blowing-up.md
+  [3/5] AI搜索初创公司正获资本追捧，Exa Labs获2.5亿美元融资估值25亿美元，Parallel获1
+  ⚠️  标题"blowing up"具有营销渲染色彩；文章主要依赖Bloomberg二手报道缺乏独立核实；声称"最具吸引力市场"
+[34/87] 034-techcrunch-stability-ai-releases-a-new-audio-model-.md
+  [2/5] Stability AI发布Stable Audio 3.0系列音频模型，顶配版本可生成长达6分20
+  ⚠️  文章大量使用公司自述的营销语言（"professional-grade"、"fully licensed"），缺乏独立质
+[35/87] 035-techcrunch-nanoclaw-creator-turns-down-20m-buyout-o.md
+  [3/5] 安全工具NanoClaw开发者获得1200万美元种子轮融资，拒绝了约2000万美元收购要约，产品因K
+  ⚠️  存在PR叙事倾向——"六周写代码到term sheet"刻意渲染速度，"virally launched"虽有具体名人背
+[36/87] 036-ars-technica-man-jailed-for-posting-trump-meme-wins-8.md
+  [3/5] Larry Bushart因发布特朗普表情包被关押37天后获83.5万美元和解，涉事治安官Nick 
+  ⚠️  叙述客观，未发现明显夸大或PR措辞；但全文基于FIRE新闻稿，立场倾向原告
+[37/87] 037-ars-technica-russias-plan-to-advertise-on-rockets-and.md
+  [2/5] 俄罗斯自2026年1月1日起正式将火箭广告纳入国家政策，已在火箭上刊登六则广告，但预计年收入仅有"数
+[38/87] 038-ars-technica-yearslong-fight-over-users-right-to-twea.md
+  [4/5] 软件自由保护组织(SFC)起诉Vizio案将于8月10日进入审判，争议焦点是Vizio是否必须根据G
+  ⚠️  叙述客观，文章平衡呈现了SFC的诉求和Vizio的沉默立场，但因原文截断，无法评估对Vizio立场的完整呈现。
+[39/87] 039-ars-technica-china-banned-rtx-5090d-v2-while-nvidia-c.md
+  [4/5] 中国在海关将RTX 5090D V2芯片列入禁止进口清单，恰逢Nvidia CEO黄仁勋随特朗普访华
+  ⚠️  标题刻意强调时间巧合（"while Jensen Huang was visiting"）制造戏剧效果，但正文叙事相对克
+[40/87] 040-ars-technica-the-internet-cant-stop-watching-figure-a.md
+  [2/5] Figure AI人形机器人连续近一周自主执行分拣包裹任务引发病毒式传播，包括机器人与人实习生的对比
+  ⚠️  文章标题"can't stop watching"暗示全网关注度，但未提供具体观看量/互动数据支撑；CEO自降预期与宣传
+[41/87] 041-hacker-news-meta-blocks-human-rights-accounts-from-r.md
+  [4/5] 自2026年4月30日起，Meta应沙特和阿联酋政府要求，封锁了ALQST等NGO、人权研究者和活动
+  ⚠️  文章为NGO联合声明，存在明确立场倾向，但援引的Meta官方内容限制报告数据具有可验证性。缺乏Meta反驳意见属信息不完
+[42/87] 042-hacker-news-goodbye-visa-and-mastercard-130m-europea.md
+  [3/5] 五家欧洲移动支付（西班牙Bizum、意大利Bancomat、葡萄牙MB WAY、北欧Vipps Mo
+[43/87] 043-hacker-news-qwen37-max-the-agent-frontier.md
+  [1/5] Qwen3.7-Max发布，定位为"Agent Frontier"，来源为Hacker News链接
+  ⚠️  内容严重不完整，仅有标题和来源信息，无法进行有效分析。这是典型的"空壳文章"，缺乏任何实质内容供批判性分析
+[44/87] 044-hacker-news-saying-goodbye-to-asmjs.md
+  [4/5] Firefox 148禁用SpiderMonkey的asm.js优化，计划移除OdinMonkey编
+  ⚠️  叙述客观。Mozilla官方博客以技术文档风格发布，用Norse神话比喻具文学性但不过度PR化，明确告知用户"nothi
+[45/87] 045-hacker-news-sbcl-the-assembly-code-breadboard-2014.md
+  [2/5] 技术博客（2014年旧文）介绍利用SBCL内置汇编器探索堆栈式VM设计，通过8槽模块化计数器优化指令
+  ⚠️  标题党+时间误导——将12年前的旧文包装成"今日Hacker News"文章发布，正文疑似被截断，实际价值存疑
+[46/87] 046-google-deepmind-blog-fast-tracking-genetic-leads-to-reverse-c.md
+  [2/5] Google DeepMind发布Co-Scientist系统，生物学家利用该AI工具发现成功逆转人
+  ⚠️  内容极度简化，仅为博客/摘要性质，缺乏任何实质数据。标题"reverse cellular aging"具冲击力，但未提
+[47/87] 047-untitled-3.md
+  [2/5] 杭州柯林斥资3亿元收购亏损机器人公司开普勒41.57%股权，估值较半年多前缩水约30%，同时其储能、
+  ⚠️  标题"豪赌亏损机器人标的"具有明显负面定性色彩；文章整体立场倾向批评
+[48/87] 048-untitled-the-token-do-or-die-line-financial-ai-co.md
+  [3/5] 金融AI公司因token成本压力加速成本精细化控制，银米基金部署200+模型月消耗千亿tokens。
+  ⚠️  标题"do-or-die"为PR夸大；整体叙事依赖银米基金单方面宣传，无竞品对比或独立数据支撑；引用的88%统计缺乏方法
+[49/87] 049-untitled-618.md
+  [2/5] 京东2026年618启动发布会，首次将AI推至核心位置，宣布AI研发投入同比增长超200%，覆盖30
+  ⚠️  文章以PR叙事为主，多处使用营销夸大措辞（"底牌"、"全场景融合"、"全球最大"等），关键业绩数据（8000万用户、10
+[50/87] 050-untitled-70007.md
+  [2/5] 达瑞电子以7000万元收购资不抵债的东莞运宏70%股权，评估增值率近7倍，原股东签下三年累计4500
+[51/87] 051-untitled-btai.md
+  [3/5] 钛媒体对比腾讯与百度2026年Q1财报，指出腾讯盈利能力强但AI商业化遇困（Q1 AI产品拖累利润约
+  ⚠️  叙事存在明显倾向性——腾讯被冠以"富贵病"、"昂贵的平庸"，百度被定性为"饥饿中挣扎"、"悲剧底色"，预设结论后筛选证据
+[52/87] 052-solidot-firefox-asmjs.md
+  [3/5] Mozilla宣布Firefox将在未来版本移除asm.js相关代码，因WebAssembly已取而
+  ⚠️  叙述客观，主要为技术事实陈述，无明显夸大或PR语言。但内容较为简短，仅覆盖基本事实，未深入探讨技术遗产或迁移影响。
+[53/87] 053-solidot-google-gcp-railway.md
+  [3/5] GCP自动系统误封Railway生产账号约8小时，Railway宣布将降低对GCP依赖，计划将其移出
+  ⚠️  叙述客观，但标题使用"不小心"带有轻微倾向；内容来源于单一信息源（Solidot+Railway博客），缺乏GCP侧说法
+[54/87] 054-solidot-untitled.md
+  [2/5] Solidot引用BBC Future报道，解释日本花粉过敏症高发（43%国民中重度症状）源于二战后
+  ⚠️  叙述客观，内容来源于BBC Future，逻辑链条清晰（战争能源短缺→砍伐天然林→战后植树造林→树种选择→花粉问题），但
+[55/87] 055-solidot-fedora.md
+  [3/5] Fedora移除深度桌面环境包，因安全审查发现deepin-daemon核心组件从未经过安全审查且难
+  ⚠️  叙述基本客观，但“多次违规”表述含糊，未提供具体违规证据，读者无法独立核实。
+[56/87] 056-solidot-openai-synthid.md
+  [3/5] Google SynthID AI水印技术获OpenAI、NVIDIA等公司采纳，但文章大量依赖Go
+  ⚠️  文章大量引用Google自述宣传数据，存在PR成分。"1000亿张"的数字缺乏独立来源，"无人破解"的声明未经第三方验证
+[57/87] 057-untitled-hidream-o1-image-pro.md
+  [ERROR] API call failed: The read operation timed out
+[58/87] 058-untitled-aiaigc2026.md
+  [ERROR] API call failed: The read operation timed out
+[59/87] 059-untitled-vcai.md
+  [2/5] AI产品"袋袋"声称能让专家通过对话封装数字分身，在HLE测试中"超越基座模型近20个百分点"，并以
+  ⚠️  文章存在明显的营销软文特征——多处使用"代差级"、"技术护城河"、"颠覆"等PR词汇；案例叙事过度依赖主观感受描述（如"
+[60/87] 060-untitled-aidc.md
+  [2/5] 商汤大装置林海在2026全球AIDC产业论坛演讲，阐述智算中心从"通用标准"向"适用高效"转型的建设
+[61/87] 061-untitled-plus.md
+  [2/5] 智会心研PLUS版开启免费公测，将企业级专利检索和AI分析能力开放给个人用户，邀友可延长会员特权。
+  ⚠️  标题含"破壁行动"、"大厂级'研发外挂'"等营销夸张用语；多处使用"颠覆"、"彻底打通"、"不可想象"等PR措辞；作为软
+[62/87] 062-simon-willison-blog-google-io-gemini-spark-antigravity.md
+  [3/5] Google发布Gemini Spark个人AI agent及Antigravity产品线，并将开源
+  ⚠️  叙述客观——作者坦诚无法实测且信息有限，聚焦于产品策略转变的批判性分析；但缺乏对Google安全声明的独立验证。
+[63/87] 063-simon-willison-blog-llm-gemini-032.md
+  [2/5] [llm-gemini 0.32插件发布，新增对gemini-3.5-flash模型支持]
+  ⚠️  叙述客观但信息量极低，仅为个人开源项目的版本更新公告，堪比GitHub release notes，无独立新闻价值
+[64/87] 064-simon-willison-blog-gemini-35-flash-more-expensive-but-googl.md
+  [4/5] [Google在I/O大会上发布Gemini 3.5 Flash，价格涨至3.x系列的3-6倍，同时
+  ⚠️  [叙述客观，标题"more expensive"和"use it for everything"均为事实陈述，无PR夸大
+[65/87] 065-simon-willison-blog-datasette-llm-accountant-01a4.md
+  [2/5] [Datasette开源项目发布LLM记账工具0.1a4版，修复了追踪响应链的bug]
+  ⚠️  [叙述客观，属于小型开源工具的例行版本更新公告]
+[66/87] 066-simon-willison-blog-llm-gemini-032a0.md
+  [2/5] Simon Willison发布llm-gemini 0.32a0插件更新，新增Google Gem
+  ⚠️  叙述客观。此为技术博客的例行发布说明，无营销语言或夸大描述，内容简洁符合RSS摘要定位。
+[67/87] 067-infoq-designing-a-multi-agent-system-for-engin.md
+  [ERROR] API call failed: The read operation timed out
+[68/87] 068-infoq-presentation-the-ai-gateway-scaling-cent.md
+  [2/5] 一位AI初创公司CEO在QCon AI大会演讲，推广AI模型网关作为解决"多模型推理混乱"的方案，推
+  ⚠️  演讲者身份为竞争产品的CEO，存在利益冲突；内容以定性描述为主，缺乏性能基准数据支撑；未讨论网关本身的单点故障风险。
+[69/87] 069-infoq-openai-outlines-webrtc-architecture-for-.md
+  [3/5] OpenAI公开其relay-transceiver架构设计，将WebRTC会话状态与路由分离以适配
+  ⚠️  叙述客观，未使用营销夸大词汇，但作为技术博客仅提供架构设计说明，缺乏部署效果验证和性能对比数据
+[70/87] 070-infoq-pip-261-ships-dependency-cooldowns-and-e.md
+  [ERROR] API call failed: HTTP Error 422: Unprocessable Entity
+[71/87] 071-infoq-anthropic-introduces-mcp-tunnels-for-pri.md
+  [4/5] Anthropic为Claude Managed Agents新增自托管沙箱和MCP隧道两项企业功能
+  ⚠️  叙述客观，技术描述准确，未发现夸大或标题党倾向；但作为产品发布报道，未提供与竞品（如Google GKE Agent S
+[72/87] 072-openai-blog-the-next-phase-of-openais-education-for-.md
+  [2/5] OpenAI发布"Education for Countries"计划第二阶段，宣布扩展学校AI应用
+  ⚠️  来源为OpenAI官方博客，标题"next phase"暗示阶段性成果但无数据支撑。"improve global le
+[73/87] 073-openai-blog-introducing-openai-for-singapore.md
+  [3/5] OpenAI宣布与新加坡建立多-year AI合作伙伴关系，旨在扩大AI部署、建立本地人才并支持商业
+  ⚠️  信息极度匮乏，仅为官方公告性质，缺乏实质细节。无法评估合作的具体价值和影响范围。
+[74/87] 074-openai-blog-advancing-content-provenance-for-a-safer.md
+  [3/5] OpenAI发布内容溯源工具包，含Content Credentials、SynthID及验证工具，
+  ⚠️  标题与摘要均属PR措辞——"safer, more transparent ecosystem"为理想化宣称而非可验证事
+[75/87] 075-github-changelog-semantic-issue-search-in-copilot-chat.md
+  [3/5] [GitHub Copilot Chat新增语义化issue搜索功能，支持自然语言模糊查询替代传统精
+  ⚠️  [叙述客观，属于标准产品更新公告]
+[76/87] 076-github-changelog-easily-apply-copilot-code-review-feedbac.md
+  [2/5] GitHub Copilot代码审查功能更新，按钮从"Implement suggestion"重命
+  ⚠️  叙述客观，属标准产品更新日志，无PR夸大或标题党，但信息量有限。
+[77/87] 077-github-changelog-gemini-35-flash-is-generally-available-f.md
+  [ERROR] API call failed: The read operation timed out
+[78/87] 078-github-changelog-expanded-oidc-support-for-dependabot-and.md
+  [3/5] GitHub扩展OIDC认证支持至Dependabot和code scanning，新增Clouds
+[79/87] 079-github-changelog-start-a-github-advanced-security-trial-f.md
+  [2/5] GitHub为企业管理员新增从安全风险评估页面直接启动Advanced Security试用的功能。
+  ⚠️  产品功能更新公告，叙述客观，但信息量极低，无实质技术细节或安全价值分析。
+[80/87] 080-product-hunt-gemini-omni.md
+  [2/5] Google在Product Hunt发布Gemini Omni产品页面，定位为从视频等任何输入创建
+  ⚠️  标题党+PR措辞。"Create anything from any input"属于典型营销语言；"leap in w
+[81/87] 081-product-hunt-ghostsnap.md
+  [2/5] GhostSnap一款Mac菜单栏工具发布，支持批量截屏自动压缩80%并一键粘贴，用于AI对话场景。
+  ⚠️  Product Hunt典型小型工具发布，核心卖点依赖单一量化指标"80%"但缺乏验证，存在PR营销嫌疑。
+[82/87] 082-product-hunt-viberia.md
+  [2/5] Viberia是一款类似文明游戏的等距地图式AI agents指挥中心产品发布，用户可查看、管理多个
+  ⚠️  标题"Command AI agents like you're playing Civilization"具有明显营销
+[83/87] 083-venturebeat-ai-google-just-redesigned-the-search-box-fo.md
+  [2/5] Google在I/O大会上宣布重新设计搜索框，从简单关键词输入转变为AI驱动的对话式界面
+  ⚠️  标题"matters more than you think"属于典型营销夸张，暗示重大突破但缺乏实质支撑；正文标注"抓
+[84/87] 084-latent-space-ainews-google-io-2026-gemini-35-flash-om.md
+  [2/5] [Google在I/O 2026发布Gemini 3.5 Flash（已GA）、Gemini Omn
+[85/87] 085-latent-space-ainews-how-to-land-a-job-at-a-frontier-l.md
+  [3/5] AI资讯汇总，重点介绍Vlad Feinberg关于如何进入AI前沿实验室的博客，聚焦pretrai
+  ⚠️  标题具有营销性质，"probable lasting title story candidate"暗示自我炒作意味；博客
+[86/87] 086-hugging-face-blog-olmoearth-v11-a-more-efficient-family-of.md
+  [2/5] AllenAI发布OlmoEarth v1.1遥感基础模型系列，包含14个预训练/微调模型更新
+  ⚠️  标题"more efficient"为未证实断言，文章仅有基础描述无实际评测数据，属产品发布公告而非报道
+[87/87] 087-hugging-face-blog-introducing-the-ettin-reranker-family.md
+  [2/5] Hugging Face发布Ettin Reranker模型族（150M参数版本），用于文本重排序任
+  ⚠️  文章内容极度贫乏，仅包含模型卡片的元数据（参数规模、下载量），无任何技术说明、性能对比或使用场景描述，难以进行实质性批判
+
+[INFO] 分析完成，34/82 篇入选（评分≥3）
+[DONE] 分析文件已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-21.md
+[DONE] sidecar 已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-21.jsonl
+/root/.openclaw/workspace/news-intel/digest/2026-05-21.md
+[INFO] sidecar 中评分≥4 的事件: 8 条
+[DONE] kb 更新: +8 条新增，共 45 条（窗口: 2026-04-21 至今）
+[INFO] 日期: 2026-05-22，信源数: 24，输出目录: /root/.openclaw/workspace/news-intel/raw/2026/05/22
+[SOURCE] TechCrunch: 5 篇
+[SOURCE] 爱范儿: 5 篇
+[SOURCE] 36氪: 5 篇
+[SOURCE] Wired: 5 篇
+[SOURCE] Ars Technica: 5 篇
+[SOURCE] MIT Tech Review: 5 篇
+[SOURCE] 少数派: 5 篇
+[SOURCE] The Verge: 5 篇
+[SOURCE] 钛媒体: 5 篇
+[SOURCE] VentureBeat AI: 1 篇
+[SOURCE] Simon Willison Blog: 5 篇
+[SOURCE] Hugging Face Blog: 1 篇
+[SOURCE] Hacker News: 5 篇
+[SOURCE] Google DeepMind Blog: 0 篇
+[SOURCE] 机器之心: 0 篇
+[SOURCE] Solidot: 5 篇
+[SOURCE] Latent Space: 3 篇
+[SOURCE] 量子位: 5 篇
+[SOURCE] Product Hunt: 3 篇
+[SOURCE] InfoQ: 5 篇
+[SOURCE] OpenAI Blog: 4 篇
+[WARN] 极客公园: RSS fetch failed: HTTP Error 502: Bad Gateway
+[SOURCE] 极客公园: 0 篇
+[SOURCE] Papers With Code: 0 篇
+[SOURCE] GitHub Changelog: 5 篇
+[INFO] RSS 抓取完成，共 87 篇待处理
+  [fetch] This young startup is taking on a fragrance industry that ha...
+  [fetch] Spotify takes on Google’s NotebookLM with its new app...
+  [fetch] Spotify adds AI-powered Q&A and briefing generation features...
+  [fetch] Spotify launches an ElevenLabs-powered audiobook creation to...
+  [fetch] Spotify will reserve tickets for top fans of an artists in a...
+  [fetch] 38.99 万起！小米 YU7 GT 发布，纽北最速 SUV 值不值？...
+  [fetch] AI 分身 24 小时冲浪，它交朋友怎么比我还好？...
+  [fetch] 大模型狂飙的尽头，这家国产 GPU 厂商要把算力放在客厅...
+  [fetch] 假如听不见声音，该如何「感触」音乐？...
+  [fetch] 早报｜448元，iPhone绝版配件回归/Meta用员工键鼠数据训练AI，扎克伯格：外包不够聪明/GoPro考虑出售或合...
+  [fetch] 氪星晚报｜马斯克旗下SpaceX启动史上最大规模IPO计划；全国首张综合性司机服务地图上线；海关总署在粤发布《海关支持粤...
+  [fetch] 新石器NewClaw：AI一体化解决方案，零门槛当无人车指挥官| 2026AI Partner·北京亦庄AI+产业大会...
+  [fetch] 业绩快报 | 唯品会一季度净营收266亿元，SVIP用户贡献超50%线上销售额...
+  [fetch] 从概念到产线一：AI在工业制造领域的深水区探索| 2026AI Partner·北京亦庄AI+产业大会...
+  [fetch] 城市级AI服务：从试点到常态化，机器人的实景作战与规模化落地| 2026AI Partner·北京亦庄AI+产业大会...
+  [fetch] Why the 2026 Hurricane Season Might Not Be That Bad...
+  [fetch] I Cloned Myself With Gemini’s AI Avatar Tool. The Result Was...
+  [fetch] NYC and LA Are Teaming Up to Fight for EVs...
+  [fetch] 11 Best Meal Delivery Services, Tested by an Ex-Restaurant C...
+  [fetch] Best Duffel Bags: Eastpak, Patagonia, Baboon to the Moon (20...
+  [fetch] US government takes $2 billion equity stake in nine quantum ...
+  [fetch] Plug-in hybrids get plugged in more than you might think...
+  [fetch] These clever active beam headlights are finally coming to Am...
+  [fetch] Famously secret about its finances, SpaceX opens its books f...
+  [fetch] Trump admin didn't want Ebola-exposed Americans, sent them t...
+  [fetch] Anthropic’s Code with Claude showed off coding’s future—whet...
+  [fetch] The Download: online safety’s future and climate tech’s big ...
+  [fetch] Climate tech companies are pivoting to critical minerals...
+  [fetch] Tech researchers are suing the Trump administration over the...
+  [fetch] Green steel startup Boston Metal is doubling down on critica...
+  [fetch] 新玩意 242｜少数派的编辑们最近买了啥？...
+  [fetch] iOS 里的这些实用辅助功能，每个人都可能用得上...
+  [fetch] 少数派 × 飞傲 多功能便携 CD 音箱一体机 BEATBOX 预售开启...
+  [fetch] 派早报：iQOO 15T 正式发布、小鹏 GX 上市等...
+  [fetch] 当 AI 成为角色：漫谈我的 SillyTavern 使用经验...
+  [fetch] The cost of the smart home is going up...
+  [fetch] Meta and Google get data from the app your boss uses to trac...
+  [fetch] GitHub faces a fight for its survival at Microsoft...
+  [fetch] Spotify is launching AI-generated remixes...
+  [fetch] Spotify is going to reserve concert tickets for ‘real fans’...
+  [fetch] 渝开发定增“大瘦身”高达87%，远郊滞销盘撑不起门面？...
+  [fetch] 蔚蓝科技发布新一代消费级四足机器人BabyAlpha A3｜具身动态...
+  [fetch] 珈凯生物：股权定价悬殊频现异常操作，高毛利、低研发并存｜IPO观察...
+  [fetch] 菜鸟副总裁毕江华：仓库人效提升100%，攀爬机器人ZeeBot启动全球交付...
+  [fetch] 优必选被拍在沙滩上...
+  [fetch] Google just redesigned the search box for the first time in ...
+  [fetch] Quoting SpaceX S-1...
+  [fetch] How fast is 10 tokens per second really?...
+  [fetch] Google I/O, Gemini Spark, Antigravity...
+  [fetch] llm-gemini 0.32...
+  [fetch] Gemini 3.5 Flash: more expensive, but Google plan to use it ...
+  [fetch] OlmoEarth v1.1: A more efficient family of Earth observation...
+  [fetch] Flipper One – we need your help...
+  [fetch] Python 3.15: features that didn't make the headlines...
+  [fetch] Michael Keating has died...
+  [fetch] Indexing a year of video locally on a 2021 MacBook with Gemm...
+  [fetch] We're testing new ad formats in Search and expanding our Dir...
+  [fetch] Google 宣布在 AI 模式下加入更多广告...
+  [fetch] NASA 预计中国将在 2027 年执行载人绕月飞行任务...
+  [fetch] Vivaldi 8.0 释出...
+  [fetch] SpaceX 最大的收入来源是与 Anthropic 达成的数据中心交易...
+  [fetch] Google 的 AI 搜索容易被人为操纵...
+  [fetch] [AINews] OpenAI GPT-next disproves 80 year old Erdős planar ...
+  [fetch] Railway: The Agent-Native Cloud — Jake Cooper...
+  [fetch] [AINews] Google I/O 2026: Gemini 3.5 Flash, Omni (NanoBanana...
+  [fetch] 腾讯混元开源全新翻译模型Hy-MT2 ，上线小程序「腾讯Hy翻译」...
+  [fetch] 菲尔兹奖得主都看懵了：OpenAI非数学模型首次自主突破80年未解数学难题...
+  [fetch] 风行在线CEO易正朝：先全员Coding，再All in众创丨AIGC2026...
+  [fetch] Artificial Analysis放榜：千问3.7问鼎国产模型冠军，全球前五...
+  [fetch] AI首次实现中国风光发电普查，北大、阿里达摩院研究登上《自然》...
+  [fetch] Tacet...
+  [fetch] Mixpanel Headless...
+  [fetch] Tycoon AI...
+  [fetch] Six Sessions at QCon AI Boston 2026 That Take Productionizin...
+  [fetch] Presentation: The Ironies of A^2 I^2...
+  [fetch] How Platform Engineering Using Golden Bricks Can Enable Fast...
+  [fetch] OpenTofu 1.12 The Feature Terraform Never Shipped...
+  [fetch] With Android CLI, Google is Making the Android Toolchain Age...
+  [fetch] An OpenAI model has disproved a central conjecture in discre...
+  [fetch] How Ramp engineers accelerate code review with Codex...
+  [fetch] The next phase of OpenAI’s Education for Countries...
+  [fetch] Introducing OpenAI for Singapore...
+  [fetch] Issue fields are now in public preview for all organizations...
+  [fetch] Copilot usage metrics reports now use GitHub-owned download ...
+  [fetch] Updates to available models in Copilot on web...
+  [fetch] Auto model selection now routes based on your task in VS Cod...
+  [fetch] Semantic issue search in Copilot Chat...
+
+[DONE] 共保存 87 篇文章到 /root/.openclaw/workspace/news-intel/raw/2026/05/22
+/root/.openclaw/workspace/news-intel/raw/2026/05/22
+[INFO] 日期: 2026-05-22，文章数: 87
+[Step1] 提取事件摘要...
+  [ERROR] API call failed: The read operation timed out
+  [ERROR] API call failed: The read operation timed out
+  [OK] 85 条摘要提取成功
+[Step2] 事件分组...
+  [ERROR] API call failed: The read operation timed out
+  [OK] 87 clusters (0 个多来源)
+[DONE] 87 clusters → /root/.openclaw/workspace/news-intel/clusters/2026-05-22.json
+/root/.openclaw/workspace/news-intel/clusters/2026-05-22.json
+[INFO] 日期: 2026-05-22，找到 87 篇文章，开始分析...
+[INFO] 知识库注入: 45 条历史事件
+[1/87] 001-techcrunch-this-young-startup-is-taking-on-a-fragra.md
+  [2/5] 香水科技初创公司Patina获得200万美元融资（Betaworks、True Ventures），
+  ⚠️  标题"taking on...that hasn't changed"暗示行业变革，但实际仅完成早期融资、尚无产品落地；
+[2/87] 002-techcrunch-spotify-takes-on-googles-notebooklm-with.md
+  [3/5] [Spotify发布桌面应用Studio by Spotify Labs，用户可整合邮件、日历等信息
+  ⚠️  标题"takes on"暗示直接竞争但实际功能差异明显；"AI can make mistakes"被轻描淡写但未警示潜
+[3/87] 003-techcrunch-spotify-adds-ai-powered-qa-and-briefing-.md
+  [3/5] Spotify推出AI生成个人播客功能，支持用户根据提示词创建每日/每周简报，并在播客中新增问答功能
+  ⚠️  文章对"50%同比增长"使用相对数据而非绝对数字，存在数据展示不完整的问题；将Spotify描述为"借鉴Notebook
+[4/87] 004-techcrunch-spotify-launches-an-elevenlabs-powered-a.md
+  [3/5] Spotify在投资者日宣布推出ElevenLabs驱动的AI有声书自助出版工具，6月开启beta测
+  ⚠️  叙事客观，数据引用存在模糊——"60%同比增长"未提供基准期对比；"100万美元ARR"未说明时间节点；文章未探讨AI生
+[5/87] 005-techcrunch-spotify-will-reserve-tickets-for-top-fan.md
+  [2/5] Spotify推出"顶级粉丝优先购票"功能，根据流媒体行为筛选合格用户，疑似旨在对抗黄牛并增强用户黏
+[6/87] 006-untitled-3899-yu7-gt-suv.md
+  [2/5] 小米在「人车家全生态」发布会上发布YU7 GT高性能纯电SUV，起售价38.99万元，搭载1003马
+  ⚠️  文章存在明显营销叙事倾向，将小米自测纽北成绩作为核心卖点反复渲染，却未提供独立验证来源；大量技术参数罗列缺乏真实使用场景
+[7/87] 007-untitled-ai-24.md
+  [2/5] 爱范儿报道AI社交分身产品演进，从Character.AI陪伴式对话到Second Me、Spark
+  ⚠️  叙事结构清晰但存在产品软文倾向。文中对
+[8/87] 008-untitled-untitled.md
+  [2/5] 苹果委托导演沈煜傑拍摄无障碍主题纪录片，讲述听障母亲通过iPhone"音乐触感反馈"功能首次"感受"
+  ⚠️  叙事以情感诉求为核心，技术细节极度匮乏；文章以"纪录片"形式呈现但未披露品牌合作背景，存在软文营销之嫌；关键类比存在误导
+[9/87] 009-untitled-gpu.md
+  [2/5] 摩尔线程发布家庭 AI 智算中枢 AICUBE，定位"全功能 GPU"进入客厅场景，6 月 18 日
+[10/87] 010-untitled-448iphonemetaaigopro.md
+  [2/5] 爱范儿RSS摘要式聚合文章，含12条新闻摘要，主要涉及SpaceX IPO、Nvidia财报、Met
+[11/87] 011-36-spacexipo.md
+  [2/5] SpaceX向美国证券监管机构递交招股说明书，计划以1.75万亿美元估值募资约750亿美元，CEO马
+  ⚠️  标题"史上最大规模"和"或将重塑华尔街格局"属于营销夸大措辞，缺乏同行对比和历史数据支撑；SpaceX IPO规模（75
+[12/87] 012-36-newclawai-2026ai-partnerai.md
+  [2/5] [新石器在2026AI Partner北京亦庄大会上推出AI Agent"NeoClaw"，号称可将
+  ⚠️  营销语言密集，多处数据缺乏验证。"行业首个"标签未经独立证实；"十倍效率提升"仅来自厂商视角，无客观基准测试；"一人管理
+[13/87] 013-36-266svip50.md
+  [ERROR] API call failed: The read operation timed out
+[14/87] 014-36-ai-2026ai-partnerai.md
+  [2/5] [嘉立创云ERP负责人在北京亦庄AI+产业大会上发表演讲，声称AI已从"辅助工具"升级为工业制造"核
+  ⚠️  [文章本质为企业营销内容，存在系统性PR夸大：标题使用"深水区探索"制造紧迫感；声称AI"重构工厂运行逻辑"但未提供可量
+[15/87] 015-36-ai-2026ai-partnerai.md
+  [2/5] 酷哇科技联合创始人李柯宏在亦庄AI+产业大会上发表演讲，称公司以"以战养战"策略在城市开放场景实现具
+  ⚠️  多处核心数据模糊
+[16/87] 016-wired-why-the-2026-hurricane-season-might-not-.md
+  [3/5] NOAA预测2026年大西洋飓风季活动低于正常水平（8-14个命名风暴），主要受厄尔尼诺现象影响，但
+  ⚠️  标题"might not be that bad"隐含乐观倾向，与文中多处警告性表述形成张力；关于NOAA人员削减对预测
+[17/87] 017-wired-i-cloned-myself-with-geminis-ai-avatar-t.md
+  [3/5] 记者测试Google Gemini AI头像工具，用自己形象生成视频，体验后感到"impressed
+  ⚠️  叙述相对客观，但标题"unnervingly me"带有主观引导色彩；文章未深入讨论Google在AI生成内容水印/溯源
+[18/87] 018-wired-nyc-and-la-are-teaming-up-to-fight-for-e.md
+  [3/5] 纽约市与洛杉矶县宣布结成"双海岸桥梁"伙伴关系，整合政府采购力量推动电动车普及，目标克服联邦层面电动
+  ⚠️  标题"fight for EVs"略显夸张，实为政府采购协调机制；文中引用"能源经济提升6%"数据来源为NYC与交通部合
+[19/87] 019-wired-11-best-meal-delivery-services-tested-by.md
+  [1/5] Wired发布2026年最佳Meal Kit配送服务评测指南，前餐厅评论员测试推荐Marley Sp
+  ⚠️  典型的"Best X"购物指南，内容实质为品牌推荐与电商导流（多处"Shop at XXX"链接），缺乏行业深度分析。
+[20/87] 020-wired-best-duffel-bags-eastpak-patagonia-baboo.md
+  [2/5] Wired发布2026年最佳旅行行李包评测指南，推荐Eastpak、Patagonia、Baboon
+  ⚠️  叙述风格偏向软性营销，"hard to beat""rock-solid"等评价缺乏客观依据；"field-tested
+[21/87] 021-ars-technica-us-government-takes-2-billion-equity-sta.md
+  [3/5] 美国商务部宣布向九家量子计算公司投资20亿美元换取股权，包括IBM（10亿）、GlobalFound
+  ⚠️  ①文章标题"$2 billion equity stake"与内文"letters of intent"不符，存在措辞夸
+[22/87] 022-ars-technica-plug-in-hybrids-get-plugged-in-more-than.md
+  [3/5] [Toyota发布RAV4 Prime和Lexus NX 450h+的充电数据，显示车主在70-90
+  ⚠️  [文章叙事倾向性明显——标题反常识暗示公众认知有误；"encouraging"等词汇带有正面评价倾向；样本量较小且来源单
+[23/87] 023-ars-technica-these-clever-active-beam-headlights-are-.md
+  [3/5] 2027款奥迪Q9将配备自适应光束数字矩阵LED大灯，因NHTSA 2022年批准该技术而首次进入美
+  ⚠️  叙述客观，记者通过实地试驾体验描述技术效果，信息来源清晰（注明奥迪提供交通住宿），但未提及文章是否经过奥迪审阅。
+[24/87] 024-ars-technica-famously-secret-about-its-finances-space.md
+  [4/5] SpaceX提交近400页S-1文件准备IPO，首次公开2025年营收186.7亿美元、亏损49.4
+  ⚠️  "largest TAM in human history"属营销语言；2.85万亿TAM中仅2万亿与太空直接相关，26
+[25/87] 025-ars-technica-trump-admin-didnt-want-ebola-exposed-ame.md
+  [3/5] 特朗普政府被指拒绝让埃博拉暴露的美国公民回国治疗，将他们送往柏林和布拉格，CDC官员回避相关问题。
+  ⚠️  文章核心指控依赖两名匿名信源，而白宫已公开否认并批评信源媒体；CDC官员回避不等于默认，存在合理沉默可能；标题"didn
+[26/87] 026-mit-tech-review-anthropics-code-with-claude-showed-off-c.md
+  [2/5] Anthropic在伦敦举办Code with Claude开发者活动，展示AI编程工具普及现状，调
+[27/87] 027-mit-tech-review-the-download-online-safetys-future-and-c.md
+  [2/5] MIT Tech Review newsletter汇总当日科技要闻，包括研究者起诉移民政策、气候科
+  ⚠️  标题客观，但内容为典型"链接农场"式编辑——大量依赖外链填充，实际原创深度有限；付费活动引导与新闻报道混杂，边界模糊；属
+[28/87] 028-mit-tech-review-climate-tech-companies-are-pivoting-to-c.md
+  [3/5] 气候科技公司因美国第二特朗普政府气候政策支持减弱，开始将重心从脱碳转向关键矿物开发以维持运营。
+  ⚠️  文章带有明显的主观担忧基调（"makes me nervous"），但未提供充分数据支持其对行业趋势的判断，属于现象描述
+[29/87] 029-mit-tech-review-tech-researchers-are-suing-the-trump-adm.md
+  [3/5] 科技研究人员联盟CITR起诉特朗普政府，指控 Rubio 等官员发布的"签证限制政策"违反言论和正当
+  ⚠️  叙述相对客观，但文中"America Undone"系列定位暗示立场倾向原告；政府方"针对行为非言论"的辩词被简短提及后
+[30/87] 030-mit-tech-review-green-steel-startup-boston-metal-is-doub.md
+  [2/5] Boston Metal融资7500万美元，将业务重心从绿色钢铁转向铌、钽等高价值关键金属，此前因巴
+[31/87] 031-untitled-242.md
+  [1/5] 少数派编辑部成员分享各自最近购买的消费电子产品（保冷瓶、电风扇、手机壳、充电底座），以第一人称主观体
+  ⚠️  典型的软性产品种草内容，文章末尾明确有"特惠、好用的硬件产品，尽在少数派 sspai 官方店铺"的导流暗示。每款产品都有
+[32/87] 032-untitled-ios.md
+  [2/5] 少数派发布iOS 26辅助功能使用指南，介绍防晕车、眼动追踪、引导式访问等实用功能的使用方法。
+  ⚠️  文章存在软性推广倾向，对Apple功能多有溢美之词（如“人文关怀”“触达每个人”）；功能介绍偏重操作步骤，缺乏实际效果数
+[33/87] 033-untitled-cd-beatbox.md
+  [2/5] 少数派与Hi-Fi厂商飞傲联名推出BEATBOX多功能便携CD音箱一体机，采用磁吸可更换盖板设计，预
+  ⚠️  这是一篇典型的软文推广，存在以下问题：①标题"预售开启"但无价格信息，信息不完整；②"极具下潜力的低频表现"等为定性描述
+[34/87] 034-untitled-iqoo-15t-gx.md
+  [2/5] 少数派发布2026年5月21日科技早报，汇总iQOO 15T手机、小鹏GX汽车、索尼耳机等多款新品发
+  ⚠️  叙述客观，但属于常规新品发布汇总，缺乏深度分析；9条资讯均以正面参数描述为主，无对比
+[35/87] 035-untitled-ai-sillytavern.md
+  [2/5] 用户分享将AI角色扮演前端SillyTavern用于非主流工作场景的个人经验，介绍其角色卡片系统和设
+  ⚠️  叙述客观，文章以个人经验分享为主，标题"漫谈我的使用经验"与内容相符，无夸大或营销语言。
+[36/87] 036-the-verge-the-cost-of-the-smart-home-is-going-up.md
+  [4/5] Google在I/O大会上宣布将Gemini for Home API扩展至第三方，允许硬件厂商和服
+  ⚠️  叙述客观，标题和副标题明确使用"subscription fatigue"和"higher bills"等批评性措辞，对
+[37/87] 037-the-verge-meta-and-google-get-data-from-the-app-yo.md
+  [4/5] 哥伦比亚法学院研究显示9款职场监控工具全部将工人数据共享给第三方广告平台，Meta/Google/M
+  ⚠️  叙述相对客观，但"every single one"等绝对化表述可能强化结论；引用Deputy反驳时仅一句带过，未呈现其
+[38/87] 038-the-verge-github-faces-a-fight-for-its-survival-at.md
+  [3/5] GitHub在微软控制下经历多次宕机、安全漏洞、人才流失，前CEO离职后领导层动荡，面临Cursor
+  ⚠️  标题使用"fight for its survival"存在明显夸大，将多个独立事件（宕机、安全漏洞、竞争压力）串联成"
+[39/87] 039-the-verge-spotify-is-launching-ai-generated-remixe.md
+  [2/5] Spotify与环球音乐集团达成AI生成混音/翻唱授权协议，将作为高级订阅付费附加功能上线，艺术家可
+  ⚠️  文章大量引用Spotify和UMG高管的PR式声明（如"grounded in consent, credit, and
+[40/87] 040-the-verge-spotify-is-going-to-reserve-concert-tick.md
+  [3/5] Spotify推出"Reserved"项目，向"真粉丝"预留演唱会门票，Premium用户可通过流媒
+  ⚠️  标题"real fans"措辞具有营销煽动性，可能引发普通用户反感；文章承认筛选标准"a touch murky"但未深
+[41/87] 041-untitled-87.md
+  [2/5] 渝开发定增从原计划不超过7亿元大幅缩减至8114.32万元，缩水87%，仅保留两个已竣备住宅项目。
+  ⚠️  文章对"远郊+低配"项目的批评及"躺平式国企"定性带有较明显的价值判断倾向；"几乎看不到翻身的可能"属于推测性结论；部分
+[42/87] 042-untitled-babyalpha-a3.md
+  [2/5] 蔚蓝科技发布消费级四足机器人BabyAlpha A3，声称配备六颗国产AI芯片本地运行70B模型、3
+  ⚠️  文章大量使用"真正思考能力""超级大脑""全栈安全防护体系"等营销语言渲染技术突破，但关键性能数据缺乏独立验证前提，定价
+[43/87] 043-untitled-ipo.md
+  [3/5] 珈凯生物北交所IPO上会在即，2020年半年内先增后减资、2022年股权定价悬殊67%，且研发费用率
+  ⚠️  文章事实陈述清晰，但未提供公司反驳意见，且"高新技术""核心业务竞争力"等描述依赖招股书口径，缺乏独立验证。
+[44/87] 044-untitled-100zeebot.md
+  [2/5] 菜鸟发布攀爬机器人ZeeBot，可同时完成地面移动与货架攀爬存取，号称仓库人效提升100%。
+[45/87] 045-untitled-untitled.md
+  [2/5] 优必选作为"人形机器人第一股"，面对宇树、智元等新秀追赶，出货量和盈利水平已被大幅赶超，市值从高峰暴
+  ⚠️  存在多重问题——1）数据缺乏来源：多处关键数据（3台销量、万台产能、200亿估值等）未标注具体出处；2）主观定性过多："
+[46/87] 046-venturebeat-ai-google-just-redesigned-the-search-box-fo.md
+  [3/5] Google在I/O大会上宣布重新设计搜索框，从传统关键词输入框转变为AI驱动的对话式界面
+  ⚠️  标题使用"first time in 25 years"和"matters more than you think"属于
+[47/87] 047-simon-willison-blog-quoting-spacex-s-1.md
+  [4/5] SpaceX在S-1文件中披露2026年5月与Anthropic签订云服务协议，Anthropic同
+  ⚠️  文章仅是原始文件引用，无夸大，但仅呈现财务数字缺乏上下文对比，普通读者难以判断这笔交易是否合理或属于行业标准价格
+[48/87] 048-simon-willison-blog-how-fast-is-10-tokens-per-second-really.md
+  [2/5] 一个HTML工具可模拟LLM输出速度（5-800 tokens/秒），帮助用户直观感受厂商宣称的性能
+  ⚠️  叙述客观，为典型的链接推荐帖子，无夸大或PR措辞
+[49/87] 049-simon-willison-blog-google-io-gemini-spark-antigravity.md
+  [ERROR] API call failed: The read operation timed out
+[50/87] 050-simon-willison-blog-llm-gemini-032.md
+  [2/5] llm-gemini 0.32插件发布，新增对Gemini 3.5 Flash模型的支持
+  ⚠️  叙述客观，但内容高度精简，仅为RSS摘要级别，缺乏技术细节；作者本人即为产品开发者，存在轻微利益关联
+[51/87] 051-simon-willison-blog-gemini-35-flash-more-expensive-but-googl.md
+  [4/5] [Google发布Gemini 3.5 Flash，定价为前代3-6倍，并大规模部署至消费者和企业产
+  ⚠️  叙述客观。文章基于开发者文档和定价页面提供具体数据，并通过Artificial Analysis基准测试进行成本对比，分
+[52/87] 052-hugging-face-blog-olmoearth-v11-a-more-efficient-family-of.md
+  [2/5] Allen AI发布OlmoEarth v1.1模型系列，专用于遥感地球观测的基础模型。
+  ⚠️  标题党嫌疑——标题包含"more efficient"但全文正文不可见，无任何支撑数据；RSS摘要注明"无摘要"表明内容
+[53/87] 053-hacker-news-flipper-one-we-need-your-help.md
+  [2/5] Flipper公司宣布开发Flipper One开源Linux ARM计算机平台，目标实现完全开源硬
+  ⚠️  文章本质是寻求社区贡献的营销行为，而非产品发布——"TL;DR"仅列举目标而无具体承诺，"incredibly hard
+[54/87] 054-hacker-news-python-315-features-that-didnt-make-the-.md
+  [2/5] Python 3.15 beta 1发布，包含异步任务组优雅取消、上下文管理器装饰器支持非普通函数、
+  ⚠️  文章存在一定的主观色彩（如"In my opinion, this now makes context managers
+[55/87] 055-hacker-news-michael-keating-has-died.md
+  [2/5] Michael Keating去世，享年78岁（1947-2026），英国演员，曾参演《神秘博士》。
+  ⚠️  RSS摘要信息严重不足，仅包含竞赛公告片段，无实质内容，无法进行有效批判性分析
+[56/87] 056-hacker-news-indexing-a-year-of-video-locally-on-a-20.md
+  [2/5] 开发者用本地Gemma 4-31B在5年前的MacBook上运行一夜，完成一年视频档案的语义索引。
+  ⚠️  叙述客观，为技术实践日志，非新闻事件，标题描述精确。
+[57/87] 057-hacker-news-were-testing-new-ad-formats-in-search-an.md
+  [2/5] Google宣布在AI驱动的搜索中测试基于Gemini的新广告格式（
+[58/87] 058-solidot-google-ai.md
+  [3/5] Google宣布在AI搜索模式中测试两类新广告形式——"对话式发现广告"和"高亮答案"，均含AI解释
+  ⚠️  叙述客观，但仅提供基本事实，缺乏批判性视角（如广告即答案模式对信息中立性的影响）。
+[59/87] 059-solidot-nasa-2027.md
+  [2/5] [NASA局长预计中国2027年载人绕月，以此为由要求修改阿尔忒弥斯计划加快美国重返月球]
+  ⚠️  [标题"NASA预计"将局长个人表态包装成机构预测；"很可能是2027年的某个时候"表述模糊缺乏可信度；全文未质疑预测可
+[60/87] 060-solidot-vivaldi-80.md
+  [2/5] Vivaldi浏览器发布8.0版本，新增名为Unified的统一视觉界面和六种预设布局选项（含垂直标
+  ⚠️  叙述客观，但信息量极其有限，仅为功能列表式发布公告，无深度分析。
+[61/87] 061-solidot-spacex-anthropic.md
+  [2/5] SpaceX向SEC递交招股说明书，首次披露财务数据，显示其最大收入来源为与Anthropic达成的
+[62/87] 062-solidot-google-ai.md
+  [2/5] [Google AI搜索因仅依赖单一答案来源而非多个链接，易被人为操纵， BBC记者以热狗文章演示此
+  ⚠️  [报道叙事清晰但技术
+[63/87] 063-latent-space-ainews-openai-gpt-next-disproves-80-year.md
+  [3/5] OpenAI GPT-next（推测GPT 5.6）在不到$1000、<32小时内否证了Erdős 
+  ⚠️  标题含营销暗示("disproves"/"under $1000")；"speculated to be GPT 5.6
+[64/87] 064-latent-space-railway-the-agent-native-cloud-jake-coop.md
+  [2/5] Railway从Heroku式部署平台转型为“agent原生云”，35人团队服务300万用户，自建裸
+[65/87] 065-latent-space-ainews-google-io-2026-gemini-35-flash-om.md
+  [3/5] Google I/O 2026发布Gemini 3.5 Flash（GA）、Omni（视频）、Spa
+[66/87] 066-untitled-hy-mt2-hy.md
+  [3/5] 腾讯混元开源翻译模型Hy-MT2，支持33种语言三规格版本发布，同时上线配套小程序
+  ⚠️  存在性能表述矛盾和信息缺失问题——"非常接近"与"已经超过"指代同一对比对象出现逻辑冲突；多处"最佳""超过"等措辞缺乏
+[67/87] 067-untitled-openai80.md
+  [2/5] OpenAI内部通用模型声称解决埃尔德什1946年提出的单位距离经典难题，获菲尔兹奖得主高尔斯认可。
+[68/87] 068-untitled-ceocodingall-inaigc2026.md
+  [2/5] 风行在线CEO在AIGC2026峰会宣称公司三年利润增长超10倍，主要归因于全员AI编程而非AI视频
+  ⚠️  文章本质为企业高管在商业峰会上的演讲宣传稿，充斥PR化表述（"成于AI编程"、"众创杠杆"）。"利润增长超10倍"缺乏同
+[69/87] 069-untitled-artificial-analysis37.md
+  [3/5] 阿里Qwen3.7-Max在Artificial Analysis全球大模型榜单中以56.6分排名第
+  ⚠️  标题“问鼎国产模型冠军”含营销色彩；“全球前五”虽属实但未说明参评模型总数；“最具影响力、含金量最高”引用榜单自述，缺乏
+[70/87] 070-untitled-ai.md
+  [3/5] 北大与阿里达摩院利用AI分析开源卫星影像，绘制全国风光设施分布图并研究跨省互补策略，论文发表于Nat
+  ⚠️  标题"AI首次实现"表述夸大，且将学术成果包装为AI能力突破；"上帝视角"为PR营销语言；1000亿千瓦时提升数据的条件
+[71/87] 071-product-hunt-tacet.md
+  [2/5] Tacet应用在Product Hunt上线，声称通过分析用户手机敲击节奏提供"每日认知健康评分"，
+  ⚠️  叙述中多处使用PR语言——"surprisingly accurate"为模糊乐观表述；"brings it to yo
+[72/87] 072-product-hunt-mixpanel-headless.md
+  [2/5] Mixpanel发布Headless Python SDK，提供面向AI代理和开发者的可编程产品分析
+  ⚠️  标题为产品发布，非重大事件。"always-on"、"AI-native"为营销用语，"makes the entire
+[73/87] 073-product-hunt-tycoon-ai.md
+  [2/5] Tycoon AI产品发布，声称可用AI代理运行单人公司，配有"AI CEO" Astra及10+预
+  ⚠️  Product Hunt本质是产品发布平台，非独立评测媒体。原文大量使用营销话术："AI CEO"人格化命名、"enti
+[74/87] 074-infoq-six-sessions-at-qcon-ai-boston-2026-that.md
+  [2/5] InfoQ介绍QCon AI Boston 2026会议上6个聚焦"AI从演示到生产落地"差距的演讲
+  ⚠️  InfoQ自家活动软文性质明显，仅提供演讲摘要而无实质内容；多处使用"pressing challenge"等营销语言强
+[75/87] 075-infoq-presentation-the-ironies-of-a2-i2.md
+  [3/5] QCon旧金山会议上，资深事故响应工程师J. Paul Reed阐述"自动化悖论"概念——AI虽先进
+  ⚠️  内容有价值但呈现有限制——作为45分钟演讲的文字版本，原文摘要仅呈现开篇框架，未能提供完整论证过程；"doubling 
+[76/87] 076-infoq-how-platform-engineering-using-golden-br.md
+  [2/5] [InfoQ报道平台工程应采用组合式"金砖"而非刚性"金路径"作为内部产品，以降低认知负担并加快交付
+  ⚠️  [实质是一篇会议演讲的摘要式报道，内容为业内广泛讨论的已知最佳实践（DORA/SPACE框架），无原创数据、无产品评测、
+[77/87] 077-infoq-opentofu-112-the-feature-terraform-never.md
+  [3/5] [OpenTofu 1.12.0于2026年5月14日发布，实现了Terraform自2016年请求
+  ⚠️  [标题"The Feature Terraform Never Shipped"有轻微的PR色彩，但核心事实属实；文章整
+[78/87] 078-infoq-with-android-cli-google-is-making-the-an.md
+  [3/5] Google发布面向AI代理的Android开发工具集（重新设计CLI、Skills模板、集成知识库
+  ⚠️  标题中"Making...Agent-Friendly"属PR措辞，"3x faster"声明缺乏透明度。社区评论已质疑
+[79/87] 079-openai-blog-an-openai-model-has-disproved-a-central-.md
+  [2/5] OpenAI博客称其AI模型解决了存在80年的单位距离问题，证伪了离散几何中的一个核心猜想。
+[80/87] 080-openai-blog-how-ramp-engineers-accelerate-code-revie.md
+  [2/5] OpenAI官方博客介绍Ramp工程师使用Codex（GPT-5.5）加速代码审查，将反馈时间从"数
+  ⚠️  典型厂商主导的案例营销——标题强调效率提升但无客观数据支撑；作为OpenAI官方博客发布，存在明显的PR属性和利益冲突；
+[81/87] 081-openai-blog-the-next-phase-of-openais-education-for-.md
+  [2/5] OpenAI宣布推进"教育国家"计划第二阶段，通过新合作、教师培训和学习工具扩大学校AI应用。
+  ⚠️  内容严重不完整，仅基于RSS摘要无法做出实质评估；标题"next phase"暗示已有第一阶段，但来源地或时间线不明；摘
+[82/87] 082-openai-blog-introducing-openai-for-singapore.md
+  [2/5] OpenAI宣布启动面向新加坡的多-year AI合作伙伴关系，计划扩展部署、构建本地人才、支持企业
+  ⚠️  作为企业博客公告，信息量极为有限，属典型PR营销内容。"multi-year"未给出具体年数，"build local 
+[83/87] 083-github-changelog-issue-fields-are-now-in-public-preview-f.md
+  [3/5] GitHub将Issue Fields功能向所有组织开放公开预览，支持在组织层级定义结构化元数据字段
+  ⚠️  叙述相对客观，但"missing link"（缺失的环节）、"Teams are building"等措辞存在轻度PR色
+[84/87] 084-github-changelog-copilot-usage-metrics-reports-now-use-gi.md
+  [2/5] GitHub将Copilot使用报告下载URL从Azure Front Door域名迁移至GitHu
+  ⚠️  叙述客观，纯技术公告，无营销夸大。
+[85/87] 085-github-changelog-updates-to-available-models-in-copilot-o.md
+  [2/5] [GitHub Copilot网页版移除所有Gemini模型及部分GPT模型，只保留OpenAI和C
+  ⚠️  叙述基本客观，但"更一致的高质量响应"属于模糊营销措辞，缺乏具体指标支撑；未说明移除决定是否基于用户反馈或技术测试
+[86/87] 086-github-changelog-auto-model-selection-now-routes-based-on.md
+  [3/5] GitHub Copilot在VS Code中新增"Auto"自动模型选择功能，根据任务特征、模型可
+  ⚠️  叙述基本客观，但"high quality, reliable, and token-efficient"含轻微营销色彩
+[87/87] 087-github-changelog-semantic-issue-search-in-copilot-chat.md
+  [3/5] GitHub Copilot Chat新增语义issue搜索功能，用户可用自然语言而非精确关键词查找
+  ⚠️  叙述客观。作为产品发布公告内容基本完整，但仅描述功能概念，缺乏技术细节、限制条件及实际效果数据。
+
+[INFO] 分析完成，33/85 篇入选（评分≥3）
+[DONE] 分析文件已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-22.md
+[DONE] sidecar 已写入: /root/.openclaw/workspace/news-intel/digest/2026-05-22.jsonl
+/root/.openclaw/workspace/news-intel/digest/2026-05-22.md
+[INFO] sidecar 中评分≥4 的事件: 5 条
+[DONE] kb 更新: +5 条新增，共 50 条（窗口: 2026-04-22 至今）
