@@ -1,0 +1,72 @@
+<svg width="1440" height="620" viewBox="0 0 1440 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#192a49"/>
+      <stop offset="66%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#0b0f1a"/>
+    </radialGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="56%">
+      <stop offset="0%" stop-color="#4f8ef7" stop-opacity="0.34"/>
+      <stop offset="56%" stop-color="#4f8ef7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4f8ef7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000000" flood-opacity="0.36"/>
+    </filter>
+    <style>
+      .panel-title { font: 700 22px -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; fill: #f0f2f7; }
+      .panel-note { font: 500 13px "JetBrains Mono", monospace; fill: #7a8699; letter-spacing: .08em; }
+      .label { font: 600 18px -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; fill: #f0f2f7; }
+      .desc { font: 400 13px -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; fill: #b8c0d0; }
+      .mono { font: 700 120px "JetBrains Mono", monospace; fill: #f0f2f7; letter-spacing: -.08em; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="620" fill="#0e1117"/>
+  <text x="70" y="70" class="panel-title">Intel Daily icon alternatives</text>
+  <text x="70" y="98" class="panel-note">RADAR / MONOGRAM / SIGNAL STACK</text>
+
+  <g transform="translate(110 160)">
+    <rect x="0" y="0" width="300" height="300" rx="64" fill="url(#bg)"/>
+    <circle cx="150" cy="150" r="108" fill="url(#radarGlow)"/>
+    <g filter="url(#drop)">
+      <circle cx="150" cy="150" r="104" fill="none" stroke="#2a3040" stroke-width="10"/>
+      <circle cx="150" cy="150" r="68" fill="none" stroke="#2a3040" stroke-width="8"/>
+      <circle cx="150" cy="150" r="28" fill="none" stroke="#4f8ef7" stroke-width="8"/>
+      <path d="M150 150L224 78" stroke="#4f8ef7" stroke-width="14" stroke-linecap="round"/>
+      <path d="M150 46v208M46 150h208" stroke="#2a3040" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="210" cy="102" r="12" fill="#f26b5e"/>
+      <circle cx="102" cy="210" r="10" fill="#5cba7d"/>
+      <circle cx="150" cy="150" r="9" fill="#f0f2f7"/>
+    </g>
+    <text x="0" y="354" class="label">雷达扫描</text>
+    <text x="0" y="381" class="desc">更像情报监控台，科技感强，但新闻日报感较弱。</text>
+  </g>
+
+  <g transform="translate(570 160)">
+    <rect x="0" y="0" width="300" height="300" rx="64" fill="url(#bg)"/>
+    <path d="M64 84h172M64 216h172M84 64v172M216 64v172" stroke="#2a3040" stroke-width="12" stroke-linecap="round"/>
+    <g filter="url(#drop)">
+      <rect x="62" y="62" width="176" height="176" rx="28" fill="#161b27" stroke="#4f8ef7" stroke-width="12"/>
+      <text x="71" y="190" class="mono">ID</text>
+      <path d="M74 246h152" stroke="#4f8ef7" stroke-width="14" stroke-linecap="round"/>
+      <circle cx="228" cy="72" r="14" fill="#f26b5e"/>
+    </g>
+    <text x="0" y="354" class="label">ID 字母标</text>
+    <text x="0" y="381" class="desc">品牌识别直接，最简洁；语义需要用户记住 Intel Daily。</text>
+  </g>
+
+  <g transform="translate(1030 160)">
+    <rect x="0" y="0" width="300" height="300" rx="64" fill="url(#bg)"/>
+    <path d="M62 88h176M62 150h176M62 212h176" stroke="#2a3040" stroke-width="12" stroke-linecap="round"/>
+    <g filter="url(#drop)">
+      <rect x="76" y="68" width="148" height="178" rx="22" fill="#161b27" stroke="#4f8ef7" stroke-width="12"/>
+      <path d="M104 110h92M104 148h70M104 186h92" stroke="#f0f2f7" stroke-width="14" stroke-linecap="round"/>
+      <path d="M224 104c30 18 46 46 46 84M244 82c45 27 70 67 70 124" stroke="#4f8ef7" stroke-width="10" stroke-linecap="round" opacity="0.72"/>
+      <path d="M76 246h148" stroke="#f26b5e" stroke-width="12" stroke-linecap="round"/>
+      <circle cx="198" cy="110" r="11" fill="#5cba7d"/>
+    </g>
+    <text x="0" y="354" class="label">新闻信号栈</text>
+    <text x="0" y="381" class="desc">日报和聚合传播语义更明显，视觉比雷达更温和。</text>
+  </g>
+</svg>
