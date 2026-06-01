@@ -2,17 +2,20 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from news_intel.config import load_sources
 from news_intel.clustering import cluster_candidates
 from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
+from news_intel.knowledge import update_claims, update_entities
 from news_intel.llm import OpenAICompatibleClient
-from news_intel.models import Article, Candidate
+from news_intel.models import Article, Candidate, Claim, Entity, Event
 from news_intel.storage import append_jsonl, read_jsonl, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
+CST = timezone(timedelta(hours=8))
 
 VALID_STAGES = [
     "fetch",
@@ -101,6 +104,23 @@ def stage_cluster(date: str) -> int:
     return 0
 
 
+def stage_knowledge(date: str) -> int:
+    events_path = ROOT / "data" / "events" / f"{date}.jsonl"
+    entities_path = ROOT / "data" / "entities.jsonl"
+    claims_path = ROOT / "data" / "claims.jsonl"
+    events = [Event.model_validate(row) for row in read_jsonl(events_path)]
+    entities = [Entity.model_validate(row) for row in read_jsonl(entities_path)]
+    claims = [Claim.model_validate(row) for row in read_jsonl(claims_path)]
+    now = datetime.now(CST).isoformat()
+    updated_entities = update_entities(entities, events, now=now)
+    updated_claims = update_claims(claims, events, now=now)
+    write_jsonl(entities_path, [entity.model_dump(mode="json") for entity in updated_entities])
+    write_jsonl(claims_path, [claim.model_dump(mode="json") for claim in updated_claims])
+    print(f"[KNOWLEDGE] wrote {len(updated_entities)} entities to {entities_path}", file=sys.stderr)
+    print(f"[KNOWLEDGE] wrote {len(updated_claims)} claims to {claims_path}", file=sys.stderr)
+    return 0
+
+
 def run_stage(stage_name: str, date: str) -> int:
     if stage_name == "ingest":
         return stage_ingest(date)
@@ -108,6 +128,8 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_extract(date)
     if stage_name == "cluster":
         return stage_cluster(date)
+    if stage_name == "knowledge":
+        return stage_knowledge(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 
