@@ -38,10 +38,16 @@ def test_daily_brief_contains_evidence_and_source_health():
     ]
     text = render_daily_brief("2026-06-01", [event], evidence, health)
     assert "# Personal Tech Radar · 2026-06-01" in text
-    assert "Source health" in text
+    assert "先看结论" in text
+    assert "重点信号" in text
+    assert "信源状态" in text
     assert "OpenAI Blog" in text
-    assert "Evidence:" in text
+    assert "依据：" in text
     assert "https://openai.com/example" in text
+    assert "Importance:" not in text
+    assert "Evidence:" not in text
+    assert "T0_FIRST_HAND" not in text
+    assert "claim-agentic-coding" not in text
 
 
 def test_weekly_review_renders_claim_updates():

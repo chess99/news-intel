@@ -1,0 +1,20 @@
+{
+  "anthropic-claude-product-containment": {
+    "claim-agent-security-is-product-surface": "supports"
+  },
+  "railway-gcp-account-suspension-outage": {
+    "claim-cloud-control-plane-risk-is-underpriced": "supports"
+  },
+  "duckdb-quack-http-client-server-protocol": {
+    "claim-local-first-devtools-are-moving-server-side": "supports"
+  },
+  "arm-metis-agentic-ai-security-framework": {
+    "claim-security-tools-shift-from-rules-to-agents": "supports"
+  },
+  "anthropic-run-rate-revenue-definition": {
+    "claim-ai-company-revenue-metrics-need-skepticism": "supports"
+  },
+  "nvidia-windows-ai-pc-local-ai-push": {
+    "claim-edge-ai-needs-dedicated-local-hardware": "supports"
+  }
+}
