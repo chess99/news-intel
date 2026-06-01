@@ -1,19 +1,21 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from news_intel.config import load_sources
+from news_intel.briefing import render_daily_brief
 from news_intel.clustering import cluster_candidates
 from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
 from news_intel.investigation import INVESTIGATION_PROMPT, select_events_for_investigation
 from news_intel.knowledge import update_claims, update_entities
 from news_intel.llm import OpenAICompatibleClient
-from news_intel.models import Article, Candidate, Claim, Entity, Event
+from news_intel.models import Article, Candidate, Claim, Entity, Event, Evidence, SourceHealth
 from news_intel.storage import append_jsonl, read_jsonl, write_json, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -156,6 +158,28 @@ def stage_knowledge(date: str) -> int:
     return 0
 
 
+def stage_brief(date: str) -> int:
+    events_path = ROOT / "data" / "events" / f"{date}.jsonl"
+    evidence_path = ROOT / "data" / "evidence.jsonl"
+    health_path = ROOT / "state" / "source_health.json"
+    daily_path = ROOT / "brief" / "daily" / f"{date}.md"
+    report_path = ROOT / "report" / f"{date}.md"
+
+    events = [Event.model_validate(row) for row in read_jsonl(events_path)]
+    evidence_rows = [Evidence.model_validate(row) for row in read_jsonl(evidence_path)]
+    evidence_by_id = {row.id: row for row in evidence_rows}
+    health_data = json.loads(health_path.read_text(encoding="utf-8")) if health_path.exists() else {}
+    source_health = [SourceHealth.model_validate(row) for row in health_data.values()]
+    markdown = render_daily_brief(date, events, evidence_by_id, source_health)
+    daily_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    daily_path.write_text(markdown, encoding="utf-8")
+    report_path.write_text(markdown, encoding="utf-8")
+    print(f"[BRIEF] wrote {daily_path}", file=sys.stderr)
+    print(f"[BRIEF] mirrored {report_path}", file=sys.stderr)
+    return 0
+
+
 def run_stage(stage_name: str, date: str) -> int:
     if stage_name == "ingest":
         return stage_ingest(date)
@@ -167,6 +191,8 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_investigate(date)
     if stage_name == "knowledge":
         return stage_knowledge(date)
+    if stage_name == "brief":
+        return stage_brief(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 
