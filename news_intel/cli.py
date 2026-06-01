@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -9,10 +10,11 @@ from news_intel.config import load_sources
 from news_intel.clustering import cluster_candidates
 from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
+from news_intel.investigation import INVESTIGATION_PROMPT, select_events_for_investigation
 from news_intel.knowledge import update_claims, update_entities
 from news_intel.llm import OpenAICompatibleClient
 from news_intel.models import Article, Candidate, Claim, Entity, Event
-from news_intel.storage import append_jsonl, read_jsonl, write_jsonl
+from news_intel.storage import append_jsonl, read_jsonl, write_json, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
 CST = timezone(timedelta(hours=8))
@@ -104,6 +106,39 @@ def stage_cluster(date: str) -> int:
     return 0
 
 
+def stage_investigate(date: str) -> int:
+    events_path = ROOT / "data" / "events" / f"{date}.jsonl"
+    events = [Event.model_validate(row) for row in read_jsonl(events_path)]
+    selected = select_events_for_investigation(events)
+    strong_model = os.environ.get("STRONG_LLM_MODEL", "")
+    if not strong_model:
+        skipped_path = ROOT / "state" / "investigation" / f"{date}-skipped.json"
+        write_json(skipped_path, {
+            "date": date,
+            "reason": "STRONG_LLM_MODEL not configured",
+            "selected_event_ids": [event.id for event in selected],
+        })
+        print(f"[INVESTIGATE] skipped {len(selected)} events; wrote {skipped_path}", file=sys.stderr)
+        return 0
+
+    client = OpenAICompatibleClient(model=strong_model)
+    updated_by_id = {event.id: event for event in events}
+    for event in selected:
+        prompt = f"{INVESTIGATION_PROMPT}\n\nEVENT JSON:\n{event.model_dump_json()}"
+        result = client.complete_json(prompt)
+        current = updated_by_id[event.id]
+        if result.get("confidence") in {"low", "medium", "high"}:
+            current.confidence = result["confidence"]
+        claim_links = result.get("claim_links", {})
+        for claim_id, relation in claim_links.items():
+            if relation in {"supports", "weakens", "contradicts", "neutral"}:
+                current.claim_links[claim_id] = relation
+        updated_by_id[event.id] = current
+    write_jsonl(events_path, [event.model_dump(mode="json") for event in updated_by_id.values()])
+    print(f"[INVESTIGATE] updated {len(selected)} events in {events_path}", file=sys.stderr)
+    return 0
+
+
 def stage_knowledge(date: str) -> int:
     events_path = ROOT / "data" / "events" / f"{date}.jsonl"
     entities_path = ROOT / "data" / "entities.jsonl"
@@ -128,6 +163,8 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_extract(date)
     if stage_name == "cluster":
         return stage_cluster(date)
+    if stage_name == "investigate":
+        return stage_investigate(date)
     if stage_name == "knowledge":
         return stage_knowledge(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
