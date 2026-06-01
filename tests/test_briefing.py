@@ -1,5 +1,5 @@
-from news_intel.briefing import render_daily_brief
-from news_intel.models import Event, Evidence, SourceHealth, SourceTier
+from news_intel.briefing import render_daily_brief, render_weekly_review
+from news_intel.models import Claim, Event, Evidence, SourceHealth, SourceTier
 
 
 def test_daily_brief_contains_evidence_and_source_health():
@@ -42,3 +42,19 @@ def test_daily_brief_contains_evidence_and_source_health():
     assert "OpenAI Blog" in text
     assert "Evidence:" in text
     assert "https://openai.com/example" in text
+
+
+def test_weekly_review_renders_claim_updates():
+    claim = Claim(
+        id="claim-agentic-coding",
+        title="Coding agents are becoming engineering environments",
+        status="active",
+        confidence="medium",
+        summary="Multiple events support the shift from chat assistants to agentic coding environments.",
+        supporting_event_ids=["evt-001", "evt-002"],
+        updated_at="2026-06-01T09:00:00+08:00",
+    )
+    text = render_weekly_review("2026-W23", [claim], [])
+    assert "# Weekly Tech Radar · 2026-W23" in text
+    assert "Coding agents are becoming engineering environments" in text
+    assert "active · medium" in text

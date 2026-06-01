@@ -8,7 +8,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from news_intel.config import load_sources
-from news_intel.briefing import render_daily_brief
+from news_intel.briefing import render_daily_brief, render_monthly_review, render_weekly_review
 from news_intel.clustering import cluster_candidates
 from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
@@ -180,6 +180,48 @@ def stage_brief(date: str) -> int:
     return 0
 
 
+def events_for_period(*, week_id: str | None = None, month_id: str | None = None) -> list[Event]:
+    events_dir = ROOT / "data" / "events"
+    events = []
+    for path in sorted(events_dir.glob("*.jsonl")):
+        day = path.stem
+        if week_id:
+            if datetime.fromisoformat(day).date().isocalendar()[:2] != (
+                int(week_id[:4]),
+                int(week_id[-2:]),
+            ):
+                continue
+        if month_id and not day.startswith(month_id):
+            continue
+        events.extend(Event.model_validate(row) for row in read_jsonl(path))
+    return events
+
+
+def stage_weekly(date: str) -> int:
+    iso = datetime.fromisoformat(date).date().isocalendar()
+    week_id = f"{iso.year}-W{iso.week:02d}"
+    claims = [Claim.model_validate(row) for row in read_jsonl(ROOT / "data" / "claims.jsonl")]
+    events = events_for_period(week_id=week_id)
+    markdown = render_weekly_review(week_id, claims, events)
+    path = ROOT / "brief" / "weekly" / f"{week_id}.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(markdown, encoding="utf-8")
+    print(f"[WEEKLY] wrote {path}", file=sys.stderr)
+    return 0
+
+
+def stage_monthly(date: str) -> int:
+    month_id = date[:7]
+    claims = [Claim.model_validate(row) for row in read_jsonl(ROOT / "data" / "claims.jsonl")]
+    events = events_for_period(month_id=month_id)
+    markdown = render_monthly_review(month_id, claims, events)
+    path = ROOT / "brief" / "monthly" / f"{month_id}.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(markdown, encoding="utf-8")
+    print(f"[MONTHLY] wrote {path}", file=sys.stderr)
+    return 0
+
+
 def run_stage(stage_name: str, date: str) -> int:
     if stage_name == "ingest":
         return stage_ingest(date)
@@ -193,6 +235,10 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_knowledge(date)
     if stage_name == "brief":
         return stage_brief(date)
+    if stage_name == "weekly":
+        return stage_weekly(date)
+    if stage_name == "monthly":
+        return stage_monthly(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 

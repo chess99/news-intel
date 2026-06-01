@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from news_intel.models import Event, Evidence, SourceHealth
+from news_intel.models import Claim, Event, Evidence, SourceHealth
 
 
 def render_daily_brief(
@@ -39,4 +39,54 @@ def render_daily_brief(
                 if evidence.quote:
                     lines.append(f"  Quote: {evidence.quote}")
         lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_weekly_review(week_id: str, claims: list[Claim], notable_events: list[Event]) -> str:
+    lines = [
+        f"# Weekly Tech Radar · {week_id}",
+        "",
+        "## Claim updates",
+        "",
+    ]
+    for claim in sorted(claims, key=lambda c: (c.status, c.id)):
+        evidence_count = (
+            len(claim.supporting_event_ids)
+            + len(claim.weakening_event_ids)
+            + len(claim.contradicting_event_ids)
+        )
+        if evidence_count == 0:
+            continue
+        lines.append(f"### {claim.title}")
+        lines.append("")
+        lines.append(f"Status: {claim.status} · {claim.confidence}")
+        lines.append("")
+        lines.append(claim.summary)
+        lines.append("")
+        lines.append(
+            f"Supporting: {len(claim.supporting_event_ids)} · "
+            f"Weakening: {len(claim.weakening_event_ids)} · "
+            f"Contradicting: {len(claim.contradicting_event_ids)}"
+        )
+        lines.append("")
+    lines.append("## Notable events")
+    lines.append("")
+    for event in sorted(notable_events, key=lambda e: e.importance, reverse=True)[:10]:
+        lines.append(f"- {event.title} ({event.importance}/5): {event.summary}")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_monthly_review(month_id: str, claims: list[Claim], notable_events: list[Event]) -> str:
+    lines = [
+        f"# Monthly Tech Radar · {month_id}",
+        "",
+        "## What changed",
+        "",
+    ]
+    for claim in sorted(claims, key=lambda c: (c.confidence, c.id), reverse=True):
+        if claim.status in {"active", "weakened", "contradicted"}:
+            lines.append(f"- {claim.title}: {claim.status} · {claim.confidence}")
+    lines.extend(["", "## Events to remember", ""])
+    for event in sorted(notable_events, key=lambda e: e.importance, reverse=True)[:15]:
+        lines.append(f"- {event.date} · {event.title}")
     return "\n".join(lines).rstrip() + "\n"
