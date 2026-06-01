@@ -182,8 +182,104 @@ a:hover { text-decoration: underline; }
   max-width: 860px;
 }
 
-/* ── REPORT BODY ── */
-.report-html h1 {
+.radar-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+  background: var(--border);
+}
+
+.radar-stat {
+  background: var(--bg);
+  padding: 1rem;
+}
+
+.radar-stat-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.radar-stat strong {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.radar-section {
+  margin: 2rem 0;
+}
+
+.radar-section h1,
+.radar-section h2 {
+  font-family: var(--mono);
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0.85rem;
+}
+
+.radar-section p {
+  color: var(--text-sub);
+  margin-bottom: 0.85rem;
+}
+
+.radar-list,
+.radar-event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.radar-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.radar-list span,
+.radar-event-list p {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.radar-event-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.radar-event-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.standalone-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 2rem 5rem;
+}
+
+.standalone-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: var(--header-h);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+/* ── BRIEF BODY ── */
+.brief-html h1 {
   font-family: var(--serif);
   font-size: 1.9rem;
   font-weight: 700;
@@ -193,7 +289,7 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 
-.report-html blockquote:first-of-type {
+.brief-html blockquote:first-of-type {
   font-family: var(--mono);
   font-size: 11.5px;
   color: var(--text-muted);
@@ -205,7 +301,7 @@ a:hover { text-decoration: underline; }
   line-height: 1.7;
 }
 
-.report-html h2 {
+.brief-html h2 {
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 500;
@@ -219,7 +315,7 @@ a:hover { text-decoration: underline; }
   border-left: 2px solid var(--accent);
 }
 
-.report-html h3 {
+.brief-html h3 {
   font-family: var(--serif);
   font-size: 1.15rem;
   font-weight: 600;
@@ -229,14 +325,14 @@ a:hover { text-decoration: underline; }
   letter-spacing: -0.01em;
 }
 
-.report-html p {
+.brief-html p {
   color: var(--text-sub);
   margin-bottom: 0.85rem;
   line-height: 1.9;
   font-size: 15px;
 }
 
-.report-html blockquote {
+.brief-html blockquote {
   border-left: 2px solid var(--accent-line);
   margin: 1.25rem 0;
   padding: 0.65rem 1.1rem;
@@ -244,36 +340,36 @@ a:hover { text-decoration: underline; }
   font-style: italic;
   font-size: 14px;
 }
-.report-html blockquote p { color: var(--text-muted); margin: 0; line-height: 1.7; }
+.brief-html blockquote p { color: var(--text-muted); margin: 0; line-height: 1.7; }
 
-.report-html strong { color: var(--text); font-weight: 600; }
-.report-html em { font-style: italic; color: var(--text-sub); }
+.brief-html strong { color: var(--text); font-weight: 600; }
+.brief-html em { font-style: italic; color: var(--text-sub); }
 
-.report-html hr {
+.brief-html hr {
   border: none;
   border-top: 1px solid var(--border);
   margin: 2rem 0;
 }
 
-.report-html ul, .report-html ol {
+.brief-html ul, .brief-html ol {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
-.report-html li {
+.brief-html li {
   color: var(--text-sub);
   margin: 0.3rem 0;
   font-size: 15px;
   line-height: 1.8;
 }
-.report-html li strong { color: var(--text); }
+.brief-html li strong { color: var(--text); }
 
-.report-html table {
+.brief-html table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.25rem 0 1.75rem;
   font-size: 13.5px;
 }
-.report-html th {
+.brief-html th {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -283,16 +379,16 @@ a:hover { text-decoration: underline; }
   padding: 0.55rem 0.85rem;
   border-bottom: 1px solid var(--border);
 }
-.report-html td {
+.brief-html td {
   padding: 0.55rem 0.85rem;
   border-bottom: 1px solid var(--border-light);
   color: var(--text-sub);
   vertical-align: top;
   line-height: 1.65;
 }
-.report-html tr:hover td { background: var(--bg-hover); }
+.brief-html tr:hover td { background: var(--bg-hover); }
 
-.report-html code {
+.brief-html code {
   font-family: var(--mono);
   font-size: 12.5px;
   background: var(--bg-card);
@@ -301,7 +397,7 @@ a:hover { text-decoration: underline; }
   border-radius: 3px;
   border: 1px solid var(--border);
 }
-.report-html pre {
+.brief-html pre {
   background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 1.1rem;
@@ -309,7 +405,7 @@ a:hover { text-decoration: underline; }
   overflow-x: auto;
   margin: 1.25rem 0;
 }
-.report-html pre code { background: none; border: none; padding: 0; font-size: 12.5px; color: var(--text-sub); }
+.brief-html pre code { background: none; border: none; padding: 0; font-size: 12.5px; color: var(--text-sub); }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
@@ -370,10 +466,10 @@ a:hover { text-decoration: underline; }
 
   .main-content { padding: 1.25rem 1rem 3rem; max-width: 100%; }
 
-  .report-html h1 { font-size: 1.5rem; }
-  .report-html h3 { font-size: 1.05rem; }
-  .report-html p, .report-html li { font-size: 14.5px; }
-  .report-html table {
+  .brief-html h1 { font-size: 1.5rem; }
+  .brief-html h3 { font-size: 1.05rem; }
+  .brief-html p, .brief-html li { font-size: 14.5px; }
+  .brief-html table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -389,10 +485,10 @@ a:hover { text-decoration: underline; }
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.report-fade-in { animation: fadeIn 0.2s ease-out; }
+.brief-fade-in { animation: fadeIn 0.2s ease-out; }
 
 @media (prefers-reduced-motion: reduce) {
-  .report-fade-in { animation: none; }
+  .brief-fade-in { animation: none; }
 }
 
 /* ── SEARCH PAGE ── */

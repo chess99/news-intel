@@ -3,17 +3,17 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function Sidebar({ reports, latestDate }) {
+export default function Sidebar({ briefs, latestDate }) {
   const pathname = usePathname()
 
   return (
     <aside className="sidebar">
       <div className="sidebar-section">
         <div className="sidebar-label">
-          归档 <span className="count-badge">{reports.length}</span>
+          简报 <span className="count-badge">{briefs.length}</span>
         </div>
         <ul className="archive-list">
-          {reports.map(r => {
+          {briefs.map(r => {
             const isActive =
               pathname === `/${r.date}/` ||
               pathname === `/${r.date}` ||

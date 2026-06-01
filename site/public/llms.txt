@@ -1,27 +1,16 @@
-# Intel Daily — 科技资讯日报
+# Personal Tech Radar
 
-## 是什么
+## What it is
 
-Intel Daily（https://news.cearl.cc）是一个由 AI 自动生成的每日科技资讯日报站。
-每天早上 09:00 CST 从 30+ 中文科技媒体（极客公园、36氪、InfoQ、量子位等）抓取文章，
-经 AI 分析筛选后生成结构化日报，包含评分、分类、批判性分析。
+Personal Tech Radar (https://news.cearl.cc) is a personal technology intelligence archive. It publishes small evidence-first daily briefs and keeps structured history for events, entities, source health, and long-running claims.
 
-## 内容特点
+## Content model
 
-- 覆盖领域：AI/大模型、科技创业、产品发布、行业动态
-- 更新频率：每日一期（工作日 + 周末）
-- 内容来源：30+ 中文科技媒体 RSS 聚合
-- 分析方法：AI 多维评分（1-5分），批判性视角，去除营销噪音
+- Daily briefs: https://news.cearl.cc/YYYY-MM-DD/
+- Topics and tracked objects: https://news.cearl.cc/topics/
+- Search: https://news.cearl.cc/search/
+- RSS: https://news.cearl.cc/feed.xml
 
-## 主要页面
+## Method
 
-- 首页（最新日报）: https://news.cearl.cc/
-- 历史日报: https://news.cearl.cc/YYYY-MM-DD/（例：https://news.cearl.cc/2026-05-11/）
-- 站内搜索: https://news.cearl.cc/search/
-- RSS 订阅: https://news.cearl.cc/feed.xml
-- Sitemap: https://news.cearl.cc/sitemap.xml
-
-## 技术说明
-
-本站内容由 AI（MiniMax M2.7）生成，但信源均为真实媒体文章。
-每篇资讯均标注来源媒体和评分，不含广告或赞助内容。
+The pipeline watches tiered sources, records source health, extracts structured candidates, clusters them into events, links evidence to entities and claims, and renders a concise daily brief for push delivery.

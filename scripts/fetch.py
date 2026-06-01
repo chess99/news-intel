@@ -7,7 +7,7 @@ fetch.py — 抓取 RSS 信源，将每篇文章原文存档到 raw/YYYY/MM/DD/N
 
 每篇文章输出为独立 markdown 文件，包含元数据 frontmatter + 正文。
 """
-import os, sys, re, yaml, unicodedata
+import os, sys, re, json
 import feedparser
 import urllib.request, urllib.error, ssl
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -17,8 +17,18 @@ import threading
 import argparse
 
 WORKDIR = Path(__file__).parent.parent
+sys.path.insert(0, str(WORKDIR))
+
+from news_intel.config import load_env_file, load_sources
+from news_intel.fetcher import source_slug
+from news_intel.source_health import build_health_record
+from news_intel.storage import write_json
+
 SOURCES_FILE = WORKDIR / "sources" / "feeds.yaml"
 RAW_DIR = WORKDIR / "raw"
+STATE_DIR = WORKDIR / "state"
+SOURCE_HEALTH_FILE = STATE_DIR / "source_health.json"
+load_env_file(WORKDIR / ".env")
 PROXY = os.environ.get("HTTPS_PROXY", os.environ.get("HTTP_PROXY", ""))
 TIMEOUT = 20
 MAX_PER_SOURCE = 5
@@ -41,10 +51,7 @@ def _next_idx() -> int:
 
 
 def slugify(text: str, max_len: int = 40) -> str:
-    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
-    text = re.sub(r"[^\w\s-]", "", text.lower())
-    text = re.sub(r"[\s_-]+", "-", text).strip("-")
-    return text[:max_len] or "untitled"
+    return source_slug(text, max_len=max_len)
 
 
 def fetch_full_content(url: str) -> str:
@@ -86,14 +93,16 @@ def fetch_feed(source: dict, date_str: str) -> list:
     """抓取单个 RSS 源，返回文章列表（已过滤 48h 外的旧文章）"""
     name = source["name"]
     url = source["url"]
+    source["_fetch_error"] = ""
+    effective_proxy = PROXY if source.get("use_proxy", True) else ""
     headers = {
         "User-Agent": "Mozilla/5.0 (compatible; NewsIntelBot/1.0)",
         "Accept": "application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.8",
     }
     ctx = ssl._create_unverified_context()
     try:
-        if PROXY:
-            proxy_handler = urllib.request.ProxyHandler({"http": PROXY, "https": PROXY})
+        if effective_proxy:
+            proxy_handler = urllib.request.ProxyHandler({"http": effective_proxy, "https": effective_proxy})
             opener = urllib.request.build_opener(proxy_handler, urllib.request.HTTPSHandler(context=ctx))
         else:
             opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=ctx))
@@ -101,9 +110,11 @@ def fetch_feed(source: dict, date_str: str) -> list:
         resp = opener.open(req, timeout=TIMEOUT)
         content = resp.read()
     except ConnectionRefusedError:
-        print(f"[WARN] {name}: 代理连接被拒绝 (HTTPS_PROXY={PROXY!r})，请检查代理设置", file=sys.stderr)
+        source["_fetch_error"] = f"proxy connection refused ({effective_proxy!r})"
+        print(f"[WARN] {name}: 代理连接被拒绝 (HTTPS_PROXY={effective_proxy!r})，请检查代理设置", file=sys.stderr)
         return []
     except Exception as e:
+        source["_fetch_error"] = str(e)
         print(f"[WARN] {name}: RSS fetch failed: {e}", file=sys.stderr)
         return []
 
@@ -140,6 +151,37 @@ def fetch_feed(source: dict, date_str: str) -> list:
             "category": source["category"],
         })
     return articles
+
+
+def load_previous_source_health() -> dict:
+    if not SOURCE_HEALTH_FILE.exists():
+        return {}
+    try:
+        return json.loads(SOURCE_HEALTH_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def write_source_health(sources: list[dict], counts: dict[str, int]) -> None:
+    previous = load_previous_source_health()
+    now = datetime.now(CST).isoformat()
+    health = {}
+    for source in sources:
+        count = counts.get(source["name"], 0)
+        error = source.get("_fetch_error", "")
+        status = "failed" if error else ("ok" if count > 0 else "empty")
+        proxy_used = PROXY if source.get("use_proxy", True) else ""
+        record = build_health_record(
+            source=source,
+            status=status,
+            fetched_count=count,
+            failure_reason=error,
+            proxy_used=proxy_used,
+            now=now,
+            previous=previous.get(source["name"]),
+        )
+        health[source["name"]] = record.model_dump(mode="json")
+    write_json(SOURCE_HEALTH_FILE, health)
 
 
 def save_article(article: dict, out_dir: Path, idx: int) -> Path:
@@ -196,13 +238,13 @@ def main():
     out_dir = RAW_DIR / yyyy / mm / dd
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    config = yaml.safe_load(SOURCES_FILE.read_text())
-    sources = [s for s in config["sources"] if s.get("enabled", True)]
+    sources = [s for s in load_sources(SOURCES_FILE) if s.get("enabled", True)]
 
     print(f"[INFO] 日期: {date_str}，信源数: {len(sources)}，输出目录: {out_dir}", file=sys.stderr)
 
     # Step 1: 并发抓取所有 RSS 源
     all_articles: list[dict] = []
+    source_counts: dict[str, int] = {}
     with ThreadPoolExecutor(max_workers=MAX_RSS_WORKERS) as executor:
         futures = {executor.submit(fetch_feed, source, date_str): source for source in sources}
         for future in as_completed(futures):
@@ -212,9 +254,14 @@ def main():
                 if args.limit:
                     articles = articles[:args.limit]
                 all_articles.extend(articles)
+                source_counts[src["name"]] = len(articles)
                 print(f"[SOURCE] {src['name']}: {len(articles)} 篇", file=sys.stderr)
             except Exception as e:
+                src["_fetch_error"] = str(e)
+                source_counts[src["name"]] = 0
                 print(f"[WARN] {src['name']}: 处理失败: {e}", file=sys.stderr)
+
+    write_source_health(sources, source_counts)
 
     print(f"[INFO] RSS 抓取完成，共 {len(all_articles)} 篇待处理", file=sys.stderr)
 

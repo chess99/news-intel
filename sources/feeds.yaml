@@ -14,48 +14,72 @@ sources:
     url: https://techcrunch.com/feed/
     lang: en
     category: tech_startup
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: The Verge
     url: https://www.theverge.com/rss/index.xml
     lang: en
     category: consumer_tech
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: Ars Technica
     url: https://feeds.arstechnica.com/arstechnica/index
     lang: en
     category: deep_tech
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: Wired
     url: https://www.wired.com/feed/rss
     lang: en
     category: tech_culture
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: MIT Tech Review
     url: https://www.technologyreview.com/feed/
     lang: en
     category: deep_tech_research
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: VentureBeat AI
     url: https://venturebeat.com/category/ai/feed/
     lang: en
     category: ai
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: Hacker News
     url: https://news.ycombinator.com/rss
     lang: en
     category: community
+    tier: T2_COMMUNITY_DISCOVERY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: The Information
     url: https://www.theinformation.com/feed
     lang: en
     category: tech_business
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: false  # may require login
 
   # === Chinese Tech ===
@@ -63,30 +87,45 @@ sources:
     url: https://36kr.com/feed
     lang: zh
     category: tech_startup
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   - name: 爱范儿
     url: https://www.ifanr.com/feed
     lang: zh
     category: consumer_tech
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   - name: 极客公园
     url: http://www.geekpark.net/rss
     lang: zh
     category: consumer_tech
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   - name: 少数派
     url: https://sspai.com/feed
     lang: zh
     category: digital_life
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   - name: 钛媒体
     url: https://www.tmtpost.com/rss
     lang: zh
     category: tech_business
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   # === GitHub Trending ===
@@ -94,6 +133,9 @@ sources:
     url: https://github.com/trending.rss
     lang: en
     category: open_source
+    tier: T2_COMMUNITY_DISCOVERY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: false  # 406 Not Acceptable, GitHub 已不支持 trending RSS
 
   # === AI Official Blogs ===
@@ -101,30 +143,45 @@ sources:
     url: https://www.anthropic.com/feed.rss
     lang: en
     category: ai_official
+    tier: T0_FIRST_HAND
+    fetch_strategy: html
+    use_proxy: true
     enabled: false  # 无 RSS，需 Playwright 抓取或第三方 RSS 服务
 
   - name: OpenAI Blog
     url: https://openai.com/blog/rss.xml
     lang: en
     category: ai_official
+    tier: T0_FIRST_HAND
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: Google DeepMind Blog
     url: https://deepmind.google/blog/rss.xml
     lang: en
     category: ai_official
+    tier: T0_FIRST_HAND
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true  # 修正 URL: /rss/ -> /rss.xml (302 跳转目标)
 
   - name: Meta AI Blog
     url: https://ai.meta.com/blog/feed/
     lang: en
     category: ai_official
+    tier: T0_FIRST_HAND
+    fetch_strategy: html
+    use_proxy: true
     enabled: false  # 无 RSS
 
   - name: Hugging Face Blog
     url: https://huggingface.co/blog/feed.xml
     lang: en
     category: ai_research
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   # === AI Newsletters ===
@@ -132,18 +189,27 @@ sources:
     url: https://www.deeplearning.ai/the-batch/feed/
     lang: en
     category: ai_newsletter
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: false  # 无官方 RSS，thebatch.substack.com/feed 是无关账号
 
   - name: Latent Space
     url: https://www.latent.space/feed
     lang: en
     category: ai_newsletter
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   - name: Simon Willison Blog
     url: https://simonwillison.net/atom/everything/
     lang: en
     category: ai_practitioner
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   # === AI Research ===
@@ -151,6 +217,9 @@ sources:
     url: https://paperswithcode.com/rss
     lang: en
     category: ai_research
+    tier: T0_FIRST_HAND
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   # === Product & Startup ===
@@ -158,6 +227,9 @@ sources:
     url: https://www.producthunt.com/feed?category=undefined
     lang: en
     category: product
+    tier: T2_COMMUNITY_DISCOVERY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   # === Engineering ===
@@ -165,6 +237,9 @@ sources:
     url: https://feed.infoq.com/
     lang: en
     category: engineering
+    tier: T1_HIGH_QUALITY_SECONDARY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   # === Chinese AI ===
@@ -172,12 +247,18 @@ sources:
     url: https://www.jiqizhixin.com/rss
     lang: zh
     category: ai_zh
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   - name: 量子位
     url: https://www.qbitai.com/rss
     lang: zh
     category: ai_zh
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   # === Chinese Tech ===
@@ -185,6 +266,9 @@ sources:
     url: https://www.solidot.org/index.rss
     lang: zh
     category: open_source_zh
+    tier: T3_CHINESE_SECONDARY
+    fetch_strategy: rss
+    use_proxy: false
     enabled: true
 
   # === Platform ===
@@ -192,6 +276,9 @@ sources:
     url: https://github.blog/changelog/feed/
     lang: en
     category: platform
+    tier: T0_FIRST_HAND
+    fetch_strategy: rss
+    use_proxy: true
     enabled: true
 
   # === AI Specific (legacy disabled) ===
@@ -199,6 +286,9 @@ sources:
     url: https://www.reddit.com/r/artificial/.rss
     lang: en
     category: ai
+    tier: T2_COMMUNITY_DISCOVERY
+    fetch_strategy: rss
+    use_proxy: true
     enabled: false  # reddit rss needs login
 
 # ── 以下配置项暂未被脚本读取，保留供未来使用 ────────────────────────────────

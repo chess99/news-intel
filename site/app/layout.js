@@ -2,12 +2,12 @@ import './globals.css'
 import Analytics from '@/components/Analytics'
 
 const SITE_URL = 'https://news.cearl.cc'
-const SITE_NAME = 'Intel Daily'
-const SITE_DESCRIPTION = '每日 AI 与科技深度资讯，批判性分析 | 聚合 30+ 中文科技媒体'
+const SITE_NAME = 'Personal Tech Radar'
+const SITE_DESCRIPTION = 'Evidence-first personal technology intelligence radar with daily briefs, source health, events, entities, and claims.'
 
 export const metadata = {
   title: {
-    default: `${SITE_NAME} — 科技资讯日报`,
+    default: SITE_NAME,
     template: `%s — ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -56,7 +56,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
-  description: 'AI 自动生成的每日中文科技资讯日报，聚合 30+ 科技媒体，每日早上 09:00 更新',
+  description: SITE_DESCRIPTION,
   sameAs: [],
 }
 
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="Intel Daily RSS"
+          title="Personal Tech Radar RSS"
           href="/feed.xml"
         />
         <script

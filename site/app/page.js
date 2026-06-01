@@ -1,30 +1,31 @@
-import { getAllReports, getReport } from '../lib/reports'
+import { getAllBriefs, getBrief } from '../lib/briefs'
 import Sidebar from '../components/Sidebar'
-import ReportBody from '../components/ReportBody'
+import BriefBody from '../components/BriefBody'
 import Link from 'next/link'
+import { getAllClaims, getAllEntities, getSourceHealth } from '../lib/radar'
 
 const SITE_URL = 'https://news.cearl.cc'
 
 export async function generateMetadata() {
-  const reports = getAllReports()
-  const latest = reports[0]
+  const briefs = getAllBriefs()
+  const latest = briefs[0]
 
   if (!latest) {
     return {
-      title: 'Intel Daily — 科技资讯日报',
-      description: '每日 AI 与科技深度资讯，批判性分析',
+      title: 'Personal Tech Radar',
+      description: 'Evidence-first personal technology intelligence radar.',
     }
   }
 
   return {
-    title: `${latest.title} — Intel Daily`,
-    description: latest.excerpt || '每日 AI 与科技深度资讯，批判性分析 | 聚合 30+ 中文科技媒体',
+    title: `${latest.title} — Personal Tech Radar`,
+    description: latest.excerpt || 'Evidence-first personal technology intelligence radar.',
     alternates: {
       canonical: `${SITE_URL}/`,
     },
     openGraph: {
-      title: `${latest.title} — Intel Daily`,
-      description: latest.excerpt || '每日 AI 与科技深度资讯，批判性分析',
+      title: `${latest.title} — Personal Tech Radar`,
+      description: latest.excerpt || 'Evidence-first personal technology intelligence radar.',
       url: `${SITE_URL}/`,
       type: 'website',
       locale: 'zh_CN',
@@ -33,27 +34,31 @@ export async function generateMetadata() {
 }
 
 export default async function HomePage() {
-  const reports = getAllReports()
-  const latest = reports[0]
-  const report = latest ? await getReport(latest.date) : null
+  const briefs = getAllBriefs()
+  const latest = briefs[0]
+  const brief = latest ? await getBrief(latest.date) : null
+  const sourceHealth = getSourceHealth()
+  const staleSources = sourceHealth.filter(s => s.status === 'failed' || s.status === 'stale')
+  const activeClaims = getAllClaims().filter(c => ['active', 'watching', 'weakened'].includes(c.status)).slice(0, 6)
+  const entities = getAllEntities().slice(0, 8)
 
   // NewsArticle schema points to the stable date page, not the homepage URL
-  const newsArticleSchema = report
+  const newsArticleSchema = brief
     ? {
         '@context': 'https://schema.org',
         '@type': 'NewsArticle',
-        headline: report.title,
+        headline: brief.title,
         datePublished: `${latest.date}T09:00:00+08:00`,
         dateModified: `${latest.date}T09:00:00+08:00`,
         url: `${SITE_URL}/${latest.date}/`,
         author: {
           '@type': 'Organization',
-          name: 'Intel Daily',
+          name: 'Personal Tech Radar',
           url: SITE_URL,
         },
         publisher: {
           '@type': 'Organization',
-          name: 'Intel Daily',
+          name: 'Personal Tech Radar',
           url: SITE_URL,
         },
         inLanguage: 'zh-CN',
@@ -64,15 +69,18 @@ export default async function HomePage() {
   return (
     <div className="site-wrapper">
       <header className="site-header">
-        <Link href="/" className="site-logo">Intel Daily</Link>
+        <Link href="/" className="site-logo">Personal Tech Radar</Link>
         <span className="site-header-sep" />
-        <span className="site-tagline">科技资讯 · 批判性分析 · 每日更新</span>
+        <span className="site-tagline">Evidence · Events · Claims</span>
         <div className="site-header-right">
           <Link href="/search/" className="header-nav-btn" aria-label="搜索">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
             </svg>
             <span>搜索</span>
+          </Link>
+          <Link href="/topics/" className="header-nav-btn" aria-label="主题">
+            <span>主题</span>
           </Link>
           <a
             href="/feed.xml"
@@ -89,7 +97,7 @@ export default async function HomePage() {
         </div>
       </header>
 
-      <Sidebar reports={reports} latestDate={reports[0]?.date} />
+      <Sidebar briefs={briefs} latestDate={briefs[0]?.date} />
 
       <main className="main-content">
         {newsArticleSchema && (
@@ -98,11 +106,56 @@ export default async function HomePage() {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(newsArticleSchema) }}
           />
         )}
-        {report ? (
-          <ReportBody htmlContent={report.htmlContent} />
+        {brief ? (
+          <>
+            <section className="radar-overview" aria-label="Radar status">
+              <div className="radar-stat">
+                <span className="radar-stat-label">Latest Brief</span>
+                <strong>{latest.date}</strong>
+              </div>
+              <div className="radar-stat">
+                <span className="radar-stat-label">Source Health</span>
+                <strong>{sourceHealth.length - staleSources.length}/{sourceHealth.length} OK</strong>
+              </div>
+              <div className="radar-stat">
+                <span className="radar-stat-label">Tracked Claims</span>
+                <strong>{activeClaims.length}</strong>
+              </div>
+            </section>
+
+            {activeClaims.length > 0 && (
+              <section className="radar-section">
+                <h2>Tracked Claims</h2>
+                <ul className="radar-list">
+                  {activeClaims.map(claim => (
+                    <li key={claim.id}>
+                      <Link href={`/claims/${claim.id}/`}>{claim.title}</Link>
+                      <span>{claim.status} · {claim.confidence}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {entities.length > 0 && (
+              <section className="radar-section">
+                <h2>Entities</h2>
+                <ul className="radar-list">
+                  {entities.map(entity => (
+                    <li key={entity.id}>
+                      <Link href={`/entities/${entity.id}/`}>{entity.name}</Link>
+                      <span>{entity.event_ids?.length || 0} events</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <BriefBody htmlContent={brief.htmlContent} />
+          </>
         ) : (
           <div style={{ padding: '4rem', fontFamily: 'var(--mono)', color: 'var(--text-muted)', fontSize: '12px', letterSpacing: '0.1em' }}>
-            暂无日报数据
+            暂无雷达简报
           </div>
         )}
       </main>
