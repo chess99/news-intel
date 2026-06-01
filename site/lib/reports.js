@@ -5,8 +5,12 @@ import { remark } from 'remark'
 import remarkGfm from 'remark-gfm'
 import remarkHtml from 'remark-html'
 
-// report/ 目录相对于 site/ 的位置
 const REPORT_DIR = path.join(process.cwd(), '..', 'report')
+const BRIEF_DIR = path.join(process.cwd(), '..', 'brief', 'daily')
+
+function getContentDir() {
+  return fs.existsSync(BRIEF_DIR) ? BRIEF_DIR : REPORT_DIR
+}
 
 /**
  * 从 markdown 第一个 # 标题中提取标题
@@ -39,14 +43,15 @@ let _reportsCache = null
 
 export function getAllReports() {
   if (_reportsCache) return _reportsCache
-  if (!fs.existsSync(REPORT_DIR)) return []
+  const contentDir = getContentDir()
+  if (!fs.existsSync(contentDir)) return []
 
   _reportsCache = fs
-    .readdirSync(REPORT_DIR)
+    .readdirSync(contentDir)
     .filter(f => f.endsWith('.md'))
     .map(f => {
       const date = f.replace('.md', '')
-      const raw = fs.readFileSync(path.join(REPORT_DIR, f), 'utf-8')
+      const raw = fs.readFileSync(path.join(contentDir, f), 'utf-8')
       const { content } = matter(raw)
       return {
         date,
@@ -65,7 +70,8 @@ export function getAllReports() {
  * @returns {Promise<{ date: string, title: string, htmlContent: string } | null>}
  */
 export async function getReport(date) {
-  const filePath = path.join(REPORT_DIR, `${date}.md`)
+  const contentDir = getContentDir()
+  const filePath = path.join(contentDir, `${date}.md`)
   if (!fs.existsSync(filePath)) return null
 
   const raw = fs.readFileSync(filePath, 'utf-8')

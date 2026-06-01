@@ -2,6 +2,7 @@ import { getAllReports, getReport } from '../lib/reports'
 import Sidebar from '../components/Sidebar'
 import ReportBody from '../components/ReportBody'
 import Link from 'next/link'
+import { getAllClaims, getAllEntities, getSourceHealth } from '../lib/radar'
 
 const SITE_URL = 'https://news.cearl.cc'
 
@@ -36,6 +37,10 @@ export default async function HomePage() {
   const reports = getAllReports()
   const latest = reports[0]
   const report = latest ? await getReport(latest.date) : null
+  const sourceHealth = getSourceHealth()
+  const staleSources = sourceHealth.filter(s => s.status === 'failed' || s.status === 'stale')
+  const activeClaims = getAllClaims().filter(c => ['active', 'watching', 'weakened'].includes(c.status)).slice(0, 6)
+  const entities = getAllEntities().slice(0, 8)
 
   // NewsArticle schema points to the stable date page, not the homepage URL
   const newsArticleSchema = report
@@ -74,6 +79,9 @@ export default async function HomePage() {
             </svg>
             <span>搜索</span>
           </Link>
+          <Link href="/topics/" className="header-nav-btn" aria-label="主题">
+            <span>主题</span>
+          </Link>
           <a
             href="/feed.xml"
             className="header-nav-btn"
@@ -99,7 +107,52 @@ export default async function HomePage() {
           />
         )}
         {report ? (
-          <ReportBody htmlContent={report.htmlContent} />
+          <>
+            <section className="radar-overview" aria-label="Radar status">
+              <div className="radar-stat">
+                <span className="radar-stat-label">Latest Brief</span>
+                <strong>{latest.date}</strong>
+              </div>
+              <div className="radar-stat">
+                <span className="radar-stat-label">Source Health</span>
+                <strong>{sourceHealth.length - staleSources.length}/{sourceHealth.length} OK</strong>
+              </div>
+              <div className="radar-stat">
+                <span className="radar-stat-label">Tracked Claims</span>
+                <strong>{activeClaims.length}</strong>
+              </div>
+            </section>
+
+            {activeClaims.length > 0 && (
+              <section className="radar-section">
+                <h2>Tracked Claims</h2>
+                <ul className="radar-list">
+                  {activeClaims.map(claim => (
+                    <li key={claim.id}>
+                      <Link href={`/claims/${claim.id}/`}>{claim.title}</Link>
+                      <span>{claim.status} · {claim.confidence}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {entities.length > 0 && (
+              <section className="radar-section">
+                <h2>Entities</h2>
+                <ul className="radar-list">
+                  {entities.map(entity => (
+                    <li key={entity.id}>
+                      <Link href={`/entities/${entity.id}/`}>{entity.name}</Link>
+                      <span>{entity.event_ids?.length || 0} events</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <ReportBody htmlContent={report.htmlContent} />
+          </>
         ) : (
           <div style={{ padding: '4rem', fontFamily: 'var(--mono)', color: 'var(--text-muted)', fontSize: '12px', letterSpacing: '0.1em' }}>
             暂无日报数据

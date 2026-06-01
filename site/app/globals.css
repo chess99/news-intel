@@ -182,6 +182,102 @@ a:hover { text-decoration: underline; }
   max-width: 860px;
 }
 
+.radar-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+  background: var(--border);
+}
+
+.radar-stat {
+  background: var(--bg);
+  padding: 1rem;
+}
+
+.radar-stat-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.radar-stat strong {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.radar-section {
+  margin: 2rem 0;
+}
+
+.radar-section h1,
+.radar-section h2 {
+  font-family: var(--mono);
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0.85rem;
+}
+
+.radar-section p {
+  color: var(--text-sub);
+  margin-bottom: 0.85rem;
+}
+
+.radar-list,
+.radar-event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.radar-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.radar-list span,
+.radar-event-list p {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.radar-event-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.radar-event-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.standalone-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 2rem 5rem;
+}
+
+.standalone-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: var(--header-h);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
 /* ── REPORT BODY ── */
 .report-html h1 {
   font-family: var(--serif);
