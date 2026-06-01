@@ -5,11 +5,12 @@ import sys
 from pathlib import Path
 
 from news_intel.config import load_sources
+from news_intel.clustering import cluster_candidates
 from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
 from news_intel.llm import OpenAICompatibleClient
-from news_intel.models import Article
-from news_intel.storage import read_jsonl, write_jsonl
+from news_intel.models import Article, Candidate
+from news_intel.storage import append_jsonl, read_jsonl, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -87,11 +88,26 @@ def stage_extract(date: str) -> int:
     return 0
 
 
+def stage_cluster(date: str) -> int:
+    input_path = ROOT / "data" / "candidates" / f"{date}.jsonl"
+    events_path = ROOT / "data" / "events" / f"{date}.jsonl"
+    evidence_path = ROOT / "data" / "evidence.jsonl"
+    candidates = [Candidate.model_validate(row) for row in read_jsonl(input_path)]
+    events, evidence = cluster_candidates(candidates)
+    write_jsonl(events_path, [event.model_dump(mode="json") for event in events])
+    append_jsonl(evidence_path, [row.model_dump(mode="json") for row in evidence])
+    print(f"[CLUSTER] wrote {len(events)} events to {events_path}", file=sys.stderr)
+    print(f"[CLUSTER] appended {len(evidence)} evidence rows to {evidence_path}", file=sys.stderr)
+    return 0
+
+
 def run_stage(stage_name: str, date: str) -> int:
     if stage_name == "ingest":
         return stage_ingest(date)
     if stage_name == "extract":
         return stage_extract(date)
+    if stage_name == "cluster":
+        return stage_cluster(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 
