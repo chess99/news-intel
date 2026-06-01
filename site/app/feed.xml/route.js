@@ -1,4 +1,4 @@
-import { getAllReports } from '../../lib/reports'
+import { getAllBriefs } from '../../lib/briefs'
 
 export const dynamic = 'force-static'
 
@@ -6,9 +6,9 @@ const SITE_URL = 'https://news.cearl.cc'
 const BASE_PATH = ''
 
 export async function GET() {
-  const reports = getAllReports().slice(0, 20)
+  const briefs = getAllBriefs().slice(0, 20)
 
-  const items = reports.map(r => `
+  const items = briefs.map(r => `
     <item>
       <title><![CDATA[${r.title}]]></title>
       <link>${SITE_URL}${BASE_PATH}/${r.date}/</link>

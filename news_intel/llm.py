@@ -13,7 +13,7 @@ class OpenAICompatibleClient:
         api_host: str | None = None,
         model: str | None = None,
     ):
-        self.api_key = api_key or os.environ.get("MINIMAX_API_KEY", "")
+        self.api_key = api_key or os.environ.get("LLM_API_KEY") or os.environ.get("MINIMAX_API_KEY", "")
         self.api_host = (api_host or os.environ.get("LLM_API_HOST", "https://api.minimaxi.com")).rstrip("/")
         self.model = model or os.environ.get("LLM_MODEL", "MiniMax-M2.7")
 

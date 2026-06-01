@@ -17,7 +17,7 @@ export default function ClaimPage({ params }) {
     return (
       <main className="standalone-page">
         <header className="standalone-header">
-          <Link href="/" className="site-logo">Intel Daily</Link>
+          <Link href="/" className="site-logo">Personal Tech Radar</Link>
           <Link href="/topics/" className="header-nav-btn">Topics</Link>
         </header>
         <section className="radar-section">
@@ -35,7 +35,7 @@ export default function ClaimPage({ params }) {
   return (
     <main className="standalone-page">
       <header className="standalone-header">
-        <Link href="/" className="site-logo">Intel Daily</Link>
+        <Link href="/" className="site-logo">Personal Tech Radar</Link>
         <Link href="/topics/" className="header-nav-btn">Topics</Link>
       </header>
       <section className="radar-section">

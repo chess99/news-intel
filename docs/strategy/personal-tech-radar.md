@@ -32,7 +32,7 @@ The website is an archive and research surface. It is not the primary reading in
    Cheap deterministic rules and lightweight model calls handle extraction, categorization, deduplication, and rough ranking. Strong models or agentic investigation are reserved for a small number of high-value events, weekly synthesis, and cases that require evidence checking across multiple sources.
 
 5. **History is structured, not pasted into a prompt.**
-   Long-term value comes from maintaining durable records for events, entities, and claims. The system should not ask a weak model to read all past reports and invent trends. It should update structured history and let stronger synthesis operate on curated context.
+   Long-term value comes from maintaining durable records for events, entities, and claims. The system should not ask a weak model to read all past briefs and invent trends. It should update structured history and let stronger synthesis operate on curated context.
 
 6. **The daily brief should be small.**
    A good daily brief has roughly five to eight items. It should make skipped information visible through counts and source health, but it should not recreate an information stream.
@@ -141,7 +141,7 @@ The website should evolve away from "daily markdown archive" and toward:
 - Topic pages.
 - Entity timelines.
 - Claim pages with evidence history.
-- Search across events, reports, entities, and claims.
+- Search across events, briefs, entities, and claims.
 
 ## Full End-State Direction
 

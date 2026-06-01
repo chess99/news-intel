@@ -278,8 +278,8 @@ a:hover { text-decoration: underline; }
   margin-bottom: 2rem;
 }
 
-/* ── REPORT BODY ── */
-.report-html h1 {
+/* ── BRIEF BODY ── */
+.brief-html h1 {
   font-family: var(--serif);
   font-size: 1.9rem;
   font-weight: 700;
@@ -289,7 +289,7 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 
-.report-html blockquote:first-of-type {
+.brief-html blockquote:first-of-type {
   font-family: var(--mono);
   font-size: 11.5px;
   color: var(--text-muted);
@@ -301,7 +301,7 @@ a:hover { text-decoration: underline; }
   line-height: 1.7;
 }
 
-.report-html h2 {
+.brief-html h2 {
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 500;
@@ -315,7 +315,7 @@ a:hover { text-decoration: underline; }
   border-left: 2px solid var(--accent);
 }
 
-.report-html h3 {
+.brief-html h3 {
   font-family: var(--serif);
   font-size: 1.15rem;
   font-weight: 600;
@@ -325,14 +325,14 @@ a:hover { text-decoration: underline; }
   letter-spacing: -0.01em;
 }
 
-.report-html p {
+.brief-html p {
   color: var(--text-sub);
   margin-bottom: 0.85rem;
   line-height: 1.9;
   font-size: 15px;
 }
 
-.report-html blockquote {
+.brief-html blockquote {
   border-left: 2px solid var(--accent-line);
   margin: 1.25rem 0;
   padding: 0.65rem 1.1rem;
@@ -340,36 +340,36 @@ a:hover { text-decoration: underline; }
   font-style: italic;
   font-size: 14px;
 }
-.report-html blockquote p { color: var(--text-muted); margin: 0; line-height: 1.7; }
+.brief-html blockquote p { color: var(--text-muted); margin: 0; line-height: 1.7; }
 
-.report-html strong { color: var(--text); font-weight: 600; }
-.report-html em { font-style: italic; color: var(--text-sub); }
+.brief-html strong { color: var(--text); font-weight: 600; }
+.brief-html em { font-style: italic; color: var(--text-sub); }
 
-.report-html hr {
+.brief-html hr {
   border: none;
   border-top: 1px solid var(--border);
   margin: 2rem 0;
 }
 
-.report-html ul, .report-html ol {
+.brief-html ul, .brief-html ol {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
-.report-html li {
+.brief-html li {
   color: var(--text-sub);
   margin: 0.3rem 0;
   font-size: 15px;
   line-height: 1.8;
 }
-.report-html li strong { color: var(--text); }
+.brief-html li strong { color: var(--text); }
 
-.report-html table {
+.brief-html table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.25rem 0 1.75rem;
   font-size: 13.5px;
 }
-.report-html th {
+.brief-html th {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -379,16 +379,16 @@ a:hover { text-decoration: underline; }
   padding: 0.55rem 0.85rem;
   border-bottom: 1px solid var(--border);
 }
-.report-html td {
+.brief-html td {
   padding: 0.55rem 0.85rem;
   border-bottom: 1px solid var(--border-light);
   color: var(--text-sub);
   vertical-align: top;
   line-height: 1.65;
 }
-.report-html tr:hover td { background: var(--bg-hover); }
+.brief-html tr:hover td { background: var(--bg-hover); }
 
-.report-html code {
+.brief-html code {
   font-family: var(--mono);
   font-size: 12.5px;
   background: var(--bg-card);
@@ -397,7 +397,7 @@ a:hover { text-decoration: underline; }
   border-radius: 3px;
   border: 1px solid var(--border);
 }
-.report-html pre {
+.brief-html pre {
   background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 1.1rem;
@@ -405,7 +405,7 @@ a:hover { text-decoration: underline; }
   overflow-x: auto;
   margin: 1.25rem 0;
 }
-.report-html pre code { background: none; border: none; padding: 0; font-size: 12.5px; color: var(--text-sub); }
+.brief-html pre code { background: none; border: none; padding: 0; font-size: 12.5px; color: var(--text-sub); }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
@@ -466,10 +466,10 @@ a:hover { text-decoration: underline; }
 
   .main-content { padding: 1.25rem 1rem 3rem; max-width: 100%; }
 
-  .report-html h1 { font-size: 1.5rem; }
-  .report-html h3 { font-size: 1.05rem; }
-  .report-html p, .report-html li { font-size: 14.5px; }
-  .report-html table {
+  .brief-html h1 { font-size: 1.5rem; }
+  .brief-html h3 { font-size: 1.05rem; }
+  .brief-html p, .brief-html li { font-size: 14.5px; }
+  .brief-html table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -485,10 +485,10 @@ a:hover { text-decoration: underline; }
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.report-fade-in { animation: fadeIn 0.2s ease-out; }
+.brief-fade-in { animation: fadeIn 0.2s ease-out; }
 
 @media (prefers-reduced-motion: reduce) {
-  .report-fade-in { animation: none; }
+  .brief-fade-in { animation: none; }
 }
 
 /* ── SEARCH PAGE ── */

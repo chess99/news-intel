@@ -47,9 +47,9 @@ export default function SearchPage() {
   return (
     <div className="site-wrapper">
       <header className="site-header">
-        <Link href="/" className="site-logo">Intel Daily</Link>
+        <Link href="/" className="site-logo">Personal Tech Radar</Link>
         <span className="site-header-sep" />
-        <span className="site-tagline">科技资讯 · 批判性分析 · 每日更新</span>
+        <span className="site-tagline">Evidence · Events · Claims</span>
         <div className="site-header-right">
           <Link href="/search/" className="header-nav-btn header-nav-btn--active" aria-label="搜索">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -58,7 +58,7 @@ export default function SearchPage() {
             <span>搜索</span>
           </Link>
           <a
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/feed.xml`}
+            href="/feed.xml"
             className="header-nav-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -74,7 +74,7 @@ export default function SearchPage() {
 
       <div className="search-page-wrapper">
         <div className="search-page-inner">
-          <h1 className="search-page-title">搜索日报</h1>
+          <h1 className="search-page-title">搜索雷达简报</h1>
           <div id="search-container" className="search-container-wrap" />
         </div>
       </div>

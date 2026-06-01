@@ -14,7 +14,7 @@ export default function TopicsPage() {
   return (
     <main className="standalone-page">
       <header className="standalone-header">
-        <Link href="/" className="site-logo">Intel Daily</Link>
+        <Link href="/" className="site-logo">Personal Tech Radar</Link>
         <span className="site-tagline">Personal Tech Radar</span>
       </header>
       <section className="radar-section">

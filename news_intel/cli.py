@@ -189,7 +189,6 @@ def stage_brief(date: str) -> int:
     evidence_path = ROOT / "data" / "evidence.jsonl"
     health_path = ROOT / "state" / "source_health.json"
     daily_path = ROOT / "brief" / "daily" / f"{date}.md"
-    report_path = ROOT / "report" / f"{date}.md"
 
     events = [Event.model_validate(row) for row in read_jsonl(events_path)]
     evidence_rows = [Evidence.model_validate(row) for row in read_jsonl(evidence_path)]
@@ -198,11 +197,8 @@ def stage_brief(date: str) -> int:
     source_health = [SourceHealth.model_validate(row) for row in health_data.values()]
     markdown = render_daily_brief(date, events, evidence_by_id, source_health)
     daily_path.parent.mkdir(parents=True, exist_ok=True)
-    report_path.parent.mkdir(parents=True, exist_ok=True)
     daily_path.write_text(markdown, encoding="utf-8")
-    report_path.write_text(markdown, encoding="utf-8")
     print(f"[BRIEF] wrote {daily_path}", file=sys.stderr)
-    print(f"[BRIEF] mirrored {report_path}", file=sys.stderr)
     return 0
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "Intel Daily",
-  "short_name": "Intel Daily",
-  "description": "每日 AI 与科技深度资讯，批判性分析",
+  "name": "Personal Tech Radar",
+  "short_name": "Personal Tech Radar",
+  "description": "Evidence-first personal technology intelligence radar",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

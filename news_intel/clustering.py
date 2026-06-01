@@ -6,8 +6,8 @@ from news_intel.models import Candidate, Event, Evidence, SourceTier
 
 
 def stable_id(prefix: str, value: str) -> str:
-    digest = hashlib.sha1(value.encode("utf-8")).hexdigest()[:12]
-    return f"{prefix}-{digest}"
+    suffix = hashlib.sha1(value.encode("utf-8")).hexdigest()[:12]
+    return f"{prefix}-{suffix}"
 
 
 def normalize_entity_id(name: str) -> str:

@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'report/**.md'
+      - 'brief/**'
+      - 'data/**'
+      - 'state/source_health.json'
       - 'site/**'
   workflow_dispatch:
 

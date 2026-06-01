@@ -1,13 +1,13 @@
-import { getAllReports } from '../lib/reports'
+import { getAllBriefs } from '../lib/briefs'
 
 const BASE_URL = 'https://news.cearl.cc'
 
 export default function sitemap() {
-  const reports = getAllReports()
+  const briefs = getAllBriefs()
 
-  const reportEntries = reports.map(report => ({
-    url: `${BASE_URL}/${report.date}/`,
-    lastModified: new Date(report.date),
+  const briefEntries = briefs.map(brief => ({
+    url: `${BASE_URL}/${brief.date}/`,
+    lastModified: new Date(brief.date),
     changeFrequency: 'never',
     priority: 0.8,
   }))
@@ -15,7 +15,7 @@ export default function sitemap() {
   return [
     {
       url: `${BASE_URL}/`,
-      lastModified: reports[0] ? new Date(reports[0].date) : new Date(),
+      lastModified: briefs[0] ? new Date(briefs[0].date) : new Date(),
       changeFrequency: 'daily',
       priority: 1.0,
     },
@@ -25,6 +25,6 @@ export default function sitemap() {
       changeFrequency: 'weekly',
       priority: 0.5,
     },
-    ...reportEntries,
+    ...briefEntries,
   ]
 }
