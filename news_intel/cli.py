@@ -5,8 +5,11 @@ import sys
 from pathlib import Path
 
 from news_intel.config import load_sources
+from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
-from news_intel.storage import write_jsonl
+from news_intel.llm import OpenAICompatibleClient
+from news_intel.models import Article
+from news_intel.storage import read_jsonl, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -64,9 +67,31 @@ def stage_ingest(date: str) -> int:
     return 0
 
 
+def stage_extract(date: str) -> int:
+    input_path = ROOT / "data" / "articles" / f"{date}.jsonl"
+    output_path = ROOT / "data" / "candidates" / f"{date}.jsonl"
+    llm = OpenAICompatibleClient()
+    candidates = []
+    failed = []
+    for row in read_jsonl(input_path):
+        article = Article.model_validate(row)
+        try:
+            candidate = extract_candidate(article, llm=llm)
+            candidates.append(candidate.model_dump(mode="json"))
+        except Exception as exc:
+            failed.append(f"{article.id}: {exc}")
+    write_jsonl(output_path, candidates)
+    print(f"[EXTRACT] wrote {len(candidates)} candidates to {output_path}", file=sys.stderr)
+    for failure in failed:
+        print(f"[WARN] extract failed: {failure}", file=sys.stderr)
+    return 0
+
+
 def run_stage(stage_name: str, date: str) -> int:
     if stage_name == "ingest":
         return stage_ingest(date)
+    if stage_name == "extract":
+        return stage_extract(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 
