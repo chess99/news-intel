@@ -30,3 +30,11 @@ def test_run_order_is_stable():
         "deliver",
         "site",
     ]
+
+
+def test_extract_stage_fails_closed_for_empty_candidates():
+    from news_intel.cli import extract_stage_exit_code
+
+    assert extract_stage_exit_code(article_count=3, candidate_count=0) == 1
+    assert extract_stage_exit_code(article_count=3, candidate_count=1) == 0
+    assert extract_stage_exit_code(article_count=0, candidate_count=0) == 0

@@ -95,7 +95,8 @@ def stage_extract(date: str) -> int:
     llm = OpenAICompatibleClient()
     candidates = []
     failed = []
-    for row in read_jsonl(input_path):
+    rows = list(read_jsonl(input_path))
+    for row in rows:
         article = Article.model_validate(row)
         try:
             candidate = extract_candidate(article, llm=llm)
@@ -106,6 +107,17 @@ def stage_extract(date: str) -> int:
     print(f"[EXTRACT] wrote {len(candidates)} candidates to {output_path}", file=sys.stderr)
     for failure in failed:
         print(f"[WARN] extract failed: {failure}", file=sys.stderr)
+    return extract_stage_exit_code(article_count=len(rows), candidate_count=len(candidates))
+
+
+def extract_stage_exit_code(*, article_count: int, candidate_count: int) -> int:
+    if article_count > 0 and candidate_count == 0:
+        print(
+            "[ERROR] extraction produced no candidates from non-empty input; "
+            "stop before generating an empty brief",
+            file=sys.stderr,
+        )
+        return 1
     return 0
 
 
