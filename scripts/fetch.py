@@ -19,7 +19,7 @@ import argparse
 WORKDIR = Path(__file__).parent.parent
 sys.path.insert(0, str(WORKDIR))
 
-from news_intel.config import load_sources
+from news_intel.config import load_env_file, load_sources
 from news_intel.fetcher import source_slug
 from news_intel.source_health import build_health_record
 from news_intel.storage import write_json
@@ -28,6 +28,7 @@ SOURCES_FILE = WORKDIR / "sources" / "feeds.yaml"
 RAW_DIR = WORKDIR / "raw"
 STATE_DIR = WORKDIR / "state"
 SOURCE_HEALTH_FILE = STATE_DIR / "source_health.json"
+load_env_file(WORKDIR / ".env")
 PROXY = os.environ.get("HTTPS_PROXY", os.environ.get("HTTP_PROXY", ""))
 TIMEOUT = 20
 MAX_PER_SOURCE = 5

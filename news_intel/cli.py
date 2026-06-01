@@ -8,7 +8,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from news_intel.config import load_sources
+from news_intel.config import load_env_file, load_sources
 from news_intel.briefing import render_daily_brief, render_monthly_review, render_weekly_review
 from news_intel.clustering import cluster_candidates
 from news_intel.extraction import extract_candidate
@@ -21,6 +21,7 @@ from news_intel.storage import append_jsonl, read_jsonl, write_json, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
 CST = timezone(timedelta(hours=8))
+load_env_file(ROOT / ".env")
 
 VALID_STAGES = [
     "fetch",

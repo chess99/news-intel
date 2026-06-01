@@ -1,4 +1,6 @@
-from news_intel.config import load_sources
+from pathlib import Path
+
+from news_intel.config import load_env_file, load_sources
 from news_intel.models import SourceTier
 from news_intel.source_health import build_health_record
 
@@ -26,3 +28,13 @@ def test_build_health_record_for_failed_fetch():
     )
     assert record.consecutive_failures == 2
     assert record.is_stale is True
+
+
+def test_load_env_file_sets_missing_values(tmp_path: Path, monkeypatch):
+    env_path = tmp_path / ".env"
+    env_path.write_text("EXAMPLE_KEY=example-value\nEXISTING=from-file\n", encoding="utf-8")
+    monkeypatch.delenv("EXAMPLE_KEY", raising=False)
+    monkeypatch.setenv("EXISTING", "from-env")
+    load_env_file(env_path)
+    assert __import__("os").environ["EXAMPLE_KEY"] == "example-value"
+    assert __import__("os").environ["EXISTING"] == "from-env"
