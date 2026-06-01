@@ -1,19 +1,20 @@
 # news-intel
 
-每日 AI 与科技深度资讯 pipeline。自动抓取 30+ 信源，LLM 批判性分析，生成日报。
+Personal Tech Radar：个人科技情报系统。它不是通用新闻站，而是抓取一手与高质量二手信源，结构化为文章、候选事件、事件、证据、实体和判断假设，再生成可推送的每日简报与可检索的历史研究页面。
 
 📰 **[在线日报归档](https://news.cearl.cc/)** — 每日自动更新
 
 ---
 
-## 特点
+## 核心定位
 
-- **30+ 信源**：AI 官方博客（Anthropic/OpenAI/Google/Meta）、顶级 newsletter、中文 AI 媒体、工程实践
-- **批判性分析**：识别 PR 语言、标注缺失信息、保留原文限定词
-- **历史关联**：30 天知识库，分析时自动关联历史事件
-- **事件聚合**：同一事件多个来源合并对比（cluster.py）
-- **完全自动化**：cron 每日 08:30 触发，09:00 前准备就绪
-- **开源友好**：兼容任何 OpenAI-format API，proxy 可选
+- **一手信源优先**：官方博客、产品 changelog、论文、监管/标准机构作为事实依据。
+- **信源健康显式化**：墙外源依赖 mihomo 代理，失败不会静默消失，会写入 `state/source_health.json` 并出现在简报里。
+- **AI 分层使用**：规则和轻量 LLM 做抽取/分类/聚类；强模型或 agent 只处理少数高价值调查与周/月度综合。
+- **历史结构化**：用 `Event`、`Entity`、`Claim` 和 `Evidence` 拉通历史，不把历史日报整篇塞给模型硬总结。
+- **推送优先**：主产物是 `brief/daily/YYYY-MM-DD.md`；GitHub Pages 是归档、搜索、主题、实体和假设页面。
+
+详见 [Personal Tech Radar Strategy](docs/strategy/personal-tech-radar.md)。
 
 ---
 
@@ -36,15 +37,19 @@ pip install -r requirements.txt
 cp .env.example .env
 # 编辑 .env，填入你的 API Key 和代理地址
 
-# 4. 抓取今日文章
-source .env
-python3.11 scripts/fetch.py
-
-# 5. 生成深度分析
-python3.11 scripts/digest.py
+# 4. 运行完整 pipeline
+python3.11 -m news_intel.cli run --date YYYY-MM-DD
 ```
 
-分析结果在 `digest/YYYY-MM-DD.md`，可以直接阅读或交给 AI 生成日报。
+主输出：
+
+- `brief/daily/YYYY-MM-DD.md`：每日推送简报
+- `brief/weekly/YYYY-WW.md`：周度判断更新
+- `brief/monthly/YYYY-MM.md`：月度复盘
+- `data/events/YYYY-MM-DD.jsonl`：结构化事件
+- `data/entities.jsonl`：实体时间线数据
+- `data/claims.jsonl`：长期假设与判断状态
+- `state/source_health.json`：信源健康状态
 
 ---
 
@@ -83,8 +88,8 @@ LLM_MODEL=qwen2.5:14b
 # 编辑 crontab
 crontab -e
 
-# 每天 08:30 抓取 + 分析，09:00 由 AI agent 生成日报
-30 8 * * * cd /path/to/news-intel && source .env && python3.11 scripts/fetch.py >> /tmp/news-fetch.log 2>&1 && python3.11 scripts/digest.py >> /tmp/news-digest.log 2>&1 && python3.11 scripts/kb_update.py >> /tmp/news-kb.log 2>&1
+# 每天 08:30 运行完整 radar pipeline
+30 8 * * * cd /path/to/news-intel && python3.11 -m news_intel.cli run --date $(TZ=Asia/Shanghai date +\\%F) >> /tmp/news-radar.log 2>&1
 ```
 
 ---
@@ -93,24 +98,21 @@ crontab -e
 
 ```
 news-intel/
+├── news_intel/         # Personal Tech Radar pipeline package
 ├── scripts/
-│   ├── fetch.py        # Layer 1: 并发抓取 RSS + 全文（含日期过滤）
-│   ├── digest.py       # Layer 3: LLM 批判性分析 + 历史关联注入
-│   ├── cluster.py      # Layer 2: 事件聚合（同一事件多来源合并）
-│   ├── kb_update.py    # Layer 4: 维护 30 天知识库
-│   ├── build_site.py   # Layer 5: 生成 GitHub Pages 静态站点
+│   ├── fetch.py        # RSS/全文抓取，保留 raw/ 兼容
+│   ├── send_report.py  # 发送 brief/daily 到飞书，report/ 作为 fallback
 │   └── git_push.js     # 用 GitHub App token 推送（可选）
 ├── sources/
-│   └── feeds.yaml      # 信源配置（可直接增删）
+│   └── feeds.yaml      # 信源配置：tier / fetch_strategy / proxy
 ├── raw/YYYY/MM/DD/     # 原文存档（脚本自动生成）
-├── digest/             # LLM 分析结果（脚本自动生成）
-│   ├── YYYY-MM-DD.md   # 人类可读格式
-│   └── YYYY-MM-DD.jsonl # 结构化数据（供 kb_update.py 读取）
-├── kb/
-│   └── events.jsonl    # 30 天知识库（kb_update.py 维护）
-├── clusters/           # 事件聚合结果（cluster.py 生成）
-├── report/             # 最终日报（AI agent 或手工生成）
-├── docs/               # GitHub Pages 静态文件（build_site.py 生成）
+├── data/               # articles / candidates / events / entities / claims / evidence
+├── state/              # source health and investigation state
+├── brief/              # daily / weekly / monthly human-facing briefs
+├── report/             # daily brief compatibility mirror
+├── digest/             # historical legacy artifacts
+├── clusters/           # historical legacy artifacts
+├── site/               # Next.js GitHub Pages site
 ├── .env.example        # 环境变量模板
 └── requirements.txt    # Python 依赖
 ```
@@ -120,7 +122,7 @@ news-intel/
 ## 完整 pipeline
 
 ```
-fetch.py → cluster.py → digest.py → kb_update.py → [AI生成日报] → build_site.py
+fetch → ingest → extract → cluster → investigate → knowledge → brief → deliver → site
 ```
 
 每个步骤独立运行，失败会降级而不中断整个 pipeline：

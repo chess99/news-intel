@@ -15,3 +15,18 @@ def test_parser_accepts_individual_stage():
     assert args.command == "stage"
     assert args.stage_name == "brief"
     assert args.date == "2026-06-01"
+
+
+def test_run_order_is_stable():
+    from news_intel.cli import PIPELINE_ORDER
+    assert PIPELINE_ORDER == [
+        "fetch",
+        "ingest",
+        "extract",
+        "cluster",
+        "investigate",
+        "knowledge",
+        "brief",
+        "deliver",
+        "site",
+    ]

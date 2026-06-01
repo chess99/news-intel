@@ -36,6 +36,18 @@ VALID_STAGES = [
     "site",
 ]
 
+PIPELINE_ORDER = [
+    "fetch",
+    "ingest",
+    "extract",
+    "cluster",
+    "investigate",
+    "knowledge",
+    "brief",
+    "deliver",
+    "site",
+]
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="news-intel")
@@ -228,7 +240,29 @@ def stage_deliver(date: str) -> int:
     return result.returncode
 
 
+def stage_fetch(date: str) -> int:
+    result = subprocess.run([sys.executable, str(ROOT / "scripts" / "fetch.py"), "--date", date], check=False)
+    return result.returncode
+
+
+def stage_site(date: str) -> int:
+    result = subprocess.run(["npm", "--prefix", str(ROOT / "site"), "run", "build"], check=False)
+    return result.returncode
+
+
+def run_pipeline(date: str, *, skip_delivery: bool) -> int:
+    for stage_name in PIPELINE_ORDER:
+        if skip_delivery and stage_name == "deliver":
+            continue
+        code = run_stage(stage_name, date)
+        if code != 0:
+            return code
+    return 0
+
+
 def run_stage(stage_name: str, date: str) -> int:
+    if stage_name == "fetch":
+        return stage_fetch(date)
     if stage_name == "ingest":
         return stage_ingest(date)
     if stage_name == "extract":
@@ -247,6 +281,8 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_monthly(date)
     if stage_name == "deliver":
         return stage_deliver(date)
+    if stage_name == "site":
+        return stage_site(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 
@@ -256,6 +292,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.command == "stage":
         return run_stage(args.stage_name, args.date)
+    if args.command == "run":
+        return run_pipeline(args.date, skip_delivery=args.skip_delivery)
     return 0
 
 
