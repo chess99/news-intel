@@ -11,10 +11,11 @@ CHAT_ID = "oc_d170dda09264716d786cd28cc48e5f78"
 CST = timezone(timedelta(hours=8))
 
 date_str = sys.argv[1] if len(sys.argv) > 1 else datetime.now(CST).strftime("%Y-%m-%d")
-report_path = WORKDIR / "report" / f"{date_str}.md"
+brief_path = WORKDIR / "brief" / "daily" / f"{date_str}.md"
+report_path = brief_path if brief_path.exists() else WORKDIR / "report" / f"{date_str}.md"
 
 if not report_path.exists():
-    print(f"ERROR: report not found: {report_path}", file=sys.stderr)
+    print(f"ERROR: brief/report not found: {report_path}", file=sys.stderr)
     sys.exit(1)
 
 ctx = ssl._create_unverified_context()

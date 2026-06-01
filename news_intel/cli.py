@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import subprocess
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -222,6 +223,11 @@ def stage_monthly(date: str) -> int:
     return 0
 
 
+def stage_deliver(date: str) -> int:
+    result = subprocess.run([sys.executable, str(ROOT / "scripts" / "send_report.py"), date], check=False)
+    return result.returncode
+
+
 def run_stage(stage_name: str, date: str) -> int:
     if stage_name == "ingest":
         return stage_ingest(date)
@@ -239,6 +245,8 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_weekly(date)
     if stage_name == "monthly":
         return stage_monthly(date)
+    if stage_name == "deliver":
+        return stage_deliver(date)
     print(f"[WARN] stage not implemented yet: {stage_name}", file=sys.stderr)
     return 0
 
