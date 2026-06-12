@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from news_intel.delivery import brief_path, delivery_payload, require_feishu_config
+from scripts import send_report
 
 
 def test_delivery_payload_contains_title_and_body():
@@ -33,3 +34,17 @@ def test_require_feishu_config_reads_env(monkeypatch):
         "FEISHU_APP_SECRET": "secret",
         "FEISHU_CHAT_ID": "chat",
     }
+
+
+def test_send_report_dry_run_validates_payload(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(send_report, "ROOT", tmp_path)
+    monkeypatch.setenv("FEISHU_APP_ID", "app")
+    monkeypatch.setenv("FEISHU_APP_SECRET", "secret")
+    monkeypatch.setenv("FEISHU_CHAT_ID", "chat")
+    path = tmp_path / "brief" / "daily" / "2026-06-01.md"
+    path.parent.mkdir(parents=True)
+    path.write_text("# Personal Tech Radar · 2026-06-01\n\nBody", encoding="utf-8")
+
+    assert send_report.main(["--dry-run", "2026-06-01"]) == 0
+
+    assert "dry-run ok" in capsys.readouterr().out

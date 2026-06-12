@@ -10,10 +10,58 @@ npm --prefix site run build
 
 Use `--skip-delivery` locally unless Feishu credentials are intentionally configured.
 
-## Server Cron
+## Local Cron
 
 ```cron
-30 8 * * * cd /root/.openclaw/workspace/news-intel && python3.11 -m news_intel.cli run --date $(TZ=Asia/Shanghai date +\%F) >> /tmp/news-radar.log 2>&1
+0 9 * * * /Users/zcs/code2/news-intel/scripts/run_local_daily.sh
+```
+
+Manual local run:
+
+```bash
+/Users/zcs/code2/news-intel/scripts/run_local_daily.sh YYYY-MM-DD
+```
+
+Manual local run without Feishu delivery:
+
+```bash
+NEWS_INTEL_SKIP_DELIVERY=1 /Users/zcs/code2/news-intel/scripts/run_local_daily.sh YYYY-MM-DD
+```
+
+Cron logs are written to:
+
+```text
+logs/cron/news-intel-YYYY-MM-DD.log
+```
+
+The runner uses `/Users/zcs/miniforge3/bin/python3` and loads `.env` through the Python pipeline.
+
+## LLM Provider
+
+API mode:
+
+```env
+LLM_PROVIDER=openai
+LLM_API_HOST=https://api.openai.com
+LLM_API_KEY=...
+LLM_MODEL=...
+```
+
+Local command mode:
+
+```env
+LLM_PROVIDER=command
+LLM_COMMAND=/opt/homebrew/bin/codex -s read-only -a never exec --ephemeral
+LLM_COMMAND_INPUT=argv
+LLM_COMMAND_TIMEOUT=120
+```
+
+If `mc` is installed locally, command mode can be switched to:
+
+```env
+LLM_PROVIDER=command
+LLM_COMMAND=mc --code -p
+LLM_COMMAND_INPUT=argv
 ```
 
 ## Failure Handling
@@ -21,6 +69,7 @@ Use `--skip-delivery` locally unless Feishu credentials are intentionally config
 - Source fetch failures should be recorded in `state/source_health.json`.
 - If extraction produces zero candidates from non-empty article input, the pipeline fails before rendering an empty brief.
 - Missing Feishu configuration fails the `deliver` stage with an explicit error.
+- Use `scripts/send_report.py --dry-run YYYY-MM-DD` to validate Feishu config and payload without sending.
 - Use `--skip-delivery` for dry runs and debugging.
 
 ## Site Deployment

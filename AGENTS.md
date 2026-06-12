@@ -25,6 +25,12 @@ Local validation without Feishu delivery:
 python3 -m news_intel.cli run --date YYYY-MM-DD --skip-delivery
 ```
 
+Local cron runner:
+
+```bash
+/Users/zcs/code2/news-intel/scripts/run_local_daily.sh YYYY-MM-DD
+```
+
 Execution order:
 
 ```text
@@ -51,7 +57,8 @@ site/                            static research console
 ## Operating Notes
 
 - `.env` is loaded automatically.
-- Use `LLM_API_KEY`, `LLM_API_HOST`, and `LLM_MODEL` for the OpenAI-compatible extraction model.
+- Use `LLM_PROVIDER=openai` with `LLM_API_KEY`, `LLM_API_HOST`, and `LLM_MODEL` for OpenAI-compatible extraction.
+- Use `LLM_PROVIDER=command` with `LLM_COMMAND` when delegating extraction to a local agent command such as `mc --code -p` or `codex exec`.
 - Use `STRONG_LLM_MODEL` only for targeted investigation.
 - Use `HTTPS_PROXY=http://127.0.0.1:7890` when the source needs mihomo.
 - Feishu delivery requires `FEISHU_APP_ID`, `FEISHU_APP_SECRET`, and `FEISHU_CHAT_ID`.
