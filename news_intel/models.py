@@ -85,6 +85,33 @@ class Evidence(BaseModel):
     quote: str
 
 
+class EditorialSource(BaseModel):
+    name: str
+    url: str
+    tier: SourceTier
+    quote: str = ""
+
+
+class EditorialItem(BaseModel):
+    event_id: str
+    headline: str
+    takeaway: str
+    why_it_matters: str = ""
+    sources: list[EditorialSource] = Field(default_factory=list)
+    tags: list[str] = Field(default_factory=list)
+    track_reason: str = ""
+
+
+class DailyEditorial(BaseModel):
+    date: str
+    signal_title: str
+    signal_summary: str
+    signal_bullets: list[str] = Field(default_factory=list)
+    must_read_items: list[EditorialItem] = Field(default_factory=list)
+    scan_items: list[EditorialItem] = Field(default_factory=list)
+    archive_items: list[EditorialItem] = Field(default_factory=list)
+
+
 class Event(BaseModel):
     id: str
     date: str

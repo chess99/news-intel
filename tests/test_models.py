@@ -1,4 +1,14 @@
-from news_intel.models import Article, Claim, Event, Evidence, SourceHealth, SourceTier
+from news_intel.models import (
+    Article,
+    Claim,
+    DailyEditorial,
+    EditorialItem,
+    EditorialSource,
+    Event,
+    Evidence,
+    SourceHealth,
+    SourceTier,
+)
 
 
 def test_article_normalizes_source_tier():
@@ -73,3 +83,33 @@ def test_claim_status_is_conservative():
         updated_at="2026-06-01T09:00:00+08:00",
     )
     assert claim.status == "active"
+
+
+def test_daily_editorial_schema_keeps_reader_facing_fields():
+    editorial = DailyEditorial(
+        date="2026-06-13",
+        signal_title="Agent 正在进入团队账本",
+        signal_summary="团队开始把 Agent 当成可计量生产资源管理。",
+        signal_bullets=["Agent 指标开始从体验叙事转向团队产能账本。"],
+        must_read_items=[
+            EditorialItem(
+                event_id="evt-001",
+                headline="Anthropic Fable/Mythos 被监管按下暂停键",
+                takeaway="监管边界正在影响前沿模型发布节奏。",
+                why_it_matters="这会改变模型公司对安全评估和发布窗口的管理方式。",
+                sources=[
+                    EditorialSource(
+                        name="Anthropic",
+                        url="https://anthropic.com/example",
+                        tier=SourceTier.T0_FIRST_HAND,
+                    )
+                ],
+                tags=["模型安全", "监管"],
+                track_reason="继续跟踪 frontier model 发布边界。",
+            )
+        ],
+    )
+
+    assert editorial.must_read_items[0].sources[0].tier == SourceTier.T0_FIRST_HAND
+    assert editorial.scan_items == []
+    assert editorial.archive_items == []

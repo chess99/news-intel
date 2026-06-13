@@ -29,7 +29,7 @@ python3 -m news_intel.cli run --date YYYY-MM-DD --skip-delivery
 ## Pipeline
 
 ```text
-fetch -> ingest -> extract -> cluster -> investigate -> knowledge -> brief -> deliver -> site
+fetch -> ingest -> extract -> cluster -> knowledge -> editorial -> brief -> deliver -> site
 ```
 
 ## Outputs
@@ -42,6 +42,7 @@ fetch -> ingest -> extract -> cluster -> investigate -> knowledge -> brief -> de
 - `data/evidence.jsonl`: evidence snippets
 - `data/entities.jsonl`: entity timelines
 - `data/claims.jsonl`: tracked claims
+- `data/editorial/YYYY-MM-DD.json`: daily editorial plan
 - `brief/daily/YYYY-MM-DD.md`: daily push brief
 - `brief/weekly/YYYY-WW.md`: weekly review
 - `brief/monthly/YYYY-MM.md`: monthly review
@@ -50,7 +51,8 @@ fetch -> ingest -> extract -> cluster -> investigate -> knowledge -> brief -> de
 
 - Prefer first-hand and high-quality sources.
 - Keep source health explicit, especially proxy failures.
-- Use lightweight LLM extraction for article-level structure.
-- Use strong model investigation only for a small number of high-value events.
-- Do not generate prose without evidence links and confidence.
+- Keep extraction rules-based and fast; do not call a local agent once per article.
+- Use LLM only for the batch editorial pass in the default daily path.
+- Use strong model investigation only as a manual stage for a small number of high-value events.
+- Do not generate prose without evidence or source-health context.
 - Keep the daily brief concise.

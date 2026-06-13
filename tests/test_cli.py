@@ -11,9 +11,9 @@ def test_parser_accepts_pipeline_commands():
 
 def test_parser_accepts_individual_stage():
     parser = build_parser()
-    args = parser.parse_args(["stage", "brief", "--date", "2026-06-01"])
+    args = parser.parse_args(["stage", "editorial", "--date", "2026-06-01"])
     assert args.command == "stage"
-    assert args.stage_name == "brief"
+    assert args.stage_name == "editorial"
     assert args.date == "2026-06-01"
 
 
@@ -24,8 +24,8 @@ def test_run_order_is_stable():
         "ingest",
         "extract",
         "cluster",
-        "investigate",
         "knowledge",
+        "editorial",
         "brief",
         "deliver",
         "site",

@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT="/Users/zcs/code2/news-intel"
 PYTHON="/Users/zcs/miniforge3/bin/python3"
-export PATH="/opt/homebrew/bin:/Users/zcs/miniforge3/bin:/Users/zcs/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:/Users/zcs/.nvm/versions/node/v24.13.0/bin:/Users/zcs/miniforge3/bin:/Users/zcs/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export TZ="Asia/Shanghai"
 
 DATE="${1:-$(date +%F)}"

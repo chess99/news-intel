@@ -9,14 +9,20 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from news_intel.config import load_env_file, load_sources
-from news_intel.briefing import render_daily_brief, render_monthly_review, render_weekly_review
+from news_intel.briefing import (
+    render_daily_brief,
+    render_daily_editorial_brief,
+    render_monthly_review,
+    render_weekly_review,
+)
 from news_intel.clustering import cluster_candidates
+from news_intel.editorial import build_editorial
 from news_intel.extraction import extract_candidate
 from news_intel.ingest import parse_raw_article, should_drop_article
 from news_intel.investigation import INVESTIGATION_PROMPT, select_events_for_investigation
 from news_intel.knowledge import update_claims, update_entities
 from news_intel.llm import build_llm_client
-from news_intel.models import Article, Candidate, Claim, Entity, Event, Evidence, SourceHealth
+from news_intel.models import Article, Candidate, Claim, DailyEditorial, Entity, Event, Evidence, SourceHealth
 from news_intel.storage import append_jsonl, read_jsonl, write_json, write_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +36,7 @@ VALID_STAGES = [
     "cluster",
     "investigate",
     "knowledge",
+    "editorial",
     "brief",
     "weekly",
     "monthly",
@@ -42,8 +49,8 @@ PIPELINE_ORDER = [
     "ingest",
     "extract",
     "cluster",
-    "investigate",
     "knowledge",
+    "editorial",
     "brief",
     "deliver",
     "site",
@@ -92,14 +99,13 @@ def stage_ingest(date: str) -> int:
 def stage_extract(date: str) -> int:
     input_path = ROOT / "data" / "articles" / f"{date}.jsonl"
     output_path = ROOT / "data" / "candidates" / f"{date}.jsonl"
-    llm = build_llm_client()
     candidates = []
     failed = []
     rows = list(read_jsonl(input_path))
     for row in rows:
         article = Article.model_validate(row)
         try:
-            candidate = extract_candidate(article, llm=llm)
+            candidate = extract_candidate(article)
             candidates.append(candidate.model_dump(mode="json"))
         except Exception as exc:
             failed.append(f"{article.id}: {exc}")
@@ -184,10 +190,55 @@ def stage_knowledge(date: str) -> int:
     return 0
 
 
+def stage_editorial(date: str) -> int:
+    events_path = ROOT / "data" / "events" / f"{date}.jsonl"
+    evidence_path = ROOT / "data" / "evidence.jsonl"
+    health_path = ROOT / "state" / "source_health.json"
+    claims_path = ROOT / "data" / "claims.jsonl"
+    output_path = ROOT / "data" / "editorial" / f"{date}.json"
+
+    events = [Event.model_validate(row) for row in read_jsonl(events_path)]
+    evidence_rows = [Evidence.model_validate(row) for row in read_jsonl(evidence_path)]
+    evidence_by_id = {row.id: row for row in evidence_rows}
+    health_data = json.loads(health_path.read_text(encoding="utf-8")) if health_path.exists() else {}
+    source_health = [SourceHealth.model_validate(row) for row in health_data.values()]
+    claims = [Claim.model_validate(row) for row in read_jsonl(claims_path)]
+    llm = build_optional_editorial_llm()
+    editorial = build_editorial(
+        date=date,
+        events=events,
+        evidence_by_id=evidence_by_id,
+        source_health=source_health,
+        claims=claims,
+        llm=llm,
+    )
+    write_json(output_path, editorial.model_dump(mode="json"))
+    mode = "llm" if llm is not None else "rules"
+    print(f"[EDITORIAL] wrote {output_path} ({mode})", file=sys.stderr)
+    return 0
+
+
+def build_optional_editorial_llm():
+    provider = os.environ.get("LLM_PROVIDER", "").strip().lower()
+    if not provider:
+        return None
+    if provider in {"openai", "openai-compatible", "api"}:
+        if not (os.environ.get("LLM_API_KEY") or os.environ.get("MINIMAX_API_KEY")):
+            return None
+    if provider in {"command", "agent", "local-command"} and not os.environ.get("LLM_COMMAND"):
+        return None
+    try:
+        return build_llm_client()
+    except RuntimeError as exc:
+        print(f"[WARN] editorial LLM disabled: {exc}", file=sys.stderr)
+        return None
+
+
 def stage_brief(date: str) -> int:
     events_path = ROOT / "data" / "events" / f"{date}.jsonl"
     evidence_path = ROOT / "data" / "evidence.jsonl"
     health_path = ROOT / "state" / "source_health.json"
+    editorial_path = ROOT / "data" / "editorial" / f"{date}.json"
     daily_path = ROOT / "brief" / "daily" / f"{date}.md"
 
     events = [Event.model_validate(row) for row in read_jsonl(events_path)]
@@ -195,7 +246,11 @@ def stage_brief(date: str) -> int:
     evidence_by_id = {row.id: row for row in evidence_rows}
     health_data = json.loads(health_path.read_text(encoding="utf-8")) if health_path.exists() else {}
     source_health = [SourceHealth.model_validate(row) for row in health_data.values()]
-    markdown = render_daily_brief(date, events, evidence_by_id, source_health)
+    if editorial_path.exists():
+        editorial = DailyEditorial.model_validate(json.loads(editorial_path.read_text(encoding="utf-8")))
+        markdown = render_daily_editorial_brief(date, editorial, source_health)
+    else:
+        markdown = render_daily_brief(date, events, evidence_by_id, source_health)
     daily_path.parent.mkdir(parents=True, exist_ok=True)
     daily_path.write_text(markdown, encoding="utf-8")
     print(f"[BRIEF] wrote {daily_path}", file=sys.stderr)
@@ -282,6 +337,8 @@ def run_stage(stage_name: str, date: str) -> int:
         return stage_investigate(date)
     if stage_name == "knowledge":
         return stage_knowledge(date)
+    if stage_name == "editorial":
+        return stage_editorial(date)
     if stage_name == "brief":
         return stage_brief(date)
     if stage_name == "weekly":

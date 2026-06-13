@@ -1,0 +1,384 @@
+{
+  "archive_items": [
+    {
+      "event_id": "evt-b8a5f6f95d68",
+      "headline": "Kimi K2.7 Code",
+      "sources": [
+        {
+          "name": "Product Hunt",
+          "quote": "Kimi’s most capable coding model yet Discussion | Link",
+          "tier": "T2_COMMUNITY_DISCOVERY",
+          "url": "https://www.producthunt.com/products/kimi-ai-assistant"
+        }
+      ],
+      "tags": [
+        "模型/Agent"
+      ],
+      "takeaway": "Kimi’s most capable coding model yet Discussion | Link",
+      "track_reason": "评测复现、能力边界、成本变化。",
+      "why_it_matters": "模型能力和评测变化会影响后续工具选择与长期假设。"
+    },
+    {
+      "event_id": "evt-4c868f17e6e5",
+      "headline": "Copilot code review: New configurations and controls",
+      "sources": [
+        {
+          "name": "GitHub Changelog",
+          "quote": "With new organization runner controls, Copilot content exclusion support, and the removal of the character limit on r...",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "With new organization runner controls, Copilot content exclusion support, and the removal of the character limit on r...",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "With new organization runner controls, Copilot content exclusion support, and the removal of the character limit on r..."
+    },
+    {
+      "event_id": "evt-b0312c5426b0",
+      "headline": "Here's what Jeff Bezos' new startup Prometheus will do",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "quote": "It isn't the only startup tackling physical AI, but it's one of the best-funded.",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://arstechnica.com/ai/2026/06/heres-what-jeff-bezos-new-startup-prometheus-will-do/"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "It isn't the only startup tackling physical AI, but it's one of the best-funded.",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "It isn't the only startup tackling physical AI, but it's one of the best-funded."
+    },
+    {
+      "event_id": "evt-f239503479dc",
+      "headline": "How Preply combines AI and human tutors to personalize learning",
+      "sources": [
+        {
+          "name": "OpenAI Blog",
+          "quote": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exe...",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://openai.com/index/preply"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exe...",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exe..."
+    },
+    {
+      "event_id": "evt-a0ae4857ef38",
+      "headline": "AWS Introduces CDK Mixins for Composable Infrastructure Abstractions",
+      "sources": [
+        {
+          "name": "InfoQ",
+          "quote": "AWS recently announced CDK Mixins, a new AWS CDK feature that lets developers add reusable capabilities like security...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.infoq.com/news/2026/06/cdk-mixins-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "AWS recently announced CDK Mixins, a new AWS CDK feature that lets developers add reusable capabilities like security...",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "AWS recently announced CDK Mixins, a new AWS CDK feature that lets developers add reusable capabilities like security..."
+    },
+    {
+      "event_id": "evt-3bda26dc1d12",
+      "headline": "Slack Eliminates SSH in EMR Pipelines, Migrates 700+ Jobs to Rest-Based Architecture",
+      "sources": [
+        {
+          "name": "InfoQ",
+          "quote": "Slack modernized its data platform by replacing SSH based execution in Amazon EMR pipelines with a REST driven orches...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.infoq.com/news/2026/06/slack-ssh-rest-quarry-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "Slack modernized its data platform by replacing SSH based execution in Amazon EMR pipelines with a REST driven orches...",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "Slack modernized its data platform by replacing SSH based execution in Amazon EMR pipelines with a REST driven orches..."
+    },
+    {
+      "event_id": "evt-3a5fca15aa9d",
+      "headline": "我们拉上 vivo，聊聊 AI 时代的折叠屏",
+      "sources": [
+        {
+          "name": "爱范儿",
+          "quote": "我们和 vivo 以及一批 AI 行动派用户聊了聊，无关宏大叙事，而是日常工作和生活里那些具体的「小事」：贴发票、写日报，手机也可以是调度各路 Agent 的入口。",
+          "tier": "T3_CHINESE_SECONDARY",
+          "url": "https://www.ifanr.com/1668866?utm_source=rss&utm_medium=rss&utm_campaign="
+        }
+      ],
+      "tags": [
+        "模型/Agent"
+      ],
+      "takeaway": "我们和 vivo 以及一批 AI 行动派用户聊了聊，无关宏大叙事，而是日常工作和生活里那些具体的「小事」：贴发票、写日报，手机也可以是调度各路 Agent 的入口。",
+      "track_reason": "评测复现、能力边界、成本变化。",
+      "why_it_matters": "模型能力和评测变化会影响后续工具选择与长期假设。"
+    },
+    {
+      "event_id": "evt-f5cc18e2f21a",
+      "headline": "Andrew Yang thinks the next big startup opportunity is lowering the cost of living",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "quote": "Andrew Yang made a list of everything Americans overpay for — housing, food, wireless — and thinks the next startup g...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://techcrunch.com/2026/06/12/andrew-yang-thinks-the-next-big-startup-opportunity-is-lowering-the-cost-of-living/"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "Andrew Yang made a list of everything Americans overpay for — housing, food, wireless — and thinks the next startup g...",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "Andrew Yang made a list of everything Americans overpay for — housing, food, wireless — and thinks the next startup g..."
+    }
+  ],
+  "date": "2026-06-13",
+  "must_read_items": [
+    {
+      "event_id": "evt-9dd323fb67a8",
+      "headline": "Anthropic 因美国政府指令暂停 Fable 5 和 Mythos 5",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "quote": "worries that a Fable 5 \"jailbreak\" could be a national security threat.",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive/"
+        },
+        {
+          "name": "Latent Space",
+          "quote": "We are in the strangest timeline.",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.latent.space/p/ainews-fable-and-mythos-officially"
+        },
+        {
+          "name": "Simon Willison Blog",
+          "quote": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Well this is nuts : The US governm...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything"
+        }
+      ],
+      "tags": [
+        "监管/安全边界"
+      ],
+      "takeaway": "美国政府因潜在 jailbreak 与国家安全顾虑要求 Anthropic 暂停 Fable 5 和 Mythos 5；多家报道显示这会影响前沿模型发布的监管边界。",
+      "track_reason": "监管口径、发布边界、模型安全评估。",
+      "why_it_matters": "监管和安全边界会影响模型或产品的发布节奏，也会改变后续采用判断。"
+    },
+    {
+      "event_id": "evt-53446ec22d6f",
+      "headline": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "quote": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/"
+        }
+      ],
+      "tags": [
+        "安全/风险"
+      ],
+      "takeaway": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
+      "track_reason": "影响范围、补丁状态、真实利用情况。",
+      "why_it_matters": "安全事件会直接改变升级、排查和供应链防护优先级。"
+    },
+    {
+      "event_id": "evt-073e96eb5242",
+      "headline": "Arch Linux 逾四百 AUR 包被植入恶意程序",
+      "sources": [
+        {
+          "name": "Solidot",
+          "quote": "Arch Linux 项目的用户软件仓库 Arch User Repository(AUR)遭遇了大规模恶意攻击，逾四百 AUR 包被植入恶意程序。Arch Linux 维护者从昨天开始一直在重置/删除所有恶意内容，封禁受影响账号。此...",
+          "tier": "T3_CHINESE_SECONDARY",
+          "url": "https://www.solidot.org/story?sid=84566"
+        }
+      ],
+      "tags": [
+        "安全/风险"
+      ],
+      "takeaway": "Arch Linux 项目的用户软件仓库 Arch User Repository(AUR)遭遇了大规模恶意攻击，逾四百 AUR 包被植入恶意程序。Arch Linux 维护者从昨天开始一直在重置/删除所有恶意内容，封禁受影响账号。此...",
+      "track_reason": "影响范围、补丁状态、真实利用情况。",
+      "why_it_matters": "安全事件会直接改变升级、排查和供应链防护优先级。"
+    },
+    {
+      "event_id": "evt-68e34bf603d0",
+      "headline": "Google Launches Colab CLI for Developers, Automation, and AI Agents",
+      "sources": [
+        {
+          "name": "InfoQ",
+          "quote": "Google has announced the Google Colab CLI, a command-line tool that allows developers and AI agents to interact with...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.infoq.com/news/2026/06/google-colab-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        }
+      ],
+      "tags": [
+        "开发者工具",
+        "模型/Agent"
+      ],
+      "takeaway": "Google has announced the Google Colab CLI, a command-line tool that allows developers and AI agents to interact with...",
+      "track_reason": "真实开发者采用、API 稳定性、生态集成。",
+      "why_it_matters": "开发者工具的能力变化会进入日常工作流，值得比营销发布更早观察。"
+    },
+    {
+      "event_id": "evt-997742040822",
+      "headline": "Angular's Official Agent Skills Helps AI Coding Tools Write Modern Angular",
+      "sources": [
+        {
+          "name": "InfoQ",
+          "quote": "Google's Angular team has released a repository called angular/skills, focusing on Agent Skills that enhance AI codin...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.infoq.com/news/2026/06/angular-agent-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        }
+      ],
+      "tags": [
+        "开发者工具",
+        "模型/Agent"
+      ],
+      "takeaway": "Google's Angular team has released a repository called angular/skills, focusing on Agent Skills that enhance AI codin...",
+      "track_reason": "真实开发者采用、API 稳定性、生态集成。",
+      "why_it_matters": "开发者工具的能力变化会进入日常工作流，值得比营销发布更早观察。"
+    }
+  ],
+  "scan_items": [
+    {
+      "event_id": "evt-9942b1b53d35",
+      "headline": "AI usage report updates",
+      "sources": [
+        {
+          "name": "GitHub Changelog",
+          "quote": "GitHub Actions is resuming enforcement of version requirements for self-hosted runners on github.com and GitHub Enter...",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners"
+        },
+        {
+          "name": "GitHub Changelog",
+          "quote": "Pull requests created by the github-actions[bot] are now able to run your CI/CD workflows with user approval.",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://github.blog/changelog/2026-06-11-bot-created-pull-requests-can-run-workflows-if-approved"
+        },
+        {
+          "name": "GitHub Changelog",
+          "quote": "Your AI usage reports now reflect GitHub AI Credits usage in the standard report fields.",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://github.blog/changelog/2026-06-11-ai-usage-report-updates"
+        }
+      ],
+      "tags": [
+        "开发者工具"
+      ],
+      "takeaway": "Your AI usage reports now reflect GitHub AI Credits usage in the standard report fields.",
+      "track_reason": "真实开发者采用、API 稳定性、生态集成。",
+      "why_it_matters": "开发者工具的能力变化会进入日常工作流，值得比营销发布更早观察。"
+    },
+    {
+      "event_id": "evt-e2c5b57a8e79",
+      "headline": "WebMCP Standard Proposal for Agentic Web Actuation Now Available in Chrome (Origin Trials)",
+      "sources": [
+        {
+          "name": "InfoQ",
+          "quote": "Google recently announced that WebMCP is entering origin trials in Chrome 149.",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.infoq.com/news/2026/06/webmcp-web-agent-standard-chrome/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        }
+      ],
+      "tags": [
+        "开发者工具"
+      ],
+      "takeaway": "Google recently announced that WebMCP is entering origin trials in Chrome 149.",
+      "track_reason": "真实开发者采用、API 稳定性、生态集成。",
+      "why_it_matters": "开发者工具的能力变化会进入日常工作流，值得比营销发布更早观察。"
+    },
+    {
+      "event_id": "evt-5c540003bbab",
+      "headline": "GitHub Enterprise Server 3.21 is now generally available",
+      "sources": [
+        {
+          "name": "GitHub Changelog",
+          "quote": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and poli...",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://github.blog/changelog/2026-06-11-github-enterprise-server-3-21-is-now-generally-available"
+        }
+      ],
+      "tags": [
+        "开发者工具"
+      ],
+      "takeaway": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and poli...",
+      "track_reason": "真实开发者采用、API 稳定性、生态集成。",
+      "why_it_matters": "开发者工具的能力变化会进入日常工作流，值得比营销发布更早观察。"
+    },
+    {
+      "event_id": "evt-bd573f9eca18",
+      "headline": "OpenAI WebRTC Audio Session, now with document context",
+      "sources": [
+        {
+          "name": "Simon Willison Blog",
+          "quote": "OpenAI WebRTC Audio Session, now with document context I built the first version of this tool in December 2024 to try...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://simonwillison.net/2026/Jun/12/openai-webrtc/#atom-everything"
+        }
+      ],
+      "tags": [
+        "开发者工具"
+      ],
+      "takeaway": "OpenAI WebRTC Audio Session, now with document context I built the first version of this tool in December 2024 to try...",
+      "track_reason": "真实开发者采用、API 稳定性、生态集成。",
+      "why_it_matters": "开发者工具的能力变化会进入日常工作流，值得比营销发布更早观察。"
+    },
+    {
+      "event_id": "evt-7c09feb215b6",
+      "headline": "Here’s How AI Agents Can Protect EV Chargers",
+      "sources": [
+        {
+          "name": "Wired",
+          "quote": "An AI agent system proposed by researchers in Spain promises to prevent energy theft and damage to EV chargers, as we...",
+          "tier": "T1_HIGH_QUALITY_SECONDARY",
+          "url": "https://www.wired.com/story/researchers-in-spain-show-how-ai-agents-can-protect-ev-chargers/"
+        }
+      ],
+      "tags": [
+        "模型/Agent"
+      ],
+      "takeaway": "An AI agent system proposed by researchers in Spain promises to prevent energy theft and damage to EV chargers, as we...",
+      "track_reason": "评测复现、能力边界、成本变化。",
+      "why_it_matters": "模型能力和评测变化会影响后续工具选择与长期假设。"
+    },
+    {
+      "event_id": "evt-ab1fe9ef2e27",
+      "headline": "New OpenAI Academy courses for the next era of work",
+      "sources": [
+        {
+          "name": "OpenAI Blog",
+          "quote": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and...",
+          "tier": "T0_FIRST_HAND",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work"
+        }
+      ],
+      "tags": [
+        "技术信号"
+      ],
+      "takeaway": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and...",
+      "track_reason": "后续是否出现一手证据或可验证进展。",
+      "why_it_matters": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and..."
+    }
+  ],
+  "signal_bullets": [
+    "先读 Anthropic 因美国政府指令暂停 Fable 5 和 Mythos 5，它最可能改变后续判断。",
+    "安全事件优先看影响范围、补丁状态和真实利用证据。",
+    "开发者工具变化只在进入实际工作流时才值得长期跟踪。"
+  ],
+  "signal_summary": "今天值得先看的不是热度最高的消息，而是会改变安全边界、工具采用或模型判断的信号。",
+  "signal_title": "安全与监管正在同时改变技术采用节奏"
+}

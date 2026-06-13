@@ -34,7 +34,7 @@ Local cron runner:
 Execution order:
 
 ```text
-fetch -> ingest -> extract -> cluster -> investigate -> knowledge -> brief -> deliver -> site
+fetch -> ingest -> extract -> cluster -> knowledge -> editorial -> brief -> deliver -> site
 ```
 
 ## Artifacts
@@ -48,6 +48,7 @@ data/events/YYYY-MM-DD.jsonl     clustered events
 data/evidence.jsonl              evidence snippets
 data/entities.jsonl              entity timelines
 data/claims.jsonl                tracked claims
+data/editorial/YYYY-MM-DD.json   daily editorial plan
 brief/daily/YYYY-MM-DD.md        daily push brief
 brief/weekly/YYYY-WW.md          weekly review
 brief/monthly/YYYY-MM.md         monthly review
@@ -57,9 +58,10 @@ site/                            static research console
 ## Operating Notes
 
 - `.env` is loaded automatically.
-- Use `LLM_PROVIDER=openai` with `LLM_API_KEY`, `LLM_API_HOST`, and `LLM_MODEL` for OpenAI-compatible extraction.
-- Use `LLM_PROVIDER=command` with `LLM_COMMAND` when delegating extraction to a local agent command such as `mc --code -p` or `codex exec`.
-- Use `STRONG_LLM_MODEL` only for targeted investigation.
+- Use `LLM_PROVIDER=openai` with `LLM_API_KEY`, `LLM_API_HOST`, and `LLM_MODEL` for the batch editorial pass.
+- Use `LLM_PROVIDER=command` with `LLM_COMMAND` when delegating the editorial pass to a local agent command such as `mc --code -p` or `codex exec`.
+- Article extraction is rules-based; do not reintroduce per-article command LLM calls into default cron.
+- Use `STRONG_LLM_MODEL` only for manual targeted investigation.
 - Use `HTTPS_PROXY=http://127.0.0.1:7890` when the source needs mihomo.
 - Feishu delivery requires `FEISHU_APP_ID`, `FEISHU_APP_SECRET`, and `FEISHU_CHAT_ID`.
 - A source failure must appear in `state/source_health.json`; do not silently hide first-hand source failure.
