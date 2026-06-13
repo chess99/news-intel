@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-13",
+  "reason": "STRONG_LLM_MODEL not configured",
+  "selected_event_ids": [
+    "evt-f5cc18e2f21a",
+    "evt-b7ca1e77e363",
+    "evt-b6f5a910da81",
+    "evt-bc93256e49c2",
+    "evt-1bbb69ffcbc0"
+  ]
+}
